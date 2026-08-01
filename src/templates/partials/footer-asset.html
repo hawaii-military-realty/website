@@ -1,7 +1,7 @@
 <footer class="site-footer">
   <div class="container grid">
     <div>
-      <a href="{{prefix}}index.html" class="brand light" aria-label="{{brandName}}">
+      <a href="{{homeHref}}" class="brand light" aria-label="{{brandName}}">
         {{{brandLogoHtml}}}
       </a>
       <p class="about">{{footerBlurb}}</p>
@@ -12,10 +12,14 @@
       <ul>{{{footerNavHtml}}}</ul>
     </div>
     <div class="f-col">
+      <h4>{{guidesHeading}}</h4>
+      <ul>{{{footerGuidesHtml}}}</ul>
+    </div>
+    <div class="f-col">
       <h4>{{contactHeading}}</h4>
       <ul>
         <li>{{{phoneIcon}}}<a href="{{phoneHref}}">{{phoneDisplay}}</a></li>
-        <li>{{{mailIcon}}}<a href="mailto:{{email}}">{{email}}</a></li>
+        <li>{{{mailIcon}}}<a href="{{contactPageHref}}">{{contactPageLabel}}</a></li>
         <li>{{{mapPinIcon}}}<span>{{address}}</span></li>
       </ul>
     </div>
