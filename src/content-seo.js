@@ -1799,25 +1799,111 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
       "Call or text before you spend time on listings that do not fit your commute, budget, financing, school plan, or move timeline."
     ),
   },
-  "our-cooperating-broker-commissions": buildEvergreenExpansion({
-    topic: "cooperating broker commissions",
-    audienceShort: "clients and cooperating professionals",
-    intent: "looking for clarity on compensation, representation, and professional expectations before a showing, offer, referral, or listing conversation",
-    segment: "This page is for buyers, sellers, cooperating brokers, and referral partners who need commission language handled plainly and professionally.",
-    sidebarNote: "Compensation details can affect expectations, but the specific terms still need to be confirmed through the property, listing, and transaction documents involved.",
-    localContext: "In Hawaii real estate, clarity matters because buyers, sellers, agents, lenders, escrow, and relocation timelines often need to move together. Vague compensation language creates avoidable friction at the moment when trust matters most.",
-    whyItMatters: "Commission and cooperation questions are not casual searches. They usually happen when someone is close to a transaction or deciding whether a professional relationship is aligned enough to proceed.",
-    oahuContext: "Oahu transactions can involve military timelines, remote owners, off-island sellers, VA-financed buyers, property managers, and cooperating professionals who need clean expectations early.",
-    decisionFactors: ["representation status", "property-specific terms", "written agreements", "brokerage communication", "disclosure timing"],
-    compareGuidance: "Do not rely on broad assumptions. Confirm the terms attached to the specific listing or agreement, then make sure every party understands how compensation and representation are being handled before leverage or money is committed.",
-    nextStep: "Use this page as the starting point for a direct conversation tied to the property or representation question in front of you.",
-    heroIntro: "If you landed here, you are likely looking for professional clarity before time, trust, or a transaction is already in motion.",
-    introLead: "A useful commission page should reduce ambiguity and make it easier for clients and cooperating professionals to move forward with aligned expectations.",
-    pills: ["Commissions", "Brokerage", "Representation", "Disclosure", "Oahu Real Estate"],
-    contextPills: ["Brokerage Standards", "Client Trust", "Professional Coordination"],
-    ctaTitle: "Clarify representation and compensation",
-    ctaText: "Reach out with the property or transaction context so expectations can be confirmed before the next step.",
-  }),
+  "our-cooperating-broker-commissions": {
+    description: "A plain-language guide to buyer-broker compensation, seller-authorized offers, referrals, written agreements, and VA buyer considerations in Oahu real estate.",
+    keywords: ["Oahu cooperating broker commission", "Hawaii buyer broker compensation", "buyer representation agreement Hawaii", "VA buyer broker fee Hawaii", "real estate referral Oahu"],
+    heroEyebrow: "Brokerage Compensation Guide",
+    heroIntro: "Broker compensation is negotiable, property-specific, and best settled in writing before a showing, offer, or referral creates expectations. This guide explains the questions Oahu buyers, sellers, and cooperating professionals should resolve together.",
+    introEyebrow: "Clear Terms Before Action",
+    introHeading: "How cooperating-broker compensation works now",
+    introLead: "There is no single commission that applies to every Oahu sale, buyer relationship, or broker referral.",
+    intro: [
+      "A buyer may agree to compensate a buyer broker for defined services. A seller may authorize a listing broker to offer payment to a broker representing a buyer, or the parties may negotiate buyer costs in the purchase contract. Those are separate decisions, and the final arrangement depends on the written representation, listing, compensation, and transaction documents—not on an assumed islandwide rate.",
+      "For National Association of REALTORS® settlement-covered MLSs, offers of buyer-broker compensation are no longer displayed on the MLS. An offer can still be communicated and negotiated outside the MLS when the seller authorizes it. MLS participants working with a buyer also generally need a written agreement before touring a home. These practice rules make an early compensation conversation more important; they do not set a required fee or eliminate consumer choice.",
+      "On Oahu, the issue often intersects with a short PCS timeline, a remote buyer or seller, VA financing, or an off-island referral. The practical goal is to identify who represents whom, what services each brokerage will provide, what compensation has been agreed to, which source may pay it, and what happens if that source pays less than the buyer agreed to pay their broker. Confirm those points before anyone relies on an informal message or starts work.",
+    ],
+    sidebar: {
+      eyebrow: "Start With Your Role",
+      heading: "The right question depends on who you are",
+      paragraphs: [
+        "Buyers should review services, duration, exclusivity, cancellation, compensation, and any potential shortfall. Sellers should decide what, if anything, they authorize their listing brokerage to offer or pay toward buyer representation and evaluate that choice as part of the listing strategy.",
+        "Cooperating brokers and referral partners should contact the brokerage directly, identify the client and property or market area, and put the agreement in writing before providing the service that may earn compensation. This page is general information, not a standing offer of compensation or a substitute for the controlling documents.",
+      ],
+      pills: ["Buyers", "Sellers", "Cooperating Brokers", "Referral Partners", "VA Buyers"],
+    },
+    sections: [
+      {
+        title: "Separate representation from the source of payment",
+        pills: ["Agency", "Services", "Payment Source"],
+        paragraphs: [
+          "Representation answers who the brokerage works for and what duties or services it has accepted. Compensation answers how that brokerage may be paid. A buyer broker does not become the seller's representative merely because a seller or listing broker contributes to the buyer broker's compensation. Likewise, a buyer should not infer representation simply because an agent opened a door or supplied listing information. Hawaii's agency-disclosure rules require the parties' representation to be disclosed and confirmed in the purchase contract; ask your licensee to explain the form and the relationship that applies to your transaction.",
+          "The buyer-broker agreement should state the services and an objectively determinable compensation amount or method. It should also explain whether the buyer may owe a difference when an authorized seller or listing-broker payment is lower than the agreed buyer-broker compensation. Under the NAR settlement practice changes, an MLS participant cannot receive more from all sources than the amount agreed to with the buyer. Buyers should review the agreement before signing, ask about cancellation and exclusivity, and retain a copy.",
+          "A seller's decision belongs in the seller's listing and transaction strategy. The seller can discuss with the listing broker whether an authorized payment toward buyer representation might support access or offer competitiveness, what amount or method is acceptable, and how it will be communicated outside the MLS. NAR guidance requires settlement-covered listing brokers to obtain the seller's written approval before offering or paying compensation to a buyer-side broker and to specify the amount or rate. The seller can also compare offers on their complete financial and contractual terms rather than treating one line item in isolation.",
+        ],
+      },
+      {
+        title: "What to confirm for a specific Oahu property",
+        pills: ["Before Touring", "Before Offering", "Written Confirmation"],
+        paragraphs: [
+          "Before a private tour, the buyer and buyer broker should know which written agreement applies and what it says about scope, term, geographic area, compensation, and exit options. An open house attended without the listing agent working with the visitor as a buyer is treated differently under the NAR practice rules, but an unrepresented visitor should still understand that the listing agent works for the seller. Ask rather than assume.",
+          "Before writing an offer, confirm whether the seller or listing brokerage has authorized any payment toward buyer-broker compensation, the exact amount or calculation, and whether a separate broker-to-broker agreement is needed. The buyer broker should compare that confirmed amount with the buyer agreement. If there is a gap, the buyer needs to understand the potential cash obligation and discuss with their agent and lender whether to request a seller-paid amount as an offer term. A request is negotiable; it is not guaranteed and may affect how the seller evaluates the offer's net terms.",
+          "Oahu transactions frequently involve condominium documents, leasehold interests, association costs, insurance questions, and tight arrival or departure dates. Those items deserve their own review and should not get lost in a compensation discussion. A clean file identifies the agency relationship and compensation path early, then lets the buyer and seller evaluate price, financing, contingencies, condition, timing, and net proceeds together.",
+        ],
+      },
+      {
+        title: "Special planning for VA-financed buyers",
+        pills: ["VA Loan", "Liquid Funds", "Closing Disclosure"],
+        paragraphs: [
+          "VA policy currently permits eligible VA home-loan buyers to pay reasonable and customary buyer-broker charges under a temporary local variance for qualifying purchase contracts. The charge cannot be added to the VA loan amount, and a buyer-paid amount is considered when the lender determines whether the borrower has enough liquid assets to close. VA also treats the buyer-broker agreement as part of the sales-contract package and expects applicable buyer-paid compensation to appear on the Closing Disclosure.",
+          "The seller may still pay the VA buyer's broker charge, and VA states that this payment is not treated as a seller concession. That distinction is useful, but it does not mean every seller will agree to pay or that every proposed fee automatically satisfies VA requirements. Before making an offer, a VA buyer should give the representation agreement to the lender, ask the lender to model any buyer-paid amount in cash-to-close, and confirm current VA guidance. VA policy can change, so the lender and agent should verify the rule for the specific file rather than relying on an old transaction.",
+          "For a military household moving to Oahu, cash reserves may also need to cover temporary lodging, deposits, vehicles, household setup, and costs that cannot be financed. Comparing compensation options early helps prevent a last-minute cash surprise and allows the offer strategy to reflect both competitiveness and the family's arrival plan.",
+        ],
+      },
+      {
+        title: "Cooperating brokers and referral partners: document the handoff",
+        pills: ["Broker-to-Broker", "Referrals", "Client Handoff"],
+        paragraphs: [
+          "A cooperating broker seeking property-specific compensation should contact the listing brokerage through its stated channel and verify the terms before relying on them. A useful written confirmation identifies the property, parties or roles, amount or calculation, conditions that earn the compensation, and any required signatures. An advertisement, prior custom, or compensation offered on another listing should not be treated as the terms for the current property.",
+          "A referral is different from cooperating on a particular sale. Referral partners should identify the prospective client, destination market, contemplated service, referral amount or method, exclusions, payment trigger, and expiration. They should also confirm licensing and brokerage approval requirements through their principal or broker in charge before sharing protected client information or expecting a fee. A warm introduction alone does not replace an accepted referral agreement.",
+          "Remote handoffs deserve extra care. State the client's consent to be contacted, preferred communication method, Oahu target area, purchase or rental objective, military or civilian timeline, and whether another professional is already representing the client. Do not send sensitive financial, eligibility, or orders information unless it is needed and the client has authorized a secure transfer. Clear scope protects the client and makes the professional relationship easier to manage.",
+        ],
+      },
+      {
+        title: "A practical compensation checklist",
+        pills: ["Questions to Ask", "Compare Terms", "Next Step"],
+        paragraphs: [
+          "Buyers can ask: What services are included? Is the agreement exclusive? How long does it last? How is compensation calculated? Can payment come from the seller or listing broker? Could I owe a shortfall? How do cancellation and property-specific agreements work? Sellers can ask: What am I paying my listing brokerage for? Have I authorized any payment to a buyer-side professional? How could that choice affect marketing, negotiation, and estimated net proceeds? What written approval is required?",
+          "Professionals can ask: Which brokerage and licensees are involved? Who represents each party? Is the proposed compensation authorized and documented? What event earns it? Does the buyer agreement permit the amount? Are there financing constraints or disclosure steps? Is this cooperation on a listing or a separate referral? Resolve inconsistent answers before touring, drafting an offer, or transferring a client.",
+          "Commission terms are negotiable and transaction-specific. Ask a Hawaii-licensed real estate professional to explain the brokerage documents, a lender to verify financing treatment, and an attorney to answer legal questions. Hawaii Military Realty can discuss its own services and the facts of a specific Oahu property, buyer relationship, seller engagement, or proposed referral; it cannot confirm another firm's obligations for them.",
+        ],
+      },
+    ],
+    faq: {
+      eyebrow: "Common Questions",
+      heading: "Cooperating-broker commission FAQs",
+      intro: "Use these answers to frame the conversation, then rely on the signed documents and current guidance for the actual transaction.",
+      items: [
+        {
+          question: "Is there a standard cooperating-broker commission on Oahu?",
+          answer: "No universal rate applies to every transaction. Compensation is negotiable and depends on the buyer agreement, seller authorization, any broker-to-broker agreement, and the purchase contract. Confirm the amount and payment source for the specific property in writing.",
+        },
+        {
+          question: "Can a seller still pay a buyer broker?",
+          answer: "Yes. A seller may authorize a listing broker to offer or pay buyer-broker compensation outside the MLS, or the parties may negotiate a seller-paid amount in the offer. The seller's approval and the applicable terms should be written, and the buyer broker cannot receive more than the buyer agreed to pay under settlement-covered NAR practice rules.",
+        },
+        {
+          question: "Why is buyer-broker compensation not shown in the MLS?",
+          answer: "NAR's settlement practice changes prohibit offers of compensation on settlement-covered MLSs. That does not prohibit compensation; it means any seller- or listing-broker-authorized offer must be communicated and negotiated away from the MLS.",
+        },
+        {
+          question: "Must I sign a buyer agreement before seeing a home?",
+          answer: "MLS participants working with a buyer generally must have a written agreement before touring a home under NAR's practice rules. Open-house and listing-agent situations can differ. Ask the professional which role they are performing and read the scope, term, services, compensation, and cancellation language before signing.",
+        },
+        {
+          question: "Can a VA buyer pay a buyer-broker fee?",
+          answer: "Current VA guidance allows reasonable and customary buyer-broker charges under its temporary variance, subject to conditions. The fee cannot be financed into the VA loan, affects the lender's liquid-assets review, and may instead be paid by the seller. Confirm current treatment with the VA lender before the offer.",
+        },
+        {
+          question: "Is this page a standing offer of compensation or referral fee?",
+          answer: "No. It provides general information only. A cooperating broker or referral partner should contact Hawaii Military Realty with the specific property or client context and obtain an accepted written agreement before relying on any compensation term.",
+        },
+      ],
+    },
+    cta: buildPageCta(
+      "Clarify the terms before the next step",
+      "Share whether you are a buyer, seller, cooperating broker, or referral partner and identify the Oahu property or client situation. We can discuss our role, services, and the written terms needed before a tour, offer, or handoff."
+    ),
+  },
   "hawaii-va-homebuying-video": buildEvergreenExpansion({
     topic: "Hawaii VA homebuying video",
     audienceShort: "early-stage VA buyers",
