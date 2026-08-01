@@ -3347,25 +3347,91 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Build a decision-ready Kapolei shortlist", "Share your budget range, financing status, firm dates, property type, parking needs, and the destinations that shape your week. We can compare current Kapolei options with nearby West Oahu homes and identify the next property-specific checks."),
   },
-  "hawaii-commissaries": buildEvergreenExpansion({
-    topic: "Hawaii commissaries",
-    audienceShort: "military households planning daily life on Oahu",
-    intent: "understanding how commissary access and base-area convenience may affect where you live",
-    segment: "This page is for incoming and current military households who are thinking about everyday logistics, not just installation names.",
-    sidebarNote: "Commissary access can matter for grocery routine, budgeting, errands, and how convenient a community feels after move-in.",
-    localContext: "On Oahu, daily convenience is part of housing fit. A home may be close to a preferred neighborhood, but the routine still has to work around base access, shopping, traffic, and family schedules.",
-    whyItMatters: "Commissary searches are practical relocation searches. They show that the user is thinking about real life on island, which is exactly where housing guidance becomes valuable.",
-    oahuContext: "Commissary convenience may connect to Joint Base Pearl Harbor-Hickam, Schofield Barracks, Marine Corps Base Hawaii, Fort Shafter, or other installation routines depending on assignment and household needs.",
-    decisionFactors: ["base access", "shopping routine", "commute", "housing area", "family schedule", "budget"],
-    compareGuidance: "Compare commissary convenience with the full weekly routine. If grocery access is easy but the commute is difficult, the housing decision may still need adjustment.",
-    nextStep: "Use daily logistics as one more filter for community fit, then compare rentals or homes in the areas that support your normal week.",
-    heroIntro: "Commissary access is a practical part of military relocation planning because it affects the way daily life works after move-in.",
-    introLead: "Use this page to connect base-area convenience with housing and community decisions.",
-    pills: ["Commissaries", "Military Families", "Daily Routine", "Base Access", "Relocation"],
-    contextPills: ["Errands", "Base Access", "Shopping", "Housing Fit"],
-    ctaTitle: "Plan housing around daily logistics",
-    ctaText: "Call or text to compare base access, commissary convenience, commute, and housing areas.",
-  }),
+  "hawaii-commissaries": {
+    title: "Oahu Military Commissaries and Housing Logistics",
+    description: "Compare Oahu commissary locations, installation access, CLICK2GO options, and grocery routines when choosing housing near Pearl Harbor, Hickam, Schofield, or MCBH.",
+    keywords: ["Hawaii commissaries", "Oahu commissary locations", "Pearl Harbor commissary", "Hickam commissary", "Schofield commissary", "Kaneohe Bay commissary"],
+    heroEyebrow: "Oahu Military Life Guide",
+    heroIntro: "Oahu has commissaries at Pearl Harbor, Hickam, Schofield Barracks, and Marine Corps Base Hawaii at Kaneohe Bay. Use their locations as one practical input—not the only input—when comparing where your household should live.",
+    introEyebrow: "Groceries, Gates, and Your Weekly Route",
+    introHeading: "Plan commissary access around the life you will actually live",
+    introLead: "A nearby commissary can simplify a recurring errand, but a sound housing choice also accounts for duty travel, gate access, school or childcare, medical appointments, and the stores you use off installation.",
+    intro: [
+      "Incoming military households often ask which Oahu neighborhoods are closest to a commissary. The more useful question is which store fits the household's real route. The Defense Commissary Agency lists four Oahu locations: Pearl Harbor and Hickam at Joint Base Pearl Harbor-Hickam, Schofield Barracks in central Oahu, and Kaneohe Bay at Marine Corps Base Hawaii on the windward side. They serve different parts of the island and should not be treated as interchangeable dots on a map.",
+      "Start with the assigned duty location and the gate normally used, then layer in grocery shopping. A home that makes a weekly commissary trip easy can still create a difficult daily commute. Conversely, a household may reasonably choose housing near work, school, or family support and combine commissary shopping with a commute or use commercial groceries for smaller trips. Test exact routes at the times you expect to travel rather than relying on island mileage alone.",
+      "Store hours, holiday schedules, pickup windows, gate procedures, and visitor rules can change. Check the selected store's official DeCA page and the installation's current access guidance before a first visit. Eligibility to shop and permission to enter an installation are related but separate questions; an ID or access credential that gets someone through a gate does not automatically create commissary purchasing privileges."
+    ],
+    sidebar: {
+      eyebrow: "Best For",
+      heading: "Households building an Oahu routine",
+      paragraphs: [
+        "Use this guide if you are arriving on PCS orders, comparing central, leeward, urban, or windward housing, or trying to make an existing grocery routine more efficient.",
+        "Write down the duty gate, likely shopping day, childcare or school stops, vehicle availability, storage space, and whether curbside pickup would materially change the route."
+      ],
+      pills: ["PCS Households", "Pearl Harbor", "Hickam", "Schofield", "Kaneohe Bay"]
+    },
+    sections: [
+      {
+        title: "Know the four Oahu commissary locations",
+        pills: ["Pearl Harbor", "Hickam", "Schofield", "MCBH Kaneohe Bay"],
+        paragraphs: [
+          "Pearl Harbor Commissary is on Bougainville Drive and Hickam Commissary is on Hickam Court, both within Joint Base Pearl Harbor-Hickam. They may be logical candidates for households whose regular route already reaches the joint base, airport-area employment, or nearby Honolulu corridors. Because they are separate stores in different parts of the installation, compare the gate, parking, store schedule, and route that apply to each rather than assuming either is equally convenient from every home or workplace.",
+          "Schofield Barracks Commissary is on Trimble Road in Wahiawa. It can align more naturally with a central Oahu routine involving Schofield Barracks or Wheeler Army Airfield. The Kaneohe Bay MCBH Commissary is on Mokapu Road at Marine Corps Base Hawaii and may align with a windward duty and housing pattern. Neither community names nor straight-line distance reveal the whole trip: installation entry, arterial roads, school traffic, and the time of day can change the experience.",
+          "Use DeCA's store locator as the source of truth for addresses, phone numbers, normal hours, holiday changes, and store notices. Save the page for the store you expect to use and check it again after arrival. Published hours are operational information, not a permanent housing feature, so this guide deliberately does not promise that today's schedule will remain in effect."
+        ]
+      },
+      {
+        title: "Confirm both shopping eligibility and installation access",
+        pills: ["Eligibility", "DoD ID", "VHIC", "Gate Access"],
+        paragraphs: [
+          "DeCA identifies authorized patron categories under Department of Defense policy, including active-duty, Guard and Reserve members, retirees, and authorized family members, with additional eligible veteran and caregiver categories. DeCA also says shoppers must present the appropriate valid identification and directs people with entitlement questions to an installation Pass and ID office. Do not rely on a neighbor's experience or assume that employment on an installation alone confers commissary privileges.",
+          "For eligible veterans and caregivers using expanded privileges, review DeCA's current eligibility instructions before traveling. The agency explains acceptable status markings and documents, while installation enrollment or access steps may also apply. Resolve credential questions in advance with the official office identified by the installation; a real estate professional cannot determine benefit eligibility or grant base access.",
+          "Guests may be allowed to accompany an authorized patron, but installation commanders can restrict visitors, and only authorized patrons may make purchases. Current gate policy controls the trip before store policy matters. If a relative, caregiver, contractor, or visiting friend will be part of the routine, verify both the installation's visitor procedure and DeCA's purchasing rules instead of treating escort access as shopping authority."
+        ]
+      },
+      {
+        title: "Build a realistic commissary trip before choosing housing",
+        pills: ["Duty Gate", "Traffic", "Cold Storage", "Errand Loop"],
+        paragraphs: [
+          "Plot the home, normal duty gate, commissary, school or childcare, and any recurring medical stop. Then test the likely sequence on a weekday and on the shopping day you prefer. A store close to the workplace may support an after-shift trip, while a store near home may work better for a larger weekend run. For a two-worker household, compare both routes; optimizing around one person's commissary trip can shift much more travel onto the other person.",
+          "Account for what happens after checkout. A longer drive with frozen or refrigerated food may call for insulated bags or a cooler, especially if another stop comes first. Apartment or condo residents should consider the distance from assigned parking to the unit, elevator access, and available pantry and freezer space. A large trip is less useful if storage is tight or carrying groceries from parking is impractical.",
+          "Compare at least two workable routines: commissary-centered shopping and a mixed plan using an off-base store for fill-in trips. Track the products your household actually buys, the time spent, transportation cost, and how often the trip can be combined with duty travel. Commissaries are a military benefit, but the best weekly plan is household-specific and should not force a poor housing or commute decision."
+        ]
+      },
+      {
+        title: "Use CLICK2GO as an option, not an assumption",
+        pills: ["CLICK2GO", "Curbside Pickup", "Delivery", "Time Windows"],
+        paragraphs: [
+          "DeCA's CLICK2GO program supports online ordering and scheduled curbside pickup, with orders placed through its shopping site or app. DeCA cautions that dates and hours vary by location. Select the actual Oahu store in the system to see current inventory, pickup windows, payment information, substitution choices, and any location-specific instructions before building the service into a fixed family schedule.",
+          "Pickup can reduce time inside the store and make it easier to combine groceries with a duty commute. It does not erase the gate trip, pickup window, loading, or drive home. Check which household member is eligible and available to collect the order, and allow margin for traffic or an installation-access delay. If a particular item or substitution matters, review the order carefully rather than assuming online availability is identical across Oahu stores.",
+          "DeCA has also announced delivery at the four Oahu commissaries, while its delivery guidance says availability, windows, service area, and timing are store dependent. Enter the prospective address in the official service before treating delivery as a housing advantage. Service coverage and fees can change, so confirm them for the exact address and date instead of relying on a general radius or an older announcement."
+        ]
+      },
+      {
+        title: "Compare neighborhoods without letting one errand dominate",
+        pills: ["Central Oahu", "Leeward", "Honolulu", "Windward"],
+        paragraphs: [
+          "For Schofield- or Wheeler-oriented households, central Oahu housing may simplify duty travel and access to the Schofield store, but exact properties still differ in parking, association costs, condition, and routes. Leeward communities can offer a different housing mix while adding distance to some central or joint-base trips. Test the address against the actual gate and work schedule before using broad labels such as ‘near base.’",
+          "For Joint Base Pearl Harbor-Hickam households, Pearl Harbor and Hickam stores create choices near the duty area, but that does not make every nearby neighborhood the right fit. Compare urban Honolulu, central, and leeward options using the same all-in housing budget, commute test, parking needs, and likely ownership or rental horizon. For MCBH households, windward housing may support the Kaneohe Bay routine, while cross-island obligations can change that calculation.",
+          "Keep commissary convenience as one row in a housing scorecard. Give greater weight to nonnegotiable daily travel, affordable all-in cost, property condition, parking, safety and hazard research, and the household's likely time on Oahu. A good local real estate comparison should identify the exact routes and tradeoffs; it should never promise commute times or base access."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Commissary Planning Questions",
+      heading: "Oahu commissary FAQs",
+      intro: "Verify changing operational details with DeCA and access or credential questions with the appropriate installation office.",
+      items: [
+        { question: "How many military commissaries are on Oahu?", answer: "DeCA's current locator identifies four: Pearl Harbor, Hickam AFB, Schofield Barracks, and Kaneohe Bay MCBH. Check each official store page before visiting because hours, holiday schedules, services, and notices can change." },
+        { question: "Which Oahu commissary should my household use?", answer: "Start with the store that fits your assigned duty gate and weekly route, then compare hours, access, parking, pickup options, and the drive home. The closest store by mileage may not produce the easiest trip under real traffic and gate conditions." },
+        { question: "Who is eligible to shop at a commissary?", answer: "Eligibility is governed by DoD policy and includes several military, retiree, family-member, veteran, and caregiver categories. Use DeCA's official eligibility page and contact Pass and ID when your status or required credential is unclear; a gate pass alone does not establish purchasing privileges." },
+        { question: "Can my guest shop with me?", answer: "DeCA says guests may accompany an authorized patron subject to installation restrictions, but only authorized patrons may purchase. Check the installation's current visitor policy before arrival because local access rules can be more restrictive." },
+        { question: "Do Oahu commissaries offer curbside pickup or delivery?", answer: "DeCA offers CLICK2GO services at Oahu locations, but pickup and delivery availability, hours, windows, and coverage are location dependent. Select the exact store and enter the exact address in DeCA's official shopping system for current options." },
+        { question: "Should I choose a home based on commissary proximity?", answer: "Use proximity as one practical factor, not the deciding factor. Compare the daily duty commute, school or childcare, all-in housing cost, parking, property condition, and the option to combine commissary shopping with an existing route." }
+      ]
+    },
+    cta: buildPageCta("Compare Oahu housing with your real duty route", "Share your duty location, report window, likely gate, housing budget, and the stops that shape your week. We can compare current homes or rentals while you verify commissary eligibility, access, and services with the appropriate official offices.")
+  },
 };
 
 const PROPERTY_CONTENT_EXPANSIONS = {
