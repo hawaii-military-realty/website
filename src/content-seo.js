@@ -2229,25 +2229,90 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
       "Share your work or duty locations, arrival or purchase window, financing stage, property preferences, and non-negotiables. We can help narrow the island to realistic areas and exact homes while your lender, inspector, insurer, title provider, and attorney handle their specialized reviews."
     )
   },
-  "hawaii-military-lodging": buildEvergreenExpansion({
-    topic: "Hawaii military lodging",
-    audienceShort: "incoming military families",
-    intent: "planning temporary arrival logistics while trying to understand where permanent housing should come next",
-    segment: "This page is for service members, spouses, and families arriving on Oahu who need temporary lodging context before they commit to a longer housing plan.",
-    sidebarNote: "Temporary lodging is usually the first housing decision, but it should also help you prepare for the permanent housing decision that follows.",
-    localContext: "Arriving on Oahu often means balancing temporary lodging, a vehicle, pets, school timing, household goods, base reporting, and the pressure to find a rental or purchase quickly.",
-    whyItMatters: "Lodging searches happen when the move is already real. A useful page helps families avoid treating temporary arrival plans as separate from the neighborhood and housing decisions coming right behind them.",
-    oahuContext: "Where you stay at arrival can shape which areas you tour first and how quickly you learn real commute patterns to Joint Base Pearl Harbor-Hickam, Schofield Barracks, Wheeler Army Airfield, Marine Corps Base Hawaii, Camp Smith, or Fort Shafter.",
-    decisionFactors: ["arrival date", "base assignment", "pet needs", "vehicle access", "school timing", "housing search window"],
-    compareGuidance: "Compare temporary lodging against the areas you will realistically tour. A convenient short-term location can make showings, school visits, and commute testing much easier.",
-    nextStep: "Once temporary lodging is set, shift quickly into area screening, rental availability, or purchase readiness so the permanent housing plan does not fall behind.",
-    heroIntro: "Military lodging is often the first practical step in an Oahu move, and it should connect directly to the housing decisions that follow.",
-    introLead: "Use this page to link arrival logistics with permanent housing strategy.",
-    pills: ["Military Lodging", "PCS Arrival", "Temporary Housing", "Oahu Bases", "Relocation"],
-    contextPills: ["Arrival Planning", "Base Access", "Housing Search"],
-    ctaTitle: "Connect arrival plans to housing plans",
-    ctaText: "Call or text with your report date, base, family needs, and housing timeline so the next move is not reactive.",
-  }),
+  "hawaii-military-lodging": {
+    description: "Plan Hawaii military lodging for an Oahu PCS, including official reservation channels, TLA questions, pets, transportation, and the transition to permanent housing.",
+    keywords: ["Hawaii military lodging", "Oahu PCS lodging", "temporary lodging allowance Hawaii", "military hotel Oahu", "PCS to Hawaii"],
+    heroEyebrow: "Oahu PCS Arrival Guide",
+    heroIntro: "Choose temporary lodging as part of your full Oahu arrival plan—not as an isolated hotel booking—so reporting, transportation, pets, and the search for permanent housing stay workable.",
+    introEyebrow: "Before You Reserve",
+    introHeading: "Hawaii military lodging that supports the move after landing",
+    introLead: "Start with your gaining command and service housing office, then verify the reservation and reimbursement rules that apply to your orders before paying a deposit.",
+    intro: [
+      "A PCS to Oahu can put several clocks in motion at once: your report date, a lodging reservation, household-goods delivery, vehicle shipment, pet entry requirements, school enrollment, and the search for a long-term home. The best temporary room is therefore not always the cheapest or closest on a map. It is the option your approving office accepts and your household can actually use during the first days on island.",
+      "Hawaii is outside the continental United States for travel-allowance purposes. Do not assume the Temporary Lodging Expense rules described for a stateside move are the same as Hawaii Temporary Lodging Allowance procedures. Military OneSource describes TLE as a partial reimbursement for qualifying CONUS PCS lodging, while local Hawaii housing offices administer TLA under service-specific procedures. Your orders, branch, assignment, family status, and approved lodging documentation can affect the answer.",
+      "Reserve early, but treat every important detail as something to reconfirm directly: eligibility, dates, room type, pet acceptance, parking, kitchen facilities, cancellation terms, taxes or fees, and any required certificate of non-availability. Keep confirmations and itemized receipts. A website can help you build a short list; only the lodging desk and your authorizing office can confirm what applies to your stay and claim."
+    ],
+    sidebar: {
+      eyebrow: "Arrival File",
+      heading: "Keep these details together",
+      paragraphs: [
+        "Have orders and amendments, sponsor and gaining-unit contacts, flight details, lodging confirmations, pet records, vehicle-shipment information, and housing-office instructions accessible after landing—not packed with household goods.",
+        "Before changing hotels or booking commercially, ask the office that controls your allowance what approval, approved-property list, or non-availability documentation is required. Save names, dates, written guidance, and itemized receipts."
+      ],
+      pills: ["Orders", "Receipts", "TLA Guidance", "Pet Plan", "Vehicle Plan", "Housing Search"]
+    },
+    sections: [
+      {
+        title: "Start with the official channel for your assignment",
+        pills: ["Gaining Command", "Housing Office", "DoD Lodging", "Reservations"],
+        paragraphs: [
+          "Ask your sponsor or gaining command which installation office owns your arrival process. Army personnel can use the U.S. Army Garrison Hawaii Housing Services Office, which says it assists incoming and departing personnel and processes Army TLA eligibility. Navy and Air Force households assigned around Joint Base Pearl Harbor-Hickam should follow their command and installation lodging instructions. Marine households can check Inns of the Corps Hawaii at Marine Corps Base Hawaii. Official inventories and policies change, so these are starting points rather than promises that a particular room is available or reimbursable.",
+          "When you call, give the complete party size and ages, accessible-room needs, pet count and size, arrival time, anticipated checkout window, and whether you will initially have a vehicle. Ask the agent to identify the exact facility, not merely the brand, and repeat the cancellation deadline. If government lodging is unavailable, ask what written proof you need before choosing a commercial hotel. Never infer that a sold-out screen alone satisfies your branch's claim requirements.",
+          "Availability and reimbursement are separate questions. A room may be open but not suitable for your allowance, while an approved property can still have no vacancy for your dates. Confirm both before relying on the reservation."
+        ]
+      },
+      {
+        title: "Understand TLA before building a hotel budget",
+        pills: ["TLA", "TLE", "Approval", "Itemized Receipts"],
+        paragraphs: [
+          "TLA is intended to help with higher-than-normal temporary lodging and meal costs in qualifying overseas or non-foreign OCONUS circumstances; it is not a guarantee that every expense will be repaid. Army Hawaii specifically advises customers to check with its Housing Services Office before making arrangements, and its official page provides arrival brief information, forms, and approved-hotel resources. Other services may use different offices and workflows.",
+          "Build a cash-flow cushion even when you expect reimbursement. Ask how lodging cost, meals, kitchen availability, dependent status, and partial days are treated; whether extensions require a documented housing search; and how often paperwork must be renewed or submitted. Do not use an old social-media post, a friend's prior PCS, or a hotel employee's opinion as benefits guidance. Obtain the current answer from the housing, finance, or travel office responsible for your claim.",
+          "Keep the full itemized folio rather than only a credit-card receipt. Preserve reservation changes, non-availability documentation, and written approvals. If your permanent housing becomes available or your family travels on different dates, report the change and ask how it affects authorization."
+        ]
+      },
+      {
+        title: "Compare Oahu locations by the first-week mission",
+        pills: ["Duty Location", "Airport", "Showings", "Daily Route"],
+        paragraphs: [
+          "Oahu's installations are spread across the island. A stay near Joint Base Pearl Harbor-Hickam may simplify airport and central-Oahu access, while a Kaneohe Bay stay supports a Marine Corps Base Hawaii report. Schofield Barracks and Wheeler Army Airfield point toward central Oahu. Fort Shafter, Tripler, and Camp Smith create different daily routes. Choose for the place you must reliably reach first, then consider where you expect to tour homes.",
+          "Do not turn a single drive-time estimate into a housing conclusion. Test important routes at the times your household would actually travel, and account for gate entry, parking, child care, appointments, and vehicle pickup. A short-term address can bias a search toward whichever neighborhoods are easiest to see, so deliberately compare at least two realistic housing areas before narrowing your long-term plan.",
+          "If your shipped vehicle will not be ready, ask whether the property has a shuttle, what rideshare pickup is like, and whether groceries, laundry, and meals are practical without a car. Confirm rental-car reimbursement separately; lodging eligibility does not automatically make transportation reimbursable."
+        ]
+      },
+      {
+        title: "Plan pets, rooms, and household goods as constraints",
+        pills: ["Pet-Friendly Rooms", "Quarantine", "Kitchen", "Storage"],
+        paragraphs: [
+          "Pet-friendly does not mean a suitable room is guaranteed. Inns of the Corps lists pet-friendly lodging at MCB Hawaii, but you still need to confirm inventory, species and size rules, fees, vaccination records, and where the animal can be left during appointments. Hawaii animal-entry requirements are a separate process; complete that work directly with the Hawaii Department of Agriculture and your veterinarian before travel.",
+          "For a longer temporary stay, compare more than beds. A kitchen or kitchenette, laundry access, refrigerator capacity, workspace, parking, elevator access, and room layout can materially change daily cost and stress. Ask what the room actually contains. If household goods arrive before you have keys, coordinate delivery or storage through the proper transportation channel rather than assuming the lodging facility can accept them.",
+          "Keep medications, uniforms, school documents, pet supplies, chargers, a few kitchen basics, and housing-search records in accompanied baggage. Your temporary room should bridge a gap; it should not become the only plan if shipments, housing, or vehicle delivery slip."
+        ]
+      },
+      {
+        title: "Use temporary lodging to reach a deliberate housing decision",
+        pills: ["Rental Search", "Home Purchase", "Tour Plan", "Backup Plan"],
+        paragraphs: [
+          "Within the first few days, turn the lodging window into a dated housing plan. Decide whether you are pursuing installation housing, an off-base rental, a purchase, or parallel options. Record application or financing requirements, tour blocks, decision dates, and a fallback if the first path takes longer. Avoid signing a lease or purchase contract merely to end hotel fatigue.",
+          "For off-base choices, compare the full routine: duty commute, school or child-care trip, parking, utilities, association rules, pet limits, and the date the home can actually be occupied. For a purchase, speak with a qualified lender about financing and cash needs and use appropriate inspectors and transaction professionals. Temporary lodging and TLA deadlines should inform the calendar, but they should not replace property due diligence.",
+          "A local real estate team can help organize areas, current inventory, and tours around the arrival schedule. It cannot approve lodging reimbursement, interpret your orders, or guarantee benefits. Keep those decisions with the command, housing, finance, and travel officials who have authority over your case."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "PCS Lodging Questions",
+      heading: "Hawaii military lodging FAQs",
+      intro: "Use these answers to identify the right office and next question; verify case-specific rules before spending or changing plans.",
+      items: [
+        { question: "Is TLA the same as TLE?", answer: "No. Military OneSource describes TLE for qualifying CONUS PCS lodging, while Hawaii is non-foreign OCONUS and local service offices administer TLA procedures. Ask the housing or finance office responsible for your assignment which allowance and documentation apply." },
+        { question: "Do I have to stay in government lodging on Oahu?", answer: "Requirements vary by orders, service, location, availability, and current policy. Begin with your gaining command and official lodging or housing office. Before booking commercially, ask whether you need an approved property or certificate of non-availability and obtain the answer in writing." },
+        { question: "When should I reserve Hawaii military lodging?", answer: "Contact your sponsor and official lodging channel as soon as your travel window is dependable. Reconfirm after orders or flights change. Early booking improves options but does not replace eligibility, reimbursement, cancellation, or non-availability verification." },
+        { question: "Can I bring a pet to military lodging?", answer: "Some facilities have pet-friendly rooms, but inventory and rules vary. Confirm the exact animal, fees, records, restrictions, and room availability directly. Also complete Hawaii's separate animal-entry process with the state and your veterinarian." },
+        { question: "Where should I stay if I want to tour homes?", answer: "First protect the required report and in-processing route. Then consider the areas you will realistically tour and whether you have a vehicle. Do not choose a permanent neighborhood only because it was convenient from the hotel; test real routes and compare multiple areas." },
+        { question: "Can a real estate agent tell me whether a hotel will be reimbursed?", answer: "No. A real estate professional can help with neighborhoods, rentals, listings, and tour logistics. Only the appropriate military housing, finance, travel, or command office can determine authorization and reimbursement for your circumstances." }
+      ]
+    },
+    cta: buildPageCta("Connect your arrival window to an Oahu housing plan", "Share your duty location, arrival dates, household needs, vehicle timing, and whether you expect to rent or buy. We can help organize realistic areas and tours while your military offices handle lodging authorization and allowances.")
+  },
   "va-loan-information": buildEvergreenExpansion({
     topic: "VA loan information",
     audienceShort: "Hawaii VA buyers",
