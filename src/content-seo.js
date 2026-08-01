@@ -4501,26 +4501,89 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     ctaTitle: "Compare Mililani Mauka condo rentals",
     ctaText: "Call or text to review current smaller rentals in Mililani Mauka and central Oahu.",
   }),
-  "oahu-available-rental-properties/4-bedroom-3-bath-single-family-home-2060-sf.html": buildPropertyExpansion({
-    topic: "4-bedroom single-family rental",
-    status: "For Rent",
-    segment: "This page is for space-focused renter households evaluating a large detached rental home on Oahu.",
-    bestFit: "A 4-bedroom, 3-bath, 2,060-square-foot home usually fits larger families or shared households that need usable space, multiple bathrooms, and room to settle during an assignment or local move.",
-    sidebarNote: "Square footage matters only if the layout works. Bedroom placement, storage, parking, and common areas should be reviewed carefully.",
-    localContext: "Large detached rentals can be valuable on Oahu because space is limited and family-sized rentals can move quickly when priced correctly.",
-    whySearched: "A size-specific rental search suggests the household already knows it needs room and is checking whether the home profile can support daily life.",
-    neighborhoodContext: "The location should be evaluated by the commute and services the household needs, because a large home can still be a poor fit if daily logistics are wrong.",
-    compareFactors: ["rent", "square footage", "bedroom layout", "bathroom access", "parking", "commute"],
-    compareGuidance: "Compare large homes by how the space is distributed. A smaller home with a better layout can sometimes function better than a larger one with awkward rooms.",
-    currentUse: "Use this page to evaluate current large single-family rentals with the same space and routine criteria.",
-    heroIntro: "A large single-family rental should be judged by functional space, not only the headline square footage.",
-    introHeading: "Large single-family rental context",
-    introLead: "Use this page to compare space-focused rentals against real household needs.",
-    pills: ["4 Bedrooms", "3 Bathrooms", "2,060 SF", "Single Family", "Rental"],
-    comparePills: ["Square Footage", "Layout", "Parking", "Commute"],
-    ctaTitle: "Ask about large Oahu rentals",
-    ctaText: "Call or text to compare current 4-bedroom rental homes by location, layout, and availability.",
-  }),
+  "oahu-available-rental-properties/4-bedroom-3-bath-single-family-home-2060-sf.html": {
+    description: "Archived context for a 4-bedroom, 3-bath, 2,060-square-foot Oahu rental, with a practical checklist for layout, lease, commute, schools, and hazards.",
+    keywords: ["4 bedroom Oahu rental", "4 bedroom 3 bath house Oahu", "2060 square foot rental home", "large single family rental Oahu"],
+    heroEyebrow: "Archived Oahu Rental",
+    heroIntro: "This legacy page describes a 4-bedroom, 3-bath, 2,060-square-foot single-family-home profile—not a promise that the original home is available today. Use it to decide what a similarly sized Oahu rental must prove before you apply.",
+    introEyebrow: "Archived Property Context",
+    introHeading: "Test the space, address, and lease—not just the bedroom count",
+    introLead: "A four-bedroom home can solve a real space problem, but the right comparison starts with how 2,060 square feet supports your household's ordinary week.",
+    intro: [
+      "The known facts preserved in this archive are limited to the headline profile: four bedrooms, three bathrooms, a single-family format, and 2,060 square feet. The route does not establish a street address, neighborhood, rent, deposit, utilities, parking, pet policy, yard duties, cooling, accessibility, or current status. Confirm every one of those details from a current listing and written rental terms before treating the property as a live option.",
+      "This size may appeal to a larger family, a multigenerational household, or adults who need separate work and sleeping areas. It does not guarantee four equally useful rooms. Ask where the bedrooms and bathrooms sit, whether a bedroom is downstairs, how people reach shared baths, and whether the dining, living, storage, and laundry areas remain functional when every bedroom is occupied.",
+      "Location is the missing decision variable. On Oahu, an address affects the work route, installation gate, school service area, hazard exposure, parking pattern, and access to daily errands. Get the exact address before comparing drive times or making school assumptions; a house with generous interior space can still create an unworkable daily routine.",
+    ],
+    sidebar: {
+      eyebrow: "Best Fit Test",
+      heading: "Who should compare this profile",
+      paragraphs: [
+        "Start here if four true bedrooms, three bathrooms, and detached-home space are requirements rather than upgrades. Write down who needs each room, whether anyone needs a ground-floor bedroom or bath, and how many vehicles, pets, desks, and storage zones the household brings.",
+        "If the household can function in three bedrooms, a townhouse, or fewer square feet, compare those alternatives too. The extra room and yard responsibility may increase rent, utilities, furnishing needs, and maintenance obligations without improving the commute or daily flow.",
+      ],
+      pills: ["4 Bedrooms", "3 Bathrooms", "2,060 SF", "Single Family", "Current Status Unverified"],
+    },
+    sections: [
+      {
+        title: "Make the floor plan earn its 2,060 square feet",
+        pills: ["Room Plan", "Bathroom Access", "Storage", "Cooling"],
+        paragraphs: [
+          "Request a current floor plan or a live video walkthrough that moves continuously between rooms. Check bedroom dimensions, closet depth, stair placement, bathroom access, laundry location, kitchen storage, and whether large furniture blocks circulation. If privacy matters, identify which walls bedrooms share and whether one bathroom is attached to a single bedroom. A three-bath count can work very differently when everyone leaves at the same time.",
+          "Ask how the home is cooled and which utilities the tenant pays. Square footage alone does not reveal airflow, afternoon sun, ceiling fans, window units, split systems, or the cost of cooling occupied bedrooms. During a tour, test water pressure with permission, look for staining or musty odors, inspect windows and screens, and ask who handles appliances, landscaping, pest service, trash, and recurring filters.",
+          "Parking deserves its own check. Confirm the number and dimensions of assigned or permitted spaces, whether the garage is included and usable for vehicles, street and guest rules, and any restrictions on commercial, oversized, or stored vehicles. Do not infer parking capacity from a driveway photo. Match the written rules to the household's actual vehicles and arrival schedule.",
+        ],
+      },
+      {
+        title: "Build the full monthly and move-in cost",
+        pills: ["Rent", "Deposit", "Utilities", "Move-In Funds"],
+        paragraphs: [
+          "Compare homes with an all-in worksheet: advertised rent, required deposits, application or screening charges, electricity, water or sewer, internet, refuse, yard care, pest service, renters insurance, and any approved pet costs. Also plan for overlap with temporary lodging or a departing lease. Ask which services are separately metered and request recent utility context if the owner or manager can provide it; do not assume another household's usage predicts yours.",
+          "Hawaii's Office of Consumer Protection says a written rental agreement is always recommended and advises prospective tenants to read the agreement and house rules carefully. It also recommends putting rental conditions, restrictions, designated parking, and verbal promises in the contract, filling blank spaces, and keeping signed and dated copies. Use that guidance as a document checklist, not as legal advice about a particular lease.",
+          "The same state guidance says the ordinary security deposit may not exceed one month's rent, while a separate pet deposit of up to one month's rent may be agreed to for an allowed pet; an assistance animal is treated differently. Rules and facts can change, so verify current requirements with DCCA or a qualified professional and ask the property manager to itemize every amount due before sending funds.",
+        ],
+      },
+      {
+        title: "Verify the address before judging schools, commute, or hazards",
+        pills: ["Exact Address", "Schools", "Hazards", "Parcel Check"],
+        paragraphs: [
+          "For a military move, replace a broad base name with the actual duty location, gate, reporting window, and likely travel time. Then test the route at relevant hours and include a spouse's job, school drop-off, childcare, and recurring appointments. A map estimate outside the commuting window is a starting point, not a reliable promise of the daily drive.",
+          "For public-school planning, the Hawaii Department of Education's SchoolSite Locator accepts a street address and displays general service areas. DOE explicitly says the locator is for reference only and should not be the sole source for a relocation, purchase, or rental decision; contact the school directly to confirm the service area. Because this archive supplies no address, it cannot support a school assignment claim.",
+          "Use Honolulu's Oʻahu Hazard Explorer once you have the address. The county says the tool can show whether a selected location is in a tsunami evacuation zone, flood zone, wildfire risk area, or dam or levee evacuation area. Honolulu's Department of Planning and Permitting also directs users to Parcel Information for flood zone, zoning, warnings, and advisories by address or tax map key. Discuss results with the property manager and appropriate insurance or emergency-planning professionals rather than assuming a map alone settles the risk.",
+        ],
+      },
+      {
+        title: "Inspect, document, and verify before paying",
+        pills: ["Current Listing", "Condition Record", "Written Terms", "Fraud Check"],
+        paragraphs: [
+          "First verify that the home is currently offered, who is authorized to rent it, when possession is possible, and how applications are handled. Compare the advertiser's name and contact channel with current brokerage or property-management information. Be cautious if someone refuses a real-time tour, pressures you to wire money immediately, or will not provide written terms. This archive is not evidence that any person is authorized to collect an application fee, deposit, or rent for the original property.",
+          "At the showing, compare the property with the advertisement and ask what will change before possession. DCCA advises tenants to inspect carefully, identify damage and needed corrections with the landlord, and record repair promises and timing in the rental contract. Its guidance also recommends a signed, dated written inventory covering condition, contents, cleanliness, and damage. Photos and video can supplement that record when all parties follow the lease and applicable rules.",
+          "Before signing, confirm names, address, term, rent due date, deposits, included utilities, occupants, pets, parking, yard work, entry procedures, repair contacts, renewal or termination terms, and the condition expected at return. If a clause is unclear or the timing conflicts with orders or another lease, pause and get appropriate professional guidance. A large home is only a good rental when its documentation, condition, location, and total cost work together.",
+        ],
+      },
+      {
+        title: "Use this archive to compare live four-bedroom rentals",
+        pills: ["Availability", "Shortlist", "Tradeoffs", "Next Step"],
+        paragraphs: [
+          "Turn the profile into a shortlist scorecard. Mark each live option for verified status, exact address, usable bedroom plan, bathroom access, parking, pet fit, cooling, storage, outdoor duties, commute, school verification, hazard review, lease terms, and all-in monthly cost. Keep unresolved facts visible instead of scoring an assumption as a benefit.",
+          "Rank deal-breakers before touring. If four bedrooms are essential, do not let finishes distract from a room that cannot serve its intended purpose. If the commute or move-in date is fixed, remove homes that fail those constraints even when the square footage is appealing. A smaller but better-arranged home may outperform a nominal 2,060-square-foot option; a larger home may be worth the cost when every room has a defined use.",
+        ],
+      },
+    ],
+    faq: {
+      eyebrow: "Rental Questions",
+      heading: "Four-bedroom Oahu rental FAQs",
+      intro: "These answers preserve the archive's limits while helping you verify a current large-home rental.",
+      items: [
+        { question: "Is this exact 4-bedroom home available now?", answer: "This archived page does not establish current availability. Ask Hawaii Military Realty or the current authorized property manager to verify status, address, rent, showing access, application process, and move-in date before relying on the home as an option." },
+        { question: "What property details are actually known from this page?", answer: "Only the legacy headline profile: a single-family home with four bedrooms, three bathrooms, and 2,060 square feet. The archive does not verify neighborhood, price, parking, pets, utilities, features, condition, or present rental status." },
+        { question: "How should I compare 2,060 square feet with a smaller rental?", answer: "Compare room dimensions and placement, bathroom access, storage, cooling, furniture flow, parking, outdoor obligations, commute, and total monthly cost. Usable layout matters more than the headline number when each bedroom has a specific job." },
+        { question: "Can I determine the assigned public schools from this archive?", answer: "No. An exact address is required. Use Hawaii DOE's SchoolSite Locator as a starting point, then contact the school directly because DOE says the locator shows general service areas and should not be the sole source for a rental decision." },
+        { question: "What should I document at move-in?", answer: "Follow the signed lease and create a detailed condition record. Hawaii DCCA recommends a signed and dated inventory describing condition, contents, cleanliness, damage, and items needing correction, with repair promises and timing recorded in the rental agreement." },
+        { question: "What should a military household verify first?", answer: "Confirm the current listing and move-in timing, then the exact duty location and gate, household room plan, vehicles, pets, school needs, full monthly cost, and lease term. Do not assume a broad Oahu location will fit a particular assignment." },
+      ],
+    },
+    cta: buildPageCta("Compare current four-bedroom Oahu rentals", "Share your move date, duty or work location, room plan, budget, vehicles, pets, and must-have lease terms. Hawaii Military Realty can verify current options instead of treating this archived home as active."),
+  },
   "oahu-available-rental-properties/2-bedroom-2-bathroom-condo-in-mililani.html": buildPropertyExpansion({
     topic: "Mililani 2-bedroom condo rental",
     status: "For Rent",
@@ -4709,6 +4772,15 @@ function assignSecondPassLinks() {
   });
 
   CONTENT.propertyPages.forEach(function (page) {
+    if (page.path === "oahu-available-rental-properties/4-bedroom-3-bath-single-family-home-2060-sf.html") {
+      page.relatedLinks = [
+        linkTo(pageIndex, "oahu-real-estate-property-for-sale-listings", "Oahu Area and Property Guide", "Compare island locations and housing tradeoffs before narrowing a large-home rental search."),
+        linkTo(pageIndex, "hawaii-bases-and-barracks", "Oahu Bases and Barracks", "Verify the actual installation and duty location before judging a military commute."),
+        { path: "contact.html", label: "Ask About Current Four-Bedroom Rentals", description: "Share your move date, room plan, budget, vehicles, pets, and work location for a current-availability conversation." },
+      ].filter(Boolean).slice(0, 3);
+      return;
+    }
+
     if (page.path === "oahu-available-rental-properties/4-bedroom-2-5-bathrooms-1538-sf-in-ewa-beach-2500-per-month.html") {
       page.relatedLinks = [
         linkTo(pageIndex, "ewa-beach-real-estate", "Ewa Beach Area Guide", "Review broader Ewa Beach transportation, hazard, housing, and daily-life context."),
