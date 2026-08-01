@@ -2822,25 +2822,99 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Turn your VA readiness into an Oahu property plan", "Share your duty location, move and occupancy dates, lender status, total monthly ceiling, cash reserve, and preferred property types. We can help build and investigate a realistic Oahu shortlist while your lender and VA confirm benefit and loan decisions.")
   },
-  "ewa-beach-real-estate": buildEvergreenExpansion({
-    topic: "Ewa Beach real estate",
-    audienceShort: "Ewa Beach researchers",
-    intent: "deciding whether Ewa Beach fits your budget, commute, household needs, and move timeline",
-    segment: "This page is for buyers, renters, sellers, and relocating families who want broader Ewa Beach context before focusing on active listings.",
-    sidebarNote: "Use it as a community hub for understanding the area before you compare individual homes or rentals.",
-    localContext: "Ewa Beach includes a mix of older neighborhoods, newer communities, condos, townhomes, single-family homes, golf-course areas, and beach-oriented lifestyle pockets.",
-    whyItMatters: "Ewa Beach is one of the site's most commercially relevant communities. A strong page can help users understand the market before they choose a listing, rental, or sale strategy.",
-    oahuContext: "The area can offer space and value that buyers want, but commute, heat, traffic timing, association rules, and parking can change the decision. Those tradeoffs should be discussed before a household commits to the area.",
-    decisionFactors: ["neighborhood pocket", "property type", "commute", "schools", "parking", "association costs"],
-    compareGuidance: "Compare Ewa Beach against Kapolei, Makakilo, and Mililani so you understand what the area gives you and what it asks in return.",
-    nextStep: "Once the area fit is clear, move into active listings, rental options, or a sale conversation tied to your specific neighborhood.",
-    heroIntro: "Ewa Beach real estate research should help you understand the community before individual listings start driving the decision.",
-    introLead: "Use this page as a practical guide to Ewa Beach fit, tradeoffs, and next steps.",
-    pills: ["Ewa Beach", "Community Guide", "West Oahu", "Buyers", "Renters"],
-    contextPills: ["Neighborhoods", "Commute", "Schools", "Parking"],
-    ctaTitle: "Talk through Ewa Beach fit",
-    ctaText: "Call or text to compare Ewa Beach neighborhoods, listings, rentals, or sale timing.",
-  }),
+  "ewa-beach-real-estate": {
+    description: "Practical Ewa Beach real estate guide for comparing homes, associations, flood information, schools, transportation, and daily fit before buying, renting, or selling.",
+    keywords: ["Ewa Beach real estate", "Ewa Beach homes", "Ewa Beach neighborhoods", "West Oahu real estate", "Ewa Beach relocation"],
+    heroEyebrow: "Ewa Beach Area Guide",
+    heroIntro: "Evaluate Ewa Beach by the address, ownership costs, travel routine, and property records—not by a neighborhood label or listing photos alone.",
+    introEyebrow: "Start With Area Fit",
+    introHeading: "Make an Ewa Beach housing decision that works beyond move-in day",
+    introLead: "Ewa Beach can mean different housing types and daily routines within a relatively compact part of leeward Oahu, so begin with the household plan and investigate each address on its own facts.",
+    intro: [
+      "People often use “Ewa Beach” broadly, but search results can span distinct Census-designated communities and developments. The Census Bureau reports Ewa Beach, Ewa Gentry, Ewa Villages, and Ocean Pointe separately. A portal label is therefore a useful search shortcut, not a precise description of a property's boundaries, services, association, school assignment, or commute.",
+      "The housing choice may range from an older detached home to a townhome, condominium, or newer planned-community residence. Those options can differ in lot and interior space, parking, maintenance responsibility, common amenities, association payments, insurance structure, and rules. Compare the complete ownership or rental arrangement instead of assuming that two homes with similar prices deliver the same value.",
+      "This guide is for buyers, renters, sellers, and relocating households who need to screen Ewa Beach before chasing active inventory. It explains how to test travel, verify public records and hazards, review association obligations, and prepare a property-specific budget. It does not promise availability, school placement, commute time, future value, or a particular financing result."
+    ],
+    sidebar: {
+      eyebrow: "Build Your Shortlist",
+      heading: "Bring these facts into the search",
+      paragraphs: [
+        "Write down each worksite and likely arrival time, maximum all-in monthly housing cost, required parking, pets, accessibility needs, school or child-care trips, move date, and likely length of stay.",
+        "For every candidate, record the legal property type, association obligations, insurance quote, tax and permit findings, hazard-map result, and a tested route. Buyers should also identify the cash they want to preserve after closing."
+      ],
+      pills: ["Address", "Total Cost", "Travel Test", "Property Records", "Association Review", "Move Timing"]
+    },
+    sections: [
+      {
+        title: "Define what Ewa Beach means for this search",
+        pills: ["Search Boundary", "Housing Type", "Daily Routine", "Length Of Stay"],
+        paragraphs: [
+          "Start with a map boundary that serves your real destinations, then confirm the address and legal description of every property. Ewa Beach is not one uniform subdivision. Even nearby homes can sit in different developments, condominium projects, associations, school service areas, flood zones, or street settings. Ask what is conveyed, what is shared, and who maintains roads, landscaping, drainage features, roofs, exterior elements, or recreational facilities that matter to the household.",
+          "Choose property type deliberately. A detached house may offer a private yard and more direct maintenance control, but it can also put every exterior repair on the owner. A townhome or condominium may shift some work to an association while adding recurring fees, rules, master-insurance questions, and shared financial exposure. A newer home can reduce some immediate projects without removing the need for inspection, document review, warranty research, or a reserve for repairs.",
+          "Renters need the same discipline. Confirm who is authorized to lease the property, the exact term, deposit and move-in requirements, utilities, parking, pet terms, maintenance contacts, association restrictions, and condition documentation. Never send funds or sensitive information until the owner or property manager and payment instructions have been independently verified. An archived page or old advertisement is context, not proof that a home remains available."
+        ]
+      },
+      {
+        title: "Test the transportation plan at the times that matter",
+        pills: ["Fort Weaver Road", "Worksite", "TheBus", "Route Changes"],
+        paragraphs: [
+          "Treat the commute as a schedule problem, not a mileage problem. List the actual worksite, likely gate or parking destination, required arrival and departure windows, and any school, child-care, medical, or second-worksite trip. Test the route on a representative weekday when possible and build a fallback for incidents or a changed duty schedule. A single map estimate cannot guarantee recurring travel time.",
+          "The Census Bureau's 2020–2024 QuickFacts reports a 38.0-minute mean travel time to work for workers living in the Ewa Beach CDP. That population average is useful evidence that transportation deserves attention, but it is not a forecast for a specific address, destination, shift, or travel mode. A household bound for Kapolei faces a different pattern from one traveling toward Pearl Harbor, the airport, or urban Honolulu.",
+          "Transit can be part of the comparison, but verify the current network rather than relying on a listing description. TheBus publishes live route descriptions, maps, and timetables; its current route index includes Ewa Beach Transit Center service and connections involving Kapolei and Skyline stations. Check the closest safe stop, walking conditions, transfers, first and last trips, weekend schedule, and total door-to-door time shortly before committing because service changes."
+        ]
+      },
+      {
+        title: "Build the full monthly and move-in cost",
+        pills: ["Payment", "Association Fees", "Insurance", "Utilities", "Reserves"],
+        paragraphs: [
+          "Buyers should ask a lender for property-specific scenarios rather than applying a portal payment to the whole neighborhood. Include principal and interest, estimated Honolulu real property tax, the insurance quote, mortgage insurance or VA funding-fee treatment when applicable, and every association or maintenance payment. Keep electricity, water or sewer arrangements, landscaping, pest control, transportation, and repair reserves visible even when they are outside the lender's estimate.",
+          "Do not use Census medians as a pricing shortcut. QuickFacts currently reports housing and rent characteristics for the Ewa Beach CDP, but those are multi-year community estimates, not an appraisal, current market report, or valuation for a home. Current price and negotiation decisions require recent comparable sales, the property's condition and legal attributes, present inventory, financing terms, and professional analysis tied to the date of the decision.",
+          "Renters should compare the full move-in and recurring cost: rent, security deposit, utilities, parking charges, pet costs, insurance, transportation, and any overlap with lodging or a prior lease. Sellers should prepare their own net and timing scenarios, including likely repairs, moving costs, mortgage payoff, negotiated credits, and the costs stated in their listing and sale agreements. No neighborhood-wide number replaces a written property-specific estimate."
+        ]
+      },
+      {
+        title: "Investigate the parcel, permits, hazards, and insurance",
+        pills: ["TMK", "Permits", "Flood Map", "Inspection", "Insurance Quote"],
+        paragraphs: [
+          "Use the property's Tax Map Key to cross-check City and County of Honolulu tax and building information. Search permit records for additions, enclosed areas, photovoltaic work, accessory spaces, bedrooms, and other features important to the intended use. Honolulu's Department of Planning and Permitting directs users to its building-permit search by permit number or TMK and explains that full files may require a records request. A tax description, listing, or appraisal does not by itself establish that work was permitted or finally approved.",
+          "Review the exact address in Hawaii's official Flood Hazard Assessment Tool while contingencies still allow investigation. The Department of Land and Natural Resources explains that the viewer displays FEMA flood zones but does not identify every place that can flood, and its estimated elevation does not replace a survey. Discuss the map result, drainage observations, flood-insurance requirements, coverage, exclusions, and deductibles with the appropriate agencies and an insurance professional.",
+          "Order an address-specific insurance quote early and use inspections suited to the property and visible concerns. Look beyond interiors to roof and exterior condition, drainage, grading, ventilation and cooling, pests, solar equipment and agreements, utilities, boundaries, and shared infrastructure. Review seller disclosures and title, survey, permit, association, and inspection material together; any one source can leave an important question unanswered."
+        ]
+      },
+      {
+        title: "Read association obligations as part of the property",
+        pills: ["Declaration", "Budget", "Reserves", "Insurance", "House Rules"],
+        paragraphs: [
+          "For a condominium or association-governed home, identify every organization and payment attached to the address. Request the applicable declaration, bylaws, house rules, budgets, reserve information, meeting minutes, insurance summary, assessment notices, litigation disclosures, parking documents, and architectural standards through the transaction process. Confirm rental, pet, vehicle, yard, exterior-change, solar, and use restrictions that affect the household rather than assuming rules are consistent across Ewa Beach.",
+          "Hawaii's Real Estate Branch provides a condominium-buyer checklist that calls for review of governing documents, the current budget, reserve study and audit, insurance, board and association minutes, special assessments, lawsuits, capital improvements, delinquencies, and claims. Its guidance also warns that insufficient reserves can produce special assessments, borrowing, or deferred maintenance. Have qualified professionals explain material legal, financial, title, or insurance issues; a summary from an agent is not a substitute for reading the documents.",
+          "Clarify maintenance responsibility and insurance boundaries. A low monthly fee is not automatically better if major common components are underfunded, and a broad amenity list is not automatically useful if the household will not use it. Compare the fee with what it pays for, reserve condition, planned work, deductibles, owner coverage needs, rule fit, and the risk of future assessments."
+        ]
+      },
+      {
+        title: "Verify school information and make a clean decision",
+        pills: ["School Finder", "Address Check", "Resale Plan", "Decision Sheet"],
+        paragraphs: [
+          "If public schools affect the move, verify information through the Hawaii Department of Education. Its School Finder organizes schools by island, complex area, type, and grade level, but a buyer or renter should confirm the current assignment and enrollment process for the exact address directly with the department or school. Do not treat proximity, a portal label, test scores, or another resident's assignment as a guarantee.",
+          "Compare finalists on one decision sheet: legal property type, useful space, condition, parking, association duties, total monthly cost, cash needed, insurance, permit questions, hazard review, school verification, and tested travel. Add the planned holding period and an exit scenario. Military households expecting another PCS should investigate rental restrictions and management costs, but should not assume a future tenant, rent level, or resale result.",
+          "For sellers, the same evidence improves preparation. Gather permits, association material, warranties, service records, solar documents, and known property information early, then discuss condition, comparable sales, timing, disclosure duties, and likely buyer concerns with the appropriate professionals. For buyers and renters, set nonnegotiables before touring so attractive finishes do not quietly override the budget or daily routine."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Ewa Beach Decisions",
+      heading: "Ewa Beach real estate FAQs",
+      intro: "Use these answers to frame due diligence; the exact address, documents, agencies, contract, and qualified professionals control a real transaction.",
+      items: [
+        { question: "Is Ewa Beach one uniform real estate market?", answer: "No. Search labels can span distinct communities, developments, property types, associations, and street settings. Confirm the exact address, legal description, ownership structure, recurring obligations, and daily route for each candidate instead of relying on the broad place name." },
+        { question: "How should I estimate an Ewa Beach commute?", answer: "Test the actual address-to-destination trip at representative times and include gates, parking, transfers, walking, school stops, and a disruption fallback. Census averages and map estimates provide context but cannot predict a specific household's recurring trip." },
+        { question: "What should I review for an Ewa Beach condo or association home?", answer: "Review every applicable declaration, bylaw, rule, budget, reserve document, meeting minute, insurance summary, assessment notice, parking assignment, and use restriction available through the transaction. Confirm what the owner maintains and ask qualified advisers about material legal, financial, title, or insurance concerns." },
+        { question: "How do I check flood risk for an Ewa Beach property?", answer: "Search the exact address in Hawaii DLNR's Flood Hazard Assessment Tool, review the result with the appropriate county or state contacts, inspect site drainage, and obtain an address-specific insurance quote. The state cautions that the viewer does not show every area that may flood and that estimated elevation is not a survey." },
+        { question: "Can a listing tell me which public school serves a home?", answer: "Do not rely on a listing for a guarantee. Use the Hawaii Department of Education's tools and confirm the current assignment and enrollment requirements for the exact address directly with the department or school before making the decision." },
+        { question: "What is the best first step for an off-island Ewa Beach search?", answer: "Send your worksite and schedule, move and occupancy dates, total monthly ceiling, cash reserve, property-type preferences, parking and pet needs, and expected holding period. Use that profile to create a short list, then require live tours, documents, inspections, route tests, and address-specific cost checks before committing." }
+      ]
+    },
+    cta: buildPageCta("Build an address-specific Ewa Beach plan", "Share your destinations, move date, all-in monthly ceiling, cash reserve, property type, parking, pets, school needs, and likely holding period. We can help compare realistic Ewa Beach options while lenders, insurers, inspectors, agencies, and legal or tax professionals confirm decisions in their fields.")
+  },
   "opportune-lift-program-oplift": buildEvergreenExpansion({
     topic: "OPLIFT",
     audienceShort: "military families researching relocation support",
