@@ -3829,26 +3829,85 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Compare current Mililani Mauka rentals", "Share your move date, monthly budget, vehicles, pets, accessibility and school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, rules, layouts, and daily fit before you apply.")
   },
-  "oahu-available-rental-properties/4-br-3-ba-rental-in-kapolei.html": buildPropertyExpansion({
-    topic: "Kapolei 4-bedroom single-family rental",
-    status: "For Rent",
-    segment: "This page is for larger renter households with a higher budget looking for detached-home space in Kapolei.",
-    bestFit: "This profile fits families or shared households that need multiple bedrooms, more bathrooms, parking, and a West Oahu location with access to Kapolei services.",
-    sidebarNote: "A larger rental should be judged by total cost and function, not just bedroom count.",
-    localContext: "Kapolei rentals can appeal to households that want west-side convenience, shopping, schools, and access to newer community infrastructure.",
-    whySearched: "The price, bedroom count, and bathroom count suggest a serious renter comparing whether a larger home is realistic within budget.",
-    neighborhoodContext: "Kapolei can make errands and services easier for West Oahu households, but drives toward Honolulu or certain installations still require realistic timing.",
-    compareFactors: ["rent", "bedroom layout", "parking", "yard care", "utilities", "commute"],
-    compareGuidance: "A 4-bedroom home may solve space needs, but utilities, yard care, and commute costs should be included in the monthly decision.",
-    currentUse: "Use this page as a benchmark for larger Kapolei rental searches and current comparable availability.",
-    heroIntro: "A 4-bedroom Kapolei rental is a serious family-size option that should be compared by space, cost, and routine.",
-    introHeading: "Kapolei single-family rental context",
-    introLead: "Use this page to compare larger rental homes against total monthly cost and commute.",
-    pills: ["Kapolei", "4 Bedrooms", "Single Family", "Rental", "West Oahu"],
-    comparePills: ["Rent", "Layout", "Parking", "Utilities"],
-    ctaTitle: "Ask about Kapolei family rentals",
-    ctaText: "Call or text to compare current 4-bedroom rentals in Kapolei and nearby West Oahu communities.",
-  }),
+  "oahu-available-rental-properties/4-br-3-ba-rental-in-kapolei.html": {
+    description: "Use this archived Kapolei 4-bedroom home rental guide to verify availability, total cost, layout, parking, yard duties, schools, hazards, and commute fit.",
+    keywords: ["Kapolei 4 bedroom rental", "4 bedroom house for rent Kapolei", "Kapolei single family home rental", "West Oahu rental home", "Kapolei rental guide"],
+    heroEyebrow: "Archived Rental Guide",
+    heroIntro: "This legacy 4-bedroom, 3-bath Kapolei rental page does not establish current availability or a current $3,000 rent. Confirm the exact home and written terms, then compare its full cost, layout, upkeep, and daily travel with active West Oahu rentals.",
+    introEyebrow: "Detached-Home Rental Checklist",
+    introHeading: "How to evaluate a 4-bedroom Kapolei rental",
+    introLead: "Four bedrooms may solve a space problem, but the address, lease, household layout, parking, upkeep, utilities, and weekday routine determine whether the home works.",
+    intro: [
+      "The archived title preserves three useful search filters: Kapolei, a single-family home, and four bedrooms with three bathrooms. It also preserves an old $3,000 figure, but none of those words confirm that the original home is available now at that rent. The exact address, square footage, condition, cooling, parking, appliances, yard, pet policy, utility allocation, lease dates, and deposit terms all require current written verification.",
+      "A larger detached home can fit a family, a multigenerational household, or roommates, yet the same bedroom count can produce very different daily routines. One bedroom may be downstairs or all may require stairs; a bathroom may be attached, shared, or inconvenient for a household member with limited mobility. Ask for a floor plan when possible, then tour and measure the spaces that matter instead of treating the headline as proof of fit.",
+      "Use one scorecard for this archived lead and every active alternative. Compare funds due before move-in, complete recurring cost, bedroom and bathroom placement, parking for every vehicle, storage, cooling, yard responsibility, pet approval, repair contacts, exact-address school and hazard checks, and realistic trips to work or a duty station. That process makes the old page useful without turning historic advertising into a present-day promise."
+    ],
+    sidebar: {
+      eyebrow: "Best Fit",
+      heading: "Who should shortlist this rental profile",
+      paragraphs: [
+        "This profile may suit a larger household that will use four distinct rooms and three bathrooms, prefers detached-home responsibilities to condominium living, and can make a Kapolei routine work for every driver, student, and recurring destination.",
+        "Pause before applying if the household has not priced the utilities, lacks a confirmed space for each vehicle, needs a downstairs bedroom, expects a pet or yard use that is not approved in writing, or has tested travel only from the word Kapolei rather than the exact address."
+      ],
+      pills: ["Archived Listing", "4 Bedrooms", "3 Bathrooms", "Single-Family Home", "Kapolei", "Cost Review"]
+    },
+    sections: [
+      {
+        title: "Confirm the offer and authorized contact first",
+        pills: ["Availability", "Exact Address", "Showing", "Written Terms"],
+        paragraphs: [
+          "Ask whether the original home is available now. Obtain the exact address, current rent, proposed start date, lease length, application standards and charge, deposit amounts, included appliances and utilities, pet terms, parking arrangements, and the owner or licensed property manager's identity. Verify who is authorized to offer the home before sending money, identification, or other sensitive application information.",
+          "Tour the actual house rather than relying on archived photographs. Operate doors, windows, locks, plumbing fixtures, appliances, fans, and cooling equipment. Look for visible moisture or pest evidence, listen for road and neighboring noise, test cellular reception, and locate laundry, refuse storage, utility equipment, exterior shutoffs, mail delivery, and every permitted parking area. If you proceed, document existing condition with the required move-in process and dated images."
+        ]
+      },
+      {
+        title: "Calculate move-in funds and full monthly cost",
+        pills: ["Rent", "Deposit", "Utilities", "Insurance"],
+        paragraphs: [
+          "Separate one-time and recurring expenses. Move-in funds may include first month's rent, the security deposit, an allowed application charge, an agreed pet deposit, movers, utility setup, and items the house does not provide. Monthly comparisons should include rent, electricity, water or sewer if assigned to the tenant, internet, renters insurance, pest or yard service, pet charges, and transportation costs created by the address.",
+          "Hawaii's Department of Commerce and Consumer Affairs says a residential security deposit cannot exceed one month's rent. Its 2024 handbook discusses a separately agreed additional pet deposit of up to one month's rent and an exception for an assistance animal. Read the latest official guidance and the proposed lease; take legal questions about a particular agreement or right to a qualified Hawaii attorney."
+        ]
+      },
+      {
+        title: "Test the floor plan, parking, and house responsibilities",
+        pills: ["Layout", "Vehicles", "Yard", "Maintenance"],
+        paragraphs: [
+          "Confirm which floor holds every bedroom and bathroom, whether any sleeping room is beside a noisy living area, usable room and closet dimensions, laundry placement, pantry and equipment storage, cooling by room, afternoon sun, stairs, and the route from parking to the kitchen. Decide who gets each room before applying if adults will share the lease; bedroom counts alone do not resolve privacy, accessibility, or bathroom scheduling.",
+          "Verify garage and driveway capacity using the household's actual vehicles, plus street and guest-parking rules. Walk the lot boundaries and identify who handles mowing, irrigation, trees, pests, gutters, exterior cleaning, and green-waste disposal; request standards and service frequency in writing. Ask how appliance, plumbing, electrical, cooling, roof, fence, and yard problems are reported, who may authorize work, and how after-hours issues are handled."
+        ]
+      },
+      {
+        title: "Drive the real Kapolei routine before signing",
+        pills: ["Commute", "Duty Station", "Errands", "Timing"],
+        paragraphs: [
+          "Drive from the exact address to the actual workplace, installation gate, school, childcare provider, or recurring appointment at the times the household expects to travel, then test the return. Include the local-road portion, parking, security screening, drop-off, and any transit transfer. A neighborhood-level map estimate cannot reproduce the route from a particular driveway on an ordinary weekday.",
+          "Military renters should confirm the expected duty location and access procedure with their command or installation before choosing a lease around an assumed commute. Also test the trips that repeat outside work: groceries, medical care, activities, pet care, and visits by anyone who depends on the household for transportation. Compare the routine for every driver, not only the person submitting the application."
+        ]
+      },
+      {
+        title: "Verify schools, hazards, and coverage by address",
+        pills: ["School Assignment", "Flood", "Wildfire", "Preparedness"],
+        paragraphs: [
+          "Do not infer a public-school assignment from Kapolei or an archived advertisement. The Hawaii Department of Education's SchoolSite Locator accepts a street address, but the department says its general service areas are for reference and should not be the sole source for a rent decision. Enter the exact address, then confirm the result, grade placement, enrollment steps, and transportation directly with the relevant school.",
+          "Search the address in Honolulu's Oʻahu Hazard Explorer. The city says the tool can show whether a location is within mapped tsunami evacuation, flood, wildfire-risk, or dam and levee evacuation areas. Treat the result as a preparedness screen, not a guarantee about the home. Ask about prior water intrusion, drainage, outages, and emergency access, then obtain a renters-insurance quote tied to the address and household."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Kapolei Rental FAQs",
+      heading: "Questions to answer before applying",
+      intro: "Use the archived size and location as a search profile, then verify every current fact in writing.",
+      items: [
+        { question: "Is this Kapolei house available now for $3,000?", answer: "The legacy title is not proof of current status or price. Confirm the exact address, current rent, showing access, lease dates, application terms, and authorized contact before submitting information or funds." },
+        { question: "What costs should I compare beyond the advertised rent?", answer: "Add move-in funds and recurring electricity, water or sewer, internet, insurance, pet charges, yard or pest service, and transportation. Identify every included service, tenant responsibility, and refundable amount in writing." },
+        { question: "How much can a Hawaii rental security deposit be?", answer: "DCCA says the security deposit cannot exceed one month's rent. Its handbook discusses a separately agreed additional pet deposit and an assistance-animal exception. Check current official guidance and the proposed lease for your circumstances." },
+        { question: "What should a larger household verify in the floor plan?", answer: "Confirm bedroom and bathroom locations, stairs, usable dimensions, privacy, cooling, laundry, storage, and the route from parking. Assign rooms before applying so access needs and bathroom schedules are tested against the actual plan." },
+        { question: "How do I verify public schools for a Kapolei address?", answer: "Enter the exact street address in the Hawaii Department of Education's SchoolSite Locator, then contact the relevant school directly. The department says the locator shows general service areas and should not be the sole basis for a rental decision." },
+        { question: "How should I check hazards for the house?", answer: "Search the exact address in Honolulu's Oʻahu Hazard Explorer, ask about prior incidents and emergency access, and discuss address-specific coverage with an insurer. Official mapping is an initial screen and does not guarantee a home is free from hazards." }
+      ]
+    },
+    cta: buildPageCta("Compare current 4-bedroom Kapolei rentals", "Share your move date, monthly budget, vehicles, pets, accessibility and school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, layouts, upkeep, total cost, and daily fit before you apply.")
+  },
   "oahu-available-rental-properties/3-br-1-5-bath-with-ocean-views.html": buildPropertyExpansion({
     topic: "3-bedroom rental with ocean views",
     status: "For Rent",
@@ -4237,6 +4296,15 @@ function assignSecondPassLinks() {
   });
 
   CONTENT.propertyPages.forEach(function (page) {
+    if (page.path === "oahu-available-rental-properties/4-br-3-ba-rental-in-kapolei.html") {
+      page.relatedLinks = [
+        linkTo(pageIndex, "kapolei-real-estate-listings-and-information", "Kapolei Area Guide", "Review broader Kapolei location, transportation, hazard, and housing context."),
+        linkTo(pageIndex, "hawaii-bases-and-barracks", "Oahu Bases and Barracks", "Verify installation context before choosing a lease around an assumed duty commute."),
+        { path: "contact.html", label: "Ask About Current Rentals", description: "Share your timing and rental requirements for a current-availability conversation." },
+      ].filter(Boolean).slice(0, 3);
+      return;
+    }
+
     if (page.path === "oahu-available-rental-properties/3-bedroom-2-bathroom-townhouse-in-mililani-mauka.html") {
       page.relatedLinks = [
         linkTo(pageIndex, "mililani-real-estate", "Mililani Area Guide", "Review broader Mililani location, housing, transportation, and community context."),
