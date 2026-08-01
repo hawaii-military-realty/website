@@ -4224,26 +4224,85 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Compare current Ocean Pointe and Ewa Beach rentals", "Share your move date, budget, household layout, vehicles, pets, accessibility needs, school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, governing rules, total cost, and daily fit before you apply.")
   },
-  "oahu-available-rental-properties/for-rent-2-br-2-ba-condominium-in-mililani-hawaii.html": buildPropertyExpansion({
-    topic: "Mililani condominium rental",
-    status: "For Rent",
-    segment: "This page is for central Oahu renters looking for condo living near Mililani's everyday conveniences.",
-    bestFit: "A Mililani condo can fit smaller households that value central location, manageable space, and access to shopping, schools, and Schofield or Wheeler commute routes.",
-    sidebarNote: "Confirm bedroom and bathroom details, parking, association rules, and utilities because archived titles may not tell the whole current story.",
-    localContext: "Mililani offers a central Oahu option for renters who do not want every search path to default to Ewa Beach or Kapolei.",
-    whySearched: "Mililani rental searches are often practical. The renter is likely balancing convenience, budget, and commute rather than chasing a luxury feature.",
-    neighborhoodContext: "Mililani can make certain routines easier, especially for central or north-side assignments, but inventory can be competitive and property condition varies.",
-    compareFactors: ["rent", "parking", "utilities", "association rules", "commute", "unit condition"],
-    compareGuidance: "Compare Mililani condos against townhomes and smaller single-family options to understand what you gain in convenience and what you give up in space.",
-    currentUse: "Use this page to evaluate current Mililani condo rentals with practical central Oahu criteria.",
-    heroIntro: "A Mililani condo rental can be a practical central Oahu choice when convenience and monthly cost line up.",
-    introHeading: "Mililani condo rental context",
-    introLead: "Use this page to compare central Oahu condo living against your budget and commute.",
-    pills: ["Mililani", "Condominium", "Central Oahu", "Rental", "Convenience"],
-    comparePills: ["Rent", "Parking", "Utilities", "Condition"],
-    ctaTitle: "Ask about Mililani condo rentals",
-    ctaText: "Call or text to compare current Mililani rentals and central Oahu alternatives.",
-  }),
+  "oahu-available-rental-properties/for-rent-2-br-2-ba-condominium-in-mililani-hawaii.html": {
+    description: "Use this archived Mililani condominium rental guide to verify the bedroom count, availability, lease costs, parking, condo rules, schools, hazards, and commute fit.",
+    keywords: ["Mililani condo rental", "3 bedroom condo Mililani", "Central Oahu rental", "Mililani rental guide", "Schofield Barracks housing search"],
+    heroEyebrow: "Archived Mililani Rental Guide",
+    heroIntro: "This legacy page describes a Mililani condominium, but its route says two bedrooms while its archived title says three. Neither version proves current availability. Verify the exact unit and every material term before treating it as a rental option.",
+    introEyebrow: "Resolve the Archive Mismatch",
+    introHeading: "Confirm what the Mililani condo actually offers",
+    introLead: "Use the old page as a search profile, then rebuild the current offer from the address, listing documents, lease, condo rules, and an in-person or live-video showing.",
+    intro: [
+      "This archive is most useful to renters comparing a two- or three-bedroom condominium in Mililani with other Central Oahu choices. The conflicting bedroom references are a warning not to infer the floor plan from the URL. Ask the owner or authorized property manager to confirm the street address, unit number, bedroom and bathroom count, legal sleeping areas, current availability date, rent, lease term, condition, parking, utilities, deposits, pet terms, and application process in writing.",
+      "A condo can reduce exterior upkeep, yet it adds a second layer of documents. The rental agreement governs the landlord-tenant relationship, while a declaration, bylaws, or house rules may control parking, guests, pets, noise, smoking, deliveries, moves, common areas, and tenant registration. Request the current documents that apply to the exact unit and ask who handles rule questions and maintenance inside and outside the condo.",
+      "Mililani can be a practical base for some Central Oahu routines, including households connected with Schofield Barracks or Wheeler Army Airfield, but a community name is not a commute result. Confirm the exact duty or work destination and gate, test the trip at realistic times, and compare it with school, childcare, medical, shopping, and off-duty trips before applying."
+    ],
+    sidebar: {
+      eyebrow: "Condo Search Fit",
+      heading: "Who should use this archived profile",
+      paragraphs: [
+        "This guide fits couples, roommates, small families, or remote workers who want a manageable Central Oahu footprint and are prepared to verify the room count. A second bathroom may help shared routines, but layout, privacy, storage, parking, and written rules matter more than the headline count.",
+        "Pause if the decision depends on a particular school, two guaranteed parking spaces, a pet approval, step-free access, air conditioning, an amenity, or a short military commute. None is established by this archive; each requires address-specific evidence."
+      ],
+      pills: ["Archived Listing", "Mililani", "Condominium", "2 or 3 Bedrooms", "2 Baths", "Verify in Writing"]
+    },
+    sections: [
+      {
+        title: "Reconstruct the offer before paying anything",
+        pills: ["Address", "Availability", "Lease", "Application"],
+        paragraphs: [
+          "Start by confirming that the advertiser is the owner or authorized manager for the exact unit. Obtain a current listing sheet and proposed lease showing rent, start date, term, due date, late charge, application criteria and screening charge, deposits, utility allocation, renters-insurance requirement, pet terms, included appliances, and maintenance responsibilities. Do not send money because an old page, copied photo, or familiar community name appears credible.",
+          "Hawaii DCCA's landlord-tenant handbook says promises and house rules should be written into the agreement. It also says a landlord may collect first month's rent and a security deposit no greater than one month's rent, while separately describing an agreed additional pet deposit and the assistance-animal exception. Use the current handbook for general information and take legal questions to DCCA or a qualified attorney."
+        ]
+      },
+      {
+        title: "Test the interior as a two- or three-bedroom home",
+        pills: ["Floor Plan", "Bathrooms", "Storage", "Condition"],
+        paragraphs: [
+          "At the showing, identify every room rather than relying on labels. Measure usable dimensions, locate closets and windows, check privacy and noise, and assign a real purpose to each bedroom. Note bathroom placement, laundry, linen and pantry storage, cooling, ventilation, stairs or thresholds, and the path from parking to the front door. Confirm which fixtures, appliances, window coverings, and furnishings remain with the unit.",
+          "Run permitted fixtures and appliances, open doors and windows, and look for visible leaks, moisture staining, pest evidence, damaged screens, unsafe railings, and incomplete repairs. Ask how after-hours maintenance works. DCCA describes a written, detailed condition inventory before occupancy that both sides sign and retain; use that formal process and put repair promises and timing in writing."
+        ]
+      },
+      {
+        title: "Read condo rules as part of the housing cost",
+        pills: ["Parking", "Pets", "Moves", "Common Areas"],
+        paragraphs: [
+          "Match every vehicle to a specific legal space. Verify stall numbers, tandem arrangements, size limits, permits, guest parking, towing, loading, bicycle storage, and the route from the stall to the unit. Ask whether a moving reservation, elevator protection, deposit, access credential, or limited move window applies. A verbal parking assurance is not a substitute for the lease and current rules.",
+          "Build a monthly comparison that includes rent, electricity, water or sewer if allocated to the tenant, internet, renters insurance, parking charges, and any tenant-paid services. Keep move-in cash separate: first rent, lawful deposits, screening costs, utility setup, insurance, and moving expenses. Confirm whether access to any pool, recreation area, or other common facility is included rather than assuming every resident receives it."
+        ]
+      },
+      {
+        title: "Verify address-level Mililani fit",
+        pills: ["Commute", "Schools", "Hazards", "Daily Routine"],
+        paragraphs: [
+          "For a military move, use the actual installation, building, gate, reporting schedule, and access rules—not simply 'Schofield' or 'Wheeler.' The U.S. Army Garrison Hawaii directory identifies services at both locations, which helps establish that they are distinct destinations. Test realistic departure and return windows and keep a backup route in mind; do not promise a commute time from the word Mililani alone.",
+          "Public-school service areas also require the exact address. Hawaii DOE's SchoolSite Locator provides general service-area information, but the department says it should not be the sole basis for renting and directs families to confirm with the school. For preparedness, search the address in Honolulu's Oʻahu Hazard Explorer, review the mapped flood, wildfire-risk, tsunami-evacuation, and dam or levee information that applies, and discuss property history and coverage with the manager and an insurer."
+        ]
+      },
+      {
+        title: "Compare this condo with current alternatives",
+        pills: ["Condo", "Townhouse", "Detached Home", "Tradeoffs"],
+        paragraphs: [
+          "Compare current Mililani condos on usable room count, total monthly cost, parking certainty, rule flexibility, condition, noise, storage, accessibility, and travel—not on rent alone. A townhouse may add separation or storage but introduce stairs; a detached home may add privacy and outdoor responsibility; a smaller condo may preserve budget if the extra room would rarely be used.",
+          "Create a short list only after the nonnegotiables are documented. Use the same questions and cost worksheet for every property, then revisit the finalists during a normal travel period if possible. The strongest choice is the verified home whose written terms and everyday routine fit, even if it differs from this archived listing profile."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Mililani Rental FAQs",
+      heading: "Questions raised by the archived listing",
+      intro: "These answers address the legacy page's uncertainty without presenting its room count or availability as current fact.",
+      items: [
+        { question: "Is this Mililani condominium available now?", answer: "This archived page does not prove current availability. Ask the owner or authorized manager to confirm the exact address, availability date, rent, lease term, and application process before touring or paying." },
+        { question: "Does the condo have two bedrooms or three?", answer: "The legacy route and title conflict, so the room count is unverified. Obtain a current listing sheet or floor plan, inspect each room, and make sure the proposed lease identifies the exact unit." },
+        { question: "How much can a Hawaii rental security deposit be?", answer: "Hawaii DCCA's handbook says the security deposit may not exceed one month's rent. It separately discusses an agreed pet deposit and the assistance-animal exception. Check current official guidance and the proposed lease for your situation." },
+        { question: "Do condo rules apply to tenants?", answer: "Tenants should expect the lease and applicable condo documents to matter. Request current rules for parking, pets, guests, noise, moves, smoking, deliveries, common areas, registration, violations, and fines before committing." },
+        { question: "How can I verify the assigned public school?", answer: "Enter the exact address in Hawaii DOE's SchoolSite Locator and then contact the relevant school. DOE says the locator provides general service areas for reference and should not be the sole basis for a rental decision." },
+        { question: "Is Mililani close to Schofield Barracks or Wheeler Army Airfield?", answer: "Mililani may be relevant to a Central Oahu military search, but no commute time can be inferred from the area name. Verify the precise duty location and gate, then test the route at the times you would actually travel." }
+      ]
+    },
+    cta: buildPageCta("Compare current Mililani condominium rentals", "Share your move date, verified bedroom need, monthly budget, vehicles, pets, accessibility and school requirements, and exact work or duty destination. We can confirm current options and help compare written terms, condo rules, total cost, and daily fit before you apply.")
+  },
   "oahu-available-rental-properties/3-bedroom-2-5-bath-townhouse-at-fairways-edge.html": {
     description: "Use this archived Fairways Edge townhouse rental guide to verify availability, layout, parking, community rules, total cost, schools, hazards, and commute fit.",
     keywords: ["Fairways Edge townhouse rental", "3 bedroom Ewa Beach townhouse", "Ocean Pointe rental", "West Oahu townhome rental"],
@@ -4772,6 +4831,15 @@ function assignSecondPassLinks() {
   });
 
   CONTENT.propertyPages.forEach(function (page) {
+    if (page.path === "oahu-available-rental-properties/for-rent-2-br-2-ba-condominium-in-mililani-hawaii.html") {
+      page.relatedLinks = [
+        linkTo(pageIndex, "mililani-real-estate", "Mililani Area Guide", "Compare Central Oahu housing, transportation, schools, association, and ownership context."),
+        linkTo(pageIndex, "hawaii-bases-and-barracks", "Oahu Bases and Barracks", "Verify the actual installation and duty destination before judging a military commute."),
+        { path: "contact.html", label: "Ask About Current Mililani Rentals", description: "Share your timing, room need, budget, vehicles, pets, and commute anchor for a current-availability conversation." },
+      ].filter(Boolean).slice(0, 3);
+      return;
+    }
+
     if (page.path === "oahu-available-rental-properties/4-bedroom-3-bath-single-family-home-2060-sf.html") {
       page.relatedLinks = [
         linkTo(pageIndex, "oahu-real-estate-property-for-sale-listings", "Oahu Area and Property Guide", "Compare island locations and housing tradeoffs before narrowing a large-home rental search."),
