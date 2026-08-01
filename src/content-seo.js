@@ -3987,26 +3987,85 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Compare current Oahu rentals with a view", "Share your move date, monthly budget, vehicles, pets, accessibility needs, exact duty or work destination, and what kind of view matters. We can confirm current options and help you compare written terms, total cost, layout, parking, and daily fit before you apply.")
   },
-  "oahu-available-rental-properties/2-br-2-ba-with-2-car-garage-in-ewa-beach.html": buildPropertyExpansion({
-    topic: "Ewa Beach 2-bedroom rental with garage",
-    status: "For Rent",
-    segment: "This page is for renters who value parking, storage, and practical household function in Ewa Beach.",
-    bestFit: "A 2-bedroom, 2-bath rental with a 2-car garage can fit couples, small families, roommates, or military households with gear, vehicles, or storage needs.",
-    sidebarNote: "Garage parking can be a major feature on Oahu, but renters should still confirm driveway rules, guest parking, storage use, and association restrictions.",
-    localContext: "In Ewa Beach, parking and storage can be meaningful advantages because household routines often involve multiple vehicles, beach gear, tools, or military equipment.",
-    whySearched: "The garage detail is intent-rich. It tells us the renter cares about more than basic bedroom count.",
-    neighborhoodContext: "Ewa Beach garage rentals should still be compared against commute timing, neighborhood rules, heat, and how far daily errands or base access will feel.",
-    compareFactors: ["garage usability", "rent", "parking rules", "storage", "commute", "association restrictions"],
-    compareGuidance: "Confirm whether the garage fits vehicles, storage, or both. Some garages are functionally different from what the listing headline suggests.",
-    currentUse: "Use this page to benchmark Ewa Beach rentals where parking and storage are major decision factors.",
-    heroIntro: "A 2-car garage can make an Ewa Beach rental much more practical for the right household.",
-    introHeading: "Ewa Beach rental with garage context",
-    introLead: "Use this page to compare parking and storage value against rent and commute.",
-    pills: ["Ewa Beach", "2-Car Garage", "2 Bedrooms", "Storage", "Rental"],
-    comparePills: ["Garage", "Parking Rules", "Storage", "Rent"],
-    ctaTitle: "Ask about Ewa Beach rentals with garages",
-    ctaText: "Call or text to compare current Ewa Beach rentals with parking and storage features.",
-  }),
+  "oahu-available-rental-properties/2-br-2-ba-with-2-car-garage-in-ewa-beach.html": {
+    description: "Use this archived Ewa Beach 2-bedroom rental guide to verify current availability, garage fit, total cost, lease terms, commute, schools, and hazards.",
+    keywords: ["Ewa Beach 2 bedroom rental", "Ewa Beach rental with garage", "2 bedroom 2 bath Ewa Beach", "Ewa Beach home for rent", "Ewa Beach rental guide"],
+    heroEyebrow: "Archived Rental Guide",
+    heroIntro: "This legacy 2-bedroom, 2-bath Ewa Beach rental page does not establish current availability, price, condition, or even whether the original two-car garage remains usable as advertised. Verify the exact property and written terms before treating it as an active rental.",
+    introEyebrow: "Garage-Focused Rental Checklist",
+    introHeading: "How to evaluate an Ewa Beach rental with a two-car garage",
+    introLead: "Treat the archived headline as a search profile: two bedrooms, two bathrooms, and garage capacity to test against the vehicles, storage, budget, and daily routine your household actually has.",
+    intro: [
+      "The old headline preserves only a limited property description. It does not confirm the exact address, property type, interior size, garage dimensions, driveway, guest parking, current rent, deposit, utilities, pet policy, lease dates, association rules, condition, or present availability. Ask the authorized owner or property manager for those facts in writing before scheduling around this specific lead.",
+      "A label such as two-car garage describes intended capacity, not guaranteed fit. Door width and height, interior depth, storage cabinets, water heaters, stairs, posts, and the shape of the driveway can reduce usable space. A household with two large vehicles, motorcycles, bicycles, tools, surf equipment, or a charging need should measure and inspect instead of relying on the listing phrase.",
+      "Compare the complete living arrangement rather than pricing the garage alone. Score active rentals on verified monthly cost, funds due before move-in, bedroom and bathroom function, cooling, laundry, garage access, legal parking for every vehicle, storage rules, commute at realistic times, exact-address hazards, and any school needs. A smaller parking setup may win if it produces a better lease, route, or monthly budget."
+    ],
+    sidebar: {
+      eyebrow: "Best Fit",
+      heading: "Who should shortlist this rental profile",
+      paragraphs: [
+        "This profile may suit a couple, small family, roommates, or military household that can use two separate bedrooms and bathrooms and has a genuine need for secure vehicle space, equipment storage, or a protected loading area.",
+        "Pause before applying if the authorized contact and exact address are unknown, both vehicles have not been tested against the garage and driveway, stored items would block required parking, association rules are unavailable, or the Ewa Beach commute has only been estimated from a map."
+      ],
+      pills: ["Archived Listing", "2 Bedrooms", "2 Bathrooms", "2-Car Garage", "Ewa Beach", "Parking Check"]
+    },
+    sections: [
+      {
+        title: "Verify the offer and garage in person",
+        pills: ["Availability", "Exact Address", "Measurements", "Written Terms"],
+        paragraphs: [
+          "First confirm whether the original home is currently offered and who has authority to rent it. Request the exact address, current rent, proposed start date, lease length, application standards and charge, deposit amounts, included utilities and appliances, pet terms, parking allocation, and all house or association rules. Do not send funds, identification, or sensitive application information merely because an archived page resembles a current advertisement.",
+          "Tour the actual property or request a continuous live video tour. Open the garage door; measure the opening, depth, width, and clearance around fixed equipment; then test the household's vehicles when permitted. Confirm remote controls, manual release, lighting, outlets, ventilation, drainage, fire separation, interior access, and who maintains the door. Photograph existing damage with permission and ask that promised repairs and the garage's permitted uses appear in the agreement."
+        ]
+      },
+      {
+        title: "Map every vehicle, visitor, and stored item",
+        pills: ["Assigned Parking", "Driveway", "Guests", "Storage"],
+        paragraphs: [
+          "Create a parking plan using actual vehicle lengths and widths. Identify which vehicles fit inside without blocking doors, appliances, trash bins, or one another; whether the driveway is assigned to the home; and whether a vehicle can remain outside overnight. Ask about curb restrictions, guest passes, towing, commercial or oversized vehicles, motorcycles, trailers, vehicle washing, repairs, and electric-vehicle charging. Verbal assurances should be reconciled with the lease and applicable community rules.",
+          "Decide what the garage must do before touring. If it must hold two cars, treat leftover storage as a bonus rather than an assumption. If one bay will hold boxes, bicycles, beach equipment, tools, or military gear, verify that use is allowed and keep required access clear. Inspect for water entry, pests, corrosion, heat, ventilation, secure closing, and the route used to carry groceries or equipment into the home."
+        ]
+      },
+      {
+        title: "Price the complete lease, not a garage premium",
+        pills: ["Rent", "Move-In Funds", "Utilities", "Insurance"],
+        paragraphs: [
+          "Separate one-time move-in funds from recurring costs. Ask for an itemized ledger covering first month's rent, security deposit, any allowed application charge, agreed pet deposit, utility setup, insurance, and other required payments. Then compare monthly rent plus electricity, water or sewer if assigned to the tenant, internet, renters insurance, pet charges, and transportation. Confirm which services and maintenance tasks belong to each party and which payments are refundable.",
+          "Hawaii's Department of Commerce and Consumer Affairs says a residential security deposit may not exceed one month's rent. Current DCCA guidance also recommends a written agreement that clearly states restrictions, designated parking, and verbal promises, plus a signed inventory of condition. Use the official guidance and the proposed lease for general review; take questions about a specific legal right or contract to a qualified Hawaii attorney."
+        ]
+      },
+      {
+        title: "Test the two-bedroom, two-bath layout",
+        pills: ["Privacy", "Bathroom Access", "Cooling", "Laundry"],
+        paragraphs: [
+          "Two bathrooms can reduce scheduling conflicts, but the count does not reveal whether both are full baths, where they sit, or who can reach them. Confirm the actual fixtures, bedroom and bathroom locations, stairs, usable room dimensions, closets, privacy, ventilation, water pressure, hot-water capacity, laundry placement, and route from the garage. Roommates should agree on bedroom, bathroom, parking, storage, utility, and guest arrangements before applying.",
+          "Inspect the home at a time when heat and neighborhood activity are apparent. Ask which rooms have air conditioning or fans, who maintains that equipment, and what prior electricity use can be documented without treating an old bill as a forecast. Check windows, screens, shading, cross-ventilation, noise with doors closed, refuse handling, delivery access, and outdoor maintenance rather than assuming every Ewa Beach property performs alike."
+        ]
+      },
+      {
+        title: "Drive the real route and check the address",
+        pills: ["Commute", "Duty Station", "Schools", "Hazards"],
+        paragraphs: [
+          "Drive from the exact driveway to the actual workplace, installation gate, school, childcare provider, or recurring appointment at the times the household expects to travel, then test the return. Include local streets, parking, security screening, drop-off, and any transit transfer. Military renters should confirm their expected duty location and access procedure with their command or installation before choosing a lease around an assumed commute.",
+          "For public schools, enter the exact address in the Hawaii Department of Education's SchoolSite Locator, then contact the relevant school; the department says the displayed service areas are general and for reference. Also search the address in Honolulu's Oʻahu Hazard Explorer for mapped flood, tsunami evacuation, wildfire-risk, and dam or levee evacuation information. Use mapping as a preparedness screen, ask about prior water intrusion and emergency access, and obtain an address-specific renters-insurance quote."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Ewa Beach Garage Rental FAQs",
+      heading: "Questions to answer before applying",
+      intro: "Use the archived bedroom, bathroom, and garage details as search criteria, then verify every current fact in writing.",
+      items: [
+        { question: "Is this Ewa Beach rental available now?", answer: "This is a legacy property page, not proof of an active offer. Confirm the exact address, current status, rent, showing access, lease dates, application terms, and authorized contact before submitting information or money." },
+        { question: "Will a two-car garage fit two vehicles?", answer: "The label alone cannot answer that. Measure the door opening and usable interior around fixed equipment, test the actual vehicles when permitted, and confirm driveway, overnight, storage, and association rules in writing." },
+        { question: "Can I use one garage bay only for storage?", answer: "Ask the owner or manager and review the lease and current community rules. Confirm whether required parking must remain inside, what items are prohibited, and whether storage would obstruct utilities, doors, fire separation, or access." },
+        { question: "How much can a Hawaii rental security deposit be?", answer: "DCCA says the security deposit cannot exceed one month's rent. Review current official guidance and the proposed agreement for your circumstances, and consult a qualified Hawaii attorney for advice about a specific dispute or lease." },
+        { question: "How do I verify public schools for the property?", answer: "Obtain the exact address, use the Hawaii Department of Education's SchoolSite Locator, and confirm directly with the relevant school. The department describes the locator's service areas as general and for reference." },
+        { question: "How should I check hazards for an Ewa Beach rental?", answer: "Search the exact address in Honolulu's Oʻahu Hazard Explorer, ask about prior water intrusion, drainage, outages, and emergency access, and discuss coverage with an insurer. A map is an initial screen, not a guarantee about the home." }
+      ]
+    },
+    cta: buildPageCta("Compare current Ewa Beach rentals with garages", "Share your move date, monthly budget, vehicles, storage needs, pets, accessibility needs, and exact duty or work destination. We can confirm current options and help you compare written terms, garage fit, total cost, layout, and daily routine before you apply.")
+  },
   "oahu-available-rental-properties/4-bedroom-3-bathroom-single-family-home-in-ewa-beach.html": buildPropertyExpansion({
     topic: "Ewa Beach 4-bedroom single-family rental",
     status: "For Rent",
@@ -4355,6 +4414,15 @@ function assignSecondPassLinks() {
   });
 
   CONTENT.propertyPages.forEach(function (page) {
+    if (page.path === "oahu-available-rental-properties/2-br-2-ba-with-2-car-garage-in-ewa-beach.html") {
+      page.relatedLinks = [
+        linkTo(pageIndex, "ewa-beach-real-estate", "Ewa Beach Area Guide", "Review broader Ewa Beach transportation, hazard, housing, and daily-life context."),
+        linkTo(pageIndex, "hawaii-bases-and-barracks", "Oahu Bases and Barracks", "Verify installation context before choosing a lease around an assumed duty commute."),
+        { path: "contact.html", label: "Ask About Current Rentals", description: "Share your timing, vehicles, and garage requirements for a current-availability conversation." },
+      ].filter(Boolean).slice(0, 3);
+      return;
+    }
+
     if (page.path === "oahu-available-rental-properties/3-br-1-5-bath-with-ocean-views.html") {
       page.relatedLinks = [
         linkTo(pageIndex, "oahu-real-estate-property-for-sale-listings", "Oahu Area and Property Guide", "Review broader island location and housing context while comparing view-oriented rentals."),
