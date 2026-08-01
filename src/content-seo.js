@@ -3179,25 +3179,90 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Apply the latest Oahu signals to your move", "Share your target area, property type, budget, financing status, and deadline. We can help compare current inventory and property-level facts while your lender, insurer, and other advisers address their parts of the decision."),
   },
-  "hawaii-military-realty-inc": buildEvergreenExpansion({
-    topic: "Hawaii Military Realty, Inc.",
-    audienceShort: "branded entity searchers",
-    intent: "verifying the company, its service model, and whether it is the right brokerage for an Oahu real estate need",
-    segment: "This page is for people who searched the company by name and want to confirm legitimacy, specialization, leadership, and service fit before contacting the team.",
-    sidebarNote: "Branded searchers are often close to taking action. The page should answer trust questions quickly and then guide them toward the relevant service or area page.",
-    localContext: "Hawaii Military Realty is positioned around Oahu service, Native Hawaiian ownership, veteran-owned management, military relocation familiarity, and direct communication.",
-    whyItMatters: "Company-name searches usually happen after a referral, review, listing, or prior interaction. That makes the page valuable for trust, not only for rankings.",
-    oahuContext: "The brokerage's relevance is strongest when users need Oahu-specific guidance: PCS moves, VA-aware buying, rental placement, property management, selling from off island, and local community tradeoffs.",
-    decisionFactors: ["company credibility", "Oahu focus", "military experience", "service fit", "communication style", "next step"],
-    compareGuidance: "Compare the company against your actual need. A buyer on orders, an owner leaving island, a renter under deadline, and a seller facing timing pressure all need different next steps.",
-    nextStep: "Move from company verification into the service, team, area, or contact page that matches your situation.",
-    heroIntro: "If you searched Hawaii Military Realty, Inc. directly, you are likely deciding whether the company is credible and relevant for your Oahu move or transaction.",
-    introLead: "Use this page to confirm who the company serves and why the military-informed Oahu focus matters.",
-    pills: ["Company Profile", "Oahu", "Veteran Owned", "Military Realty", "Relocation"],
-    contextPills: ["Trust", "Services", "Leadership", "Oahu Focus"],
-    ctaTitle: "Confirm whether the team is the right fit",
-    ctaText: "Call or text with your situation so the conversation can move from company research into a practical plan.",
-  }),
+  "hawaii-military-realty-inc": {
+    description: "Verify Hawaii Military Realty, Inc., understand its Oahu and military-relocation focus, and use practical questions to decide whether the brokerage fits your move.",
+    keywords: ["Hawaii Military Realty Inc", "David Kucic", "Tonya Kucic", "Oahu military real estate", "Hawaii real estate brokerage", "PCS Hawaii real estate"],
+    heroEyebrow: "Company Overview",
+    heroIntro: "If a referral, listing, review, or prior conversation led you to Hawaii Military Realty, Inc., use this company overview to verify the basics and decide whether its Oahu-focused, military-informed service model fits your situation.",
+    introEyebrow: "Verify The Fit",
+    introHeading: "What to know before you contact Hawaii Military Realty",
+    introLead: "A company-name search should lead to more than promotional claims. It should help you confirm who you may work with, what the brokerage says it does, and which questions still need a direct answer.",
+    intro: [
+      "Hawaii Military Realty's company-published history identifies David Kucic as president and owner and Tonya Kucic as vice president and co-owner. It describes David as a retired Army first sergeant and Tonya as a military spouse, and it presents the team as serving military and civilian clients in Oahu real estate. Those details explain the name and the service perspective, but they should be treated as the company's own account rather than a substitute for independent verification.",
+      "The State of Hawaii Department of Commerce and Consumer Affairs provides the official public tools for checking real estate licenses, business records, and complaint history. Search the current firm and individual names before signing an agreement or sending funds. A professional designation, military background, testimonial, or long operating history may add context, but none replaces an active license, a clear written scope of services, and transaction-specific due diligence.",
+      "Fit also depends on the work you need now. A buyer arriving on orders needs area screening, remote-tour discipline, financing coordination, and a realistic path from temporary lodging to keys. A seller or owner leaving Oahu may care more about property preparation, access, communication across time zones, documented decisions, and the boundary between sales representation and property management. Use the questions below to test the match rather than assuming that a military-oriented brand automatically answers every need."
+    ],
+    sidebar: {
+      eyebrow: "Trust Checklist",
+      heading: "Verify before you rely",
+      paragraphs: [
+        "Check the brokerage and the specific licensee in Hawaii DCCA's public license search. Review status, expiration information, and any available disciplinary or complaint-history records yourself.",
+        "Then ask who will handle your file, whom the brokerage represents, what is included, how communication works, and what fees or compensation could apply. Read the written agreement before signing."
+      ],
+      pills: ["License Check", "Named Agent", "Written Scope", "Fees", "Communication"]
+    },
+    sections: [
+      {
+        title: "Separate the company story from independent verification",
+        pills: ["Leadership", "License", "Business Record", "Complaint History"],
+        paragraphs: [
+          "The brokerage's website says Hawaii Military Realty, Inc. is led by David and Tonya Kucic and emphasizes David's retired-Army experience, Tonya's military-family background, and service to military and civilian households. That history can be relevant when you want someone who understands acronyms, orders, deployments, and remote decision-making. It does not tell you whether a particular agent is the right representative, whether a license is current today, or whether the promised service is written into your agreement.",
+          "Hawaii's Real Estate Commission oversees real estate licensing, education, and discipline, and DCCA directs consumers to its Professional and Vocational Licensing search for official license information. Search both the firm and the individual you expect to work with; names and roles can change. DCCA also offers business-registration and complaint-history searches. If a record is unclear, ask the brokerage for the exact licensed name and license number, then confirm it through the state rather than relying on a screenshot or marketing page.",
+          "Verification is a starting point, not an endorsement. Ask for the name and role of the person who will conduct tours, write offers, communicate with the other side, or manage a property. Confirm which brokerage is named in the agreement and where deposits or other funds will be held. Do not send money or sensitive documents based only on a social-media message, text thread, or familiar logo; verify instructions through a known contact channel."
+        ]
+      },
+      {
+        title: "Test whether the service model matches your actual transaction",
+        pills: ["Buyer", "Seller", "Owner", "Renter"],
+        paragraphs: [
+          "For buyer representation, ask how the team narrows Oahu areas by duty location, household routine, price ceiling, property type, insurance concerns, and association costs. Ask who attends showings, what a remote tour includes, how property condition is documented, and how quickly the representative can prepare and explain an offer. If you may use a VA-backed loan, confirm experience coordinating with VA lenders while keeping roles clear: the lender determines financing, VA determines program rules, and an inspection is separate from the VA appraisal.",
+          "VA recommends meeting with several agents and reading the agreement before signing, including its charges, fees, commissions, rights, and obligations. It also explains that a VA appraisal is not a home inspection. A useful agent should welcome those distinctions, explain the brokerage's role without promising approval or value, and leave lending, inspection, insurance, tax, and legal conclusions to the appropriate professionals.",
+          "Sellers and owners should ask a different set of questions. Who evaluates condition and competing inventory? What preparation is recommended, what requires owner approval, and how will pricing or offer decisions be documented when you are off island? If you want ongoing rental management rather than a sale, confirm that service is actually offered for your property, identify the responsible manager, and review leasing, maintenance authorization, accounting, inspection, termination, and fee terms in the management agreement. A company may offer several services, but the signed scope controls your relationship."
+        ]
+      },
+      {
+        title: "Make the military experience useful, not merely familiar",
+        pills: ["PCS Orders", "Housing Office", "Timeline", "Remote Planning"],
+        paragraphs: [
+          "Military familiarity is most valuable when it changes the planning process. Before discussing neighborhoods, put the fixed dates on one page: report date, authorized travel, temporary-lodging window, household-goods timing, current lease or sale obligations, school or care needs, and the earliest responsible closing or move-in date. Then identify which facts are firm, which depend on command or housing-office guidance, and which are preferences. This prevents a housing search from turning an estimated timeline into a risky commitment.",
+          "Military OneSource provides official PCS planning resources and installation contacts. Its Joint Base Pearl Harbor-Hickam housing information directs arriving members to the Military Housing Office and explains installation-specific application and check-in procedures. Use those official channels for government or privatized housing eligibility, waitlists, allowances, and entitlements. A real estate brokerage can help compare civilian-market choices, but it cannot determine military eligibility or guarantee that an allowance, reimbursement, or housing timeline will apply to your case.",
+          "Ask the brokerage to explain how it handles an off-island client: live or recorded tours, document delivery, identity verification, time-zone expectations, inspection attendance, repair decisions, final walkthrough, and key transfer. Also ask what happens if orders change, financing is delayed, or the preferred area has no acceptable inventory. The strongest relocation plan includes fallback housing and decision deadlines instead of treating urgency as a reason to skip verification."
+        ]
+      },
+      {
+        title: "Compare Oahu options through daily life and total cost",
+        pills: ["Duty Location", "Commute", "Housing Type", "Total Cost"],
+        paragraphs: [
+          "An Oahu specialist should help you compare tradeoffs without declaring one community best for every military household. Start with the destination you must reach most often, but test the route at relevant times and account for gate access, school or child-care stops, a spouse's workplace, medical needs, and recurring errands. Ewa Beach, Kapolei, Central Oahu, Honolulu, and Windward communities create different combinations of housing type, drive pattern, services, weather exposure, and access to installations.",
+          "Compare the full monthly obligation rather than the list price or rent alone. A purchase analysis may include principal and interest, taxes, homeowners and hurricane coverage, flood coverage where relevant, association dues, utilities, maintenance, and reserves. A rental comparison may include utilities, parking, pet charges, deposits, commute expense, and move-in timing. For condominiums or planned communities, review the property and association documents and ask the lender and insurer to assess project-specific requirements early.",
+          "Request a short list that states why each option survived the screening criteria and which fact remains unverified. That makes the agent's local knowledge visible and gives you a record of tradeoffs. If recommendations repeatedly stretch the payment ceiling, ignore the duty-location routine, or minimize document and condition questions, pause and reset the scope before touring or offering."
+        ]
+      },
+      {
+        title: "Use the first conversation to establish working rules",
+        pills: ["Representation", "Response Time", "Compensation", "Next Step"],
+        paragraphs: [
+          "A productive first call should end with mutual clarity, not pressure. Share whether you are buying, selling, renting, or seeking management; your Oahu locations; firm dates; financing or ownership status; decision-makers; and the biggest unresolved risk. Ask the agent to describe the next three steps, who owns each step, and what information is needed before properties or pricing can be discussed responsibly.",
+          "Hawaii's real estate rules require agency disclosure in covered buyer-seller contracts. Ask whom the brokerage represents, when that relationship begins, whether conflicts could arise, and how they would be handled. Review the term, exclusivity, services, compensation, cancellation, and any property-specific limits in the agreement. Compensation is transaction-specific; get the exact obligation in writing and ask questions before signing rather than relying on a general website description.",
+          "Finally, agree on communication. Identify the main contact, backup contact, preferred channel, normal response window, and how urgent decisions will be escalated across time zones or duty schedules. If the answers are specific and the written terms match them, move into the appropriate service or area discussion. If they remain vague, continue interviewing. Choosing a brokerage is itself a due-diligence decision."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Company Questions",
+      heading: "Hawaii Military Realty, Inc. FAQs",
+      intro: "These answers separate company-published background from the checks and conversations a prospective client should complete.",
+      items: [
+        { question: "Who owns and leads Hawaii Military Realty, Inc.?", answer: "The company's own website identifies David Kucic as president and owner and Tonya Kucic as vice president and co-owner. Because roles and license status can change, confirm the current firm and individual records through Hawaii DCCA and ask who would be responsible for your matter." },
+        { question: "Does Hawaii Military Realty work only with military clients?", answer: "No. Its company-published pages describe service to both military and civilian clients, while emphasizing military relocation and VA-aware buyer experience. Ask whether the team regularly handles your specific transaction type, location, property type, and timeline." },
+        { question: "How can I verify the brokerage or an agent's Hawaii license?", answer: "Use Hawaii DCCA's official Professional and Vocational Licensing search. Search the exact firm and individual names, review current status and expiration information, and use DCCA's business-registration and complaint-history resources when appropriate. Ask DCCA directly if a record is unclear." },
+        { question: "Can the brokerage confirm my military housing or PCS benefits?", answer: "No. Use your orders, service guidance, installation personnel office, and Military Housing Office for eligibility, waitlists, allowances, lodging, and reimbursement rules. A brokerage can help compare civilian-market housing and transaction timelines after those official facts are clear." },
+        { question: "What should a VA buyer ask before choosing an agent?", answer: "Ask about recent Oahu buyer work, remote tours, property and condominium screening, offer strategy, lender coordination, inspection attendance, and the written representation agreement. VA advises buyers to understand agent fees, commissions, rights, and obligations, and notes that the VA appraisal is not an inspection." },
+        { question: "What should I bring to the first conversation?", answer: "Bring your goal, target locations, firm dates, budget or financing status, property type, decision-makers, and top risks. Military households should distinguish confirmed order and housing-office facts from estimates. Sellers and owners should add the property address, occupancy, condition, access, and desired sale or management timeline." }
+      ]
+    },
+    cta: buildPageCta("Decide whether the team fits your Oahu move", "Share your transaction type, target area, firm timeline, and biggest unanswered question. Ask who would handle the work and request the service scope, representation, communication plan, and compensation terms in writing before you proceed."),
+  },
   "kapolei-real-estate-listings-and-information": buildEvergreenExpansion({
     topic: "Kapolei real estate",
     audienceShort: "Kapolei and West Oahu buyers",
