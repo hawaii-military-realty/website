@@ -4702,26 +4702,85 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Compare current four-bedroom Oahu rentals", "Share your move date, duty or work location, room plan, budget, vehicles, pets, and must-have lease terms. Hawaii Military Realty can verify current options instead of treating this archived home as active."),
   },
-  "oahu-available-rental-properties/2-bedroom-2-bathroom-condo-in-mililani.html": buildPropertyExpansion({
-    topic: "Mililani 2-bedroom condo rental",
-    status: "For Rent",
-    segment: "This page is for smaller renter households looking for central Oahu convenience and manageable monthly cost.",
-    bestFit: "A 2-bedroom, 2-bath Mililani condo can fit couples, roommates, small families, or remote workers who want a practical central location.",
-    sidebarNote: "The second bathroom can matter for roommates, guests, or family routine, but parking and utilities still need to be confirmed.",
-    localContext: "Mililani condo rentals offer a central Oahu path for renters who want convenience without the upkeep of a larger home.",
-    whySearched: "The search is practical and specific. The renter likely wants enough room to function without paying for more space than needed.",
-    neighborhoodContext: "Mililani's central location may reduce some drive patterns, especially for Schofield, Wheeler, Pearl City, or central-island routines.",
-    compareFactors: ["rent", "parking", "bathroom layout", "utilities", "commute", "association rules"],
-    compareGuidance: "Compare 2-bedroom condos by privacy, parking, storage, and whether the monthly cost leaves room for the rest of the move budget.",
-    currentUse: "Use this page to benchmark current Mililani condo rentals and similar central Oahu options.",
-    heroIntro: "A 2-bedroom Mililani condo rental can be practical when central location, cost, and daily convenience line up.",
-    introHeading: "Mililani condo rental context",
-    introLead: "Use this page to compare smaller central Oahu rentals before applying.",
-    pills: ["Mililani", "2 Bedrooms", "2 Bathrooms", "Condo", "Rental"],
-    comparePills: ["Rent", "Parking", "Bathroom Layout", "Utilities"],
-    ctaTitle: "Ask about Mililani condo rentals",
-    ctaText: "Call or text to compare current Mililani and central Oahu rental options.",
-  }),
+  "oahu-available-rental-properties/2-bedroom-2-bathroom-condo-in-mililani.html": {
+    description: "Archived guidance for a 2-bedroom, 2-bath Mililani condo rental, including current-status checks, layout, parking, rules, total cost, schools, and hazards.",
+    keywords: ["2 bedroom condo Mililani", "Mililani condo rental", "2 bath rental central Oahu", "Mililani rental checklist"],
+    heroEyebrow: "Archived Mililani Condo Rental",
+    heroIntro: "This legacy page preserves a two-bedroom, two-bath Mililani condo search profile; it does not prove that the original unit is available now. Use the profile to compare current rentals with the facts, documents, and daily routine that matter.",
+    introEyebrow: "Archived Property Context",
+    introHeading: "Turn a promising room count into a verified rental choice",
+    introLead: "Two bedrooms and two bathrooms can offer useful flexibility, but the exact project, floor plan, parking, written rules, and full cost decide whether a Mililani condo truly fits.",
+    intro: [
+      "Only a few details are established by the old page title: the home was presented as a Mililani condominium with two bedrooms and two bathrooms. The archive does not verify an address, project, floor area, rent, deposit, availability date, parking, utilities, pet policy, amenities, condition, or current listing status. Treat all of those as open questions until an authorized owner or manager supplies current written information.",
+      "This profile may suit a couple who needs an office, a parent and child, roommates who value separate bathrooms, or a household that wants a guest room without maintaining a detached home. Room labels do not establish usable dimensions, privacy, storage, accessibility, or whether one bathroom is reached through a bedroom. Assign a job to every room and test that plan during a tour.",
+      "Mililani is also too broad to support a commute or school promise. Obtain the exact street address and unit number, then test the routes your household will actually use at the appropriate hours. Identify the condominium project as well: project and association documents can affect parking, pets, moves, noise, common areas, and other daily details that a bedroom-and-bath count cannot show.",
+    ],
+    sidebar: {
+      eyebrow: "Practical Fit",
+      heading: "Who should use this checklist",
+      paragraphs: [
+        "Use this profile if two separate rooms and two usable bathrooms solve a defined household need while a larger townhouse or house would add unnecessary cost or upkeep. It is especially useful for comparing roommate privacy, work-from-home space, and morning routines.",
+        "Keep searching if the choice depends on assumed parking, pet permission, elevator access, recreation privileges, a named school, or an untested trip to work or a military gate. Those are current, address-level facts—not benefits established by this archive.",
+      ],
+      pills: ["Archived Listing", "2 Bedrooms", "2 Bathrooms", "Condominium", "Mililani", "Verify Current Status"],
+    },
+    sections: [
+      {
+        title: "Confirm that a real, current offer exists",
+        pills: ["Exact Unit", "Authorized Manager", "Current Terms", "Live Tour"],
+        paragraphs: [
+          "Ask for the street address, unit number, project name, current rent, available date, lease length, application process, screening charge, required deposits, and the name of the person authorized to manage the unit. Confirm which appliances, utilities, parking stalls, storage areas, and access devices are included. An old route, forwarded advertisement, or set of photos does not authorize anyone to collect money.",
+          "Tour the actual unit in person or by a continuous live video when possible. Check locks, windows, screens, plumbing, appliances, flooring, cooling equipment, visible staining, odors, pests, and repairs promised before possession. Compare the tour with the proposed lease and put material promises and deadlines in writing. Do not let application urgency replace verification.",
+        ],
+      },
+      {
+        title: "Test how two bedrooms and two baths function",
+        pills: ["Dimensions", "Bath Access", "Work Space", "Storage"],
+        paragraphs: [
+          "Measure wall lengths, closets, door swings, and furniture paths instead of relying on the room labels. Determine whether either bathroom is en suite, whether the other works for a roommate or visitor, and whether bedrooms share walls with living areas, parking, stairs, or building equipment. If a room must double as an office, check desk placement, outlets, call background, airflow, and noise during likely working hours.",
+          "Walk the full routine from parking to the front door and through laundry, kitchen, bedrooms, baths, and storage. Note stairs or elevator dependence, carrying distance, linen and pantry capacity, space for bicycles or outdoor equipment, window orientation, and ventilation. A compact condo can work well when circulation and storage support the household; it can feel cramped when ordinary belongings consume the common rooms.",
+        ],
+      },
+      {
+        title: "Compare the full cost and written agreement",
+        pills: ["Move-In Cash", "Monthly Total", "Utilities", "Inventory"],
+        paragraphs: [
+          "Prepare separate move-in and recurring totals. Move-in funds may include first month's rent, lawful deposits, application screening, movers, utility setup, and temporary lodging overlap. The monthly comparison should include rent, electricity, water or sewer when tenant-paid, internet, renters insurance, laundry, parking or pet charges allowed by the agreement, and transportation created by the address. Ask what is separately metered and itemize every amount before paying.",
+          "Hawaii DCCA's 2024 landlord-tenant handbook says written agreements and rules reduce uncertainty and that promises or changes should be put in writing. It states that the ordinary security deposit may not exceed one month's rent and separately describes an agreed pet deposit up to one month's rent, with an assistance-animal exception. The handbook also calls for a detailed written condition inventory retained by both parties. Verify current agency guidance and consult a qualified Hawaii professional for situation-specific legal questions.",
+        ],
+      },
+      {
+        title: "Identify every rule tied to the exact condo",
+        pills: ["Project Documents", "Parking", "Pets", "Move-In Rules"],
+        paragraphs: [
+          "Request the current condominium house rules and any master or sub-association documents that apply to tenants. Mililani Town Association publishes general rules and information about complexes requiring sub-association approval, but that does not establish that MTA governs this unknown archived unit. The exact address and project name are necessary to identify the right governing documents and manager.",
+          "Review assigned and guest parking, vehicle registration, towing, pets, smoking, noise, deliveries, move reservations, elevator protection, grills, bicycles, storage, trash, and common-area access. Confirm stall numbers, dimensions, tandem or covered arrangements, guest procedures, and how keys, fobs, remotes, or recreation credentials are issued. Put any permission essential to the household in writing rather than inferring it from neighborhood marketing.",
+        ],
+      },
+      {
+        title: "Check the address against the household's real week",
+        pills: ["Commute", "School Check", "Hazards", "Daily Stops"],
+        paragraphs: [
+          "Test travel from the exact unit to the actual workplace or installation gate at realistic hours. Include gate procedures, school or childcare drop-off, medical appointments, groceries, and the return trip. A general Central Oahu description cannot predict a particular schedule, and a route tested on a quiet weekend may not represent a weekday obligation.",
+          "If public schools matter, enter the street address in the Hawaii Department of Education's SchoolSite Locator and then contact the school. HIDOE describes the displayed service areas as general reference information and says the tool should not be the sole source for a rental decision. Also search the address in Honolulu's Oʻahu Hazard Explorer for mapped tsunami evacuation, flood, wildfire-risk, and dam or levee evacuation information. Use those results for preparedness questions, not as a prediction of the unit's condition.",
+        ],
+      },
+    ],
+    faq: {
+      eyebrow: "Mililani Condo FAQs",
+      heading: "Questions to answer before applying",
+      intro: "The archived title is a starting profile. A current offer, inspection, address research, and written documents must supply the missing facts.",
+      items: [
+        { question: "Is this exact two-bedroom Mililani condo available now?", answer: "This archive does not establish current availability. Confirm the address and unit, authorized manager, current rent, lease dates, showing access, application procedure, and written terms before treating it as an option." },
+        { question: "What facts does the archive actually preserve?", answer: "Only that the old page presented a Mililani condominium with two bedrooms and two bathrooms. It does not verify the project, size, price, parking, pets, utilities, amenities, condition, or present status." },
+        { question: "Does two bathrooms mean roommates each get a private bath?", answer: "Not necessarily. Request a floor plan or tour and verify whether either bath is inside a bedroom, whether both contain the fixtures the household expects, and how guests reach them." },
+        { question: "How many parking spaces come with the condo?", answer: "The archive does not say. Confirm the number, stall locations, dimensions, covered or tandem arrangement, guest access, vehicle registration, and towing rules in the current lease and project documents." },
+        { question: "How should I verify the assigned public school?", answer: "Use the exact address in HIDOE's SchoolSite Locator, then contact the school. The department says its general service-area information is for reference and should not be the sole basis for renting or relocating." },
+        { question: "What should roommates settle before signing?", answer: "Confirm bedroom and bathroom allocation, parking, utility shares, payment responsibility, guests, pets, quiet hours, cleaning, and what happens if one occupant leaves early. Ensure approved occupants and binding obligations appear in the written agreement." },
+      ],
+    },
+    cta: buildPageCta("Compare current Mililani condo rentals", "Share your move date, full monthly budget, room plan, vehicles, pets, accessibility needs, school questions, and exact work or duty destination. Hawaii Military Realty can help verify current options and compare their written terms and daily fit."),
+  },
   "oahu-available-rental-properties/2-bedroom-1-5-bath-condo-in-ewa-beach-1500-per-month.html": buildPropertyExpansion({
     topic: "Ewa Beach affordable condo rental",
     status: "For Rent",
@@ -4890,6 +4949,15 @@ function assignSecondPassLinks() {
   });
 
   CONTENT.propertyPages.forEach(function (page) {
+    if (page.path === "oahu-available-rental-properties/2-bedroom-2-bathroom-condo-in-mililani.html") {
+      page.relatedLinks = [
+        linkTo(pageIndex, "mililani-real-estate", "Mililani Area Guide", "Review broader Mililani housing, transportation, school, association, and ownership context."),
+        linkTo(pageIndex, "hawaii-bases-and-barracks", "Oahu Bases and Barracks", "Verify the actual installation and duty destination before judging a military commute."),
+        { path: "contact.html", label: "Ask About Current Mililani Rentals", description: "Share your timing, budget, room plan, vehicles, pets, and commute anchor for a current-availability conversation." },
+      ].filter(Boolean).slice(0, 3);
+      return;
+    }
+
     if (page.path === "oahu-available-rental-properties/for-rent-2-br-2-bath-condominium-in-mililani-mauka.html") {
       page.relatedLinks = [
         linkTo(pageIndex, "mililani-real-estate", "Mililani Area Guide", "Review broader Central Oahu housing, transportation, school, association, and ownership context."),
