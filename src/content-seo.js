@@ -3671,26 +3671,85 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Compare current Ocean Pointe and Ewa Beach rentals", "Share your move date, monthly budget, vehicles, pets, accessibility needs, school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, associations, layouts, and daily fit before you apply.")
   },
-  "oahu-available-rental-properties/2-bedroom-1-5-bath-condo-in-ewa-beach.html": buildPropertyExpansion({
-    topic: "Ewa Beach 2-bedroom condo rental",
-    status: "For Rent",
-    segment: "This page is for smaller renter households, couples, roommates, or budget-aware movers comparing condo options in Ewa Beach.",
-    bestFit: "A 2-bedroom condo may fit renters who want a manageable monthly cost and enough flexibility for a bedroom, office, roommate, or small family setup.",
-    sidebarNote: "Condo rentals should be compared by more than rent. Parking, laundry, utilities, rules, storage, and commute can change the real value.",
-    localContext: "Ewa Beach condo living may offer a lower entry point than larger townhomes or single-family rentals while keeping renters close to West Oahu services and residential neighborhoods.",
-    whySearched: "Smaller condo searches are precise. The user is usually trying to match budget and space without overcommitting to a larger home.",
-    neighborhoodContext: "Ewa Beach can work for renters who want West Oahu value and neighborhood feel, but the commute to town or certain bases should be considered before applying.",
-    compareFactors: ["rent", "parking", "utilities", "laundry", "commute", "association rules"],
-    compareGuidance: "A lower rent number is only useful if parking, utilities, and daily routine still work. Confirm the full monthly picture before deciding.",
-    currentUse: "Use this page as a benchmark for evaluating current 2-bedroom condo rentals in Ewa Beach.",
-    heroIntro: "A 2-bedroom Ewa Beach condo can be a practical rental option when budget, parking, and commute all line up.",
-    introHeading: "Ewa Beach condo rental context",
-    introLead: "Use this page to compare smaller Ewa Beach rentals against the full daily-life picture.",
-    pills: ["Ewa Beach", "Condo", "2 Bedrooms", "Budget", "Rental"],
-    comparePills: ["Rent", "Parking", "Utilities", "Rules"],
-    ctaTitle: "Ask about Ewa Beach condo rentals",
-    ctaText: "Call or text to compare current 2-bedroom rental options in Ewa Beach.",
-  }),
+  "oahu-available-rental-properties/2-bedroom-1-5-bath-condo-in-ewa-beach.html": {
+    description: "Use this archived Ewa Beach 2-bedroom condo rental guide to verify availability, total costs, parking, condo rules, schools, hazards, and commute fit.",
+    keywords: ["2 bedroom condo Ewa Beach", "Ewa Beach condo rental", "2 bedroom rental Ewa Beach", "West Oahu condo for rent", "Ewa Beach rental guide"],
+    heroEyebrow: "Archived Rental Guide",
+    heroIntro: "This legacy 2-bedroom, 1.5-bath Ewa Beach condo page does not establish current availability. Confirm the exact unit and written terms, then compare its real cost, rules, layout, and daily routine with current rentals.",
+    introEyebrow: "Condo Rental Checklist",
+    introHeading: "How to evaluate a 2-bedroom Ewa Beach condo",
+    introLead: "The bedroom count may fit; the exact address, parking plan, lease, and weekday travel decide whether the rental works.",
+    intro: [
+      "The archived title preserves three useful search filters: Ewa Beach, a condominium, and two bedrooms with one and a half bathrooms. It does not confirm the exact address, present asking rent, square footage, condition, floor level, parking, appliances, utilities, pet policy, lease dates, or availability. Ask for a current listing sheet and complete written terms before treating this property as an active option.",
+      "A two-bedroom layout can serve a couple, a small household, roommates, or someone who needs a separate office, but those uses create different questions. Roommates may care about bedroom dimensions and how the full bathroom is shared. A remote worker should test cellular and internet service. A household with children or mobility needs should verify stairs, railings, elevator access, and the route between parking and the unit.",
+      "Use the same scorecard for this condo and every current alternative. Compare the funds due before move-in, full recurring cost, parking for each vehicle, laundry, storage, cooling, household layout, tenant rules, maintenance contacts, exact-address school and hazard checks, and realistic travel tests. That turns an old listing lead into a careful rental decision without assuming its original facts remain true."
+    ],
+    sidebar: {
+      eyebrow: "Best Fit",
+      heading: "Who should shortlist this rental profile",
+      paragraphs: [
+        "This profile may suit a household that genuinely needs two flexible rooms, prefers a condo-sized home to a larger rental, and can make an Ewa Beach routine work for every driver and recurring destination.",
+        "Pause before applying if a second vehicle lacks a confirmed space, stairs or bathroom placement create an access issue, a pet is not approved in writing, or the commute has only been estimated from the neighborhood name. These are unit-specific questions."
+      ],
+      pills: ["Archived Listing", "2 Bedrooms", "1.5 Bathrooms", "Condo", "Ewa Beach", "Rule Review"]
+    },
+    sections: [
+      {
+        title: "Confirm the current offer before applying",
+        pills: ["Availability", "Exact Address", "Showing", "Written Terms"],
+        paragraphs: [
+          "Start by asking whether the original unit is available now. Obtain the exact address and condominium project, current rent, desired start date, lease length, application standards and charge, deposit amounts, included utilities, pet terms, parking assignment, and the name of the owner or licensed property manager. Verify who is authorized to offer the unit before sending money, identification, or other sensitive information.",
+          "Tour the actual condo rather than relying on archived photographs. Operate windows, doors, locks, plumbing fixtures, appliances, fans, and any cooling equipment. Look for visible moisture or pest evidence, listen for neighboring and parking-lot noise, test cellular reception, and locate laundry, trash, mailbox, storage, and assigned stalls. If you proceed, use the required move-in condition process and retain dated records of existing condition."
+        ]
+      },
+      {
+        title: "Calculate move-in funds and monthly cost",
+        pills: ["Rent", "Deposit", "Utilities", "Insurance"],
+        paragraphs: [
+          "Keep one-time and recurring costs separate. Move-in funds may include first month's rent, the security deposit, an allowed application charge, an agreed pet deposit, movers, utility setup, and household items the unit lacks. The monthly comparison should include rent, electricity, water or sewer if allocated to the tenant, internet, renters insurance, parking or pet charges, laundry, and transportation costs caused by the location.",
+          "Hawaii's Department of Commerce and Consumer Affairs says a security deposit cannot exceed one month's rent and may encompass deposits such as key or pet deposits. Its 2024 handbook also describes a separately agreed additional pet deposit of up to one month's rent and an assistance-animal exception. Review the latest official material and proposed lease, and direct legal questions about a particular agreement to a qualified Hawaii attorney."
+        ]
+      },
+      {
+        title: "Read the condo rules and verify parking",
+        pills: ["House Rules", "Vehicles", "Pets", "Maintenance"],
+        paragraphs: [
+          "Request the condominium documents that apply to tenants before paying a deposit. Verify quiet hours, smoking, guests, pets, grills, exterior items, deliveries, move procedures, trash, common-area access, and enforcement. Ask which party receives violation notices and who pays fines. The lease and condo rules should agree; resolve conflicting language or verbal assurances in writing before signing.",
+          "For every household vehicle, confirm the numbered stall, whether it is covered, registration or size limits, guest parking, towing procedures, street-parking assumptions, and the walking route to the unit. Ask who handles appliance, plumbing, air-conditioning, pest, and common-area problems and how after-hours repairs are reported. A modest rent can lose its advantage when parking or maintenance responsibilities remain unclear."
+        ]
+      },
+      {
+        title: "Test the floor plan and daily Ewa Beach travel",
+        pills: ["Layout", "Stairs", "Commute", "Daily Routine"],
+        paragraphs: [
+          "One and a half bathrooms can ease household scheduling, but confirm where each bathroom sits and whether the full bath works for everyone who will share it. Measure usable bedroom and closet space, identify laundry and storage locations, note afternoon sun and ventilation, and trace the route for groceries, strollers, or mobility equipment. Verify elevators and stairs rather than assuming either from the word condo.",
+          "Drive from the exact address to the actual workplace, installation gate, school, childcare provider, or recurring appointment at the times the household expects to travel, then test the return. Include local-road access, parking, security screening, drop-off, and transfers. Military renters should confirm the expected duty location and gate procedures with their command or installation instead of planning around a base name alone."
+        ]
+      },
+      {
+        title: "Check schools, hazards, and insurance by address",
+        pills: ["School Assignment", "Flood", "Preparedness", "Coverage"],
+        paragraphs: [
+          "Do not infer a public-school assignment from Ewa Beach or from an old advertisement. The Hawaii Department of Education's SchoolSite Locator accepts a street address, but the department says its general service areas are for reference and should not be the sole source for a rental decision. Enter the exact address and confirm the result directly with the relevant school before committing.",
+          "Search the address in Honolulu's Oʻahu Hazard Explorer, which maps flood, tsunami evacuation, wildfire-risk, and dam or levee evacuation areas. The State of Hawaii Flood Hazard Assessment Tool displays FEMA flood zones but warns that it does not identify every area subject to flooding. Ask about prior water intrusion and emergency access, review official preparedness guidance, and obtain an address-specific renters-insurance quote; maps are screening tools, not guarantees about a unit."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Ewa Beach Condo FAQs",
+      heading: "Questions to answer before applying",
+      intro: "Use the archived bedroom-and-bath profile as a starting point, then verify every current fact in writing.",
+      items: [
+        { question: "Is this 2-bedroom Ewa Beach condo available now?", answer: "This is a legacy property page and does not establish current availability. Confirm the exact unit, rent, showing access, move-in date, lease length, application terms, and authorized contact before submitting information or funds." },
+        { question: "What costs should I compare beyond rent?", answer: "Add required move-in funds and recurring electricity, water or sewer, internet, insurance, parking, pet, laundry, and transportation costs. Identify which amounts are refundable and require the allocation of utilities and fees in writing." },
+        { question: "How much can a Hawaii rental security deposit be?", answer: "DCCA says the security deposit cannot exceed one month's rent. Its handbook discusses a separately agreed additional pet deposit and an assistance-animal exception. Check current official guidance and the proposed lease for your circumstances." },
+        { question: "What condo rules matter most to a renter?", answer: "Verify parking and towing, pets, guests, noise, smoking, move procedures, deliveries, trash, common-area access, maintenance reporting, violations, and fines. Obtain the rules that apply to tenants and resolve conflicts with the lease in writing." },
+        { question: "How do I verify public schools for the condo?", answer: "Enter the exact street address in the Hawaii Department of Education's SchoolSite Locator, then contact the relevant school directly. The department says the locator shows general service areas and should not be the sole basis for a rental decision." },
+        { question: "How should I check flood and other hazard information?", answer: "Search the exact address in Honolulu's Oʻahu Hazard Explorer and the state's Flood Hazard Assessment Tool, ask about prior incidents and emergency access, and discuss coverage with an insurer. Official maps are useful screens but do not identify every possible hazard." }
+      ]
+    },
+    cta: buildPageCta("Compare current 2-bedroom Ewa Beach rentals", "Share your move date, monthly budget, vehicles, pets, accessibility and school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, condo rules, layouts, and daily fit before you apply.")
+  },
   "oahu-available-rental-properties/3-bedroom-2-bathroom-townhouse-in-mililani-mauka.html": buildPropertyExpansion({
     topic: "Mililani Mauka 3-bedroom townhouse rental",
     status: "For Rent",
@@ -4119,6 +4178,15 @@ function assignSecondPassLinks() {
   });
 
   CONTENT.propertyPages.forEach(function (page) {
+    if (page.path === "oahu-available-rental-properties/2-bedroom-1-5-bath-condo-in-ewa-beach.html") {
+      page.relatedLinks = [
+        linkTo(pageIndex, "ewa-beach-real-estate", "Ewa Beach Area Guide", "Review broader Ewa Beach location, transportation, hazard, and housing context."),
+        linkTo(pageIndex, "hawaii-bases-and-barracks", "Oahu Bases and Barracks", "Verify installation context before choosing a lease around an assumed duty commute."),
+        { path: "contact.html", label: "Ask About Current Rentals", description: "Share your timing and rental requirements for a current-availability conversation." },
+      ].filter(Boolean).slice(0, 3);
+      return;
+    }
+
     if (page.path === "oahu-available-rental-properties/3-bedroom-townhouse-in-makakilo.html") {
       page.relatedLinks = [
         linkTo(pageIndex, "kapolei-real-estate-listings-and-information", "Kapolei Area Guide", "Compare broader Kapolei and Makakilo location factors while screening rentals."),
