@@ -1691,25 +1691,114 @@ const PROPERTY_PAGE_DEFS = [
 ];
 
 const EVERGREEN_CONTENT_EXPANSIONS = {
-  "ewa-beach-real-estate-hawaii-listings": buildEvergreenExpansion({
-    topic: "Ewa Beach real estate listings",
-    audienceShort: "Ewa Beach buyers and relocating households",
-    intent: "trying to narrow active Ewa Beach options while comparing price range, commute, and whether the area fits your household",
-    segment: "This page is for buyers, military families, and remote searchers who already know Ewa Beach is on the short list and need practical listing guidance before they request tours.",
-    sidebarNote: "Use it to separate true candidates from homes that only look right in photos, especially when timing, BAH, schools, or remote showings are part of the decision.",
-    localContext: "Ewa Beach can mean newer master-planned neighborhoods, older residential pockets, townhomes, condos, detached homes, and communities close to golf, beaches, and West Oahu services. Those differences matter because two Ewa Beach listings can produce very different daily routines.",
-    whyItMatters: "A listings-focused search is usually high intent. You are not only learning about the community. You are trying to decide which homes deserve attention now and which ones should be filtered out before they consume time.",
-    oahuContext: "The west side offers space and newer inventory that many Oahu buyers want, but the tradeoff is usually commute planning. Joint Base Pearl Harbor-Hickam, Schofield Barracks, Fort Shafter, and Honolulu work routes should be considered before the shortlist gets too emotional.",
-    decisionFactors: ["home type", "monthly payment", "maintenance fees", "parking", "school routine", "commute timing"],
-    compareGuidance: "For Ewa Beach, compare neighborhood age, association structure, garage and street parking, heat exposure, yard maintenance, and how quickly you can reach H-1 or Fort Weaver Road during real commute hours.",
-    nextStep: "Build a short list around the homes that fit your daily life first, then use showings or video tours to test condition, noise, parking, and layout before making a stronger move.",
-    heroIntro: "If you searched for Ewa Beach listings, you are likely past casual browsing and need a clean way to compare real options, neighborhood fit, and Oahu-specific tradeoffs before scheduling tours.",
-    introLead: "Ewa Beach listing research works best when inventory is matched against commute, monthly cost, household routine, and how long you expect to stay on island.",
-    pills: ["Ewa Beach", "Listings", "West Oahu", "PCS Buyers", "VA Buyers", "Remote Tours"],
-    contextPills: ["Ewa Beach", "West Oahu", "Commute", "Inventory"],
-    ctaTitle: "Compare Ewa Beach listings with local context",
-    ctaText: "Call or text before you spend time on listings that do not fit your commute, budget, or move timeline.",
-  }),
+  "ewa-beach-real-estate-hawaii-listings": {
+    description: "Practical Ewa Beach real estate listings guidance for Oahu buyers comparing home type, commute, VA financing, schools, hazards, and tour timing.",
+    keywords: [
+      "Ewa Beach real estate listings",
+      "Ewa Beach homes for sale",
+      "Ewa Beach VA buyers",
+      "West Oahu real estate",
+      "Oahu military relocation",
+      "Ewa Beach listing tours",
+    ],
+    heroEyebrow: "Ewa Beach Listings",
+    heroIntro: "Ewa Beach listings can look similar online, but the right choice depends on commute pattern, financing, property type, neighborhood rules, and how the home will work after the first week on island.",
+    introEyebrow: "Listing Strategy",
+    introHeading: "How to compare Ewa Beach real estate listings before you tour",
+    introLead: "Use this page to turn an Ewa Beach search from a photo scroll into a practical shortlist.",
+    intro: [
+      "A useful Ewa Beach listings search starts with the life you are trying to build on Oahu. The area can appeal to buyers who want West Oahu space, newer residential communities, townhome options, single-family homes, and a neighborhood feel that is different from town. That does not mean every listing with an Ewa Beach address solves the same problem.",
+      "The Census Bureau's recent QuickFacts profile for the Ewa Beach CDP shows a community with 3,385 households from 2020 through 2024, an owner-occupied housing rate of 72.9 percent, and a mean travel time to work of 38.0 minutes for workers age 16 and older. Those figures do not price any current home, but they do explain why monthly cost, commute, and household fit should be tested early.",
+      "For military and remote buyers, the best listing is not always the newest home or the biggest floor plan. It is the one that fits your orders, lender guidance, school logistics, commute tolerance, parking needs, and maintenance comfort. Ewa Beach can stay high on the list, but only after each candidate survives those Oahu-specific checks.",
+    ],
+    sidebar: {
+      eyebrow: "Best Fit",
+      heading: "Who this page helps",
+      paragraphs: [
+        "This page is for buyers, military families, and remote searchers who already know Ewa Beach is on the short list and need practical listing guidance before they request tours.",
+        "Use it before you ask for showings, video walkthroughs, or offer strategy. The goal is to sort listings by daily use, financing reality, and location-specific risk instead of reacting only to photos, square footage, or a low apparent monthly payment.",
+      ],
+      pills: ["Ewa Beach", "Listings", "West Oahu", "PCS Buyers", "VA Buyers", "Remote Tours"],
+    },
+    sections: [
+      {
+        title: "Start with property type and monthly fit",
+        pills: ["Home Type", "Budget", "Fees", "Condition"],
+        paragraphs: [
+          "Ewa Beach inventory can include detached homes, attached homes, townhomes, condos, and homes in planned communities. Compare them by the full monthly obligation, not only by list price. Association fees, insurance, property taxes, maintenance reserves, utilities, and commute fuel can change which listing is actually sustainable.",
+          "A newer-looking home may still carry association rules, parking limits, landscaping expectations, or design review requirements. An older home may need more immediate repair planning but offer a different yard, street pattern, or renovation path. Ask what the listing does not show clearly: roof age, cooling approach, storage, guest parking, street noise, sun exposure, and whether the floor plan works for your household's normal week.",
+          "Remote buyers should treat every promising listing as provisional until the condition questions are answered. Request a video tour that slows down at windows, exterior walls, garage areas, mechanical systems, nearby streets, and parking. Photos are useful for first impressions; they are not a substitute for seeing how the home sits in the neighborhood.",
+        ],
+      },
+      {
+        title: "Test the commute before the shortlist gets emotional",
+        pills: ["Commute", "Base Access", "H-1", "Fort Weaver Road"],
+        paragraphs: [
+          "Ewa Beach can be a strong fit for buyers who want West Oahu living, but commute planning needs to happen before favorites form. Joint Base Pearl Harbor-Hickam, Fort Shafter, Schofield Barracks, Wheeler, Kapolei, downtown Honolulu, and airport-area work can create very different daily patterns from the same listing address.",
+          "Official military relocation resources place Joint Base Pearl Harbor-Hickam west of Honolulu near Daniel K. Inouye International Airport, while Army resources describe units across Fort Shafter, Schofield Barracks, and Joint Base Pearl Harbor-Hickam. That means a military buyer should confirm the actual duty location, gate routine, report time, and spouse commute before deciding that one Ewa Beach listing is better than another.",
+          "Do not rely on a single map estimate. Test likely departure windows, school drop-off needs, and weekend routines. A home that works for one service member assigned near Pearl Harbor may feel very different for a household splitting time between Schofield, town, and Ewa Beach schools or activities.",
+        ],
+      },
+      {
+        title: "Check schools, hazards, and parcel details by address",
+        pills: ["Schools", "Flood Zone", "Tsunami Zone", "Parcel Review"],
+        paragraphs: [
+          "School assumptions should be verified by address. The Hawaii Department of Education's SchoolSite Locator lets users enter a street address to see general service areas, but DOE also says the locator is for reference only and should not be the sole source for relocation, purchase, or rent decisions. Confirm directly with the school before relying on a boundary for a purchase decision.",
+          "Because Ewa Beach includes coastal and low-lying areas, property-specific hazard review matters. The City and County of Honolulu's Department of Emergency Management launched Oahu Hazard Explorer so residents can enter an address or select a map location to review tsunami evacuation, flood zone, wildfire risk, and dam or levee evacuation information. That tool is useful for preparedness conversations and for deciding what follow-up questions a listing needs.",
+          "Honolulu's Department of Planning and Permitting also directs property researchers to Parcel Information for flood zone, zoning, Special Management Area, warnings, and advisories by address or TMK. Before you write an offer, use those public tools alongside seller disclosures, insurance quotes, inspection findings, and professional guidance so the listing is not evaluated only by interior condition.",
+        ],
+      },
+      {
+        title: "Use VA and lender rules as early filters",
+        pills: ["VA Loan", "COE", "Condo Review", "Payment"],
+        paragraphs: [
+          "VA buyers should connect Ewa Beach listing research with lender review early. VA explains that buyers using a VA-backed purchase loan go through a private lender and need a Certificate of Eligibility as proof of qualification. VA also states that there are no county loan limits for Veterans with full entitlement, while county limits still matter for buyers with previously used entitlement that has not been restored.",
+          "Those rules do not mean every Ewa Beach listing is automatically a clean VA fit. Condos and townhomes can raise project-approval questions, association budget questions, insurance questions, and appraisal timing issues. Detached homes can still raise condition, repair, or appraisal concerns. A listing that fits the search map should be screened against your lender's requirements before you spend limited tour time on it.",
+          "If you are using BAH, a VA loan, or another military-timed financing plan, build the shortlist around monthly payment and cash-to-close realities. Keep lender estimates current, ask whether association fees or insurance assumptions changed the approval picture, and avoid stretching only because one listing looks rare.",
+        ],
+      },
+      {
+        title: "Turn online favorites into a tour plan",
+        pills: ["Video Tours", "Offer Timing", "Shortlist", "Next Steps"],
+        paragraphs: [
+          "The strongest Ewa Beach shortlist usually has fewer homes and better questions. Rank each candidate by must-have fit, acceptable tradeoffs, unresolved risks, and decision deadline. If a listing fails on commute, school verification, payment, parking, or hazard comfort, remove it before it absorbs attention from better matches.",
+          "For in-person tours, look beyond finishes. Check garage usability, driveway slope, guest parking, cross-breeze, afternoon heat, neighboring lots, road noise, storage, stairs, trash area, and how easy it feels to get out of the neighborhood. For video tours, ask for the same practical checks and make sure the camera shows transitions between rooms instead of only wide-angle highlights.",
+          "When a home survives those steps, then it is time to discuss offer strategy, contingencies, inspection priorities, and timing. The point is not to make Ewa Beach harder than it needs to be. It is to make sure the home you pursue has already passed the checks that matter most on Oahu.",
+        ],
+      },
+    ],
+    faq: {
+      eyebrow: "Common Questions",
+      heading: "Ewa Beach listings FAQs",
+      intro: "These questions come up often when buyers are deciding whether an Ewa Beach listing deserves a tour, a video walkthrough, or an offer conversation.",
+      items: [
+        {
+          question: "Is Ewa Beach a good place to focus my Oahu home search?",
+          answer: "It can be a strong fit if you want West Oahu housing options and the commute, monthly cost, school plan, and property type all work for your household. The right answer depends on your daily route and budget, not only on the neighborhood name.",
+        },
+        {
+          question: "What should I compare first when looking at Ewa Beach homes for sale?",
+          answer: "Start with property type, full monthly payment, association fees, parking, commute pattern, school verification, and property-specific hazards. Those factors usually remove poor-fit listings faster than cosmetic preferences do.",
+        },
+        {
+          question: "Can I use a VA loan for an Ewa Beach listing?",
+          answer: "Many buyers use VA financing on Oahu, but the specific property and your entitlement situation still need lender review. Confirm your COE, remaining entitlement if applicable, condo or association questions, appraisal timing, and payment comfort before relying on any listing as a VA-ready option.",
+        },
+        {
+          question: "How should remote buyers tour Ewa Beach listings?",
+          answer: "Use video tours to check condition, parking, exterior exposure, nearby streets, storage, and layout flow. Ask for practical footage, not only room-by-room highlights, and keep any offer strategy tied to inspections, disclosures, lender review, and your arrival timeline.",
+        },
+        {
+          question: "Should I verify school boundaries before offering?",
+          answer: "Yes. Use the Hawaii Department of Education locator as a starting point, then contact the school directly because DOE says the locator is for reference and should not be the sole source for relocation, purchase, or rent decisions.",
+        },
+      ],
+    },
+    cta: buildPageCta(
+      "Compare Ewa Beach listings with local context",
+      "Call or text before you spend time on listings that do not fit your commute, budget, financing, school plan, or move timeline."
+    ),
+  },
   "our-cooperating-broker-commissions": buildEvergreenExpansion({
     topic: "cooperating broker commissions",
     audienceShort: "clients and cooperating professionals",
