@@ -3263,25 +3263,90 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Decide whether the team fits your Oahu move", "Share your transaction type, target area, firm timeline, and biggest unanswered question. Ask who would handle the work and request the service scope, representation, communication plan, and compensation terms in writing before you proceed."),
   },
-  "kapolei-real-estate-listings-and-information": buildEvergreenExpansion({
-    topic: "Kapolei real estate",
-    audienceShort: "Kapolei and West Oahu buyers",
-    intent: "researching Kapolei listings, community fit, and how the area compares with nearby West Oahu options",
-    segment: "This page is for buyers and relocating households looking at Kapolei as a serious option in the West Oahu growth corridor.",
-    sidebarNote: "Kapolei can appeal to households that want newer services, west-side convenience, and access to shopping, schools, and employment centers, but commute still matters.",
-    localContext: "Kapolei is often compared with Ewa Beach, Makakilo, and other West Oahu communities. It can offer a more urbanized west-side hub while still connecting to beaches, newer communities, and family routines.",
-    whyItMatters: "Kapolei searchers usually want more than inventory. They want to know whether the community makes sense for the way they will live on Oahu.",
-    oahuContext: "Kapolei can reduce some west-side errand pressure because services are nearby, but drives toward Honolulu, Joint Base Pearl Harbor-Hickam, or central Oahu still need realistic planning.",
-    decisionFactors: ["Kapolei neighborhoods", "home type", "commute", "schools", "shopping access", "budget"],
-    compareGuidance: "Compare Kapolei against Ewa Beach and Makakilo by space, drive pattern, daily convenience, and inventory age. Each area solves a different version of the West Oahu housing problem.",
-    nextStep: "Use Kapolei as a focused search area once you know whether its services, commute, and property mix fit your household.",
-    heroIntro: "Kapolei real estate research should help you decide whether this West Oahu hub fits your budget, commute, and daily routine.",
-    introLead: "Use this page to compare Kapolei listings with the lifestyle and logistics that surround them.",
-    pills: ["Kapolei", "West Oahu", "Listings", "Buyers", "Relocation"],
-    contextPills: ["West Oahu", "Services", "Commute", "Newer Homes"],
-    ctaTitle: "Compare Kapolei listings with local context",
-    ctaText: "Call or text to review Kapolei against your move timeline, commute, and property goals.",
-  }),
+  "kapolei-real-estate-listings-and-information": {
+    description: "A practical Kapolei real estate guide for comparing homes, townhomes, condos, commute patterns, Skyline access, association costs, hazards, and West Oahu alternatives.",
+    keywords: ["Kapolei real estate", "Kapolei homes for sale", "Kapolei condos", "West Oahu real estate", "Kapolei relocation"],
+    heroEyebrow: "Kapolei Buyer Guide",
+    heroIntro: "Kapolei listings are only the starting point. Compare the exact property, ownership costs, transportation options, and daily routine before deciding whether this West Oahu hub fits your move.",
+    introEyebrow: "Community Fit",
+    introHeading: "How to evaluate Kapolei real estate",
+    introLead: "Use a property-level plan to separate a promising Kapolei listing from a home that merely looks convenient on a map.",
+    intro: [
+      "Kapolei attracts buyers who want to build more of their week around West Oahu. The City and County of Honolulu's ʻEwa Development Plan identifies the City of Kapolei as the urban core, or downtown, of Oahu's Secondary Urban Center and calls for a mix of business and residential uses. That planning role helps explain the area's combination of housing, offices, government services, retail, and recreation, but it does not make every address interchangeable.",
+      "Start by defining what you mean by Kapolei. Search results can blend established neighborhoods, newer communities toward East Kapolei, condominium and townhome projects, and nearby Makakilo or Ewa-area inventory. Confirm the legal address, tax map key, development or association name, and the routes you would actually use. A broad community label is useful for discovery; it is not enough for due diligence.",
+      "Then compare the full monthly and daily cost of each candidate. Price, loan terms, property tax, insurance, association or maintenance fees, utilities, parking, and expected repairs belong in one worksheet. Add commute tests and household routines before ranking homes. This approach is especially important for relocating and military households making decisions remotely or against a firm arrival date."
+    ],
+    sidebar: {
+      eyebrow: "Best Fit",
+      heading: "Who should put Kapolei on the shortlist",
+      paragraphs: [
+        "Kapolei deserves a close look from buyers who expect work, family, school, appointments, recreation, or frequent errands on the west side and want several housing formats to compare. It can also work as a deliberate tradeoff for buyers who accept longer trips elsewhere in exchange for a West Oahu home base.",
+        "Do not decide from a generic commute estimate. Test each finalist at the times and in the direction that matter to you, including the trip home. Military buyers should verify installation access and duty-location expectations through their command or housing office rather than treating a map pin as a dependable commute forecast."
+      ],
+      pills: ["West Oahu Buyers", "Relocation", "Remote Tours", "Military Households", "Property Due Diligence"]
+    },
+    sections: [
+      {
+        title: "Understand the property mix behind the listings",
+        pills: ["Single-Family", "Townhome", "Condominium", "Newer Construction"],
+        paragraphs: [
+          "A Kapolei search can surface detached houses, townhomes, condominium units, and homes in planned communities. Those labels describe different ownership obligations, not just different layouts. Compare land tenure, parking rights, private streets, shared amenities, pet and rental rules, maintenance responsibility, and every recurring association charge. Ask whether a fee shown in a listing is the only fee or one of several layers.",
+          "For a condominium or townhome, read the declaration, bylaws, house rules, current budget, reserve study, insurance information, and recent board and association minutes within the contract review process. Hawaii's Real Estate Commission specifically directs prospective condominium buyers to review financials, insurance, reserves, special assessments, litigation, capital improvements, delinquencies, and governing documents. A monthly fee alone does not reveal the project's financial condition or what the owner must maintain.",
+          "For a detached home, investigate roof and exterior condition, drainage, grading, cooling, solar agreements, permits, utility history, and the boundary between owner and association responsibility. For newer construction, confirm what is finished today, what remains proposed, warranty procedures, taxes after completion, and whether marketing amenities or nearby projects have firm delivery dates. Never assume that a newer home eliminates inspection or document review."
+        ]
+      },
+      {
+        title: "Test transportation instead of assuming it",
+        pills: ["Drive Pattern", "Skyline", "TheBus", "Parking"],
+        paragraphs: [
+          "Kapolei's west-side location can be convenient when a household's destinations are also in West Oahu. Trips toward downtown Honolulu, the airport, Joint Base Pearl Harbor-Hickam, or Central Oahu involve different corridors and bottlenecks. Run weekday route checks for each important destination and include daycare pickup, medical visits, groceries, and after-work activities. If possible, experience the trip rather than relying only on a best-case app estimate.",
+          "Transit access is address-specific. Honolulu's Skyline station list begins with Kualakaʻi in East Kapolei and includes Keoneʻae at the University of Hawaiʻi West Oʻahu and Honouliuli at Hoʻopili. The City's station guidance also identifies park-and-ride facilities and connecting services. A listing advertised as near rail may still require a drive, bus connection, bike trip, or exposed walk, so map the complete door-to-door journey and check the current schedule before relying on it.",
+          "Parking deserves its own check. Confirm the number, location, dimensions, ownership or assignment of stalls; guest-parking rules; street restrictions; charging options; and whether a larger vehicle fits. If transit is part of the plan, compare station access and the last trip home. If driving remains essential, model fuel, vehicle count, and parking alongside the mortgage rather than treating transportation as a separate budget."
+        ]
+      },
+      {
+        title: "Verify the address, costs, and physical risks",
+        pills: ["TMK", "Insurance", "Hazards", "Permits"],
+        paragraphs: [
+          "Use the exact address and Tax Map Key to check the City and County of Honolulu's real-property record. The Real Property Assessment Division says parcel records include assessment and tax history, classification, tax relief, land description, and known building improvements. These records are useful cross-checks, but they are maintained for tax purposes; ask the appropriate professionals to reconcile discrepancies and verify title, permits, boundaries, and legal use.",
+          "Hazard screening also belongs at the address level. Hawaii's Department of Land and Natural Resources Flood Hazard Assessment Tool displays FEMA flood-zone information and warns that mapped zones do not identify every place subject to flooding. Honolulu's Oʻahu Hazard Explorer adds address-based layers for flood, tsunami evacuation, wildfire, and dam or levee evacuation areas. Review the available reports, disclosures, drainage conditions, and insurance options early enough for the findings to affect the offer and budget.",
+          "Request insurance quotes for the actual property and ownership form, not a generic Kapolei estimate. For an association property, distinguish the master policy from the unit owner's coverage and confirm deductibles, exclusions, claims history, and responsibility for interior finishes or water damage. Pair that review with a professional inspection and any specialized follow-up the property condition warrants. An appraisal or tax record is not a substitute for an inspection."
+        ]
+      },
+      {
+        title: "Compare Kapolei with nearby West Oahu options",
+        pills: ["Ewa Beach", "Makakilo", "East Kapolei", "Daily Routine"],
+        paragraphs: [
+          "Compare communities using the same scorecard. Kapolei may place a buyer closer to particular civic, retail, employment, or recreation destinations. Makakilo may change elevation, slope, access routes, and the feel of the home search. Ewa Beach opens a different set of subdivisions, coastal considerations, road patterns, and amenities. East Kapolei listings may offer newer development and different rail access. These are prompts to investigate, not promises about an entire area.",
+          "Choose three to five finalists across the areas that could work. Record total estimated monthly cost, property type, interior and outdoor space, parking, association obligations, condition, hazard findings, and travel to the household's top destinations. Households with children should verify current school assignments and program details directly with the Hawaii Department of Education; boundaries, capacity, and programs can change and should not be inferred from a listing.",
+          "The best result is not necessarily the newest home or shortest advertised drive. It is the property whose documented costs, condition, rules, access, and location still work under realistic conditions. Keep one backup area or property type in the search so a tight deadline does not force you to waive important questions."
+        ]
+      },
+      {
+        title: "Use a disciplined offer and remote-buying plan",
+        pills: ["Offer Strategy", "Remote Tour", "Inspection", "Documents"],
+        paragraphs: [
+          "Before writing, separate verified facts from open questions. Ask for a live video tour that shows the approach, parking, neighboring context, mechanical systems, storage, views in both directions, and visible wear—not only polished rooms. Have the agent identify what cannot be confirmed remotely. Keep inspection, document, title, financing, appraisal, and insurance decisions aligned with the contract and professional advice.",
+          "Build the offer around your financing and risk tolerance, not assumptions about what every Kapolei seller expects. Confirm lender timelines, cash needed beyond the down payment, appraisal implications, and the date the household actually needs possession. VA buyers should coordinate property questions with a VA-experienced lender while remembering that VA's appraisal process does not replace an independent home inspection.",
+          "A useful shortlist should end with an action sheet for each home: documents outstanding, professional reviews needed, commute or transit test, insurance quote, repair questions, association contacts, and deadline owner. That makes Kapolei real estate research decision-ready even when inventory changes between the first search and arrival on Oahu."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Kapolei Buyer Questions",
+      heading: "Kapolei real estate FAQs",
+      intro: "These answers focus on the checks that remain useful even as listings and market conditions change.",
+      items: [
+        { question: "Is Kapolei a good place to live if I work in Honolulu?", answer: "It can be, but the answer depends on your exact origin, destination, schedule, and tolerance for variable travel. Test the route during relevant hours in both directions and compare driving with realistic bus or Skyline connections. Include recurring household trips, not only the commute to work." },
+        { question: "Does Kapolei have access to Skyline rail?", answer: "The current Honolulu station list includes Kualakaʻi in East Kapolei, Keoneʻae at UH West Oʻahu, and Honouliuli at Hoʻopili. Access varies by address, and the full trip may require parking, walking, biking, or a bus connection. Check current station, fare, parking, and schedule information with Honolulu before making rail part of the housing decision." },
+        { question: "What should I review when buying a Kapolei condo or townhome?", answer: "Review the declaration, bylaws, rules, budget, reserve study, master insurance, recent minutes, assessments, litigation, delinquencies, maintenance responsibilities, parking, and every recurring fee. Use the contract review period and qualified legal, insurance, inspection, lending, and real estate professionals for property-specific advice." },
+        { question: "How do I check flood or other hazard information for a Kapolei home?", answer: "Search the exact address in the State of Hawaii Flood Hazard Assessment Tool and Honolulu's Oʻahu Hazard Explorer, then review seller disclosures, site drainage, insurance availability, and professional findings. Mapping is an initial screen and does not identify every possible hazard or replace property-specific due diligence." },
+        { question: "How should a remote buyer evaluate a Kapolei listing?", answer: "Use a live, directed video tour; verify the address and TMK; request association and property documents; obtain property-specific insurance and financing information; and preserve appropriate professional inspections and reviews. Ask what the agent cannot verify remotely and assign deadlines for every open item." },
+        { question: "Should I compare Kapolei with Ewa Beach or Makakilo?", answer: "Yes. Use the same budget, property, parking, association, hazard, and commute criteria for each. Nearby areas can produce meaningfully different routes, elevations, housing formats, and daily routines, so compare exact properties rather than relying on community stereotypes." }
+      ]
+    },
+    cta: buildPageCta("Build a decision-ready Kapolei shortlist", "Share your budget range, financing status, firm dates, property type, parking needs, and the destinations that shape your week. We can compare current Kapolei options with nearby West Oahu homes and identify the next property-specific checks."),
+  },
   "hawaii-commissaries": buildEvergreenExpansion({
     topic: "Hawaii commissaries",
     audienceShort: "military households planning daily life on Oahu",
