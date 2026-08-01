@@ -1904,25 +1904,111 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
       "Share whether you are a buyer, seller, cooperating broker, or referral partner and identify the Oahu property or client situation. We can discuss our role, services, and the written terms needed before a tour, offer, or handoff."
     ),
   },
-  "hawaii-va-homebuying-video": buildEvergreenExpansion({
-    topic: "Hawaii VA homebuying video",
-    audienceShort: "early-stage VA buyers",
-    intent: "looking for a fast, plain-language overview of the Hawaii VA buying path before reading longer guides or touring homes",
-    segment: "This page is for active duty members, veterans, and military spouses who want a quick orientation before they start comparing homes, neighborhoods, and lender conversations.",
-    sidebarNote: "The video should be treated as a briefing. Use it to understand the order of decisions, then move into the deeper VA and area pages when your timeline gets specific.",
-    localContext: "Hawaii changes the VA conversation because association fees, condo rules, insurance, inventory mix, and commute pressure can affect what feels affordable or practical even when the financing path is strong.",
-    whyItMatters: "Video searchers often want confidence before detail. If the page frames the video well, it can move a buyer from vague interest into a better prepared conversation.",
-    oahuContext: "A VA buyer on Oahu needs to connect eligibility and preapproval with real housing choices around Ewa Beach, Kapolei, Mililani, Joint Base Pearl Harbor-Hickam, Schofield Barracks, and Marine Corps Base Hawaii.",
-    decisionFactors: ["preapproval timing", "monthly payment", "condo eligibility", "commute", "offer readiness", "remote tour needs"],
-    compareGuidance: "After watching, compare your target areas against monthly cost and daily routine before you focus on individual homes. That keeps the search from getting pulled by photos alone.",
-    nextStep: "Pair the video with VA Loan Information, VA Home Buying in Hawaii, and a payment estimate so your next conversation starts with better questions.",
-    heroIntro: "This video page is built for VA buyers who want the short version first, then clear links into the deeper Hawaii-specific decisions.",
-    introLead: "Use the video as a first briefing before you commit to neighborhoods, tours, or offer strategy.",
-    pills: ["VA Buyers", "Video", "PCS Planning", "Oahu Homes", "Military Families"],
-    contextPills: ["VA Process", "Oahu Inventory", "Remote Buying"],
-    ctaTitle: "Talk through your VA buying path",
-    ctaText: "Use the video as the starting point, then call or text with your orders, timing, target area, and payment questions.",
-  }),
+  "hawaii-va-homebuying-video": {
+    description: "Watch the Hawaii VA homebuying overview, then use this Oahu guide to prepare your COE, budget, property checks, remote search, and offer plan.",
+    keywords: ["Hawaii VA homebuying video", "VA home loan Oahu", "military home buying Hawaii", "Oahu VA buyer guide"],
+    heroEyebrow: "Hawaii VA Buyer Briefing",
+    heroIntro: "Start with the short Hawaii VA homebuying overview, then use this written briefing to turn the process into an Oahu-specific plan for financing, property checks, tours, and an offer.",
+    introEyebrow: "Before You Search",
+    introHeading: "A short briefing for a high-stakes Oahu purchase",
+    introLead: "The VA benefit can be powerful, but the loan program is only one part of choosing a home that works for your payment, assignment, and daily life.",
+    intro: [
+      "This resource is for active duty members, veterans, and eligible surviving spouses who want the sequence before the detail. The practical order is to verify the benefit, compare lenders, set an all-in monthly ceiling, screen Oahu locations, evaluate the property, and write an offer that matches both the financing and your move calendar. A military spouse helping manage the search can use the same checklist, but the lender and VA must confirm who qualifies and how the borrowers will be structured.",
+      "A VA-backed purchase loan comes from a private lender; VA guarantees part of it. A Certificate of Eligibility proves benefit eligibility, but it is not a loan approval. The lender still reviews credit, income, debts, and assets, and the property must support the transaction. Treat preapproval as the beginning of the housing budget conversation, not permission to shop at the highest possible number.",
+      "Oahu adds decisions that a national explainer cannot settle for you. A condo may have maintenance fees and must be in a VA-approved project. A detached home may trade a longer commute for more space. Insurance, hazard exposure, parking, condition, utilities, and temporary-lodging overlap can all change the real cost. Watch for orientation, then use the sections below to build questions for a VA lender and a local real estate professional.",
+    ],
+    sidebar: {
+      eyebrow: "Your First Brief",
+      heading: "Bring these facts to the first call",
+      paragraphs: [
+        "Share your expected arrival or move date, duty location, household and pet needs, available cash, current housing obligation, desired monthly ceiling, and whether you are buying from off island. If you have used the benefit before, say so early so the lender can review remaining entitlement.",
+        "Ask the lender to distinguish your COE, preapproval, estimated cash to close, funding-fee treatment, rate and points, and assumptions used for taxes, insurance, and association dues. Financing answers belong with the lender; neighborhood, property, tour, and offer strategy belong in the real estate conversation.",
+      ],
+      pills: ["COE", "VA Lender", "PCS Timeline", "All-In Payment", "Remote Search"],
+    },
+    sections: [
+      {
+        title: "1. Confirm the benefit, then compare the loan",
+        pills: ["Eligibility", "COE", "Preapproval", "Entitlement"],
+        paragraphs: [
+          "Request your COE through VA or ask a participating lender to help obtain it. VA explains that the COE confirms eligibility for the home-loan benefit; the lender separately decides whether you qualify for a particular loan. Starting early gives you time to address service documentation, a prior VA loan, or an entitlement-restoration question before a property deadline is involved.",
+          "Compare more than an advertised rate. Ask each lender for the same purchase-price and down-payment scenario, then compare rate, discount points, lender fees, estimated closing costs, cash required, and monthly payment. Ask whether the VA funding fee applies to you and whether it would be paid at closing or financed. VA publishes the governing fee rules, but only the lender can price your actual file.",
+          "Full entitlement does not mean unlimited borrowing. VA says borrowers with full entitlement do not have a VA loan limit, but the lender must still approve the amount and the appraisal must support the purchase. If entitlement is not fully restored, county loan limits can affect how much may be borrowed without a down payment. Have the lender calculate this rather than relying on a generic calculator or an old approval letter.",
+        ],
+      },
+      {
+        title: "2. Build an Oahu payment, not just a price range",
+        pills: ["Monthly Cost", "Association Fees", "Insurance", "Reserves"],
+        paragraphs: [
+          "Translate preapproval into an all-in housing ceiling you can live with. Include principal and interest, property taxes, homeowners insurance, any condominium or association dues, and costs the payment estimate may omit. Then protect room for utilities, transportation, maintenance, and the ordinary cost of settling into island life. A home can be lender-approved and still be too tight for the household.",
+          "Association dues deserve line-by-line attention because they can change both affordability and what the owner must maintain. Ask for the current dues, what they cover, pending assessments, reserve information, insurance responsibilities, and the documents available for review. Do not compare a condo payment with a detached-home payment until you understand which expenses sit inside and outside each number.",
+          "Keep cash needs separate from the phrase ‘no down payment.’ VA-backed loans may offer a no-down-payment option, but buyers can still face closing costs, inspections, prepaid items, moving expenses, appraisal-related negotiations, and post-closing repairs. Preserve a reserve that fits your household and ask the lender for an updated estimate whenever the price, credits, rate, or property type changes.",
+        ],
+      },
+      {
+        title: "3. Screen the location before falling for the home",
+        pills: ["Duty Station", "Commute", "Daily Routine", "Hazards"],
+        paragraphs: [
+          "Begin with the duty location and daily routine, not a list of famous neighborhoods. Compare when the service member must report, where a spouse works, school or child-care logistics, medical needs, and how many vehicles the household will have. Test likely trips at the times you would actually travel; island distance alone is a poor substitute for a commute plan.",
+          "Use two or three serious search zones and name the tradeoff in each. West and Central Oahu options may produce different combinations of space, property type, maintenance fees, and travel to work. Windward or urban options solve different routines. The goal is not to declare one area best, but to know what each location makes easier and what it asks the household to tolerate.",
+          "Check property-specific hazards rather than making assumptions about an entire community. The City and County of Honolulu’s Oahu Hazard Explorer lets residents look up mapped tsunami, flood, wildfire, and dam or levee evacuation information. Use that public planning tool as a starting point, then ask the insurer, lender, inspectors, and appropriate agencies about the specific address and coverage requirements.",
+        ],
+      },
+      {
+        title: "4. Verify that the property works for VA financing",
+        pills: ["Condo Approval", "Appraisal", "Inspection", "Property Condition"],
+        paragraphs: [
+          "For a condominium, confirm the project’s VA approval status before investing heavily in the transaction. VA guidance says a condo purchased with the benefit must be in a VA-approved project; if it is not approved, project documents must be submitted for review. Approval is a project-level financing question, not proof that a particular unit is physically sound or financially right for you.",
+          "Do not confuse the VA appraisal with a home inspection. The appraisal supports valuation and reviews the property against VA minimum property requirements. VA separately recommends an inspection. Hire appropriate inspectors within the contract timeline and use their findings to understand systems, condition, likely repairs, and questions that require specialists. Your agent and lender can explain process options; inspectors evaluate condition.",
+          "Before offering, identify issues that could affect value, loan eligibility, insurability, or closing time. Review seller disclosures and available association materials, ask what is included in the sale, and discuss visible condition with your agent. If a concern appears after contract, respond through the agreement’s deadlines rather than assuming the appraisal will solve it.",
+        ],
+      },
+      {
+        title: "5. Make remote tours and the offer deliberate",
+        pills: ["Video Tours", "Offer Terms", "Timeline", "Closing Plan"],
+        paragraphs: [
+          "If you are off island, use live video as a verification tool. Ask for the approach, street, parking, common areas, views in both directions, storage, utility spaces, signs of noise, and visible wear—not only a smooth walkthrough of the best rooms. Request measurements or follow-up footage when a detail affects furniture, accessibility, pets, or work-from-home plans.",
+          "An offer is more than price. Coordinate the financing type, deposit, inspection period, appraisal timing, requested credits, closing date, occupancy, and any sale or lease obligations. A stronger offer is one you can perform, not one that strips away protections you do not understand. Ask the lender to confirm the financing timeline and your agent to explain the real estate terms before signing.",
+          "Plan the handoff from contract to arrival. Decide who can attend inspections, how documents will be signed, when funds must be available, whether a power of attorney is contemplated, and what happens if orders or travel change. Confirm legal questions with an attorney and signing or loan requirements with the lender and closing professionals. Keep temporary lodging flexible until the closing plan is dependable.",
+        ],
+      },
+    ],
+    faq: {
+      eyebrow: "Hawaii VA Questions",
+      heading: "Answers to use after the video",
+      intro: "These answers establish the process, but your lender, real estate professional, insurer, inspectors, and closing team must verify the facts of a specific purchase.",
+      items: [
+        {
+          question: "Does a COE mean I am approved for a VA loan?",
+          answer: "No. The COE shows that you meet VA benefit-eligibility requirements. A participating lender still reviews your credit, income, debts, assets, and the property before approving a specific loan. Request the COE early, then obtain a scenario-specific preapproval.",
+        },
+        {
+          question: "Can I buy on Oahu with no down payment?",
+          answer: "VA-backed purchase loans may allow no down payment, but the result depends on entitlement, lender approval, purchase price, and appraised value. Borrowers without full entitlement may face a down-payment calculation. Closing costs and reserves also remain relevant, so ask a VA lender for the actual cash-to-close estimate.",
+        },
+        {
+          question: "Can I use a VA loan for any Oahu condo?",
+          answer: "No. VA says the condominium project must be VA-approved before a unit is eligible for the guaranty. Ask the lender to verify the exact project and status early. Project approval does not replace inspection, document review, insurance review, or an affordability analysis.",
+        },
+        {
+          question: "Is the VA appraisal the same as a home inspection?",
+          answer: "No. The appraisal addresses value and VA property requirements for the loan. A buyer’s inspection is a separate condition review, and VA recommends getting one. Discuss inspection scope and contract deadlines before deciding how to proceed.",
+        },
+        {
+          question: "Should I wait until I arrive on Oahu to start?",
+          answer: "Not necessarily. You can organize the COE, lender comparisons, budget, search zones, and remote-tour standards before arrival. Whether to contract from off island depends on your risk tolerance, timeline, available representation, and ability to complete due diligence—not simply on whether a video tour is available.",
+        },
+        {
+          question: "What should I do immediately after this briefing?",
+          answer: "Write down your move date, duty location, comfortable all-in payment, cash reserve, and two possible search zones. Then ask a VA lender to verify the financing assumptions and ask a local buyer representative to test the location, property-type, and tour plan against current options.",
+        },
+      ],
+    },
+    cta: buildPageCta(
+      "Turn the VA overview into an Oahu search plan",
+      "Share your assignment, arrival window, comfortable monthly range, and whether you will tour in person or remotely. We can help organize the location and property decisions while your VA lender confirms the financing."
+    ),
+  },
   "new-home-construction": buildEvergreenExpansion({
     topic: "new home construction",
     audienceShort: "West Oahu new-construction buyers",
