@@ -4244,26 +4244,85 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     ctaTitle: "Ask about Mililani condo rentals",
     ctaText: "Call or text to compare current Mililani rentals and central Oahu alternatives.",
   }),
-  "oahu-available-rental-properties/3-bedroom-2-5-bath-townhouse-at-fairways-edge.html": buildPropertyExpansion({
-    topic: "Fairways Edge townhouse rental",
-    status: "For Rent",
-    segment: "This page is for renters considering Fairways Edge or nearby Kapolei-area townhouse communities.",
-    bestFit: "A 3-bedroom Fairways Edge townhouse can fit households that want West Oahu access, a defined community setting, and more functional space than a condo.",
-    sidebarNote: "Community-named rentals should be checked for association rules, parking, amenities, and commute before application decisions.",
-    localContext: "Fairways Edge is part of the broader West Oahu rental conversation, often compared with Kapolei, Makakilo, and Ewa Beach options.",
-    whySearched: "A community name in the title shows the searcher may already know the neighborhood and wants specific fit details.",
-    neighborhoodContext: "The area can work for renters who want west-side services and a residential setting, but traffic direction and work location still matter.",
-    compareFactors: ["rent", "community rules", "parking", "amenities", "commute", "layout"],
-    compareGuidance: "Compare community amenities against the rent and rules. Amenities are useful only if the household will actually use them.",
-    currentUse: "Use this page to benchmark current Fairways Edge or nearby townhouse availability.",
-    heroIntro: "Fairways Edge townhouse rentals should be compared by community fit, layout, parking, and West Oahu commute.",
-    introHeading: "Fairways Edge rental context",
-    introLead: "Use this page to compare community-specific rental fit before applying.",
-    pills: ["Fairways Edge", "Townhouse", "3 Bedrooms", "West Oahu", "Rental"],
-    comparePills: ["Community Rules", "Parking", "Amenities", "Commute"],
-    ctaTitle: "Compare Fairways Edge rentals",
-    ctaText: "Call or text to review current Fairways Edge and nearby West Oahu townhome options.",
-  }),
+  "oahu-available-rental-properties/3-bedroom-2-5-bath-townhouse-at-fairways-edge.html": {
+    description: "Use this archived Fairways Edge townhouse rental guide to verify availability, layout, parking, community rules, total cost, schools, hazards, and commute fit.",
+    keywords: ["Fairways Edge townhouse rental", "3 bedroom Ewa Beach townhouse", "Ocean Pointe rental", "West Oahu townhome rental"],
+    heroEyebrow: "Archived Fairways Edge Rental Guide",
+    heroIntro: "The three-bedroom and 2.5-bath details come from a legacy listing title. They do not prove that the same Fairways Edge townhouse is available now, or that its rent, condition, parking, amenities, or lease terms remain unchanged.",
+    introEyebrow: "Address-Level Rental Check",
+    introHeading: "Verify the Fairways Edge offer before comparing it",
+    introLead: "A community name narrows the search, but the exact address, current documents, and a careful showing determine whether a townhouse fits your household.",
+    intro: [
+      "This archive is for renters considering a three-bedroom townhouse in Fairways Edge while comparing Ewa Beach and other West Oahu options. Treat the old title as a search profile, not a live advertisement. Ask an authorized owner or property manager to confirm the street address, current availability date, monthly rent, lease length, bedroom and bathroom count, condition, parking, utility responsibility, pet terms, deposits, and application process in writing.",
+      "The half bath can make a shared routine easier, but a bathroom count says little about placement. Confirm which floor contains each bedroom and bathroom, whether stairs affect anyone in the household, and how morning preparation would work. Request a current floor plan or measure at the showing; do not transfer square footage, garage details, views, finishes, or amenity claims from another Fairways Edge unit to this one.",
+      "Community living also adds a second document check. The lease controls the tenant relationship, while condominium or association rules may govern parking, guests, pets, noise, trash, shared facilities, and exterior use. Request the current rules that apply to the exact unit and ask how tenants register, receive notices, access any included common areas, and handle rule questions before paying an application charge."
+    ],
+    sidebar: {
+      eyebrow: "Townhouse Fit",
+      heading: "Who should use this archived profile",
+      paragraphs: [
+        "This search may fit a household that needs three defined rooms, values a guest half bath, and is willing to trade some detached-home independence for a managed community setting. It is most useful when renters have a clear plan for bedrooms, work space, vehicles, pets, storage, and weekday travel.",
+        "Pause before applying if the decision depends on a particular school, guaranteed guest parking, a specific amenity, step-free access, an exterior modification, or a commute that has not been tested. Each depends on the exact address, current rules, and written offer rather than the archived community label."
+      ],
+      pills: ["Archived Listing", "Fairways Edge", "3 Bedrooms", "2.5 Baths", "Townhouse", "Verify in Writing"]
+    },
+    sections: [
+      {
+        title: "Rebuild the current offer from primary documents",
+        pills: ["Availability", "Authorized Manager", "Lease", "Application"],
+        paragraphs: [
+          "Start with the exact unit address and the identity of the owner or authorized manager. Ask for a current listing sheet, a showing, the proposed start date and term, rent, application criteria and charge, all deposits, included appliances, utility allocations, renters-insurance requirements, pet terms, and maintenance duties. An archived page or copied photograph is not evidence that a new advertiser controls the unit or may collect money.",
+          "At the showing, compare the unit with the written offer. Operate doors, windows, locks, plumbing fixtures, appliances, cooling equipment, and garage or gate controls when permitted. Look for visible moisture, pest evidence, damaged screens, drainage concerns, noise, and unfinished repairs. Put promised work and timing in writing, then document condition through the proper move-in process."
+        ]
+      },
+      {
+        title: "Make the two-story layout work on an ordinary day",
+        pills: ["Floor Plan", "Stairs", "Bathrooms", "Storage"],
+        paragraphs: [
+          "Assign a purpose to every bedroom before paying for three. Record usable dimensions, closets, outlets, privacy, sun exposure, cooling, and proximity to a full bath. Locate laundry, linen and pantry storage, and the path from parking to the kitchen. If a household member has mobility needs, verify entries, thresholds, stair rails, bathroom clearances, and whether daily essentials can remain on one level.",
+          "Walk through a weekday sequence: waking, showers, remote meetings, school preparation, departures, deliveries, laundry, meals, and quiet hours. A half bath may reduce traffic through private rooms, yet it does not solve a difficult stair arrangement or limited upstairs storage. Compare the layout with a smaller condo and a detached home on usable function, not bedroom count alone."
+        ]
+      },
+      {
+        title: "Read the Fairways Edge rules for the exact unit",
+        pills: ["Parking", "Guests", "Pets", "Common Areas"],
+        paragraphs: [
+          "Request the current declaration, house rules, parking policy, and any tenant registration or common-area procedures supplied through the owner or manager. Confirm assigned stalls, garage dimensions if one is included, driveway use, street and guest parking, permits, towing enforcement, vehicle limits, and charging restrictions. Physically test whether every household vehicle fits without blocking another space or extending into a restricted area.",
+          "Read current provisions for pets, noise, trash and recycling, deliveries, grills, outdoor storage, window coverings, cameras, satellite equipment, holiday displays, landscaping, and use of any pool or recreation area offered with the lease. Ask who receives violation notices and who pays fines caused by an occupant. Never assume a feature advertised for another Fairways Edge home is included with this rental."
+        ]
+      },
+      {
+        title: "Compare total cost instead of base rent",
+        pills: ["Move-In Cash", "Utilities", "Deposits", "Transportation"],
+        paragraphs: [
+          "Separate move-in funds from the cost of a normal month. Up-front needs may include first month's rent, security and any separately agreed pet deposit, application charges, movers, utility setup, and immediate household items. Recurring comparisons should include rent, electricity for the actual cooling plan, water or sewer when tenant-paid, internet, insurance, parking or pet charges, maintenance duties, and transportation created by the location.",
+          "The Hawaii Department of Commerce and Consumer Affairs' 2024 landlord-tenant handbook says the security deposit may not exceed one month's rent. It separately describes an agreed pet deposit of up to one month's rent, except for an assistance animal provided as a disability accommodation. Check the current agency guidance and proposed lease, and take legal questions about a specific agreement to a qualified Hawaii attorney."
+        ]
+      },
+      {
+        title: "Verify schools, commute, and hazards by address",
+        pills: ["School Locator", "Route Test", "Hazard Map", "Preparedness"],
+        paragraphs: [
+          "For public schools, enter the exact address in the Hawaii Department of Education's SchoolSite Locator and contact the school directly. The department says the locator shows general service areas for reference and should not be the sole source for a rental decision. Test the actual route to work, an installation gate, school or childcare, medical care, and recurring errands at realistic outbound and return times.",
+          "Enter the address in Honolulu's Oʻahu Hazard Explorer. The city says it can show whether a location lies within mapped tsunami evacuation, flood, wildfire-risk, or dam or levee evacuation areas. Use those results to shape an emergency plan and property-specific questions; mapped screening does not predict a unit's condition or replace insurance and other professional guidance."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Fairways Edge Rental FAQs",
+      heading: "Questions to settle before an application",
+      intro: "These answers preserve the useful search intent while keeping old property details separate from a current rental offer.",
+      items: [
+        { question: "Is this three-bedroom Fairways Edge townhouse available now?", answer: "The archive does not establish current availability. Confirm the exact address, authorized manager, rent, start date, lease term, showing access, condition, and application process before relying on the old title." },
+        { question: "Does the rental include a garage, guest parking, or community amenities?", answer: "Do not assume so. Ask for the current listing and lease, inspect assigned parking, and read the rules for the exact unit. Features shown or advertised for another Fairways Edge townhouse may not be included here." },
+        { question: "What should I check in a three-bedroom, 2.5-bath layout?", answer: "Verify room dimensions, bathroom locations, stairs, storage, laundry, cooling, noise, furniture paths, and the route from parking to the home. Test the layout against the household's real morning and evening routine." },
+        { question: "How much security deposit can a Hawaii landlord request?", answer: "DCCA's 2024 handbook says a security deposit may not exceed one month's rent and describes a separately agreed pet deposit of up to one month's rent, with an assistance-animal exception. Check current official guidance and seek legal advice for a specific dispute." },
+        { question: "Which schools serve a Fairways Edge address?", answer: "Use the Hawaii Department of Education's SchoolSite Locator with the exact street address, then contact the school. The department says its general service areas are for reference and should not be the sole source for deciding to rent." },
+        { question: "How should I compare this townhouse with other West Oahu rentals?", answer: "Compare verified total monthly cost, move-in funds, layout, stairs, parking, current community rules, condition, address-specific school information, hazard screening, and routes at the times your household actually travels." }
+      ]
+    },
+    cta: buildPageCta("Compare current Fairways Edge and Ewa Beach rentals", "Share your move date, total monthly budget, bedroom plan, vehicles, pets, accessibility needs, and work or duty destination. We can verify current options and help you compare written terms, community rules, and daily fit before you apply.")
+  },
   "oahu-available-rental-properties/4-bedroom-2-5-bathrooms-1538-sf-in-ewa-beach-2500-per-month.html": {
     description: "Use this archived four-bedroom Ewa Beach rental page to verify current availability and compare layout, total cost, parking, schools, hazards, and commute fit.",
     keywords: ["4 bedroom rental Ewa Beach", "Ewa Beach family rental", "1538 square foot rental", "Oahu rental home", "military rental Ewa Beach"],
