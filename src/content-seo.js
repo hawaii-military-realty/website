@@ -2565,25 +2565,90 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Turn your duty location into an Oahu shortlist", "Share the exact worksite, report timing, household routine, budget, pets, and rent-or-buy goal. We can help compare suitable Oahu areas while your command and housing office confirm the official housing path."),
   },
-  "hawaii-golf-courses": buildEvergreenExpansion({
-    topic: "Hawaii golf courses",
-    audienceShort: "lifestyle-driven Oahu movers",
-    intent: "researching how golf access and recreation should influence where you may want to live on Oahu",
-    segment: "This page is for buyers, renters, retirees, second-home searchers, and local movers who want lifestyle fit to be part of the real estate decision.",
-    sidebarNote: "Golf access is not just recreation. It can point toward the communities, drive patterns, and weekend lifestyle a household wants after the move.",
-    localContext: "Oahu golf access touches several real estate conversations, from Ewa Beach and Kapolei to central and windward areas. The best fit depends on how often you play, where you work, and how much drive time you want in normal life.",
-    whyItMatters: "Lifestyle searches can become real estate searches when the user is trying to picture life after the transaction. That makes this page valuable when it connects recreation to location decisions.",
-    oahuContext: "A community may be close to a course but still create tradeoffs around commute, heat, traffic, schools, and daily errands. Lifestyle has to be balanced with routine.",
-    decisionFactors: ["course access", "nearby communities", "drive time", "budget", "weekend routine", "commute"],
-    compareGuidance: "Compare golf convenience against the rest of the week. If the area supports both recreation and daily logistics, it deserves a closer housing look.",
-    nextStep: "Use golf access as one filter, then move into community pages that match both lifestyle and practical housing needs.",
-    heroIntro: "Golf-course research can help you picture where Oahu life may fit, but the right real estate decision still has to work Monday through Friday.",
-    introLead: "Use this lifestyle guide to connect recreation with neighborhood decisions.",
-    pills: ["Golf", "Lifestyle", "Ewa Beach", "Kapolei", "Oahu Communities"],
-    contextPills: ["Lifestyle Fit", "Drive Time", "Neighborhoods", "Weekend Routine"],
-    ctaTitle: "Connect lifestyle with location",
-    ctaText: "Call or text to compare Oahu communities around golf access, commute, and housing fit.",
-  }),
+  "hawaii-golf-courses": {
+    description: "Compare Oahu golf access as part of a home search, including municipal, public, resort, private, and military courses plus neighborhood tradeoffs.",
+    keywords: ["Hawaii golf courses", "Oahu golf courses", "homes near golf Oahu", "Ewa Beach golf", "Oahu golf communities"],
+    heroEyebrow: "Oahu Golf Lifestyle Guide",
+    heroIntro: "Use golf access to sharpen an Oahu home search without letting one favorite course outweigh commute, housing cost, access rules, or the rest of the household's week.",
+    introEyebrow: "Lifestyle Meets Location",
+    introHeading: "How Hawaii golf courses fit an Oahu real estate decision",
+    introLead: "Start with the kind of golf access you will actually use, then compare the communities that support both that routine and daily life.",
+    intro: [
+      "Oahu is not one golf market. The island includes city-run municipal courses, daily-fee and resort facilities, private clubs, and military courses with their own eligibility rules. The Hawaii Department of Business, Economic Development and Tourism counted 36 Oahu courses in its 2024 table, divided among military, municipal, private, and public categories. That variety is useful, but a course name on a map does not tell you whether you can book it, what a normal round costs, or whether living nearby improves your week.",
+      "For real estate purposes, begin with frequency and access. A golfer who wants an affordable weekday round may value Honolulu's municipal system differently from a household seeking club membership, a resort-style second home, or occasional destination golf. Honolulu operates five 18-hole municipal courses—Ala Wai, Ewa Villages, Pali, Ted Makalena, and West Loch—plus the nine-hole Kahuku course. Its published fees distinguish resident-ID and nonresident play, which illustrates why residency and booking rules deserve verification before they influence a move.",
+      "Then place golf beside the household's harder requirements: exact work or duty location, school or care routine, housing type, all-in monthly cost, parking, climate preference, and likely holding period. Ewa Beach and the Ewa Plain have a notable concentration of golf choices, but they are not automatically right for a player who works in town or on the windward side. The goal is not to buy the shortest straight-line distance to a clubhouse. It is to find a home and access plan you will still enjoy after the novelty of the first few rounds fades."
+    ],
+    sidebar: {
+      eyebrow: "Golfer's Shortlist",
+      heading: "Define your real playing routine",
+      paragraphs: [
+        "Write down how often you expect to play, preferred days and start times, walking or cart preference, practice needs, realistic per-round budget, and whether public access or club membership is essential.",
+        "Add the household's exact commute anchors, property type, total housing ceiling, parking needs, and other weekend priorities. Verify current tee-time, fee, guest, and membership rules directly with each course before treating access as a reason to move."
+      ],
+      pills: ["Play Frequency", "Access Type", "Tee Times", "Practice", "Housing Budget", "Commute"]
+    },
+    sections: [
+      {
+        title: "Choose an access model before choosing a neighborhood",
+        pills: ["Municipal", "Daily Fee", "Resort", "Private", "Military"],
+        paragraphs: [
+          "Municipal golf can provide a repeatable public option without club membership. Honolulu's system spans different parts of Oahu: Ala Wai near Waikiki, Pali on the windward side, Kahuku on the North Shore side, and Ted Makalena, West Loch, and Ewa Villages through central and west Oahu. The city publishes separate resident and nonresident rates and uses a reservation process. Fees, identification requirements, tournament closures, and tee-time procedures can change, so check the Department of Enterprise Services before budgeting or planning a round.",
+          "Public and resort courses generally create another path to play, but price, booking windows, resident offers, maintenance schedules, and availability vary. Private clubs require a different level of diligence: ask about membership availability, initiation and recurring charges, transferability, family or guest privileges, minimum spending, assessments, and what happens if you sell or relocate. A home near a private course does not itself convey playing rights.",
+          "Military golf may be relevant to eligible service households, but access is controlled by the installation or operator. Confirm who may sponsor guests, identification and base-entry requirements, and current booking rules. Do not assume veteran status, a nearby address, or a real estate purchase grants access."
+        ]
+      },
+      {
+        title: "Compare Oahu's golf zones with the rest of the week",
+        pills: ["Ewa Plain", "Central Oahu", "Town", "Windward", "North Shore"],
+        paragraphs: [
+          "The Ewa Plain is the clearest place to begin when golf is a major west Oahu housing priority. The official Hawaii Prince Golf Club site places its 27-hole facility on Fort Weaver Road in Ewa Beach, while Honolulu's municipal inventory includes Ewa Villages and nearby West Loch. Hoakalei Country Club is also in Ewa Beach, but its official materials describe a membership-based club. These examples show why an Ewa search should separate geographic proximity from actual access.",
+          "Central Oahu can offer a broader compromise for households balancing multiple island routes, while town-oriented golfers may prefer to keep work and urban errands close and use Ala Wai or drive outward for variety. Windward and North Shore choices can suit households whose daily life is already anchored there. Pali and Kahuku provide municipal reference points, but one course should not define an entire regional comparison.",
+          "Test the two trips that are least flexible: usually the weekday commute and the desired tee-time route. Drive or map them at relevant hours, include parking and check-in time, and consider the return trip after a long round. Island mileage can understate practical effort. A course that is farther away but easier to book may serve you better than a nearby facility with limited access."
+        ]
+      },
+      {
+        title: "Price the golf lifestyle separately from the house",
+        pills: ["Green Fees", "Membership", "Equipment", "Transport", "Reserves"],
+        paragraphs: [
+          "Build an annual golf estimate instead of focusing on one advertised green fee. Include expected rounds, cart or walking costs, range use, instruction, club storage, tournaments, food, guests, equipment, and transportation. Honolulu's current fee page shows meaningful differences between resident-ID and nonresident rates; use the official schedule for today's number, not an old blog post or a figure carried into a home-search worksheet for years.",
+          "For a club, request the current membership documents and full charge schedule directly from management. Ask what is refundable or transferable and whether availability is limited. Hoakalei's official membership page, for example, lists multiple resident and nonresident membership categories and indicates that availability can differ by category. That is a prompt to verify, not a promise that any stated option will remain open when you buy.",
+          "Keep golf costs outside the maximum housing payment until you know both are sustainable. Buyers should also account for association dues, insurance, taxes, maintenance, utilities, and reserves; renters should compare rent, utilities, parking, deposits, and lease terms. A lower-cost home with an inconvenient golf routine may disappoint, but stretching the housing budget to reach a course can remove the money and time needed to play it."
+        ]
+      },
+      {
+        title: "Evaluate a golf-adjacent property on property facts",
+        pills: ["Lot Position", "Noise", "Balls", "Drainage", "Documents"],
+        paragraphs: [
+          "A golf view is not the same as usable course access, and it should not replace normal due diligence. Visit the property at different times. Observe golfer and maintenance activity, lighting, vehicle traffic, event operations, landscaping work, and how wind moves across the lot. Ask the seller and association for relevant disclosures and rules, but have the appropriate inspectors and transaction professionals evaluate the property rather than relying on a lifestyle description.",
+          "Study the exact lot relationship to tees, landing areas, greens, cart paths, water features, and maintenance areas. Ask about prior ball strikes or damage, fencing and landscaping responsibility, and restrictions on exterior changes. Review drainage, irrigation adjacency, pests, corrosion exposure, noise, privacy, and insurance questions as property-specific issues. Never assume that a premium view guarantees quiet, safety, or resale value.",
+          "Also consider what happens if the course changes operations or the household plays less often. The home should still work for commute, errands, indoor and outdoor space, parking, and future marketability. Neither a brokerage nor a course can guarantee future operations, membership terms, views, or property values."
+        ]
+      },
+      {
+        title: "Turn course research into a disciplined home shortlist",
+        pills: ["Verify", "Compare", "Tour", "Budget", "Decide"],
+        paragraphs: [
+          "First, select three courses or access types that represent different realistic routines. Verify current public, guest, membership, or military eligibility directly. Second, identify two or three housing zones that keep both golf and the household's hardest weekday routes workable. Third, compare attainable homes in each zone using one all-in cost worksheet.",
+          "Tour the communities and the courses separately. A pleasant clubhouse visit can create a halo around nearby housing, while a beautiful home can make an uncertain access arrangement seem settled. Confirm the exact property address, association obligations, course relationship, travel pattern, and current playing rules before connecting the two decisions.",
+          "Finally, rank the options by the whole week: home fit, total cost, commute reliability, course access, booking practicality, and backup recreation. If golf access disappeared or became more expensive, ask whether you would still choose the property. A yes suggests the lifestyle feature supports the decision instead of carrying it."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Oahu Golf Questions",
+      heading: "Hawaii golf course and home-search FAQs",
+      intro: "Use these answers to frame the comparison, then verify current access and property details with the responsible course and transaction professionals.",
+      items: [
+        { question: "How many golf courses are on Oahu?", answer: "Hawaii DBEDT's 2024 golf-course table reports 36 on Oahu across military, municipal, private, and public categories. Inventory and operations can change, so use the number as islandwide context and confirm any course you plan to use directly." },
+        { question: "Which Oahu municipal golf courses can residents consider?", answer: "The City and County of Honolulu identifies Ala Wai, Ewa Villages, Pali, Ted Makalena, and West Loch as 18-hole municipal courses and Kahuku as a nine-hole course. Review the city's current reservation, identification, fee, and event information before play." },
+        { question: "Does buying a home on or near a golf course include membership?", answer: "Do not assume it does. Course access and real property ownership may be separate. Obtain current membership terms from the club and have the purchase documents and any claimed rights reviewed by the appropriate real estate and legal professionals." },
+        { question: "Is Ewa Beach the best Oahu location for golfers?", answer: "It is a strong comparison area because official sources place municipal, public, and private options on or near the Ewa Plain. Whether it is best depends on actual course access, housing budget, exact work routes, household needs, and how often you will play." },
+        { question: "What should I inspect in a golf-course home?", answer: "Evaluate the home like any other property, then add lot position, ball exposure, maintenance and event activity, noise, lighting, irrigation and drainage adjacency, privacy, landscaping restrictions, and insurance questions. Use qualified inspectors and review disclosures and association documents." },
+        { question: "Should golf access determine where I live on Oahu?", answer: "It can be a meaningful filter, especially for frequent players, but it should sit beside total housing cost, commute, property fit, access certainty, and the needs of everyone in the household. Choose a home that remains workable even if playing habits or course terms change." }
+      ]
+    },
+    cta: buildPageCta("Build an Oahu home shortlist around the whole week", "Share the courses or access types you value, how often you play, exact commute anchors, housing budget, and property needs. We can help compare Ewa Beach, Kapolei, Mililani, and other Oahu options while you verify playing terms directly with each course.")
+  },
   "mililani-real-estate": buildEvergreenExpansion({
     topic: "Mililani real estate",
     audienceShort: "central Oahu buyers and renters",
