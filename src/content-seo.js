@@ -2009,25 +2009,120 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
       "Share your assignment, arrival window, comfortable monthly range, and whether you will tour in person or remotely. We can help organize the location and property decisions while your VA lender confirms the financing."
     ),
   },
-  "new-home-construction": buildEvergreenExpansion({
-    topic: "new home construction",
-    audienceShort: "West Oahu new-construction buyers",
-    intent: "comparing newer homes, builder timelines, upgrades, and whether a new-construction purchase fits your move",
-    segment: "This page is for buyers who are drawn to newer homes in Ewa Beach, Kapolei, and West Oahu, especially remote buyers and military households trying to line up housing with orders.",
-    sidebarNote: "New construction can look clean and simple online, but the real decision depends on builder process, timing, contract terms, upgrades, inspections, and resale tradeoffs.",
-    localContext: "West Oahu is often where buyers find newer construction and master-planned communities. That can mean modern layouts and better condition, but it can also mean association costs, construction timing, builder add-ons, and longer commute planning.",
-    whyItMatters: "New-construction buyers are often deciding between certainty and flexibility. A new home may reduce immediate maintenance concerns, but it still has to fit your budget, commute, and ownership plan.",
-    oahuContext: "On Oahu, new construction is not just a product choice. It is usually tied to geography, commute, school routine, and whether you want newer systems more than you want a shorter drive or older established neighborhood.",
-    decisionFactors: ["builder timeline", "upgrade costs", "association fees", "inspection rights", "commute", "resale outlook"],
-    compareGuidance: "Compare builder incentives against the full cost of ownership. A lower upfront number may not matter if upgrades, lot premiums, association dues, or delayed delivery strain your PCS timeline.",
-    nextStep: "Before visiting a sales office, clarify your representation, lender timing, desired move-in date, and whether resale homes should be part of the same comparison.",
-    heroIntro: "If new construction is on your list, this guide helps you compare the appeal of a newer home against the Oahu realities that affect ownership after closing.",
-    introLead: "A new home can be the right answer, but only when the builder process and the local tradeoffs fit the move you are actually making.",
-    pills: ["New Construction", "Ewa Beach", "Kapolei", "Builder Process", "Remote Buyers"],
-    contextPills: ["West Oahu", "Builder Timelines", "HOA Costs", "PCS Timing"],
-    ctaTitle: "Compare new construction before you visit a builder",
-    ctaText: "Call or text to review builder options, resale comparisons, and representation before you commit to a new-home path.",
-  }),
+  "new-home-construction": {
+    description: "A practical guide to new construction in Ewa Beach, Kapolei, and West Oahu, covering builder contracts, total cost, inspections, permits, financing, and PCS timing.",
+    keywords: ["new construction Ewa Beach", "new homes Kapolei", "West Oahu new construction", "Oahu builder homes", "military home buying Hawaii"],
+    heroEyebrow: "West Oahu Buyer Guide",
+    heroIntro: "Compare new homes in Ewa Beach, Kapolei, and West Oahu by the finished price, contract, delivery risk, inspection plan, and daily routine—not by the model-home presentation alone.",
+    introEyebrow: "New Construction Decisions",
+    introHeading: "How to evaluate a new home before choosing a builder or release",
+    introLead: "A newer home may offer modern systems and fewer immediate projects, but the purchase process can be less flexible than a typical resale transaction.",
+    intro: [
+      "New-construction buyers in Ewa Beach and Kapolei are often choosing among three different products: a home that is finished or nearly finished, a planned home with a projected completion window, and a resale home in a newer community. Each creates a different tradeoff. A completed home offers more certainty about the view, lot, finishes, and move-in date. An earlier-stage purchase may offer choices, but it also leaves more time for schedules, costs, and personal circumstances to change.",
+      "Military households and remote buyers should make the timeline a financial question, not just a calendar question. If completion slips beyond a lease end, hotel reservation, household-goods delivery, or report date, identify who pays for temporary housing and storage. Keep a backup housing plan until the contract, lender, and builder milestones support a reliable closing window.",
+      "Use the same discipline you would use for resale: investigate the property, compare financing, read every contract and community document, and preserve independent advice. A sales office represents the seller. Before registering or signing, ask how buyer representation works and have the agreement reviewed by the appropriate real estate, lending, insurance, and legal professionals for your situation."
+    ],
+    sidebar: {
+      eyebrow: "Best For",
+      heading: "Buyers comparing certainty with customization",
+      paragraphs: [
+        "This guide is designed for buyers considering Ewa Beach, Kapolei, or another West Oahu community, including service members coordinating a purchase from off island.",
+        "Bring four numbers to every comparison: the finished purchase price, estimated cash needed, realistic all-in monthly cost, and the cost of a delayed closing."
+      ],
+      pills: ["Ewa Beach", "Kapolei", "Remote Tours", "PCS Timing", "Builder Contracts"]
+    },
+    sections: [
+      {
+        title: "Start with the finished price, not the advertised base price",
+        pills: ["Lot Premium", "Options", "HOA Dues", "Closing Costs"],
+        paragraphs: [
+          "Build a written price sheet for the actual home or plan you would buy. Include the lot premium, structural options, design selections, appliances, window coverings, landscaping, solar or other energy equipment, and anything shown in the model that is not standard. Then add estimated lender charges, prepaid items, insurance, property taxes, homeowners or condominium dues, and any other community fees. Ask which figures can change and which deposits become nonrefundable at each milestone.",
+          "Treat an incentive as one line in the comparison rather than automatic savings. A credit tied to the builder's affiliated lender can be valuable, but compare it with outside offers using the same loan type, term, down payment, lock period, and expected closing date. The Consumer Financial Protection Bureau recommends requesting and comparing official Loan Estimates; those standardized forms show the proposed rate, payment, and closing costs. Ask each lender how an uncertain completion date affects the rate lock, extension fees, and requalification.",
+          "For VA-eligible buyers, have a VA lender confirm property eligibility, appraisal timing, cash requirements, funding fee treatment, and any new-construction documentation. Eligibility for the benefit does not by itself establish that a specific transaction, development, or delivery schedule will work."
+        ]
+      },
+      {
+        title: "Read the builder contract as a schedule and risk document",
+        pills: ["Deposits", "Completion Window", "Change Orders", "Contingencies"],
+        paragraphs: [
+          "A builder agreement may differ substantially from the standard resale forms a buyer has seen. Identify the estimated completion language, permitted extensions, deposit schedule, financing and appraisal provisions, inspection access, change-order process, cancellation rights, dispute terms, and what happens if specified materials become unavailable. Do not assume a verbal promise, model-home feature, or marketing handout changes the signed contract; request important commitments in writing and seek legal advice when contract language is unclear.",
+          "Create a milestone calendar that works backward from the proposed closing: selection deadlines, financing updates, appraisal, inspections, final walk-through, certificate-of-occupancy or permit milestones, final loan approval, household-goods delivery, and move-out from temporary lodging. For a remote purchase, decide who can attend each event, whether live video is permitted, and how defects will be documented and rechecked.",
+          "Keep reserves outside the deposit and closing-cost budget. A completion shift can create overlapping rent, lodging, storage, travel, rate-lock, or moving costs. The contract determines the parties' rights; a projected date on a website is not a substitute for that language."
+        ]
+      },
+      {
+        title: "Verify the project, permits, and people involved",
+        pills: ["HNL Build", "TMK", "Contractor License", "Records"],
+        paragraphs: [
+          "Ask for the exact address or Tax Map Key, building-permit number, development phase, and the legal name and license number of the relevant contractor. Honolulu's Department of Planning and Permitting says permit status can be checked through its building-permit search using the application or permit number or TMK. Permit records are one part of due diligence: ask what remains outstanding and what must occur before occupancy and closing.",
+          "Hawaii's Department of Commerce and Consumer Affairs provides a public professional-license search. Confirm the license status under the correct business or individual name rather than relying only on branding in a brochure. The agency advises consumers to research and hire licensed contractors and notes that official license information can include status and disciplinary action.",
+          "Match the paperwork to what you are buying. Confirm the parcel, parking assignment, floor plan, square footage source, boundaries, common elements, included equipment, and ownership structure. For a condominium or planned community, read the declaration, bylaws, house rules, budget, dues, reserve information, and pending or planned facilities. Ask which amenities are complete, which are proposed, and whether future phases may change traffic, views, access, or assessments."
+        ]
+      },
+      {
+        title: "Plan independent inspections and a documented handoff",
+        pills: ["Inspection", "Appraisal", "Walk-Through", "Warranty"],
+        paragraphs: [
+          "New does not mean independently checked for your interests. Ask when your inspector may enter, which stages can be inspected, how findings must be submitted, and whether a reinspection is allowed before closing. For a finished inventory home, schedule enough time to review major systems and complete a detailed walk-through. Photograph and list incomplete, damaged, or nonfunctioning items, assign responsibility, and record the correction deadline and verification process.",
+          "VA tells buyers that an appraisal is not the same as a home inspection and strongly recommends an inspection for major defects. That distinction matters with new construction too: an appraisal supports the lending decision and applicable property requirements, while an independent inspector evaluates condition within the agreed scope. Buyers using other financing should also ask their lender and inspector how their roles differ.",
+          "Obtain every warranty in writing before closing. Note the coverage period, exclusions, maintenance duties, claim method, response timeline, emergency contact, and whether appliances or solar equipment have separate manufacturers' warranties. Hawaii law requires notice in contracts for a new structure about the contractor's right to resolve alleged construction defects before litigation; this is a reason to retain the contract, plans, options, inspection reports, walk-through list, closing documents, warranty materials, and all repair correspondence. Consult a Hawaii attorney for legal interpretation or a dispute."
+        ]
+      },
+      {
+        title: "Test the West Oahu location against daily life",
+        pills: ["Commute", "Heat", "Flood Map", "Future Phases"],
+        paragraphs: [
+          "The right house can still be in the wrong place. Drive the likely route between the property and work or base at the hours you expect to travel. Test school, child-care, medical, shopping, and airport trips separately. For shift workers, consider early and late access rather than relying on a single map estimate. Visit the specific lot at different times if possible and look at sun exposure, wind, road noise, construction activity, guest parking, mailbox and trash locations, and the walk from assigned parking.",
+          "Review hazard and insurance questions for the exact parcel, not just the community name. Hawaii's Department of Land and Natural Resources offers a Flood Hazard Assessment Tool using FEMA flood-map data, while warning that it does not identify every area subject to flooding. Use it as a screening resource, then confirm current flood-zone, elevation, drainage, tsunami, and insurance questions with the relevant agencies and qualified insurance or survey professionals.",
+          "Compare a new home with at least one nearby resale that solves the same household need. A resale may offer a known streetscape, mature landscaping, completed amenities, or included upgrades; new construction may offer newer components or a different layout. Compare total monthly cost, condition, lot, parking, association structure, commute, and likely ownership horizon—not age alone."
+        ]
+      },
+      {
+        title: "Use a remote-buying checklist before committing",
+        pills: ["Representation", "Video Tour", "Backup Plan", "Closing"],
+        paragraphs: [
+          "Before a remote tour, send your representative a written standard for what must be shown: the approach streets, neighboring lots, exterior on every side, utility and mechanical areas, storage, parking, views from each window, noise with the camera quiet, and every room at a pace that allows questions. A polished builder video cannot replace a live review of the exact lot and home.",
+          "Before signing, confirm representation, contract-review needs, finished-price worksheet, deposit exposure, financing comparison, inspection access, permit identifiers, community documents, insurance inquiry, completion range, and backup lodging. Before closing, recheck the final walk-through items, lender conditions, occupancy or permit documentation relevant to the transaction, utility activation, keys and access devices, warranty contacts, and the first payment and dues schedule.",
+          "A practical decision does not require predicting every delay. It requires knowing which risks you accept, which protections are written down, what cash remains available, and what you will do if the home is not ready when expected."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "New-Home Questions",
+      heading: "Ewa Beach and West Oahu new-construction FAQs",
+      intro: "Use these answers to identify the next document, professional, or comparison you need—not as a substitute for transaction-specific advice.",
+      items: [
+        {
+          question: "Is a builder's preferred lender automatically the least expensive option?",
+          answer: "No. Price the incentive and the loan together. Request Loan Estimates for comparable loan terms and compare the rate, points, lender charges, credits, cash to close, payment, lock period, and extension policy. Ask a qualified lender to explain differences."
+        },
+        {
+          question: "Do I need an inspection on a brand-new home?",
+          answer: "An independent inspection can identify incomplete work or defects before closing, subject to the contract and builder's access rules. VA specifically says its appraisal is not a home inspection and strongly recommends that buyers obtain an inspection."
+        },
+        {
+          question: "How should a PCS buyer handle an estimated completion date?",
+          answer: "Read the contract's completion and extension language, ask for milestone updates, budget for overlap or delay, and keep a temporary-housing and storage plan. Coordinate lender, inspection, travel, and household-goods decisions around verified milestones rather than marketing dates."
+        },
+        {
+          question: "What should I verify about a West Oahu development?",
+          answer: "Verify the exact parcel and plan, permit identifiers and status, contractor license, included features, ownership and association documents, dues, parking, future phases, inspection access, warranties, hazard information, insurance availability, and the route to daily destinations."
+        },
+        {
+          question: "Can I use a VA-backed loan for any new-construction home?",
+          answer: "Do not assume so. Ask a VA lender to assess the specific property and transaction, including appraisal timing and required new-construction documentation. The VA also recommends a separate home inspection because an appraisal serves a different purpose."
+        },
+        {
+          question: "Should I compare new construction with resale homes?",
+          answer: "Yes. Use the same location, household needs, and all-in budget. Compare finished price, monthly costs, included upgrades, lot and parking, condition, inspection findings, association structure, move-in certainty, commute, and resale horizon."
+        }
+      ]
+    },
+    cta: buildPageCta(
+      "Build a West Oahu new-home comparison",
+      "Share your duty location or work route, arrival window, financing plan, and preferred communities. We can help compare exact new and resale options while your lender, inspector, insurer, and attorney handle their specialized reviews."
+    )
+  },
   "oahu-real-estate-property-for-sale-listings": buildEvergreenExpansion({
     topic: "Oahu real estate listings",
     audienceShort: "islandwide Oahu buyers",
