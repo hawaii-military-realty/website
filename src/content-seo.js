@@ -2649,25 +2649,90 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Build an Oahu home shortlist around the whole week", "Share the courses or access types you value, how often you play, exact commute anchors, housing budget, and property needs. We can help compare Ewa Beach, Kapolei, Mililani, and other Oahu options while you verify playing terms directly with each course.")
   },
-  "mililani-real-estate": buildEvergreenExpansion({
-    topic: "Mililani real estate",
-    audienceShort: "central Oahu buyers and renters",
-    intent: "researching whether Mililani or Mililani Mauka fits your commute, household routine, and budget",
-    segment: "This page is for buyers and renters comparing central Oahu, especially households connected to Schofield Barracks, Wheeler Army Airfield, or a more central island routine.",
-    sidebarNote: "Mililani appeals to many households because it can feel more balanced than a purely west-side or town-focused search, but inventory and pricing still need careful comparison.",
-    localContext: "Mililani and Mililani Mauka offer a central Oahu lifestyle with established neighborhoods, townhomes, condos, single-family homes, schools, shopping, and access toward Schofield, Wheeler, Pearl City, and H-2.",
-    whyItMatters: "Mililani searches usually involve serious location comparison. People want to know whether central convenience is worth the price, inventory, and property-type tradeoffs.",
-    oahuContext: "Central Oahu can make certain military and work commutes easier, but the best fit depends on whether you need more space, newer inventory, lower monthly cost, or a shorter drive to a specific installation.",
-    decisionFactors: ["Mililani vs Mililani Mauka", "property type", "schools", "commute", "association fees", "inventory age"],
-    compareGuidance: "Compare Mililani options against Ewa Beach, Kapolei, and Makakilo so you understand what you gain in central access and what you may give up in size, age, or price.",
-    nextStep: "Review Mililani listings with a clear view of property type, monthly cost, and commute before deciding whether central Oahu should stay on the short list.",
-    heroIntro: "Mililani real estate research is about more than central location. It is about whether the area fits your routine, budget, and long-term plan.",
-    introLead: "Use this page to compare Mililani through the lens of daily life and Oahu market tradeoffs.",
-    pills: ["Mililani", "Mililani Mauka", "Central Oahu", "Schofield", "Wheeler"],
-    contextPills: ["Central Oahu", "Schools", "Townhomes", "Commute"],
-    ctaTitle: "Compare Mililani with central Oahu context",
-    ctaText: "Call or text to review Mililani options against your commute, budget, and property needs.",
-  }),
+  "mililani-real-estate": {
+    description: "Compare Mililani and Mililani Mauka homes, ownership costs, association obligations, schools, transit, and military commute considerations before choosing central Oahu.",
+    keywords: ["Mililani real estate", "Mililani homes for sale", "Mililani Mauka", "central Oahu homes", "Schofield Barracks commute", "Wheeler Army Airfield housing"],
+    heroEyebrow: "Central Oahu Community Guide",
+    heroIntro: "Mililani real estate can put a household near central Oahu routines, but the right choice depends on the exact property, association documents, school boundary, and trips you need to make every week.",
+    introEyebrow: "Mililani Area Fit",
+    introHeading: "Decide whether Mililani works beyond the map",
+    introLead: "Compare Mililani Town and Mililani Mauka as real housing choices, then test each address against total cost and the household's nonnegotiable routes.",
+    intro: [
+      "Mililani often enters the search for buyers and renters connected to Schofield Barracks or Wheeler Army Airfield, as well as households that want a central-island base instead of beginning in town or on the Ewa Plain. That geography is useful context, not a commute guarantee. Gate, shift, school-drop-off, and freeway conditions can change what an address feels like in practice.",
+      "Mililani Town and Mililani Mauka should not be treated as interchangeable labels. Available homes may include detached houses, townhomes, and condominiums with different ages, layouts, parking arrangements, maintenance responsibilities, and layers of association governance. Compare the legal and financial facts for the specific property rather than assuming one community-wide package.",
+      "This guide avoids live price claims because inventory, rates, dues, insurance, and asking prices change. Use current listings to see what is available now, but use the framework below to decide what deserves a tour, which documents to request, and when another Oahu area may fit better."
+    ],
+    sidebar: {
+      eyebrow: "Military Household Shortlist",
+      heading: "Start with the week you actually live",
+      paragraphs: [
+        "List every fixed destination before opening listings: the exact installation gate or workplace, report time, spouse or partner commute, child-care or school route, medical needs, and recurring off-duty trips.",
+        "Then set an all-in monthly ceiling and minimum requirements for parking, stairs, outdoor space, pets, storage, and move date. A central pin on a map cannot compensate for a home that fails those daily tests."
+      ],
+      pills: ["Schofield", "Wheeler", "Exact Address", "All-In Cost", "Parking", "Move Timing"]
+    },
+    sections: [
+      {
+        title: "Separate Mililani Town, Mililani Mauka, and the individual property",
+        pills: ["Mililani Town", "Mililani Mauka", "Detached", "Townhome", "Condo"],
+        paragraphs: [
+          "Begin at three levels. First, compare the broader location and the roads you will use. Second, compare the neighborhood pocket and its access to errands, parks, transit, and your required route. Third, inspect the property and every association that governs it. Two homes carrying a Mililani mailing address can produce very different ownership and daily-life experiences.",
+          "For a detached home, examine roof and exterior condition, drainage, grading, additions, permits, retaining elements, termite history, ventilation, and the practical upkeep of the lot. For a townhome or condo, add shared-building condition, master insurance, reserves, planned projects, rental and pet rules, parking assignment, guest parking, and responsibility for components such as windows, pipes, roofs, and exterior walls.",
+          "The U.S. Census Bureau treats Mililani Town and Mililani Mauka as separate census-designated places. That is a useful reminder that broad online references to ‘Mililani’ can blend distinct datasets and boundaries. Census geography does not establish a listing's school, association, postal, or market boundary; verify those separately for the street address."
+        ]
+      },
+      {
+        title: "Test military and civilian commutes at the correct time",
+        pills: ["Gate Access", "H-2", "Report Time", "School Run", "Transit"],
+        paragraphs: [
+          "The Army's official directory places services at both Schofield Barracks and Wheeler Army Airfield, but a duty location name is not enough for route planning. Ask the gaining unit for the exact work site and likely gate, then check current installation access information. A route that appears short can still include neighborhood circulation, a school stop, a gate queue, parking, and movement inside the installation.",
+          "Run the route on the weekday and hour that matter. If possible, drive it in both directions; otherwise compare live navigation repeatedly and leave margin for an unfamiliar first month. Test the second adult's workplace and child-care trip independently. A Mililani address may support a north or central Oahu assignment while creating a longer or less predictable town, Pearl Harbor-Hickam, or west-side routine.",
+          "Transit can be part of the comparison, but confirm the present timetable instead of relying on a listing's generic ‘near bus’ language. TheBus currently publishes service involving Mililani Transit Center, Mililani Mauka, and express routes; routes and schedules change. Walk the actual path to the stop, check service at the needed hour, and build a backup plan before treating transit as a substitute for a vehicle."
+        ]
+      },
+      {
+        title: "Price every association and shared obligation",
+        pills: ["MTA", "Condo Documents", "Dues", "Reserves", "Insurance"],
+        paragraphs: [
+          "Mililani Town Association's official site identifies resident information, assessments, rules, design, ownership changes, disclosure-document requests, and recreation programming among its functions. That does not mean every listing has identical obligations or access. Confirm whether the property is subject to MTA, another association, a condominium regime, or more than one layer, and obtain current documents for the exact unit or parcel.",
+          "For each layer, record regular dues, what they include, recent increases, special assessments, transfer or document charges, approval requirements, and restrictions that affect your plans. If you expect to add equipment, alter a yard, install a charger, keep a pet, rent the property later, or park work and recreational vehicles, read the governing documents and request written clarification from the responsible association before relying on an agent's summary.",
+          "Hawaii's Department of Commerce and Consumer Affairs maintains condominium governance resources and explains that owners have rights to specified association records. Buyers should use the purchase process to review the disclosure package, financial statements, budgets, reserve information, minutes, insurance information, rules, and pending work with the appropriate real estate, legal, insurance, and inspection professionals. A low advertised fee alone says little about future repair exposure."
+        ]
+      },
+      {
+        title: "Verify school fit without making a ranking shortcut",
+        pills: ["School Finder", "Boundary", "Enrollment", "Daily Route"],
+        paragraphs: [
+          "If public-school assignment matters, verify it through the Hawaii Department of Education for the exact address and confirm enrollment details directly with the school. Do not infer a boundary from a subdivision name, the nearest campus, a seller statement, or an old real estate portal. Boundaries, programs, capacity, and procedures can change.",
+          "School quality is also household-specific. Compare the student's services, program needs, transportation, before- and after-school arrangements, calendar, and the route between home, campus, and work. Visit and ask the school questions that matter to your child rather than treating a rating as a promise of fit or future resale.",
+          "Renters should perform the same check before signing a lease, especially when a short arrival timeline makes a later move difficult. Buyers planning to keep the home after a tour should avoid assuming that a current assignment or reputation will remain unchanged. The durable decision is whether the property works financially and operationally even when one external factor changes."
+        ]
+      },
+      {
+        title: "Build a tour and offer plan around evidence",
+        pills: ["Shortlist", "Tour", "Inspection", "Documents", "Resale"],
+        paragraphs: [
+          "Create one comparison sheet for every candidate. Include property type, interior and outdoor space, stairs, assigned and guest parking, storage, condition, expected near-term work, regular and special assessments, insurance questions, commute tests, school verification, and the full monthly estimate. Keep cash needed after closing visible; an attractive payment is not enough if repairs or a planned assessment consume the reserve.",
+          "Tour the surrounding streets as deliberately as the interior. Return at a different hour when practical and observe traffic, parking use, lighting, noise, drainage patterns, and the route to daily services. Military households should ask whether the home remains manageable during deployment, temporary duty, or a fast PCS, including maintenance, pets, property management, and likely resale or rental constraints. Those are planning questions, not guarantees of future value or tenant demand.",
+          "Before an offer, have the right professionals review property disclosures, title information, association documents, insurance availability, financing conditions, and inspection findings. If Mililani passes those tests, move with a clear reason. If it does not, compare the same worksheet against Wahiawa, Pearl City, Aiea, Ewa Beach, Kapolei, or another area tied to the household's actual destinations instead of forcing the original search term to win."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Mililani Questions",
+      heading: "Mililani real estate FAQs",
+      intro: "Use these answers to structure research, then verify current property, association, school, transit, and installation details with the responsible sources.",
+      items: [
+        { question: "Is Mililani a good choice for Schofield Barracks or Wheeler Army Airfield?", answer: "It can be a logical comparison area, but suitability depends on the exact duty site, gate, report time, household routes, and property. Test the actual trip at relevant hours and check current gate information rather than relying on mileage or a broad community label." },
+        { question: "What is the difference between Mililani Town and Mililani Mauka for a home search?", answer: "Treat them as separate search areas, then compare individual neighborhood pockets and properties. Housing type, age, layout, association structure, parking, access routes, and current inventory can differ. Verify every listing's documents and obligations rather than applying an area-wide assumption." },
+        { question: "Do Mililani homes have association dues?", answer: "Many properties may have association obligations, but the applicable organizations and charges are property-specific. Confirm MTA status, condominium or other association layers, current assessments, inclusions, rules, and pending changes from the disclosure documents and the associations responsible for the exact address." },
+        { question: "How do I check the public school for a Mililani address?", answer: "Use the Hawaii Department of Education's official school tools and contact the school with the exact address. Do not rely on distance, a subdivision name, a listing portal, or a past assignment, and independently evaluate whether the available program and daily route fit the student." },
+        { question: "Can I commute from Mililani without a car?", answer: "TheBus publishes Mililani local and express service, but feasibility depends on the current route, timetable, walking connection, transfers, and your required arrival time. Check the official schedule for both directions and keep a realistic backup before choosing a home around transit." },
+        { question: "What should a remote buyer verify before offering?", answer: "Request a detailed live or recorded tour of the home and surroundings, review disclosures and all association documents, confirm parking and routes, investigate insurance and financing, and preserve appropriate inspection and professional-review protections. A remote tour should expose uncertainty, not conceal it." }
+      ]
+    },
+    cta: buildPageCta("Build a Mililani shortlist around your real routine", "Share the exact work locations, move date, housing budget, property needs, and association questions that matter. We can help compare current Mililani options and central Oahu alternatives while you verify financing, schools, insurance, and governing documents with the responsible professionals.")
+  },
   "va-home-buying-in-hawaii": buildEvergreenExpansion({
     topic: "VA home buying in Hawaii",
     audienceShort: "Hawaii-ready VA buyers",
