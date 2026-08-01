@@ -3908,26 +3908,85 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Compare current 4-bedroom Kapolei rentals", "Share your move date, monthly budget, vehicles, pets, accessibility and school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, layouts, upkeep, total cost, and daily fit before you apply.")
   },
-  "oahu-available-rental-properties/3-br-1-5-bath-with-ocean-views.html": buildPropertyExpansion({
-    topic: "3-bedroom rental with ocean views",
-    status: "For Rent",
-    segment: "This page is for renters attracted to view-oriented lifestyle features but still needing practical fit around space, cost, and location.",
-    bestFit: "A rental with ocean views may fit households that value daily atmosphere and are willing to compare that lifestyle benefit against commute, parking, and monthly cost.",
-    sidebarNote: "View language can be compelling, but renters should still verify exact location, condition, access, and whether the view affects the rent premium.",
-    localContext: "On Oahu, view-oriented rentals can vary widely by elevation, neighborhood, road access, wind exposure, and distance from everyday services.",
-    whySearched: "The phrase ocean views adds emotional pull to an otherwise practical bedroom and bathroom search. The content should ground that interest in real decision factors.",
-    neighborhoodContext: "A view can improve the feel of a home, but the surrounding drive pattern, parking, and household routine determine whether it remains enjoyable after move-in.",
-    compareFactors: ["rent premium", "exact location", "parking", "commute", "condition", "view quality"],
-    compareGuidance: "Ask whether the view is visible from main living areas, whether it changes privacy or heat exposure, and whether the premium makes sense compared with similar no-view rentals.",
-    currentUse: "Use this page to compare lifestyle-focused rentals without losing sight of practical Oahu constraints.",
-    heroIntro: "Ocean views can make a rental stand out, but the right choice still has to work for budget, commute, and daily life.",
-    introHeading: "Ocean-view rental context",
-    introLead: "Use this page to balance lifestyle appeal with practical rental decisions.",
-    pills: ["Ocean Views", "3 Bedrooms", "Lifestyle", "Rental", "Oahu"],
-    comparePills: ["Rent Premium", "View Quality", "Parking", "Commute"],
-    ctaTitle: "Compare view-oriented rentals",
-    ctaText: "Call or text to evaluate current rentals with views against budget, location, and availability.",
-  }),
+  "oahu-available-rental-properties/3-br-1-5-bath-with-ocean-views.html": {
+    description: "Use this archived Oahu 3-bedroom ocean-view rental guide to verify availability, view quality, total cost, layout, parking, commute, schools, and hazards.",
+    keywords: ["Oahu 3 bedroom rental", "Oahu ocean view rental", "3 bedroom 1.5 bath rental Oahu", "ocean view home for rent Oahu", "Oahu rental guide"],
+    heroEyebrow: "Archived Rental Guide",
+    heroIntro: "This legacy 3-bedroom, 1.5-bath ocean-view rental page does not establish current availability, location, condition, or price. Confirm the exact property and written terms, then decide whether the view is worth the cost and everyday tradeoffs.",
+    introEyebrow: "View-Oriented Rental Checklist",
+    introHeading: "How to evaluate an Oahu rental advertised with ocean views",
+    introLead: "Treat the view as one feature to verify—not a substitute for a workable lease, floor plan, budget, parking arrangement, and daily route.",
+    intro: [
+      "The archived headline preserves only a limited property profile: three bedrooms, one full bath, one half bath, and an advertised ocean view somewhere on Oahu. It does not confirm the original address, property type, square footage, parking, current condition, rent, deposit, utilities, pet terms, lease dates, or present availability. Obtain those details from the authorized owner or property manager before treating this page as an active offer.",
+      "Ocean-view language can describe very different experiences. The water may be visible from a main living room, one bedroom, a lanai, a standing position near a window, or only across neighboring roofs and vegetation. Weather, haze, future landscaping, curtains, parked vehicles, and the time of day can change what a photograph suggests. Tour the actual property and view it from the spaces your household will use most.",
+      "A disciplined comparison keeps the lifestyle feature in proportion. Put this archived lead beside active rentals using the same scorecard: verified monthly cost, funds due at signing, view quality, privacy, heat and wind exposure, bedroom and bathroom function, parking, stairs, laundry, storage, property rules, exact-address hazards, school confirmation if relevant, and realistic travel to work or a duty station. A less dramatic view may be the better home if the rest of the routine works."
+    ],
+    sidebar: {
+      eyebrow: "Best Fit",
+      heading: "Who should shortlist this rental profile",
+      paragraphs: [
+        "This profile may suit a household that will use three separate bedrooms, can share one full bathroom, values an outlook from the home, and has room in its budget for the complete cost after comparing similar rentals without a view.",
+        "Pause before applying if the exact address or authorized contact is still unknown, the view has not been seen in person or by live video, every vehicle lacks confirmed parking, the household needs two full bathrooms, or the commute and move-in funds have not been tested against realistic alternatives."
+      ],
+      pills: ["Archived Listing", "3 Bedrooms", "1.5 Bathrooms", "Ocean View", "Oahu", "Cost Review"]
+    },
+    sections: [
+      {
+        title: "Confirm the property, offer, and view first",
+        pills: ["Availability", "Exact Address", "Live Tour", "Authorized Contact"],
+        paragraphs: [
+          "Ask whether the original rental is available now and who is authorized to offer it. Request the exact address, current rent, proposed start date, lease length, application standards and charge, deposit amounts, included utilities and appliances, pet terms, parking, and all property or association rules in writing. Do not send money, identification, or sensitive application information based only on an archived page or copied advertisement.",
+          "Tour the actual home, or request a live video tour that begins outside and moves continuously through it. From every claimed view location, note how much ocean is visible while seated and standing, what blocks it, which direction the windows face, and whether neighbors or public areas can see inside. Compare the view at the time the household is normally home, and ask whether window coverings, lanai use, landscaping, or exterior alterations are restricted."
+        ]
+      },
+      {
+        title: "Price the view and the complete rental cost",
+        pills: ["Rent", "Deposit", "Utilities", "View Premium"],
+        paragraphs: [
+          "Separate one-time funds from recurring costs. Move-in funds may include first month's rent, the security deposit, an allowed application charge, an agreed pet deposit, movers, utility setup, and furnishings the home does not supply. For the monthly comparison, add electricity, water or sewer if assigned to the tenant, internet, renters insurance, parking, pet charges, and transportation created by the address. Ask which amounts are refundable and when each is due.",
+          "Hawaii's Department of Commerce and Consumer Affairs says a residential security deposit cannot exceed one month's rent. Its 2024 handbook discusses a separately agreed additional pet deposit of up to one month's rent and an assistance-animal exception. Read current official guidance and the proposed agreement; take questions about a specific lease or legal right to a qualified Hawaii attorney. To test a possible view premium, compare active homes with similar size, condition, parking, location, and lease terms—with and without comparable views."
+        ]
+      },
+      {
+        title: "Test the 3-bedroom, 1.5-bath layout in real life",
+        pills: ["Bathroom Schedule", "Privacy", "Cooling", "Storage"],
+        paragraphs: [
+          "Three bedrooms can support a family, roommates, guests, or a home office, but one full bathroom may become the daily constraint. Confirm which floor holds each bedroom and bathroom, whether the half bath is convenient to living space, usable room dimensions, door and closet clearance, shower access, ventilation, hot-water capacity, laundry placement, and the route from parking. Decide how mornings, guests, cleaning, and privacy would work before applying.",
+          "Inspect how the view-facing side affects comfort. Open and close every permitted window and covering; ask which rooms have air conditioning or fans and who maintains that equipment. Notice afternoon sun, glare, cross-breeze, wind noise, rain exposure, salt residue, window condition, and privacy after dark. These are observations to make at the property, not assumptions that every elevated or coastal-facing Oahu home shares."
+        ]
+      },
+      {
+        title: "Drive the exact route and verify parking",
+        pills: ["Commute", "Duty Station", "Vehicles", "After Dark"],
+        paragraphs: [
+          "An ocean view does not identify a neighborhood or predict travel time. Drive from the exact address to the actual workplace, installation gate, school, childcare provider, or recurring appointment at realistic outbound and return times. Include the local road, parking, security screening, drop-off, and transit transfer. Military renters should confirm the expected duty location and current access procedure with their command or installation rather than choosing a lease around an assumed island commute.",
+          "Verify the assigned stall, garage, driveway, street and guest-parking rules with the household's actual vehicles. Walk the route from parking to the entrance while carrying groceries and, if possible, after dark. For an elevated property, confirm stairs, handrails, lighting, drainage, delivery access, refuse handling, and how emergency or moving vehicles reach the home. Put towing, storage, charging, motorcycle, oversized-vehicle, and visitor restrictions in the comparison."
+        ]
+      },
+      {
+        title: "Check schools, hazards, and readiness by address",
+        pills: ["School Assignment", "Flood", "Wildfire", "Preparedness"],
+        paragraphs: [
+          "Do not infer a public-school assignment from Oahu or an old rental title. The Hawaii Department of Education's SchoolSite Locator accepts a street address, but the department says its general service areas are for reference and should not be the sole source for a rental decision. Enter the exact address, then confirm the result, enrollment steps, grade placement, and transportation directly with the relevant school.",
+          "Search the exact address in Honolulu's Oʻahu Hazard Explorer. The city says the tool can show whether a location is within mapped tsunami evacuation, flood, wildfire-risk, or dam and levee evacuation areas. A distant ocean view does not establish tsunami exposure, and elevation does not rule out other hazards. Use the map as a preparedness screen, ask about prior water intrusion, drainage, outages and emergency access, and obtain a renters-insurance quote for the actual address and household."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Ocean-View Rental FAQs",
+      heading: "Questions to answer before applying",
+      intro: "Use the archived size and view claim as a search profile, then verify every current fact in writing.",
+      items: [
+        { question: "Is this 3-bedroom ocean-view rental available now?", answer: "This legacy page is not proof of current availability. Confirm the exact address, current status, rent, showing access, lease dates, application terms, and authorized contact before submitting information or funds." },
+        { question: "How should I verify an advertised ocean view?", answer: "See it from each claimed room during a live tour. Check the view seated and standing, identify obstructions, note privacy and sun exposure, and ask whether landscaping, construction, window coverings, or lanai rules could affect how the view is used." },
+        { question: "How much can a Hawaii rental security deposit be?", answer: "DCCA says the security deposit cannot exceed one month's rent. Its handbook discusses a separately agreed additional pet deposit and an assistance-animal exception. Check current official guidance and the proposed lease for your circumstances." },
+        { question: "What should a household verify with only one full bathroom?", answer: "Confirm bathroom locations, shower and half-bath access, ventilation, hot-water capacity, storage, and cleaning responsibility. Test morning schedules and guest needs against the actual floor plan rather than the bedroom count alone." },
+        { question: "How do I verify schools without a neighborhood in the old title?", answer: "First obtain the exact address. Enter it in the Hawaii Department of Education's SchoolSite Locator, then contact the relevant school directly because the department describes the locator's service areas as general and for reference only." },
+        { question: "Does an ocean view tell me whether the home is in a hazard area?", answer: "No. Search the exact address in Honolulu's Oʻahu Hazard Explorer and review its mapped hazard layers. Ask about prior incidents and emergency access, and discuss address-specific coverage with an insurer; mapping is a planning screen, not a guarantee." }
+      ]
+    },
+    cta: buildPageCta("Compare current Oahu rentals with a view", "Share your move date, monthly budget, vehicles, pets, accessibility needs, exact duty or work destination, and what kind of view matters. We can confirm current options and help you compare written terms, total cost, layout, parking, and daily fit before you apply.")
+  },
   "oahu-available-rental-properties/2-br-2-ba-with-2-car-garage-in-ewa-beach.html": buildPropertyExpansion({
     topic: "Ewa Beach 2-bedroom rental with garage",
     status: "For Rent",
@@ -4296,6 +4355,15 @@ function assignSecondPassLinks() {
   });
 
   CONTENT.propertyPages.forEach(function (page) {
+    if (page.path === "oahu-available-rental-properties/3-br-1-5-bath-with-ocean-views.html") {
+      page.relatedLinks = [
+        linkTo(pageIndex, "oahu-real-estate-property-for-sale-listings", "Oahu Area and Property Guide", "Review broader island location and housing context while comparing view-oriented rentals."),
+        linkTo(pageIndex, "hawaii-bases-and-barracks", "Oahu Bases and Barracks", "Verify installation context before choosing a lease around an assumed duty commute."),
+        { path: "contact.html", label: "Ask About Current Rentals", description: "Share your timing, budget, and view priorities for a current-availability conversation." },
+      ].filter(Boolean).slice(0, 3);
+      return;
+    }
+
     if (page.path === "oahu-available-rental-properties/4-br-3-ba-rental-in-kapolei.html") {
       page.relatedLinks = [
         linkTo(pageIndex, "kapolei-real-estate-listings-and-information", "Kapolei Area Guide", "Review broader Kapolei location, transportation, hazard, and housing context."),
