@@ -4781,26 +4781,78 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Compare current Mililani condo rentals", "Share your move date, full monthly budget, room plan, vehicles, pets, accessibility needs, school questions, and exact work or duty destination. Hawaii Military Realty can help verify current options and compare their written terms and daily fit."),
   },
-  "oahu-available-rental-properties/2-bedroom-1-5-bath-condo-in-ewa-beach-1500-per-month.html": buildPropertyExpansion({
-    topic: "Ewa Beach affordable condo rental",
-    status: "For Rent",
-    segment: "This page is for value-sensitive renters searching a specific affordable Ewa Beach price point.",
-    bestFit: "A 2-bedroom, 1.5-bath condo at a lower monthly rent may fit renters who need a manageable payment and are willing to compare space, age, parking, or commute tradeoffs.",
-    sidebarNote: "A budget-friendly rent can be useful, but renters should confirm what is included and what compromises come with the price.",
-    localContext: "Affordable Ewa Beach rentals can help households stay in West Oahu, but availability, condition, and parking can change quickly.",
-    whySearched: "A price-qualified rental search is strong intent. The renter is likely trying to determine whether the budget is realistic.",
-    neighborhoodContext: "Ewa Beach may give renters access to West Oahu neighborhoods and services, but commute and property condition should still be weighed against the lower rent.",
-    compareFactors: ["rent", "included utilities", "parking", "condition", "commute", "move-in costs"],
-    compareGuidance: "Compare the advertised rent with the full monthly and move-in cost. Deposits, utilities, parking, and commute expenses can change the value quickly.",
-    currentUse: "Use this archived page as a benchmark for current budget-friendly Ewa Beach rental searches.",
-    heroIntro: "A lower-priced Ewa Beach condo rental can be valuable when the full cost and daily routine still work.",
-    introHeading: "Affordable Ewa Beach rental context",
-    introLead: "Use this page to compare budget-friendly rental options with practical tradeoffs.",
-    pills: ["Ewa Beach", "Affordable Rental", "$1,500", "2 Bedrooms", "Condo"],
-    comparePills: ["Rent", "Utilities", "Parking", "Move-In Cost"],
-    ctaTitle: "Compare affordable Ewa Beach rentals",
-    ctaText: "Call or text to review current rentals that fit your budget and move-in timeline.",
-  }),
+  "oahu-available-rental-properties/2-bedroom-1-5-bath-condo-in-ewa-beach-1500-per-month.html": {
+    description: "This archived $1,500 Ewa Beach condo page explains how to verify today's rent, availability, total costs, parking, rules, condition, schools, and hazards.",
+    keywords: ["Ewa Beach condo rental", "2 bedroom condo Ewa Beach", "Ewa Beach rental price", "1.5 bath condo rental", "West Oahu rental guide"],
+    heroEyebrow: "Archived Price-Point Guide",
+    heroIntro: "The $1,500 amount belongs to a legacy Ewa Beach condo page, not a current offer. Verify today's unit, rent, and terms before using this archive to plan a move or budget.",
+    introEyebrow: "Price Verification First",
+    introHeading: "How to investigate an old $1,500 Ewa Beach condo lead",
+    introLead: "Treat the old price as history; rebuild the decision from a current listing, actual unit, and complete written costs.",
+    intro: [
+      "The archived title preserves only a past search profile: a two-bedroom, one-and-a-half-bath condominium in Ewa Beach once promoted at $1,500 per month. It does not establish that the original unit is available, that $1,500 remains the rent, or that a comparable home can be leased for that amount today. It also does not verify an address, project, size, condition, parking, utilities, appliances, pet policy, lease dates, or responsible manager.",
+      "That distinction matters for a renter working within a firm ceiling. Do not increase an application budget, give notice, schedule movers, or send funds around the amount embedded in this URL. Ask for a dated listing sheet and proposed terms for the exact unit, then confirm which party is authorized to offer it. A current lower-priced option can still be worthwhile, but only if the home, rules, and total recurring cost fit the household.",
+      "Build a simple comparison with separate columns for cash due before move-in and costs due each month. Add condition, bedroom use, bathroom placement, parking for every vehicle, laundry, cooling, condo restrictions, maintenance responsibilities, exact-address school and hazard checks, and real travel tests. This approach preserves the useful intent behind an old bargain search without turning the archived price into a present-day claim."
+    ],
+    sidebar: {
+      eyebrow: "Budget-Renter Fit",
+      heading: "Who can use this archive productively",
+      paragraphs: [
+        "This guide is for a renter who needs two rooms and is searching carefully around a monthly ceiling, but can evaluate tradeoffs instead of assuming the old headline represents a current bargain.",
+        "Stop and verify before applying if the advertised amount is undated, required fees are missing, a parking stall is only assumed, the actual unit cannot be toured, or payment is requested before the owner or licensed manager is confirmed."
+      ],
+      pills: ["Archived Price", "2 Bedrooms", "1.5 Bathrooms", "Condo", "Ewa Beach", "Verify Today"]
+    },
+    sections: [
+      {
+        title: "Replace the archived price with a current written offer",
+        pills: ["Current Rent", "Exact Unit", "Authority", "Lease Dates"],
+        paragraphs: [
+          "Request the exact street address, unit number, condominium project, current monthly rent, availability date, lease length, application criteria and charge, deposits, utility allocation, pet terms, parking assignment, and every mandatory recurring fee. Ask who owns or manages the condo and verify that the person collecting documents or money is authorized. A headline, screenshot, text message, or old web page is not a substitute for a complete current offer.",
+          "Tour the unit being offered rather than a model, similar unit, or archive of old photographs. Operate locks, windows, faucets, toilets, appliances, fans, and any cooling equipment; look for visible moisture or pests; test cellular service; and locate laundry, trash, mailbox, storage, and parking. Record promised repairs and included items in writing. If the unit is occupied or unavailable to inspect, understand exactly what protection the proposed process provides before committing funds."
+        ]
+      },
+      {
+        title: "Test whether the new price actually fits the budget",
+        pills: ["Move-In Cash", "Monthly Total", "Utilities", "Transportation"],
+        paragraphs: [
+          "Keep the sticker rent separate from total housing cost. Before move-in, a renter may need first month's rent, a security deposit, any permitted application charge, an agreed pet deposit, utility setup, movers, and basic items missing from the condo. Monthly costs may add electricity, water or sewer, internet, renters insurance, parking or pet charges, laundry, and transportation created by the location. Mark each amount as confirmed, estimated, refundable, or nonrefundable.",
+          "The Hawaii Department of Commerce and Consumer Affairs provides the state's landlord-tenant handbook and information center for questions under the Residential Landlord-Tenant Code. Its handbook explains deposit rules and other lease topics, while DCCA cautions that its service gives general information rather than legal advice. Check the latest official guidance and the actual agreement; direct a dispute or interpretation of a specific lease to a qualified Hawaii attorney."
+        ]
+      },
+      {
+        title: "Price the condo's practical compromises",
+        pills: ["Floor Plan", "Parking", "House Rules", "Repairs"],
+        paragraphs: [
+          "A lower rent may reflect a perfectly acceptable tradeoff, but the archive does not reveal which one. Measure both bedrooms and closets, identify who would use the full and half bathrooms, trace any stairs from parking to the door, and check ventilation, afternoon heat, noise, laundry, storage, and accessibility. Roommates should decide whether bathroom access, bedroom sizes, parking, and utility sharing feel equitable before signing together.",
+          "Obtain the current condominium rules that bind tenants. Confirm assigned and guest parking, towing, vehicle limits, pets, smoking, guests, quiet hours, move procedures, deliveries, trash, common areas, and responsibility for violations or fines. Identify who handles appliance, plumbing, pest, cooling, and common-area problems and how emergencies are reported. A price advantage can disappear when a second vehicle has no lawful space or important maintenance duties remain vague."
+        ]
+      },
+      {
+        title: "Run exact-address checks before choosing Ewa Beach",
+        pills: ["Commute", "School Lookup", "Flood", "Insurance"],
+        paragraphs: [
+          "Do not judge travel from the words Ewa Beach alone. Drive from the actual address to each work site, installation gate, school, childcare stop, or recurring appointment during the hours the household expects to travel, and test the return. Include the local-road segment, parking, drop-off, transfers, and any installation screening. Military renters should confirm the duty destination and gate procedures through their command or installation rather than assuming one base name describes the trip.",
+          "For public schools, enter the complete address in the Hawaii Department of Education SchoolSite Locator and contact the school directly. HIDOE says the locator shows general service areas for reference and should not be the sole source for a rent or relocation decision. Do not infer an assignment from the city name, ZIP code, or an archived advertisement.",
+          "Search the address in official hazard tools and ask about prior water intrusion and emergency access. The State of Hawaii Flood Hazard Assessment Tool displays FEMA flood information but warns that it does not identify every area subject to flooding. Review relevant county guidance, understand evacuation routes, and obtain an address-specific renters-insurance quote. A map screen helps frame questions; it cannot guarantee what will happen at a particular unit."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Archived $1,500 Condo FAQs",
+      heading: "Questions for a price-sensitive Ewa Beach renter",
+      intro: "Every answer begins with the same boundary: the legacy title is not evidence of a current rental offer.",
+      items: [
+        { question: "Can I rent this Ewa Beach condo for $1,500 now?", answer: "This archive does not establish that. Confirm the exact unit, current rent, availability, lease dates, application process, and authorized owner or manager in current written materials. Treat $1,500 only as part of the old page title." },
+        { question: "What should I include in a monthly affordability check?", answer: "Add rent, allocated electricity and water or sewer, internet, renters insurance, parking or pet charges, laundry, and transportation. Separately total first month's rent, deposits, application costs, setup expenses, movers, and needed household items." },
+        { question: "Does the archive confirm parking or utilities?", answer: "No. It confirms neither. Require the stall number and rules for every vehicle, guest and towing provisions, and the responsibility for each utility and fee in the proposed lease or other controlling documents." },
+        { question: "How should roommates evaluate one and a half bathrooms?", answer: "Tour the actual layout, identify which fixtures each bathroom contains and how bedrooms connect to them, and agree on bathroom use, bedroom allocation, parking, utilities, guests, cleaning, and payment responsibility before signing." },
+        { question: "How do I confirm the public schools?", answer: "Use the exact address in HIDOE's SchoolSite Locator, then contact the relevant school. HIDOE says its general service areas are for reference and should not be the sole source for a rent or relocation choice." },
+        { question: "What hazard research should I do?", answer: "Check the exact address in official state and county hazard tools, ask about prior water intrusion and emergency access, review evacuation information, and seek an address-specific insurance quote. Remember that the state flood tool says mapped information does not capture every area subject to flooding." }
+      ]
+    },
+    cta: buildPageCta("Find a current Ewa Beach rental within your real budget", "Share your move date, maximum total monthly cost, move-in funds, vehicles, pets, room plan, accessibility and school needs, and exact work or duty destination. Hawaii Military Realty can help verify active options and compare written costs and tradeoffs before you apply.")
+  },
 };
 
 CONTENT.evergreenPages = EVERGREEN_PAGE_DEFS.map(buildEvergreenPage).map(function (page) {
@@ -5044,6 +5096,15 @@ function assignSecondPassLinks() {
         linkTo(pageIndex, "ewa-beach-real-estate", "Ewa Beach Area Guide", "Review broader Ewa Beach location, transportation, hazard, and housing context."),
         linkTo(pageIndex, "hawaii-bases-and-barracks", "Oahu Bases and Barracks", "Verify installation context before choosing a lease around an assumed duty commute."),
         { path: "contact.html", label: "Ask About Current Rentals", description: "Share your timing and rental requirements for a current-availability conversation." },
+      ].filter(Boolean).slice(0, 3);
+      return;
+    }
+
+    if (page.path === "oahu-available-rental-properties/2-bedroom-1-5-bath-condo-in-ewa-beach-1500-per-month.html") {
+      page.relatedLinks = [
+        linkTo(pageIndex, "ewa-beach-real-estate", "Ewa Beach Area Guide", "Review broader Ewa Beach transportation, hazard, housing, and daily-life context before narrowing a rental search."),
+        linkTo(pageIndex, "hawaii-bases-and-barracks", "Oahu Bases and Barracks", "Confirm the actual installation and duty destination before evaluating an Ewa Beach military commute."),
+        { path: "contact.html", label: "Ask About Current Budget-Fit Rentals", description: "Share your total monthly ceiling, timing, vehicles, pets, and room needs for a current-availability conversation." },
       ].filter(Boolean).slice(0, 3);
       return;
     }

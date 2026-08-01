@@ -26,14 +26,16 @@ The current generated expansion is a starting point. Review it for generic passa
 
 | URL | Publisher | Supported claim | Accessed |
 |---|---|---|---|
+| https://cca.hawaii.gov/landlord-tenant-information-center/ | State of Hawaii Department of Commerce and Consumer Affairs, Office of Consumer Protection | DCCA operates an information center for Hawaii's Residential Landlord-Tenant Code, links the official handbook and statutes, and says the service provides general information rather than legal advice. | 2026-08-01 |
+| https://hawaiipublicschools.org/enrolling-in-school/find-your-school/ | Hawaiʻi State Department of Education | The SchoolSite Locator accepts a street address and reports schools serving the area, but its general service areas are for reference and should be confirmed directly with the school rather than used as the sole basis for renting. | 2026-08-01 |
+| https://gis.hawaiinfip.org/ | State of Hawaii Department of Land and Natural Resources | The Flood Hazard Assessment Tool displays FEMA flood information and warns that it does not identify all areas subject to flooding. | 2026-08-01 |
 
 Add authoritative sources during the iteration. Do not mark the page complete with an empty research log.
 
 ## Completion record
 
-- Status: pending
-- Build: not run
-- Completed date:
-- Summary:
-- Verification notes:
-
+- Status: complete
+- Build: passed
+- Completed date: 2026-08-01
+- Summary: Replaced the generic lower-price template with a distinct archival guide that treats $1,500 only as a historical title, requires present-day offer verification, and helps budget-sensitive renters evaluate total costs, unit condition, condo rules, parking, layout, commute, schools, hazards, and insurance.
+- Verification notes: `node scripts/validate-content-expansion.js` and `node scripts/build-content.js` passed; confirmed `build/oahu-available-rental-properties/2-bedroom-1-5-bath-condo-in-ewa-beach-1500-per-month.html` exists.
