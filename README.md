@@ -10,12 +10,14 @@ All public pages are generated from source content and templates into `build/`.
 node scripts/build-content.js
 ```
 
-Use `src/content.js` for plain text content only. Use `src/templates/` for page structure, markup, classes, SVGs, and reusable partials. Generated publish files include:
+Use `src/content.js` for general site content, including header and footer links, core pages, team details, and agent profiles. Use `src/content-seo.js` for the legacy/SEO page definitions and the logic that builds and interlinks them. Use `src/templates/` for page structure, markup, classes, SVGs, and reusable partials. Generated publish files include:
 
 - `build/index.html`
 - `build/about.html`
 - `build/team.html`
 - `build/agents/*.html`
+- the 19 evergreen pages listed under [Evergreen Pages](#evergreen-pages)
+- the 18 property pages listed under [Property Pages](#property-pages)
 
 `src/` is the source tree. `build/` is ignored by git and is what GitHub Pages publishes.
 

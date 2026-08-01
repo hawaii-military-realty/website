@@ -2,14 +2,14 @@
 const fs = require("fs");
 const path = require("path");
 
-const content = require("../src/content.js");
+const content = require("../src/content-seo.js");
 
 const root = path.resolve(__dirname, "..");
 const srcDir = path.join(root, "src");
 const buildDir = path.join(root, "build");
 const templatesDir = path.join(srcDir, "templates");
 const generatedComment =
-  "<!-- Generated into build/ from src/content.js by scripts/build-content.js. Do not edit generated output directly. -->";
+  "<!-- Generated into build/ from src/content.js and src/content-seo.js by scripts/build-content.js. Do not edit generated output directly. -->";
 
 const iconAliases = {
   arrowLeft: "arrow-left",
@@ -1182,7 +1182,8 @@ function writeFile(relativePath, html) {
 function shouldCopySourceFile(relativePath) {
   const normalized = relativePath.replace(/\\/g, "/");
 
-  if (normalized === "content.js") return false;
+  if (normalized === "content.js" || normalized === "content-seo.js")
+    return false;
   if (normalized === "README.md") return false;
   if (normalized.startsWith("templates/")) return false;
   if (/\.html$/i.test(normalized)) return false;
