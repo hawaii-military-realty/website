@@ -65,26 +65,45 @@ Mandatory workflow:
 7. Run node scripts/validate-content-expansion.js and node scripts/build-content.js. Confirm build/<selected route> exists.
 8. Mark the selected row complete only after every quality gate passes. Update its completion record and reprioritize all remaining rows with unique contiguous priorities.
 9. Inspect the diff. It must not contain unrelated files or any page other than the selected page.
-10. Commit the allowed changes in one commit with message: content: expand <page key or concise slug>.
+10. Leave the verified changes uncommitted. The outer Ralph harness owns staging and committing them.
 
-Do not select a second task. If blocked, leave the task incomplete, do not commit, and explain the blocker.
+Do not select a second task. Do not run git add or git commit. If blocked, leave the task incomplete and explain the blocker.
 PROMPT
 
   [[ "$(git branch --show-current)" == "$target_branch" ]] || { echo "Agent changed branches." >&2; exit 1; }
+  [[ "$(git rev-parse HEAD)" == "$before" ]] || { echo "Agent created a commit; the outer harness must own commits." >&2; exit 1; }
   [[ ! -e src/content.js || -z "$(git diff "$before" -- src/content.js)" ]] || { echo "Forbidden src/content.js change detected." >&2; exit 1; }
-  [[ -z "$(git status --porcelain)" ]] || { echo "Iteration left uncommitted changes; stopping." >&2; exit 1; }
-  commit_count="$(git rev-list --count "$before..HEAD")"
-  [[ "$commit_count" == "1" ]] || { echo "Iteration must create exactly one commit; found $commit_count." >&2; exit 1; }
-  [[ -z "$(git diff --name-only "$before..HEAD" -- src/content.js)" ]] || { echo "Commit modified forbidden src/content.js." >&2; exit 1; }
+  [[ -n "$(git status --porcelain)" ]] || { echo "Iteration made no working-tree changes." >&2; exit 1; }
   while IFS= read -r changed_file; do
     case "$changed_file" in
       src/content-seo.js|docs/content-expansion/TODO.md|docs/content-expansion/CONTEXT.md|"docs/content-expansion/$task_brief") ;;
-      *) echo "Iteration committed an unrelated file: $changed_file" >&2; exit 1 ;;
+      *) echo "Iteration changed an unrelated file: $changed_file" >&2; exit 1 ;;
     esac
-  done < <(git diff --name-only "$before..HEAD")
+  done < <(
+    {
+      git diff --name-only "$before"
+      git ls-files --others --exclude-standard
+    } | sort -u
+  )
   [[ "$(node scripts/validate-content-expansion.js --status "$task")" == "complete" ]] || { echo "Iteration did not complete its selected task." >&2; exit 1; }
   node scripts/validate-content-expansion.js
   node scripts/build-content.js
   output="build/$task"
   [[ -f "$output" ]] || { echo "Expected generated page missing: $output" >&2; exit 1; }
+
+  git add -- src/content-seo.js docs/content-expansion/TODO.md "docs/content-expansion/$task_brief"
+  if ! git diff --quiet -- docs/content-expansion/CONTEXT.md; then
+    git add -- docs/content-expansion/CONTEXT.md
+  fi
+  while IFS= read -r staged_file; do
+    case "$staged_file" in
+      src/content-seo.js|docs/content-expansion/TODO.md|docs/content-expansion/CONTEXT.md|"docs/content-expansion/$task_brief") ;;
+      *) echo "Refusing to commit unrelated staged file: $staged_file" >&2; exit 1 ;;
+    esac
+  done < <(git diff --cached --name-only)
+  [[ -n "$(git diff --cached --name-only)" ]] || { echo "No verified changes were staged." >&2; exit 1; }
+  commit_slug="$(basename "$task_brief" .md)"
+  git commit -m "content: expand $commit_slug"
+  [[ "$(git rev-list --count "$before..HEAD")" == "1" ]] || { echo "Iteration must create exactly one commit." >&2; exit 1; }
+  [[ -z "$(git status --porcelain)" ]] || { echo "Iteration commit left uncommitted changes; stopping." >&2; exit 1; }
 done

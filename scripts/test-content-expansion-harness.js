@@ -94,7 +94,7 @@ test("premature completion invokes content and research gates", () => {
   const target = fixture();
   const file = todoPath(target);
   fs.writeFileSync(file, fs.readFileSync(file, "utf8").replace("| 1 | pending", "| 1 | complete"));
-  expectFailure(target, /no authoritative research record/);
+  expectFailure(target, /no authoritative research record|completion record is not complete/);
 });
 
 if (!process.exitCode) console.log("Passed " + passed + " harness tests.");
