@@ -3513,26 +3513,85 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Compare current Hoakalei pool homes", "Share your target price, move timing, duty or work location, and how you expect to use a pool. We can confirm current availability and help you compare similar Ewa Beach homes while you obtain property-specific inspection, association, permit, insurance, and financing guidance.")
   },
-  "oahu-available-rental-properties/3-bedroom-townhouse-in-makakilo.html": buildPropertyExpansion({
-    topic: "Makakilo 3-bedroom townhouse rental",
-    status: "For Rent",
-    segment: "This page is for renters seeking a family-sized West Oahu townhome and comparing Makakilo with Kapolei, Ewa Beach, and other leeward options.",
-    bestFit: "A 3-bedroom Makakilo townhouse usually fits households that need more space than a condo, want manageable maintenance, and value access to Kapolei services without being directly in busier commercial areas.",
-    sidebarNote: "Makakilo's hillside setting can appeal to renters who want a different feel from Ewa Beach, but drive patterns and parking still need to be confirmed.",
-    localContext: "Makakilo is often part of the Kapolei-area rental conversation, with townhomes and homes that may offer elevation, views, and west-side access.",
-    whySearched: "A 3-bedroom townhouse rental is a specific housing need. The searcher is likely comparing space, monthly cost, and move-in timing rather than casually browsing.",
-    neighborhoodContext: "Makakilo can work well for renters tied to West Oahu routines, but H-1 access, morning traffic, and distance to base or work should be tested before applying.",
-    compareFactors: ["rent", "parking", "stairs", "commute", "pet rules", "move-in date"],
-    compareGuidance: "A townhouse can offer useful separation and storage, but layouts, stairs, guest parking, and association rules can vary widely.",
-    currentUse: "Use this page to benchmark what a 3-bedroom Makakilo rental should answer before you request a showing or application.",
-    heroIntro: "A 3-bedroom townhouse in Makakilo is a practical rental search for households that need space and West Oahu access.",
-    introHeading: "Makakilo townhouse rental context",
-    introLead: "Compare space, commute, parking, and move-in timing before treating a Makakilo townhouse as a serious rental option.",
-    pills: ["Makakilo", "Townhouse", "3 Bedrooms", "West Oahu", "Rental"],
-    comparePills: ["Rent", "Parking", "Commute", "Pets"],
-    ctaTitle: "Ask about Makakilo rental options",
-    ctaText: "Call or text to compare current Makakilo and Kapolei-area townhome rentals.",
-  }),
+  "oahu-available-rental-properties/3-bedroom-townhouse-in-makakilo.html": {
+    description: "Use this archived 3-bedroom Makakilo townhouse rental page to verify current availability and compare lease costs, parking, stairs, rules, hazards, and West Oahu travel.",
+    keywords: ["3 bedroom townhouse Makakilo", "Makakilo townhouse for rent", "Makakilo rental", "Kapolei townhouse rental", "West Oahu rental"],
+    heroEyebrow: "Archived Rental Guide",
+    heroIntro: "This legacy 3-bedroom Makakilo townhouse page is a starting point, not proof of an active rental. Confirm current status first, then use the checklist below to evaluate this address or a comparable West Oahu townhome.",
+    introEyebrow: "Rental Decision Guide",
+    introHeading: "How to evaluate a 3-bedroom Makakilo townhouse rental",
+    introLead: "Separate the bedroom count from the details that determine whether the home, lease, and daily routine actually fit.",
+    intro: [
+      "A renter who reaches this page probably has a concrete space requirement and a move date, not a general interest in Makakilo. Three bedrooms may support children, a roommate plan, a home office, or visiting family, but the archived title does not establish the current rent, bathroom count, square footage, condition, parking, pet policy, or availability. Ask for a current listing sheet and written rental terms before relying on any legacy property page.",
+      "Makakilo belongs in a broader Kapolei-area comparison, but its hillside setting makes exact-address research especially important. Honolulu's official ʻEwa Development Plan identifies Puʻu Makakilo and views from it as significant regional features. That does not promise a view from this unit. It is a reminder to inspect the actual building orientation, stairs, slope, drainage, afternoon sun, wind exposure, and route to the property rather than applying a neighborhood-wide assumption.",
+      "Use the same scorecard for this home and every alternative: total move-in funds, monthly housing cost, assigned and guest parking, interior layout, stairs, included utilities, maintenance responsibility, association rules, commute tests, and the application timeline. A slightly lower advertised rent may not be the better value if parking, utilities, storage, or an impractical daily route creates recurring cost and friction."
+    ],
+    sidebar: {
+      eyebrow: "Best Fit",
+      heading: "Who should put this profile on the shortlist",
+      paragraphs: [
+        "This search profile can suit a household that truly needs three bedrooms, accepts a townhome layout, and expects much of its work, school, shopping, or family routine to happen in West Oahu. It can also give relocating military households a useful comparison point when move timing matters more than waiting for one exact unit.",
+        "Pause before applying if anyone has difficulty with stairs, the household needs more vehicles than the assigned spaces allow, a pet must be approved, or the duty or work trip has not been tested. Those are property-level questions; the words “Makakilo townhouse” do not answer them."
+      ],
+      pills: ["3 Bedrooms", "Townhouse Layout", "Parking", "Move Timing", "West Oahu"]
+    },
+    sections: [
+      {
+        title: "Confirm what is actually being offered",
+        pills: ["Current Status", "Showing", "Application", "Written Terms"],
+        paragraphs: [
+          "First confirm whether the original townhouse is available now. Request the exact address, current asking rent, desired lease start, lease length, application criteria, application fee, deposit amounts, utility responsibilities, pet terms, and the identity of the licensed property manager or owner contact. Do not send money or sensitive application information until you have verified the listing and the person authorized to rent it.",
+          "At a showing, check every level and bedroom rather than judging the home from staged photos. Note window condition, screens, ventilation, water pressure, appliance operation, signs of moisture or pests, cellular reception, noise, trash access, storage, mailbox location, and the route from each parking space to the entry. Ask which observations will be documented on a move-in condition form and take dated photos if you sign a lease."
+        ]
+      },
+      {
+        title: "Build the real move-in and monthly budget",
+        pills: ["Rent", "Deposit", "Utilities", "Insurance"],
+        paragraphs: [
+          "Put recurring and one-time costs on separate lines. Recurring costs can include rent, electricity, water or sewer if not included, internet, renters insurance, parking, pet charges, and the transportation cost created by the location. One-time needs can include the security deposit, first month's rent, application charges, pet deposit if applicable, movers, utility setup, and basic items the unit does not provide.",
+          "The Hawaii Department of Commerce and Consumer Affairs' 2024 landlord-tenant handbook says a security deposit may not exceed one month's rent. It also explains that a landlord and tenant may agree to an additional pet deposit of up to one month's rent, but not for an assistance animal provided as a disability accommodation. Use the current DCCA handbook for general information, read the proposed lease, and take property-specific legal questions to a qualified Hawaii attorney rather than treating this page as legal advice."
+        ]
+      },
+      {
+        title: "Inspect the townhouse and association fit",
+        pills: ["Stairs", "Parking", "Pets", "Community Rules"],
+        paragraphs: [
+          "Townhouse living can provide separation between sleeping and living areas, but it can also add daily stair use and shared-community constraints. Confirm the bedroom and bathroom locations, whether laundry is on the same level as the bedrooms, how groceries move from parking to the kitchen, usable storage dimensions, outdoor-space responsibility, and who handles plumbing, appliances, landscaping, pest treatment, and repairs.",
+          "Ask for the rules that apply to tenants before paying a deposit. Verify assigned stall numbers, vehicle-size or registration limits, guest parking, towing procedures, street-parking assumptions, quiet hours, smoking restrictions, pet limits, grilling, deliveries, move-in procedures, and any amenity access. The lease and community rules should agree; resolve conflicting or vague answers in writing before signing."
+        ]
+      },
+      {
+        title: "Test Makakilo travel as a household routine",
+        pills: ["Commute", "Base Access", "School Run", "Errands"],
+        paragraphs: [
+          "A map estimate is not a commute test. Drive from the exact address to the actual gate, office, school, childcare provider, or recurring appointment at the hours you expect to travel, then test the return. Include the time needed to reach the main road, find parking, pass installation security, or transfer to transit. Repeat the exercise for the household member with the least flexible schedule.",
+          "Military renters should confirm the expected duty location and access procedure with their command or installation before choosing a lease around an assumed gate. Households should also verify current school assignment and transportation directly with the Hawaii Department of Education for the exact address. Keep one alternative in Kapolei, Ewa Beach, or another workable area so a firm arrival date does not pressure you into accepting an untested routine."
+        ]
+      },
+      {
+        title: "Screen the exact address for hazards and preparedness",
+        pills: ["Address Check", "Flood", "Wildfire", "Preparedness"],
+        paragraphs: [
+          "Use Honolulu's Oʻahu Hazard Explorer for the exact address. The city says the tool can show whether a location falls within mapped flood, tsunami evacuation, wildfire-risk, or dam or levee evacuation areas. The State of Hawaii Flood Hazard Assessment Tool provides FEMA flood-zone information but warns that it does not identify every area subject to flooding. Treat maps as screening tools, not guarantees about a particular unit.",
+          "Ask about prior water intrusion, drainage, retaining walls, emergency access, power or water interruptions, and the tenant's insurance responsibilities. Walk the exterior and parking area after or during rain if practical, review official preparedness information, and obtain a renters-insurance quote for the actual address and household. If a map or property condition raises concern, seek qualified insurance, inspection, or agency guidance before committing."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Makakilo Rental FAQs",
+      heading: "Questions to answer before applying",
+      intro: "These answers preserve the useful search context while avoiding assumptions about an archived listing.",
+      items: [
+        { question: "Is this 3-bedroom Makakilo townhouse available now?", answer: "This is a legacy property page and does not establish current availability. Confirm the status, rent, showing access, move-in date, and written terms directly before submitting an application or sending funds." },
+        { question: "What should I verify about parking?", answer: "Confirm the number and exact location of assigned stalls, vehicle restrictions, guest parking, street-parking rules, towing enforcement, and the walking route from the stalls to the unit. Verify every household vehicle against the written rules." },
+        { question: "How much can a Hawaii rental security deposit be?", answer: "DCCA's 2024 handbook says the security deposit may not exceed one month's rent. It describes a separately agreed pet deposit of up to one month's rent and an exception for assistance animals used as a disability accommodation. Check current official guidance and the proposed lease for your situation." },
+        { question: "How should I evaluate a Makakilo commute?", answer: "Test the exact address to the exact destination at realistic outbound and return times. Include local-road access, parking, installation entry, school drop-off, or transit transfers; a generic map estimate is not enough." },
+        { question: "Which townhouse rules matter before signing?", answer: "Request the tenant rules and verify pets, parking, guests, noise, smoking, outdoor use, deliveries, move procedures, amenities, maintenance duties, and enforcement. Resolve any conflict between community rules and the lease in writing." },
+        { question: "Should I check hazards for a hillside rental?", answer: "Yes. Search the exact address in Honolulu's Oʻahu Hazard Explorer and the state's Flood Hazard Assessment Tool, ask about drainage and prior incidents, and discuss address-specific coverage with an insurer. Mapping is an initial screen and does not identify every possible hazard." }
+      ]
+    },
+    cta: buildPageCta("Compare current Makakilo and West Oahu rentals", "Share your move date, monthly budget, bedroom need, vehicles, pets, accessibility needs, and duty or work destination. We can confirm current options and help you compare the written terms and daily fit before you apply.")
+  },
   "oahu-available-rental-properties/3-bedroom-2-5-bathroom-townhouse-in-ewa-beach-ocean-pointe.html": buildPropertyExpansion({
     topic: "Ocean Pointe 3-bedroom townhouse rental",
     status: "For Rent",
@@ -4001,6 +4060,15 @@ function assignSecondPassLinks() {
   });
 
   CONTENT.propertyPages.forEach(function (page) {
+    if (page.path === "oahu-available-rental-properties/3-bedroom-townhouse-in-makakilo.html") {
+      page.relatedLinks = [
+        linkTo(pageIndex, "kapolei-real-estate-listings-and-information", "Kapolei Area Guide", "Compare broader Kapolei and Makakilo location factors while screening rentals."),
+        linkTo(pageIndex, "hawaii-bases-and-barracks", "Oahu Bases and Barracks", "Verify installation context before choosing a rental around an assumed duty commute."),
+        { path: "contact.html", label: "Ask About Current Rentals", description: "Share your timeline and rental requirements for a current-availability conversation." },
+      ].filter(Boolean).slice(0, 3);
+      return;
+    }
+
     const communityLinkKey =
       communityKeyByName[detectPropertySeoArea(page.hero.heading, "Oahu")] ||
       "oahu-real-estate-property-for-sale-listings";
