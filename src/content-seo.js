@@ -3592,26 +3592,85 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Compare current Makakilo and West Oahu rentals", "Share your move date, monthly budget, bedroom need, vehicles, pets, accessibility needs, and duty or work destination. We can confirm current options and help you compare the written terms and daily fit before you apply.")
   },
-  "oahu-available-rental-properties/3-bedroom-2-5-bathroom-townhouse-in-ewa-beach-ocean-pointe.html": buildPropertyExpansion({
-    topic: "Ocean Pointe 3-bedroom townhouse rental",
-    status: "For Rent",
-    segment: "This page is for renters seeking a family-oriented Ewa Beach townhouse in Ocean Pointe or a nearby West Oahu community.",
-    bestFit: "This profile tends to fit households that want a functional bedroom count, a townhome layout, and a neighborhood setting that feels established for daily family life.",
-    sidebarNote: "Ocean Pointe searches should include parking, association rules, nearby schools, and commute timing before application pressure sets in.",
-    localContext: "Ocean Pointe is one of Ewa Beach's recognizable residential areas and often draws renters who want West Oahu space without taking on a detached-home rental.",
-    whySearched: "The title points to a specific neighborhood, bedroom count, and bathroom count. That means the searcher is already filtering by practical household fit.",
-    neighborhoodContext: "Ocean Pointe can support a strong family routine, but renters should consider Fort Weaver Road timing, H-1 access, and where work or school happens during the week.",
-    compareFactors: ["rent", "parking", "layout", "association rules", "commute", "school routine"],
-    compareGuidance: "Compare townhome options by how the layout works in real life: entry, storage, guest parking, laundry location, and noise between rooms.",
-    currentUse: "Use this archived Ocean Pointe rental as a guide for what similar 3-bedroom townhomes should clarify today.",
-    heroIntro: "An Ocean Pointe townhouse rental should be evaluated by family fit, commute, and practical layout, not just bedroom count.",
-    introHeading: "Ocean Pointe townhouse rental context",
-    introLead: "Use this page to compare Ewa Beach townhome living with your move-in timeline and daily routine.",
-    pills: ["Ocean Pointe", "Ewa Beach", "Townhouse", "3 Bedrooms", "Rental"],
-    comparePills: ["Layout", "Parking", "HOA Rules", "Commute"],
-    ctaTitle: "Compare Ocean Pointe rentals",
-    ctaText: "Call or text to review current Ocean Pointe and Ewa Beach townhouse availability.",
-  }),
+  "oahu-available-rental-properties/3-bedroom-2-5-bathroom-townhouse-in-ewa-beach-ocean-pointe.html": {
+    description: "Use this archived Ocean Pointe 3-bedroom townhouse rental guide to verify availability, lease costs, parking, association rules, schools, hazards, and commute fit.",
+    keywords: ["Ocean Pointe townhouse rental", "3 bedroom rental Ewa Beach", "Ocean Pointe rental", "Ewa Beach townhouse for rent", "West Oahu rental"],
+    heroEyebrow: "Archived Rental Guide",
+    heroIntro: "This legacy 3-bedroom, 2.5-bath Ocean Pointe townhouse page does not establish current availability. Confirm the exact property and terms, then use this guide to compare its layout, costs, rules, and daily fit with current Ewa Beach rentals.",
+    introEyebrow: "Rental Decision Guide",
+    introHeading: "How to evaluate an Ocean Pointe townhouse rental",
+    introLead: "A bedroom-and-bath count narrows the search, but the lease, sub-association, parking, and ordinary weekday routine determine whether the home works.",
+    intro: [
+      "The archived title preserves three useful search filters: Ocean Pointe, a townhouse layout, and three bedrooms with two and a half bathrooms. It does not confirm the current asking rent, exact address, square footage, condition, appliances, parking, pet policy, lease dates, or availability. Request a current listing sheet and written terms before scheduling around this property or sending an application.",
+      "Ocean Pointe is not one interchangeable set of townhomes. The official Ocean Pointe Residential Community Association site lists several townhome communities and identifies different management companies for them. That makes the exact project name important: master-association guidance, sub-association rules, parking assignments, registration steps, and amenity access may not be identical from one address to another.",
+      "Use a written scorecard for this rental and each alternative. Compare total move-in funds, full monthly cost, bedroom and bathroom placement, stairs, parking, storage, outdoor space, utility responsibility, maintenance contacts, association restrictions, school verification, commute tests, and the time allowed to review and sign. This keeps an archived lead useful without pretending its original facts remain current."
+    ],
+    sidebar: {
+      eyebrow: "Best Fit",
+      heading: "Who should shortlist this rental profile",
+      paragraphs: [
+        "This profile may suit a household that genuinely uses three bedrooms, wants a townhome rather than a detached-home lease, and can make an Ewa Beach routine work for every driver, student, and recurring appointment.",
+        "Pause before applying if stairs create an access problem, the household has more vehicles than confirmed spaces, a pet needs written approval, or the work and school trips have only been checked with a generic map estimate. Each is an exact-address issue."
+      ],
+      pills: ["Archived Listing", "3 Bedrooms", "2.5 Bathrooms", "Townhouse", "Ocean Pointe", "Rule Review"]
+    },
+    sections: [
+      {
+        title: "Confirm the current offer before sharing money or data",
+        pills: ["Availability", "Exact Address", "Application", "Written Terms"],
+        paragraphs: [
+          "Ask whether the original unit is available now and obtain the exact address, project name, current rent, proposed start date, lease length, application criteria, application charge, deposit amounts, utility allocation, pet terms, and the name of the owner or licensed property manager. Verify the person authorized to offer the rental before sending funds, identification, or other sensitive application information.",
+          "Tour the actual unit rather than relying on old photographs. Check door and window operation, screens, ventilation, water pressure, appliances, plumbing fixtures, visible moisture or pest evidence, noise, cellular reception, storage, trash access, mailbox location, outdoor areas, and the path from assigned parking to the door. If you proceed, document existing condition with the required move-in paperwork and dated images."
+        ]
+      },
+      {
+        title: "Calculate move-in funds and the real monthly cost",
+        pills: ["Rent", "Deposit", "Utilities", "Insurance"],
+        paragraphs: [
+          "Separate one-time and recurring expenses. Move-in funds may include first month's rent, the security deposit, allowed application charges, an agreed pet deposit, movers, utility setup, and items the townhouse does not provide. Monthly comparisons should include rent, electricity, water or sewer if allocated to the tenant, internet, renters insurance, parking or pet charges, and transportation costs created by the location.",
+          "Hawaii's Department of Commerce and Consumer Affairs says a rental security deposit cannot exceed one month's rent and may encompass items such as key or pet deposits. Its 2024 handbook separately describes an agreed additional pet deposit of up to one month's rent and an assistance-animal exception. Review the current official guidance and proposed lease, and take situation-specific legal questions to a qualified Hawaii attorney."
+        ]
+      },
+      {
+        title: "Identify every association and read the tenant rules",
+        pills: ["Project Name", "Parking", "Pets", "Community Rules"],
+        paragraphs: [
+          "The Ocean Pointe association's official site lists Spinnaker Place, Ke ‘Aina Kai, Ke Noho Kai, Townhomes at Fairway's Edge, and Mariners Place among the townhome communities it serves, with multiple management companies shown. Confirm which master and sub-associations govern the exact unit and obtain the current documents that apply to tenants instead of assuming that rules from another Ocean Pointe property transfer here.",
+          "Verify assigned stall numbers, garage use if one is included, vehicle registration and size limits, guest parking, towing, street-parking assumptions, pets, noise, smoking, grills, outdoor items, trash, deliveries, move procedures, and access to any advertised facility. Ask who receives violation notices and who pays fines. The lease and association rules should be consistent; resolve unclear or conflicting language in writing before signing."
+        ]
+      },
+      {
+        title: "Test the floor plan and weekday travel",
+        pills: ["Stairs", "Layout", "Commute", "Daily Routine"],
+        paragraphs: [
+          "Two and a half bathrooms can reduce morning conflicts, but the count alone says little about function. Confirm which floor holds each bedroom and bathroom, whether the half bath is convenient for guests, laundry placement, usable bedroom dimensions, closet and pantry storage, stair width, cooling, afternoon sun, and how groceries or strollers move from parking to the kitchen. Match the plan to the household rather than the headline.",
+          "Drive from the exact address to the actual work site, installation gate, school, childcare provider, or medical appointment at realistic departure and return times. Include the local-road portion, parking, security screening, drop-off, and any transit transfer. For a military household, verify the likely duty location and gate procedure with the command or installation; a base name is not a single commute point."
+        ]
+      },
+      {
+        title: "Verify schools and hazards by exact address",
+        pills: ["School Assignment", "Flood", "Preparedness", "Insurance"],
+        paragraphs: [
+          "Do not infer a public-school assignment from the words Ocean Pointe or from a listing portal. The Hawaii Department of Education provides an address-based SchoolSite Locator, but explicitly describes its general service areas as reference information and says users should contact the school directly before relying on it for a rental decision. Confirm the exact address, grade, enrollment requirements, transportation, and any timing issue with the appropriate school.",
+          "Use Honolulu's Oʻahu Hazard Explorer to screen the exact address. The city says the tool shows whether a location is within mapped tsunami evacuation, flood, wildfire-risk, or dam and levee evacuation areas. Mapping is a preparedness starting point, not a guarantee about a particular unit. Ask about past water intrusion and drainage, review official emergency guidance, and obtain a renters-insurance quote tied to the address and household."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Ocean Pointe Rental FAQs",
+      heading: "Questions to answer before applying",
+      intro: "These answers distinguish this archived lead from facts that must be verified for a current Ocean Pointe rental.",
+      items: [
+        { question: "Is this exact 3-bedroom Ocean Pointe townhouse available now?", answer: "The legacy page is not proof of availability. Confirm the exact address, current status, rent, showing access, lease dates, and written application terms with the authorized owner or property manager." },
+        { question: "Does every Ocean Pointe townhouse follow the same rules?", answer: "Do not assume so. The official master-association site identifies several townhome communities and different managers. Ask which master and sub-associations apply, then request the current tenant rules for the exact unit." },
+        { question: "What should I confirm about parking?", answer: "Verify the number, type, and location of assigned spaces; garage access if advertised; vehicle and registration limits; guest parking; towing; street rules; and the route from each space to the home. Check every household vehicle against the written rules." },
+        { question: "How much can a Hawaii rental security deposit be?", answer: "DCCA says a security deposit cannot exceed one month's rent, while its handbook discusses a separately agreed pet deposit and an assistance-animal exception. Check the latest official guidance and proposed lease for your circumstances." },
+        { question: "How do I verify the assigned public schools?", answer: "Enter the exact address in the Hawaii Department of Education's SchoolSite Locator, then contact the relevant school directly. The department says the locator shows general service areas and should not be the sole basis for a rent decision." },
+        { question: "What should I inspect in a multi-level townhouse?", answer: "Check the daily stair route, bedroom and bathroom placement, laundry location, storage, cooling, noise between levels, outdoor responsibility, and the route from parking. Make sure the layout works for children, guests, mobility needs, and groceries." }
+      ]
+    },
+    cta: buildPageCta("Compare current Ocean Pointe and Ewa Beach rentals", "Share your move date, monthly budget, vehicles, pets, accessibility needs, school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, associations, layouts, and daily fit before you apply.")
+  },
   "oahu-available-rental-properties/2-bedroom-1-5-bath-condo-in-ewa-beach.html": buildPropertyExpansion({
     topic: "Ewa Beach 2-bedroom condo rental",
     status: "For Rent",
