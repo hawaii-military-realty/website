@@ -3435,28 +3435,84 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
 };
 
 const PROPERTY_CONTENT_EXPANSIONS = {
-  "featured/pool-home-for-sale-in-ka-makana-at-hoakalei-in-ewa-beach-hawaii.html": buildPropertyExpansion({
-    topic: "Hoakalei pool home",
-    status: "For Sale",
-    segment: "This page is for buyers looking for an upgraded single-family lifestyle home in Ka Makana at Hoakalei, Ewa Beach, or a nearby premium West Oahu community.",
-    bestFit: "The strongest fit is a buyer who wants a detached home with lifestyle features, more privacy, and a community setting that supports family life, entertaining, and a more resort-oriented Ewa Beach routine.",
-    sidebarNote: "Pool homes can be attractive, but buyers should also compare maintenance, utility costs, insurance, association rules, and how the feature fits daily use.",
-    localContext: "Ka Makana at Hoakalei sits inside one of Ewa Beach's most recognizable master-planned areas, where buyers often compare newer homes, golf access, community amenities, and proximity to West Oahu services.",
-    whySearched: "The combination of pool home, Hoakalei, and Ewa Beach signals serious lifestyle and purchase intent. Searchers are usually trying to decide whether a premium feature set is worth a closer look.",
-    neighborhoodContext: "Hoakalei and the surrounding Ewa Beach communities can work well for buyers who prioritize space and lifestyle, but commute patterns toward town, Joint Base Pearl Harbor-Hickam, or central Oahu still need to be tested.",
-    compareFactors: ["pool condition", "HOA or association rules", "monthly ownership cost", "commute", "parking", "resale appeal"],
-    compareGuidance: "A pool can add daily enjoyment, but it should be evaluated like any other major feature: useful, maintainable, properly documented, and aligned with the household's budget.",
-    currentUse: "Use the archived property profile as a benchmark for similar Hoakalei and Ewa Beach homes with lifestyle features, then compare current active inventory against the same ownership questions.",
-    heroIntro: "A Hoakalei pool home appeals to buyers who want more than bedroom count. Use this page to compare lifestyle value, ownership cost, and neighborhood fit.",
-    introHeading: "Ka Makana at Hoakalei pool home context",
-    introLead: "Premium Ewa Beach homes should be evaluated by lifestyle fit and practical ownership cost together.",
-    pills: ["Pool Home", "Hoakalei", "Ewa Beach", "Single Family", "For Sale"],
-    intentPills: ["Pool", "Hoakalei", "Lifestyle"],
-    contextPills: ["Ewa Beach", "Commute", "Amenities"],
-    comparePills: ["Pool Condition", "HOA", "Monthly Cost", "Resale"],
-    ctaTitle: "Ask about similar Hoakalei homes",
-    ctaText: "Call or text to compare current Ewa Beach homes with pool, lifestyle, and ownership-cost considerations.",
-  }),
+  "featured/pool-home-for-sale-in-ka-makana-at-hoakalei-in-ewa-beach-hawaii.html": {
+    description: "Use this archived Ka Makana at Hoakalei pool-home page to compare current availability, pool condition, association requirements, permits, insurance, and total ownership cost.",
+    keywords: uniqueKeywords(["Ka Makana at Hoakalei pool home", "Hoakalei homes for sale", "Ewa Beach pool home", "Ka Makana real estate", "Oahu pool home", "Hawaii Military Realty"]),
+    heroEyebrow: "Archived Property Guide",
+    heroIntro: "The original pool-home listing may no longer be available. Use this archival guide to verify its current status and evaluate any comparable Ka Makana at Hoakalei home with the pool, association, permit, insurance, and daily-life questions that matter before an offer.",
+    introEyebrow: "Buyer Due Diligence",
+    introHeading: "How to evaluate a Ka Makana at Hoakalei pool home",
+    introLead: "A private pool can shape how you use a home, but it also adds equipment, safety, documentation, and monthly-cost questions that deserve their own review.",
+    intro: [
+      "This page preserves the search context of a previously marketed pool home in Ka Makana at Hoakalei; it is not a statement that the property is for sale today. Confirm the exact address, asking price, listing status, included fixtures, and showing availability before relying on any legacy marketing. If it is no longer active, the same checklist can help you compare current Ewa Beach homes with private pools.",
+      "Ka Makana is a Hoakalei village that the community's official site describes as including both single-family homes and townhomes. That distinction matters. Before comparing price per square foot or association costs, verify the legal property type, parcel or unit boundaries, parking rights, and which association documents and fees apply to the exact home rather than assuming every Ka Makana property is governed or maintained the same way.",
+      "Treat the pool as a small operating system, not a photograph. Ask for its age, dimensions, equipment list, service history, recent repair invoices, safety features, electrical and plumbing documentation, and any transferable warranties. Then decide whether your household will use it enough to justify routine service, water, electricity, repairs, and the effect on insurance underwriting."
+    ],
+    sidebar: {
+      eyebrow: "Best Fit",
+      heading: "A lifestyle buyer who will verify the details",
+      paragraphs: [
+        "This search is strongest for buyers who want private outdoor recreation and entertaining space, expect to use a pool regularly, and have room in the budget for recurring care and occasional equipment replacement.",
+        "It is a weaker fit if the pool would be used rarely, if a low-maintenance yard is the priority, or if the household has not yet resolved child, guest, pet, and water-safety needs. A community pool and a private pool solve different problems and carry different responsibilities."
+      ],
+      pills: ["Archived Listing", "Private Pool", "Ka Makana", "Association Review", "Permit Check", "Insurance Quote"]
+    },
+    sections: [
+      {
+        title: "First confirm what is actually being offered",
+        pills: ["Current Status", "Exact Address", "Seller Disclosures", "Included Equipment"],
+        paragraphs: [
+          "Start with present facts: Is the exact property active, under contract, withdrawn, or sold? Request the current listing record and seller disclosures, and identify everything included in the sale. Pool pumps, filters, heaters, automation, covers, alarms, cleaning equipment, photovoltaic equipment, and leased systems should never be assumed from old photos or copy.",
+          "Match the listing to public records. Honolulu's Real Property Assessment Division says its parcel records can be searched by address or Tax Map Key and include land and improvement descriptions, assessments, tax information, and characteristics such as living area, bedrooms, and bathrooms. Those records are useful cross-checks, not substitutes for an appraisal, survey, inspection, title review, or the seller's disclosures."
+        ]
+      },
+      {
+        title: "Inspect the pool as carefully as the house",
+        pills: ["Structure", "Equipment", "Leaks", "Safety"],
+        paragraphs: [
+          "A general home inspection may not provide the depth needed for a pool. Ask an appropriately qualified pool professional to evaluate the shell or liner, coping and deck, visible cracking, water loss, circulation, filter, pump, heater if present, lighting, drains, electrical bonding, controls, and barriers. Request service records and clarify the remaining life and replacement cost of major components before the inspection period ends.",
+          "Safety deserves a separate walk-through. The U.S. Consumer Product Safety Commission recommends layers of protection around residential pools, including barriers, self-closing and self-latching gates, door alarms when the home forms part of the barrier, and properly maintained safety covers. Compare the actual property with current local requirements and your household's needs; do not interpret the presence of one device as proof that the setup is compliant or childproof."
+        ]
+      },
+      {
+        title: "Verify association approval and City permits",
+        pills: ["Design Review", "Permits", "Resale Documents", "Private Yard"],
+        paragraphs: [
+          "Ka Makana's association site says the Hoakalei Resort Community Association Architectural Review Committee oversees construction, additions, alterations, repairs, and visible site improvements, including work in enclosed private yards. For a home with a private pool, ask for the written association approval, approved plans, any completion sign-off, and confirmation that the completed work matches what was authorized.",
+          "Association approval and government permits are different checks. Honolulu's Department of Planning and Permitting provides permit searches by application number or TMK and explains how full permit files can be requested. Have the relevant professionals determine what permits and inspections were required for the pool and related electrical, plumbing, walls, decks, or equipment, then resolve missing or open records before closing."
+        ]
+      },
+      {
+        title: "Build the all-in ownership budget",
+        pills: ["Association Fees", "Utilities", "Insurance", "Reserves"],
+        paragraphs: [
+          "Compare homes using more than principal and interest. Add property taxes, every applicable association charge, homeowners and flood insurance quotes, pool service or owner-maintenance supplies, expected water and electricity use, landscaping, and a reserve for pumps, filters, surfaces, leaks, and other repairs. Obtain quotes tied to the exact address and equipment because a generic estimate can hide a material difference.",
+          "Review the current resale package, budgets, rules, design guidelines, insurance information, and notices for each association that applies. The official Ka Makana site directs buyers and sellers to order resale documents and explains that architectural matters are handled through the master association. Ask your agent and qualified legal or insurance professionals which documents, assessments, coverage gaps, and owner responsibilities affect this particular property."
+        ]
+      },
+      {
+        title: "Test the location against an ordinary week",
+        pills: ["Duty Commute", "Errands", "Flood Review", "Daily Routine"],
+        paragraphs: [
+          "A resort-oriented setting and private pool may be compelling on a weekend tour, but the purchase still has to work Monday through Friday. Drive likely work, school, childcare, medical, and shopping routes at the times you expect to use them. Military buyers should test the route to their actual gate and work location rather than treating a base name as one commute point.",
+          "Check hazards by exact address rather than making a neighborhood-wide assumption. Hawaii's Department of Land and Natural Resources provides a Flood Hazard Assessment Tool using FEMA flood-map data and warns that the viewer is informational and does not identify every area subject to flooding. Use it as a starting point, then obtain property-specific insurance guidance and any professional evaluation your lender or circumstances require."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Common Questions",
+      heading: "Ka Makana pool-home questions",
+      intro: "These answers keep an archived listing useful while directing current-property questions to the records and professionals that can verify them.",
+      items: [
+        { question: "Is this exact Ka Makana pool home still for sale?", answer: "Do not assume so from this archived page. Ask for the current listing record and verify the exact address, status, price, included items, and showing instructions before making plans around it." },
+        { question: "Does every Ka Makana home have the same property type and fees?", answer: "No assumption should be made. The official community description includes single-family homes and townhomes. Verify the legal property type, applicable associations, current fees, boundaries, and maintenance responsibilities for the exact home through its current resale and title documents." },
+        { question: "What pool records should I request?", answer: "Request permits, association approvals, approved plans, inspection or completion records, service history, repair invoices, equipment specifications, warranties, and any recent leak or condition evaluations. Have qualified professionals check whether the records match the installed pool." },
+        { question: "How should I compare a private pool with community amenities?", answer: "Compare privacy and anytime access against maintenance, utilities, safety duties, insurance, repair reserves, and yard space. Also verify current community-amenity access and rules instead of assuming they are included or unchanged." },
+        { question: "Can a buyer use public records instead of inspections?", answer: "No. County parcel and permit records are valuable cross-checks, but they do not replace seller disclosures, association records, title work, an appraisal, a survey when appropriate, or inspections by qualified professionals." }
+      ]
+    },
+    cta: buildPageCta("Compare current Hoakalei pool homes", "Share your target price, move timing, duty or work location, and how you expect to use a pool. We can confirm current availability and help you compare similar Ewa Beach homes while you obtain property-specific inspection, association, permit, insurance, and financing guidance.")
+  },
   "oahu-available-rental-properties/3-bedroom-townhouse-in-makakilo.html": buildPropertyExpansion({
     topic: "Makakilo 3-bedroom townhouse rental",
     status: "For Rent",
