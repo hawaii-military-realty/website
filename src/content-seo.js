@@ -4264,26 +4264,85 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     ctaTitle: "Compare Fairways Edge rentals",
     ctaText: "Call or text to review current Fairways Edge and nearby West Oahu townhome options.",
   }),
-  "oahu-available-rental-properties/4-bedroom-2-5-bathrooms-1538-sf-in-ewa-beach-2500-per-month.html": buildPropertyExpansion({
-    topic: "Ewa Beach 4-bedroom budget rental",
-    status: "For Rent",
-    segment: "This page is for budget-aware family renters comparing a specific Ewa Beach size and price point.",
-    bestFit: "This profile fits households that need four bedrooms but still need rent to stay controlled enough for the rest of the move budget.",
-    sidebarNote: "When a title includes price and square footage, the searcher should use both to judge whether the layout and cost are realistic together.",
-    localContext: "Ewa Beach can offer family-sized rentals, but pricing, condition, parking, and commute can vary sharply by neighborhood and property age.",
-    whySearched: "A 4-bedroom rental at a named price point is a high-intent affordability search. The renter is trying to understand what a budget can secure.",
-    neighborhoodContext: "Ewa Beach may fit larger households that need space, but the rental should be compared against the full cost of living and the commute the family will actually drive.",
-    compareFactors: ["rent", "square footage", "bedroom usability", "parking", "condition", "commute"],
-    compareGuidance: "A lower price can be valuable, but it may come with tradeoffs in size, condition, updates, or location. Confirm those details before treating it as the best option.",
-    currentUse: "Use this archived example to compare current budget-friendly Ewa Beach family rentals.",
-    heroIntro: "A 4-bedroom Ewa Beach rental at a defined price point should be evaluated by both affordability and day-to-day usability.",
-    introHeading: "Ewa Beach budget rental context",
-    introLead: "Use this page to compare family-sized rental value against space, condition, and commute.",
-    pills: ["Ewa Beach", "4 Bedrooms", "$2,500", "Budget Rental", "Family Housing"],
-    comparePills: ["Price", "Square Footage", "Condition", "Parking"],
-    ctaTitle: "Compare budget-friendly Ewa Beach rentals",
-    ctaText: "Call or text to review current family rental options in Ewa Beach within your target budget.",
-  }),
+  "oahu-available-rental-properties/4-bedroom-2-5-bathrooms-1538-sf-in-ewa-beach-2500-per-month.html": {
+    description: "Use this archived four-bedroom Ewa Beach rental page to verify current availability and compare layout, total cost, parking, schools, hazards, and commute fit.",
+    keywords: ["4 bedroom rental Ewa Beach", "Ewa Beach family rental", "1538 square foot rental", "Oahu rental home", "military rental Ewa Beach"],
+    heroEyebrow: "Archived Rental Guide",
+    heroIntro: "The four-bedroom, 2.5-bath, 1,538-square-foot, and $2,500-per-month figures come from a legacy title. They do not establish that this Ewa Beach home is available now or that any price or property detail remains current.",
+    introEyebrow: "Budget and Layout Check",
+    introHeading: "Recheck every number behind this Ewa Beach rental",
+    introLead: "A specific old price can be a useful comparison point, but only a current listing, showing, and proposed lease can tell you what is actually offered today.",
+    intro: [
+      "This archive serves households searching for four bedrooms while trying to preserve room in the monthly budget for utilities, transportation, childcare, savings, and the move itself. Start by asking whether the exact property is currently offered by an authorized owner or manager. Confirm its address, rent, availability date, lease length, bedroom and bathroom count, interior area, condition, parking, utilities, deposit, pet terms, and application requirements in writing.",
+      "Do not use the $2,500 headline as a current Ewa Beach rent benchmark. It belongs to an earlier marketing context and may omit utilities, parking charges, pet costs, yard care, renters insurance, or other obligations. Compare present options on total move-in funds and total recurring cost, not on an archived base-rent number that may no longer be attainable or attached to this home.",
+      "The 1,538-square-foot figure also needs verification and does not explain how the space works. Four bedrooms within that footprint may be efficient for one household and tight for another. Request a current floor plan or measure at the showing, locate the half bath and full baths, check storage and laundry placement, and decide where beds, desks, mobility needs, and shared activities would actually fit."
+    ],
+    sidebar: {
+      eyebrow: "Household Fit",
+      heading: "Who should use this rental profile",
+      paragraphs: [
+        "This search can fit a budget-aware family, a multigenerational household with a workable room plan, or relocating renters who need separate sleeping and office space. It is strongest when four rooms solve defined needs and the household has tested the total cost rather than focusing only on the bedroom count.",
+        "Pause before applying if the decision depends on a specific school, pet approval, accessibility, more vehicles than the property can accommodate, or a commute that has not been driven. Those questions depend on the exact address and written lease, which the archived headline does not provide."
+      ],
+      pills: ["Archived Listing", "4 Bedrooms", "2.5 Baths", "1,538 SF", "Legacy $2,500 Price", "Written Verification"]
+    },
+    sections: [
+      {
+        title: "Verify the offer before sharing money or documents",
+        pills: ["Current Status", "Authorized Manager", "Showing", "Application"],
+        paragraphs: [
+          "Ask for the exact address, the name of the owner or licensed property manager, a current listing sheet, and an in-person or live remote showing. Verify who is authorized to receive an application and funds. An old property page is not proof that a new advertisement is legitimate, and copied photos or the same historical price should not substitute for identity and ownership checks.",
+          "Request the full proposed terms before deciding that the home is affordable: current monthly rent, start date, lease duration, application criteria and charge, every deposit, included appliances, utility responsibility, yard or pest duties, smoking and pet rules, parking, and any community restrictions. Put promised repairs and their completion timing in writing rather than relying on a showing conversation."
+        ]
+      },
+      {
+        title: "Test whether four bedrooms work inside the footprint",
+        pills: ["Room Dimensions", "Bathroom Plan", "Storage", "Cooling"],
+        paragraphs: [
+          "Count usable rooms, not labels. Measure wall lengths, door swings, closets, and routes around beds. Identify which floor holds each bedroom and bathroom, whether the half bath helps at busy times, and whether a downstairs sleeping option exists if that matters. Check where laundry, linen storage, pantry space, outdoor equipment, and moving boxes would go.",
+          "Inspect each room for window and screen condition, privacy, airflow, ceiling fans or other cooling equipment, outlets, noise, and signs of moisture or pests. Operate plumbing fixtures and appliances when permitted. A four-bedroom layout can reduce monthly flexibility if the household later discovers it needs storage, cooling equipment, or furniture changes that were not included in the initial budget."
+        ]
+      },
+      {
+        title: "Build an all-in rental and move-in budget",
+        pills: ["Rent", "Deposit", "Utilities", "Transportation"],
+        paragraphs: [
+          "Create separate columns for move-in cash and ongoing monthly cost. Move-in items may include first month's rent, security and permitted pet deposits, application charges, movers, utility setup, and immediate household needs. Monthly items may include rent, electricity, water or sewer when excluded, internet, renters insurance, pet charges, yard care, parking, and the fuel or transit cost created by the location.",
+          "The Hawaii Department of Commerce and Consumer Affairs' 2024 landlord-tenant handbook says a security deposit may not exceed one month's rent. It also describes an additional agreed pet deposit of up to one month's rent, except for an assistance animal provided as a disability accommodation. Use the current official handbook for general guidance, read the proposed lease, and direct situation-specific legal questions to a qualified Hawaii attorney."
+        ]
+      },
+      {
+        title: "Check parking, schools, and the real weekday route",
+        pills: ["Vehicles", "School Assignment", "Duty Gate", "Commute Test"],
+        paragraphs: [
+          "Confirm the number, location, and dimensions of assigned spaces; garage access if one is offered; driveway and street-parking rules; guest procedures; vehicle registration limits; and towing enforcement. Walk the route from parking to the entry with groceries, children, or mobility equipment in mind. A four-bedroom home does not necessarily provide parking for a four-adult or multigenerational household.",
+          "For public schools, enter the exact address in the Hawaii Department of Education's SchoolSite Locator, which shows general service areas, then contact the school directly. The department warns that the locator is for reference and should not be the sole source for a rental decision. Also drive the actual school, childcare, work, and installation-gate routes at realistic outbound and return times; do not substitute a neighborhood label or map estimate for the household's schedule."
+        ]
+      },
+      {
+        title: "Screen the address for hazards and move-in condition",
+        pills: ["Hazard Map", "Flood Review", "Drainage", "Condition Record"],
+        paragraphs: [
+          "Search the exact address in Honolulu's Oʻahu Hazard Explorer. The city says the tool can identify whether a location is within mapped tsunami evacuation, flood, wildfire-risk, or dam or levee evacuation areas. The State of Hawaii Flood Hazard Assessment Tool displays FEMA flood zones and cautions that it does not identify every area subject to flooding. Use both as screening resources, then seek property-specific insurance or professional guidance where needed.",
+          "Ask about prior water intrusion, drainage, pest treatment, outages, and the party responsible for repairs. At move-in, use the proper condition form and retain dated documentation of rooms, walls, floors, fixtures, appliances, keys, exterior areas, and meter readings as appropriate. Resolve any material condition or safety issue through the manager and written lease process before possession."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Ewa Beach Rental FAQs",
+      heading: "Questions behind the archived numbers",
+      intro: "These answers keep the old search profile useful without presenting its price, measurements, or availability as current facts.",
+      items: [
+        { question: "Is this four-bedroom Ewa Beach rental available for $2,500 now?", answer: "Do not assume that it is. The price and property details are preserved from a legacy title. Ask an authorized owner or manager for the exact address, current status, rent, availability date, and complete written terms before applying." },
+        { question: "Is 1,538 square feet enough for four bedrooms?", answer: "The number alone cannot answer that. Verify the current measurement and floor plan, then measure bedrooms, closets, furniture paths, shared areas, storage, laundry, and bathroom placement against the needs of the people who will live there." },
+        { question: "How much security deposit can a Hawaii landlord request?", answer: "DCCA's 2024 handbook says a security deposit may not exceed one month's rent and describes a separately agreed pet deposit of up to one month's rent, with an assistance-animal exception. Check current official guidance and obtain legal advice for a specific dispute or interpretation." },
+        { question: "Which public schools serve the rental?", answer: "A neighborhood name is not enough to determine assignment. Search the exact address in the Hawaii Department of Education's SchoolSite Locator and contact the school directly; the department says the locator shows general service areas and is not a sole source for a rental decision." },
+        { question: "What should I compare with the advertised rent?", answer: "Compare total move-in cash and the recurring total for rent, utilities, insurance, parking or pet costs, maintenance duties, and transportation. Also compare room usability, condition, parking rules, commute tests, and the written application and lease terms." },
+        { question: "Should renters check hazard maps?", answer: "Yes. Use Honolulu's Oʻahu Hazard Explorer and the state Flood Hazard Assessment Tool for the exact address, while recognizing that mapping is a screening step and does not identify every possible hazard or replace address-specific insurance and professional guidance." }
+      ]
+    },
+    cta: buildPageCta("Compare current four-bedroom Ewa Beach rentals", "Share your move date, total monthly budget, room plan, vehicles, pets, accessibility needs, and work or duty destination. We can confirm current options and help you compare written terms and daily fit before you apply.")
+  },
   "oahu-available-rental-properties/for-rent-5-bedroom-executive-home-with-3-car-garage-in-ocean-pointe.html": {
     description: "Use this archived five-bedroom Ocean Pointe rental guide to verify availability, garage capacity, association rules, lease costs, schools, and daily fit.",
     keywords: ["Ocean Pointe rental", "five bedroom Ewa Beach rental", "three car garage rental", "large Oahu rental home"],
@@ -4591,6 +4650,15 @@ function assignSecondPassLinks() {
   });
 
   CONTENT.propertyPages.forEach(function (page) {
+    if (page.path === "oahu-available-rental-properties/4-bedroom-2-5-bathrooms-1538-sf-in-ewa-beach-2500-per-month.html") {
+      page.relatedLinks = [
+        linkTo(pageIndex, "ewa-beach-real-estate", "Ewa Beach Area Guide", "Review broader Ewa Beach transportation, hazard, housing, and daily-life context."),
+        linkTo(pageIndex, "hawaii-bases-and-barracks", "Oahu Bases and Barracks", "Verify the actual installation and gate before judging a military commute."),
+        { path: "contact.html", label: "Ask About Current Four-Bedroom Rentals", description: "Share your timing, total budget, room plan, vehicles, pets, and other requirements for a current-availability conversation." },
+      ].filter(Boolean).slice(0, 3);
+      return;
+    }
+
     if (page.path === "oahu-available-rental-properties/4-bedroom-3-bathroom-single-family-home-in-ewa-beach.html") {
       page.relatedLinks = [
         linkTo(pageIndex, "ewa-beach-real-estate", "Ewa Beach Area Guide", "Review broader Ewa Beach transportation, hazard, housing, and daily-life context."),
