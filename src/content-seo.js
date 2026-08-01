@@ -2733,25 +2733,95 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Build a Mililani shortlist around your real routine", "Share the exact work locations, move date, housing budget, property needs, and association questions that matter. We can help compare current Mililani options and central Oahu alternatives while you verify financing, schools, insurance, and governing documents with the responsible professionals.")
   },
-  "va-home-buying-in-hawaii": buildEvergreenExpansion({
-    topic: "VA home buying in Hawaii",
-    audienceShort: "Hawaii-ready VA buyers",
-    intent: "moving beyond general VA information into the local decisions that affect a Hawaii purchase",
-    segment: "This page is for military and veteran buyers who understand the VA concept and now need to apply it to Oahu property types, neighborhoods, and timing.",
-    sidebarNote: "Use this as the Hawaii-specific bridge between lender readiness and real estate execution.",
-    localContext: "Hawaii VA buyers need to account for condos, association dues, inventory pressure, appraisal timing, remote showings, and the full monthly cost of island ownership.",
-    whyItMatters: "A buyer who searches this topic is usually closer to action than someone reading broad national VA content. They need local preparation, not generic definitions.",
-    oahuContext: "On Oahu, a strong VA plan has to match the buyer's assignment, commute, property type, and comfort with total monthly cost. The right home is not always the largest home or the newest listing.",
-    decisionFactors: ["lender readiness", "property eligibility", "monthly payment", "area fit", "offer strategy", "remote purchase needs"],
-    compareGuidance: "Compare each property by VA feasibility and household fit at the same time. A home that works for financing still has to work for routine, maintenance, and resale planning.",
-    nextStep: "Move from education into a practical search plan that connects your VA readiness with Oahu areas and homes that can actually work.",
-    heroIntro: "Hawaii VA buying requires local context around properties, payments, neighborhoods, and timing.",
-    introLead: "Use this page when you are ready to turn VA eligibility into an Oahu buying plan.",
-    pills: ["VA Home Buying", "Hawaii", "Oahu", "Military Buyers", "Offer Strategy"],
-    contextPills: ["Condos", "Association Fees", "Appraisal", "Remote Tours"],
-    ctaTitle: "Build a Hawaii VA home buying plan",
-    ctaText: "Call or text to connect VA readiness with Oahu neighborhoods, listings, and timing.",
-  }),
+  "va-home-buying-in-hawaii": {
+    description: "Plan a VA home purchase on Oahu with practical guidance for condos, CPR homes, appraisal and inspection, total cost, offers, occupancy, and PCS timing.",
+    keywords: ["VA home buying Hawaii", "Oahu VA home buyer", "VA loan condo Hawaii", "military home buying Oahu", "PCS home purchase Hawaii"],
+    heroEyebrow: "Oahu Purchase Playbook",
+    heroIntro: "Turn VA eligibility into an Oahu property plan that accounts for island costs, condo and CPR details, appraisal risk, due diligence, and the realities of buying around a PCS.",
+    introEyebrow: "From Preapproval To Keys",
+    introHeading: "Make the VA benefit work for an actual Hawaii home",
+    introLead: "This guide begins where general VA education ends: choosing, investigating, and contracting for an Oahu property that works for both the loan and your household.",
+    intro: [
+      "A VA-backed loan can reduce one barrier to an Oahu purchase, but it does not choose the right neighborhood, make every property financeable, or turn a lender's maximum into a comfortable payment. Before touring, connect the exact duty or work location, expected time on island, household routine, cash reserves, and preferred property type to an all-in monthly ceiling.",
+      "Oahu choices often cross ownership formats: a detached house, a condominium apartment, a townhome, or a detached dwelling organized as a condominium property regime, commonly called a CPR. The physical appearance does not tell you the legal structure, shared obligations, insurance responsibilities, or project eligibility. Screen the exact address and legal project early rather than treating every home with its own yard as equivalent.",
+      "VA and the private lender control benefit and loan decisions. VA says a buyer must meet VA and lender credit, income, and occupancy requirements, while the lender determines approval and most loan terms. A local real estate professional helps with areas, property evidence, contracts, tours, and deadlines; inspectors, insurers, title professionals, associations, and legal advisers answer different parts of the due-diligence question. Keep those roles distinct as the transaction moves quickly."
+    ],
+    sidebar: {
+      eyebrow: "Before The Search",
+      heading: "Build one Hawaii-ready buyer file",
+      paragraphs: [
+        "Bring your current Certificate of Eligibility, lender contact, approval range, target total monthly cost, funds available after closing, orders or move window, exact worksite, and realistic occupancy date. Tell the lender whether you may use remaining entitlement or keep another VA-financed property.",
+        "For every serious address, track legal property type, VA condo status when applicable, taxes, association charges, insurance quote, parking, known assessments, condition questions, commute test, appraisal status, inspection deadline, and required cash. A clean comparison sheet is more useful than a long favorites list."
+      ],
+      pills: ["COE", "Occupancy", "Total Payment", "Cash Reserves", "Property Type", "PCS Dates"]
+    },
+    sections: [
+      {
+        title: "Set the Oahu boundary before choosing a neighborhood",
+        pills: ["Duty Location", "Monthly Ceiling", "Ownership Horizon", "Reserves"],
+        paragraphs: [
+          "Start with the daily route rather than a broad installation name. Identify the worksite and likely gate, normal arrival time, spouse or partner commute, child-care or school trip, and the errands that repeat each week. Test routes at relevant times. Oahu geography can make a home that looks close on a map feel very different in the household schedule, and a rushed PCS visit can hide that tradeoff.",
+          "Ask the lender for property-specific scenarios that include principal, interest, estimated Honolulu real property tax, homeowners insurance, and every known association payment. Then keep utilities, maintenance, transportation, and a repair reserve visible outside the mortgage estimate. VA notes that its program does not require monthly mortgage insurance, but that advantage does not erase the funding fee when applicable, closing costs, or Hawaii ownership expenses.",
+          "Choose a price ceiling that leaves cash after inspections, closing, shipping, temporary lodging, immediate work, and an emergency. VA says only the funding fee may be financed into a purchase loan; other fees and charges must be paid at closing, although allocation and allowable credits depend on the transaction and loan rules. Have the lender show cash-to-close and monthly-cost cases instead of relying on a portal estimate or the highest approved amount.",
+          "Finally, discuss the likely ownership period. A household expecting another PCS should weigh purchase and later selling costs, rental restrictions, property-management needs, and the possibility of carrying the home during a transition. Future rental or resale is not guaranteed. The purchase should make sense as a primary residence now under the occupancy plan the lender and VA approve."
+        ]
+      },
+      {
+        title: "Screen the legal property and project before falling for the unit",
+        pills: ["VA Condo Status", "CPR", "Association Records", "Insurance"],
+        paragraphs: [
+          "For a condominium, have the lender check the exact legal project and phase in VA's approved-condominium system before you assume the unit is eligible. A matching street name or a neighboring phase is not enough. If the project is not already approved, ask the lender what review is possible, what documents and time it would require, and whether your contract schedule can support it. Do not advertise approval to yourself until the lender confirms it for the actual property.",
+          "Read the association material as financial and operational evidence, not paperwork to skim. Hawaii's Real Estate Branch advises buyers to examine condominium documents, and its guidance explains that inadequate reserves can lead to special assessments, borrowing, or deferred work. Review current budgets, reserve information, meeting minutes, insurance, litigation disclosures, house rules, maintenance-fee history, pending assessments, parking assignments, pet rules, rental limits, and responsibility for major components with the appropriate professionals.",
+          "A detached-looking CPR home still requires attention to the condominium map, declaration, bylaws, common elements, access, utilities, maintenance responsibilities, and any shared infrastructure. Honolulu's Department of Planning and Permitting explains that a CPR divides ownership and may include shared land or common elements, but it does not itself establish what structures the city legally permits. Check city property and permit records using the correct address and Tax Map Key, and obtain title and legal guidance for unclear boundaries or rights.",
+          "Order an address-specific insurance quote while contingencies are still open. Clarify the master policy and the unit owner's responsibility for a condo, and ask about relevant hazards, deductibles, exclusions, and replacement assumptions for any property. A lender's insurance placeholder or the seller's current premium is not a quote for your coverage."
+        ]
+      },
+      {
+        title: "Write the offer around evidence and VA decision points",
+        pills: ["VA Escape Clause", "Inspection", "Appraisal", "Deadlines"],
+        paragraphs: [
+          "Price and seller credits are only part of an offer. Coordinate the proposed closing date, occupancy, deposit, inspection rights, document-review periods, financing deadlines, appraisal process, and any sale or lease timing with the lender and agent before signing. A shorter contingency is not stronger if the lender, inspector, association, or remote buyer cannot perform inside it.",
+          "VA requires the escape clause for a VA purchase contract signed before the Notice of Value. If VA's reasonable value is below the contract price, the clause gives the buyer the option to renegotiate, proceed with additional cash, or exit without forfeiting earnest money on that basis. It does not promise that the seller will reduce the price, pay repairs, or extend deadlines, and it does not replace other protections in the contract. Ask the lender and agent how it is documented in your transaction.",
+          "The VA appraisal supplies an opinion of value and checks minimum property requirements; it is not a home inspection. VA strongly recommends a separate inspection for major defects. Choose inspections appropriate to the property and concerns, review the results within the contract deadlines, and decide whether to request repairs, seek specialist evaluation, renegotiate when allowed, accept a known issue, or use an available cancellation right. Only the contract and qualified advisers can tell you which options remain open.",
+          "If value appears unsupported, VA describes three broad paths: request a Reconsideration of Value with valid market data routed through the lender, renegotiate the price, or pay the difference if permitted and financially sensible. Preserve reserves and do not pre-commit appraisal-gap cash without understanding entitlement, lender approval, the escape clause, and the effect on the rest of the move."
+        ]
+      },
+      {
+        title: "Investigate the Oahu address, not just the listing",
+        pills: ["TMK", "Property Records", "Permits", "Flood Review"],
+        paragraphs: [
+          "Use the property's Tax Map Key to cross-check the City and County of Honolulu record. The Real Property Assessment Division says its parcel records include current and historical assessments, tax information, property classifications, tax relief, and descriptions of land and building improvements. Those are tax records, not a warranty of condition, boundaries, permitted use, or future tax. Compare them with title, survey, permit, disclosure, and inspection information rather than treating one database as conclusive.",
+          "Investigate additions, converted spaces, accessory areas, bedrooms, and structures that matter to your intended use. Ask for permits and final approvals where appropriate and take inconsistencies to the city or a qualified professional. A listing label, tax record, or appraiser's visit does not independently establish that every improvement is permitted or suited to the use you have in mind.",
+          "Review flood and other location-specific hazards through official maps and obtain insurance advice for the exact property. Walk or tour the immediate surroundings in daylight and, when practical, at another time. Confirm parking dimensions and assignments, guest parking, drainage clues, noise sources, stairs, ventilation, sun exposure, storage, and mobile connectivity. These ordinary details can matter more after closing than a staged room or a distant ocean glimpse.",
+          "Keep school and commute claims address-specific and current. Verify public-school information with the Hawaii Department of Education and routes with the responsible transportation provider or your own timed test. No agent, listing, or map estimate should guarantee enrollment, traffic, or future assignment."
+        ]
+      },
+      {
+        title: "Run remote tours and closing as a controlled PCS process",
+        pills: ["Live Video", "Inspection Access", "Final Walkthrough", "Wire Safety"],
+        paragraphs: [
+          "If buying from off island, use a live video tour that follows a written checklist. Ask for continuous views of approaches, parking, common areas, every room, ceilings, floors, windows, utility areas, exterior conditions, and visible equipment. Request close-ups and ambient sound, then separate what was observed from what still needs documents, inspection, measurement, or specialist review. A polished recorded clip should not be the entire property investigation.",
+          "Build the calendar backward from the proposed closing and occupancy dates. Include lender document deadlines, appraisal access, inspection and association-review periods, signing logistics, funds transfer, final walkthrough, recording, key delivery, household-goods arrival, and temporary lodging. Confirm with the lender how your intended occupancy timing satisfies the applicable VA and underwriting requirements; do not assume a PCS delay or tenant occupancy will automatically be acceptable.",
+          "Treat wiring instructions as a fraud-sensitive step. Verify them through a trusted phone number already obtained for the escrow or title company, not contact information introduced by an unexpected email. Confirm any last-minute change independently. Before closing, review the Closing Disclosure the lender must provide at least three business days in advance, ask about changed figures, and avoid opening new credit or moving unexplained funds without discussing the impact with the lender.",
+          "Use the final walkthrough to check the property's agreed condition and included items; it is not a substitute for inspection. After recording and authorized key release, preserve the contract, disclosures, inspection reports, appraisal, survey or title material, association documents, insurance, warranties, and closing records. Those documents support ownership now and a later PCS, refinance, rental evaluation, or resale."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Hawaii VA Buyer Questions",
+      heading: "VA home buying in Hawaii FAQs",
+      intro: "These answers frame the next decision. VA, your lender, the contract, and qualified property professionals must confirm the rules and facts for your purchase.",
+      items: [
+        { question: "Can I buy an Oahu condo with a VA-backed loan?", answer: "Potentially. Have the lender verify the exact legal condominium project and phase in VA's approval system, then separately review the unit, association finances and documents, master insurance, title, condition, and appraisal. A project's approval does not certify that the particular unit or ownership costs fit you." },
+        { question: "Does a detached CPR home count as a single-family house for VA financing?", answer: "Do not decide from appearance or listing language. A CPR is a condominium form of ownership and may include shared land or common elements. Give the exact legal description and project information to the lender, and review the declaration, map, title, access, utilities, insurance, and maintenance obligations with the appropriate professionals." },
+        { question: "Does the VA appraisal replace an inspection?", answer: "No. VA says the appraisal provides an opinion of value and checks minimum property requirements, while a separate home inspection evaluates defects in greater depth. Preserve suitable inspection rights and choose additional specialists based on the property and findings." },
+        { question: "What happens if the VA value is below my offer?", answer: "Depending on the facts and deadlines, you may seek a Reconsideration of Value through the lender, renegotiate, contribute cash, or use the VA escape clause. The clause protects against forfeiting earnest money when its value condition applies, but it does not force a seller to change terms or replace every other contract contingency." },
+        { question: "How much cash does a zero-down VA buyer need in Hawaii?", answer: "Zero down does not mean zero cash. Plan for lender-confirmed closing costs and prepaids, appraisal and inspections, moving and temporary lodging, immediate repairs, and reserves. VA says only the funding fee may be financed into a purchase loan; ask the lender to show your exemption status, allowable credits, and exact cash-to-close estimate." },
+        { question: "Can I close on an Oahu home before I arrive for a PCS?", answer: "Possibly, but the lender must confirm that your intended occupancy timing and circumstances satisfy VA and underwriting requirements. Also plan remote inspections, document review, signing, final walkthrough, recording, key release, temporary lodging, and a fallback if orders or closing dates change." }
+      ]
+    },
+    cta: buildPageCta("Turn your VA readiness into an Oahu property plan", "Share your duty location, move and occupancy dates, lender status, total monthly ceiling, cash reserve, and preferred property types. We can help build and investigate a realistic Oahu shortlist while your lender and VA confirm benefit and loan decisions.")
+  },
   "ewa-beach-real-estate": buildEvergreenExpansion({
     topic: "Ewa Beach real estate",
     audienceShort: "Ewa Beach researchers",
