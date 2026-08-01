@@ -3750,26 +3750,85 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Compare current 2-bedroom Ewa Beach rentals", "Share your move date, monthly budget, vehicles, pets, accessibility and school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, condo rules, layouts, and daily fit before you apply.")
   },
-  "oahu-available-rental-properties/3-bedroom-2-bathroom-townhouse-in-mililani-mauka.html": buildPropertyExpansion({
-    topic: "Mililani Mauka 3-bedroom townhouse rental",
-    status: "For Rent",
-    segment: "This page is for central Oahu renter families comparing Mililani Mauka for routine, schools, and access to Schofield Barracks or Wheeler Army Airfield.",
-    bestFit: "A 3-bedroom Mililani Mauka townhouse often fits households that want central Oahu convenience, a family-sized layout, and less direct dependence on West Oahu commute patterns.",
-    sidebarNote: "Mililani Mauka is specific enough that renters should compare neighborhood feel, parking, rent, and commute before widening the search.",
-    localContext: "Mililani Mauka is part of the central Oahu conversation, with access toward H-2, Schofield, Wheeler, Mililani services, and established residential routines.",
-    whySearched: "The title combines bedroom count, property type, and a specific community, which signals a renter who already has a clear target.",
-    neighborhoodContext: "Central Oahu can be a strong fit for some military and civilian households, but the exact commute and school routine should be confirmed before applying.",
-    compareFactors: ["rent", "parking", "stairs", "commute to Schofield or Wheeler", "school routine", "pet rules"],
-    compareGuidance: "Compare this type of rental with Mililani condos and single-family options so you understand the tradeoff between space, cost, and maintenance responsibility.",
-    currentUse: "Use the page to evaluate current Mililani Mauka townhomes by practical household fit.",
-    heroIntro: "A Mililani Mauka townhouse rental can be a strong central Oahu option when commute, space, and family routine line up.",
-    introHeading: "Mililani Mauka townhouse rental context",
-    introLead: "Use this page to compare central Oahu rental fit before submitting an application.",
-    pills: ["Mililani Mauka", "Townhouse", "3 Bedrooms", "Central Oahu", "Rental"],
-    comparePills: ["Rent", "Parking", "Schofield", "Schools"],
-    ctaTitle: "Compare Mililani Mauka rentals",
-    ctaText: "Call or text to review current central Oahu townhome and condo rentals.",
-  }),
+  "oahu-available-rental-properties/3-bedroom-2-bathroom-townhouse-in-mililani-mauka.html": {
+    description: "Use this archived Mililani Mauka 3-bedroom townhouse rental guide to verify availability, lease costs, parking, community rules, schools, hazards, and commute fit.",
+    keywords: ["Mililani Mauka townhouse rental", "3 bedroom rental Mililani", "Mililani Mauka rental", "Central Oahu townhouse for rent", "Mililani rental guide"],
+    heroEyebrow: "Archived Rental Guide",
+    heroIntro: "This legacy 3-bedroom, 2-bath Mililani Mauka townhouse page does not establish current availability. Confirm the exact home and written terms, then compare its layout, rules, total cost, and daily routine with current Central Oahu rentals.",
+    introEyebrow: "Rental Decision Guide",
+    introHeading: "How to evaluate a Mililani Mauka townhouse rental",
+    introLead: "Three bedrooms may solve the space question, but the exact address, parking, governing rules, lease, and weekday travel determine whether the home works.",
+    intro: [
+      "The archived title preserves three useful filters: Mililani Mauka, a townhouse, and three bedrooms with two bathrooms. It does not confirm the current asking rent, exact address, project name, square footage, condition, parking, appliances, pet policy, utilities, lease dates, or availability. Obtain a current listing sheet and complete written terms before arranging a move around this property or sending an application.",
+      "Townhouse communities can layer a lease with master-association and project-specific requirements. Mililani Town Association publishes covenants, design documents, general rules, and a list of complexes requiring sub-association approval. That is a reason to identify the exact complex and request every rule that applies to tenants; it is not proof that a particular archived unit includes recreation access or any other amenity.",
+      "Use one written scorecard for this home and each active alternative. Compare funds due before move-in, full recurring cost, bedroom and bathroom placement, stairs, parking for every vehicle, storage, cooling, utility responsibility, maintenance contacts, pet restrictions, exact-address school and hazard checks, and realistic travel tests. An old listing can guide a search, but only current documents can support a rental decision."
+    ],
+    sidebar: {
+      eyebrow: "Best Fit",
+      heading: "Who should shortlist this rental profile",
+      paragraphs: [
+        "This profile may suit a household that genuinely uses three bedrooms, prefers a townhouse to a detached-home lease, and can make a Mililani Mauka routine work for every driver, student, and recurring destination.",
+        "Pause before applying if stairs create an access problem, a vehicle lacks a confirmed space, a pet has only verbal approval, or a Schofield Barracks, Wheeler Army Airfield, school, or Honolulu trip has only been estimated from the neighborhood name. Each is an address-specific question."
+      ],
+      pills: ["Archived Listing", "3 Bedrooms", "2 Bathrooms", "Townhouse", "Mililani Mauka", "Rule Review"]
+    },
+    sections: [
+      {
+        title: "Confirm the current offer before applying",
+        pills: ["Availability", "Exact Address", "Showing", "Written Terms"],
+        paragraphs: [
+          "Ask whether the original townhouse is available now. Obtain the exact address and project name, current rent, proposed start date, lease length, application standards and charge, deposits, utility allocation, pet terms, parking assignment, and the name of the owner or licensed property manager. Verify who is authorized to offer the home before sending money, identification, or other sensitive application information.",
+          "Tour the actual unit rather than relying on archived photographs. Operate windows, doors, locks, plumbing fixtures, appliances, fans, and cooling equipment. Look for visible moisture or pest evidence, listen for road and neighboring noise, test cellular reception, and locate laundry, trash, mailbox, storage, and assigned parking. If you proceed, follow the move-in condition process and retain dated records of existing condition."
+        ]
+      },
+      {
+        title: "Calculate move-in funds and the full monthly cost",
+        pills: ["Rent", "Deposit", "Utilities", "Insurance"],
+        paragraphs: [
+          "Separate one-time and recurring expenses. Move-in funds may include first month's rent, the security deposit, an allowed application charge, an agreed pet deposit, movers, utility setup, and household items the unit lacks. Monthly comparisons should include rent, electricity, water or sewer if allocated to the tenant, internet, renters insurance, parking or pet charges, and transportation costs created by the address.",
+          "Hawaii's Department of Commerce and Consumer Affairs says a security deposit cannot exceed one month's rent. Its 2024 handbook discusses a separately agreed additional pet deposit of up to one month's rent and an assistance-animal exception. Review the latest official guidance and the proposed lease, and take questions about a specific agreement or legal right to a qualified Hawaii attorney."
+        ]
+      },
+      {
+        title: "Identify the governing associations and tenant rules",
+        pills: ["Project Name", "Parking", "Pets", "Community Rules"],
+        paragraphs: [
+          "Mililani Town Association's official rules page provides its declaration, general rules, design materials, and a document identifying property complexes that require sub-association approval. Confirm whether the exact townhouse is governed by MTA, a sub-association, or both, and obtain the current tenant-facing documents. Do not assume rules or access rights from another Mililani address transfer to this home.",
+          "Verify assigned stall numbers, garage use if advertised, vehicle registration and size limits, guest parking, towing, street-parking assumptions, pets, noise, smoking, outdoor items, trash, deliveries, move procedures, and access to any advertised facility. Ask who receives violation notices and who pays fines. Resolve any conflict between the lease, association documents, and verbal representations in writing before signing."
+        ]
+      },
+      {
+        title: "Test the floor plan and Central Oahu travel",
+        pills: ["Stairs", "Layout", "Commute", "Daily Routine"],
+        paragraphs: [
+          "Two bathrooms can reduce morning conflicts, but the count alone does not explain function. Confirm which floor holds each bedroom and bathroom, whether a full bath is convenient for guests, usable room dimensions, closet and pantry storage, laundry placement, stair width, cooling, afternoon sun, and the route for groceries or mobility equipment from parking. Match the plan to the people who will use it.",
+          "Drive from the exact address to the actual workplace, installation gate, school, childcare provider, or recurring appointment at realistic outbound and return times. Include local-road access, parking, installation screening, drop-off, and transit transfers. Military renters should verify their expected duty location and current access procedure with their command or installation; neither Schofield nor Wheeler is a single generic commute point."
+        ]
+      },
+      {
+        title: "Verify schools, hazards, and preparedness by address",
+        pills: ["School Assignment", "Flood", "Wildfire", "Coverage"],
+        paragraphs: [
+          "Do not infer a public-school assignment from Mililani Mauka or an old advertisement. The Hawaii Department of Education's SchoolSite Locator accepts a street address, but the department says its general service areas are for reference and should not be the sole source for a rental decision. Enter the exact address, then confirm the result, grade placement, enrollment steps, and transportation directly with the relevant school.",
+          "Search the address in Honolulu's Oʻahu Hazard Explorer. The city says it can show whether a location is within mapped flood, tsunami evacuation, wildfire-risk, or dam and levee evacuation areas. Treat mapping as a preparedness screen, not a guarantee about a unit. Ask about prior water intrusion, drainage, emergency access, and outages, review official preparedness guidance, and obtain a renters-insurance quote tied to the actual address and household."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Mililani Mauka Rental FAQs",
+      heading: "Questions to answer before applying",
+      intro: "Use the archived bedroom-and-bath profile as a starting point, then verify every current fact in writing.",
+      items: [
+        { question: "Is this 3-bedroom Mililani Mauka townhouse available now?", answer: "This legacy page is not proof of current availability. Confirm the exact address, status, rent, showing access, lease dates, application terms, and authorized contact before submitting information or funds." },
+        { question: "How much can a Hawaii rental security deposit be?", answer: "DCCA says a security deposit cannot exceed one month's rent. Its handbook discusses a separately agreed additional pet deposit and an assistance-animal exception. Check current official guidance and the proposed lease for your circumstances." },
+        { question: "Which community rules should a tenant request?", answer: "Confirm every association governing the unit, then request tenant rules for parking, towing, pets, guests, noise, smoking, outdoor use, deliveries, moving, facilities, maintenance, violations, and fines. Resolve conflicts with the lease in writing." },
+        { question: "How should I test a commute to Schofield or Wheeler?", answer: "Drive from the exact townhouse to the actual gate and duty destination at realistic outbound and return times. Include local roads, parking, and security screening, and verify the expected duty location and access procedure with the command or installation." },
+        { question: "How do I verify public schools for the townhouse?", answer: "Enter the exact street address in the Hawaii Department of Education's SchoolSite Locator, then contact the relevant school directly. The department says the locator shows general service areas and should not be the sole basis for a rental decision." },
+        { question: "How should I check hazards for a Mililani Mauka address?", answer: "Search the exact address in Honolulu's Oʻahu Hazard Explorer, ask about prior incidents and emergency access, and discuss address-specific coverage with an insurer. Official mapping is an initial screen and does not guarantee a property is free from hazards." }
+      ]
+    },
+    cta: buildPageCta("Compare current Mililani Mauka rentals", "Share your move date, monthly budget, vehicles, pets, accessibility and school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, rules, layouts, and daily fit before you apply.")
+  },
   "oahu-available-rental-properties/4-br-3-ba-rental-in-kapolei.html": buildPropertyExpansion({
     topic: "Kapolei 4-bedroom single-family rental",
     status: "For Rent",
@@ -4178,6 +4237,15 @@ function assignSecondPassLinks() {
   });
 
   CONTENT.propertyPages.forEach(function (page) {
+    if (page.path === "oahu-available-rental-properties/3-bedroom-2-bathroom-townhouse-in-mililani-mauka.html") {
+      page.relatedLinks = [
+        linkTo(pageIndex, "mililani-real-estate", "Mililani Area Guide", "Review broader Mililani location, housing, transportation, and community context."),
+        linkTo(pageIndex, "hawaii-bases-and-barracks", "Oahu Bases and Barracks", "Verify installation context before choosing a lease around an assumed duty commute."),
+        { path: "contact.html", label: "Ask About Current Rentals", description: "Share your timing and rental requirements for a current-availability conversation." },
+      ].filter(Boolean).slice(0, 3);
+      return;
+    }
+
     if (page.path === "oahu-available-rental-properties/2-bedroom-1-5-bath-condo-in-ewa-beach.html") {
       page.relatedLinks = [
         linkTo(pageIndex, "ewa-beach-real-estate", "Ewa Beach Area Guide", "Review broader Ewa Beach location, transportation, hazard, and housing context."),
