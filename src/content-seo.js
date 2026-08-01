@@ -4066,26 +4066,85 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Compare current Ewa Beach rentals with garages", "Share your move date, monthly budget, vehicles, storage needs, pets, accessibility needs, and exact duty or work destination. We can confirm current options and help you compare written terms, garage fit, total cost, layout, and daily routine before you apply.")
   },
-  "oahu-available-rental-properties/4-bedroom-3-bathroom-single-family-home-in-ewa-beach.html": buildPropertyExpansion({
-    topic: "Ewa Beach 4-bedroom single-family rental",
-    status: "For Rent",
-    segment: "This page is for larger renter households looking for detached-home living, more bedrooms, and a West Oahu family routine.",
-    bestFit: "A 4-bedroom Ewa Beach home usually fits families that need private bedrooms, garage or yard function, and enough space to settle quickly after a move.",
-    sidebarNote: "Large rentals should be evaluated by how the whole home works, including layout, parking, utility cost, yard care, and commute.",
-    localContext: "Ewa Beach single-family rentals are often attractive to military families and local households that need more space than a townhome or condo can provide.",
-    whySearched: "A 4-bedroom, 3-bath title signals a renter with a serious space requirement and likely a tight decision window.",
-    neighborhoodContext: "Ewa Beach can offer the space many families want, but commute timing and household logistics should be tested before signing a lease.",
-    compareFactors: ["rent", "layout", "parking", "yard", "utilities", "commute"],
-    compareGuidance: "Look beyond the bedroom count. Bedroom placement, bathroom access, yard expectations, and storage often matter more after move-in.",
-    currentUse: "Use this page to compare current larger Ewa Beach rentals with the same practical family-living criteria.",
-    heroIntro: "A 4-bedroom Ewa Beach rental should be judged by how well it supports family life under a real Oahu commute.",
-    introHeading: "Ewa Beach family rental context",
-    introLead: "Use this page to compare space, cost, parking, and timing before applying.",
-    pills: ["Ewa Beach", "4 Bedrooms", "Single Family", "Family Rental", "West Oahu"],
-    comparePills: ["Layout", "Yard", "Parking", "Utilities"],
-    ctaTitle: "Ask about large Ewa Beach rentals",
-    ctaText: "Call or text to compare current 4-bedroom rental homes in Ewa Beach and nearby areas.",
-  }),
+  "oahu-available-rental-properties/4-bedroom-3-bathroom-single-family-home-in-ewa-beach.html": {
+    description: "Use this archived Ewa Beach 4-bedroom rental guide to verify availability, total cost, layout, parking, yard duties, commute, schools, and hazards.",
+    keywords: ["Ewa Beach 4 bedroom rental", "4 bedroom 3 bath Ewa Beach", "Ewa Beach single family home for rent", "large Ewa Beach rental", "Ewa Beach rental checklist"],
+    heroEyebrow: "Archived Rental Guide",
+    heroIntro: "This legacy page describes a 4-bedroom, 3-bath single-family home in Ewa Beach, but it does not prove that the original property is currently available or that its old terms still apply. Confirm the exact address, authorized contact, condition, price, and written offer before treating it as an active rental.",
+    introEyebrow: "Large-Household Rental Checklist",
+    introHeading: "How to evaluate a 4-bedroom Ewa Beach rental",
+    introLead: "Treat the archived bedroom, bathroom, property-type, and location claims as a search profile—not as a current listing—and test each available home against the way your household actually lives.",
+    intro: [
+      "The old title does not establish the home's street address, floor plan, interior size, garage or driveway capacity, yard, current rent, deposits, utilities, appliances, pet policy, lease dates, association rules, condition, or availability. Get a current written fact sheet and proposed agreement from the owner or authorized property manager before sending money, identification, or an application.",
+      "Four bedrooms can solve several different problems: separate rooms for children, space for a multigenerational household, a private office, or less conflict among roommates. Three bathrooms can make mornings easier, but the count says nothing about whether a full bath is downstairs, which bedrooms share, or whether a guest can reach a bathroom without crossing a private room. The floor plan matters more than the headline.",
+      "Detached-home living also shifts the comparison beyond rent. Ask who handles landscaping, irrigation, pest treatment, refuse, appliance service, air-conditioning maintenance, and exterior care. Then combine those responsibilities with electricity, water or sewer if tenant-paid, internet, insurance, parking, pet costs, and transportation to compare the complete monthly routine rather than bedroom count alone."
+    ],
+    sidebar: {
+      eyebrow: "Best Fit",
+      heading: "Who should shortlist this rental profile",
+      paragraphs: [
+        "This profile may fit a larger family, multigenerational household, roommate group, or military household that needs four genuinely usable rooms, three workable bathrooms, and the privacy of a detached home in Ewa Beach.",
+        "Pause before applying if the exact address or authorized contact is unclear, a required downstairs sleeping or bathing arrangement has not been verified, every vehicle lacks a legal parking plan, yard duties are undefined, or the real commute has not been driven."
+      ],
+      pills: ["Archived Listing", "4 Bedrooms", "3 Bathrooms", "Single-Family Home", "Ewa Beach", "Layout Check"]
+    },
+    sections: [
+      {
+        title: "Verify the current offer before touring",
+        pills: ["Availability", "Exact Address", "Written Terms", "Fraud Check"],
+        paragraphs: [
+          "Start by confirming whether the original home is offered now and who has authority to rent it. Request the exact address, current rent, available date, lease length, application criteria and charge, all deposits, included utilities and appliances, pet terms, parking allocation, maintenance duties, and any house or association rules. Reconcile advertisements and verbal promises with the proposed agreement before paying or sharing sensitive information.",
+          "Tour the actual home or request a continuous live video tour if you are off island. Test doors, windows, plumbing fixtures, hot water, major appliances, cooling equipment, smoke alarms, lighting, and garage access. Ask that promised repairs be written down, and complete a detailed move-in condition record with dated photos when permitted. A polished headline or old photo set cannot establish present condition."
+        ]
+      },
+      {
+        title: "Make the four-bedroom, three-bath layout earn its cost",
+        pills: ["Floor Plan", "Privacy", "Accessibility", "Storage"],
+        paragraphs: [
+          "Assign a purpose to every room before the showing. Record usable dimensions, closets, doors, window exposure, cooling, noise, and distance to bathrooms. If anyone needs a bedroom and full bathroom without stairs, verify the fixtures and route in person; do not infer accessibility from the count. Roommates should settle bedroom, bathroom, guest, storage, cleaning, utility, and early-departure expectations before applying together.",
+          "Walk through a realistic morning and evening. Check whether three showers can be supported by the hot-water setup, whether bathroom ventilation works, where laundry sits, and whether bedrooms beside living areas provide enough separation. Inspect stairs, rails, exterior thresholds, delivery routes, pantry space, linen storage, and the path from parking with groceries. These details determine whether extra rooms reduce friction or merely increase cost."
+        ]
+      },
+      {
+        title: "Price the detached-home responsibilities",
+        pills: ["Total Cost", "Utilities", "Yard Care", "Insurance"],
+        paragraphs: [
+          "Build two totals: funds due before keys and expected monthly cost. The first may include first month's rent, security deposit, an agreed pet deposit, application costs, utility setup, and insurance. The second should include rent plus electricity, water or sewer if assigned, internet, renters insurance, pet charges, yard service or supplies, and transportation. Ask for documented billing history only as context because occupancy, weather, equipment, and usage differ.",
+          "Hawaii's Department of Commerce and Consumer Affairs says a residential security deposit may not exceed one month's rent; its handbook separately discusses an additional agreed pet deposit and the assistance-animal exception. The handbook also recommends putting restrictions, designated parking, and verbal promises in the rental agreement and using a signed condition inventory. Consult the current official guidance and a qualified Hawaii attorney for advice about a specific lease or dispute."
+        ]
+      },
+      {
+        title: "Inspect parking, outdoor space, and community rules",
+        pills: ["Vehicles", "Garage", "Yard", "Association Rules"],
+        paragraphs: [
+          "Map every household vehicle and likely guest vehicle to a legal space. Measure the garage opening and usable depth around storage, equipment, stairs, and water heaters; identify driveway boundaries; and ask about overnight street parking, guest passes, towing, commercial or oversized vehicles, motorcycles, trailers, repairs, washing, and electric charging. Confirm the current rules in writing because a detached home can still be governed by an association.",
+          "Clarify who maintains grass, landscaping, irrigation, fences, gates, trees, and pest control; what standard applies; and who pays when systems fail. Inspect drainage, exterior lighting, hose bibs, refuse storage, secure gates, and signs of water intrusion or pests. If outdoor space matters for children or pets, verify fencing and allowed use rather than assuming that the word single-family guarantees a private or enclosed yard."
+        ]
+      },
+      {
+        title: "Test the Ewa Beach routine by exact address",
+        pills: ["Commute", "Schools", "Transit", "Hazards"],
+        paragraphs: [
+          "Drive from the exact driveway to the actual workplace, installation gate, school, childcare provider, or recurring appointment at realistic outbound and return times. Include local streets, parking, security screening, drop-off, and any transit connection. Honolulu identifies Kualakaʻi in East Kapolei as a Skyline station, but access and usefulness depend on the home's precise location and the complete trip; do not treat an Ewa Beach label as proof of a rail-friendly commute.",
+          "For public schools, enter the exact address in the Hawaii Department of Education's SchoolSite Locator and confirm with the relevant school because the department says the locator shows general service areas for reference and should not be the sole source for a rental decision. Also enter the address in Honolulu's Oʻahu Hazard Explorer to review mapped tsunami evacuation, flood, wildfire-risk, and dam or levee evacuation areas. Use mapping as a planning screen, ask about prior events and emergency access, and discuss address-specific coverage with an insurer."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Ewa Beach Large-Home FAQs",
+      heading: "Questions to answer before applying",
+      intro: "Use the archived 4-bedroom, 3-bath description to frame your search, then verify every current property and lease fact in writing.",
+      items: [
+        { question: "Is this 4-bedroom Ewa Beach home available now?", answer: "This legacy page is not proof of a current offer. Confirm the exact address, availability, rent, showing access, lease dates, application terms, condition, and authorized contact before submitting information or funds." },
+        { question: "Does three bathrooms mean there is a full bathroom downstairs?", answer: "No. A bathroom count does not establish location or fixtures. Review the current floor plan and inspect the actual home, especially if a household member needs sleeping and bathing space without stairs." },
+        { question: "What detached-home costs should I ask about?", answer: "Confirm who pays for electricity, water or sewer, internet, insurance, yard and irrigation care, pest control, refuse, appliance service, cooling maintenance, and any required community-related charges. Compare both move-in funds and recurring costs." },
+        { question: "How much can a Hawaii rental security deposit be?", answer: "DCCA says the security deposit cannot exceed one month's rent. Its handbook separately addresses an agreed pet deposit and assistance animals. Review current official guidance and the proposed agreement, and seek qualified legal advice for your situation." },
+        { question: "How do I verify schools for an Ewa Beach address?", answer: "Use the Hawaii Department of Education's SchoolSite Locator with the exact address, then contact the relevant school directly. The department says the locator's general service areas are for reference and should not be the sole source for a rental decision." },
+        { question: "How should I screen hazards for the home?", answer: "Search the exact address in Honolulu's Oʻahu Hazard Explorer, ask about prior water intrusion, drainage, outages, and emergency access, and discuss coverage with an insurer. Hazard mapping informs preparedness but does not guarantee a property's condition or future safety." }
+      ]
+    },
+    cta: buildPageCta("Compare current 4-bedroom Ewa Beach rentals", "Share your move date, monthly budget, household layout needs, vehicles, pets, accessibility requirements, and exact duty or work destination. We can confirm current options and help you compare written terms, total cost, floor-plan fit, parking, outdoor duties, and daily routine before you apply.")
+  },
   "oahu-available-rental-properties/3-bedroom-2-5-bathroom-in-ocean-pointe.html": buildPropertyExpansion({
     topic: "Ocean Pointe 3-bedroom rental",
     status: "For Rent",
@@ -4414,6 +4473,15 @@ function assignSecondPassLinks() {
   });
 
   CONTENT.propertyPages.forEach(function (page) {
+    if (page.path === "oahu-available-rental-properties/4-bedroom-3-bathroom-single-family-home-in-ewa-beach.html") {
+      page.relatedLinks = [
+        linkTo(pageIndex, "ewa-beach-real-estate", "Ewa Beach Area Guide", "Review broader Ewa Beach transportation, hazard, housing, and daily-life context."),
+        linkTo(pageIndex, "hawaii-bases-and-barracks", "Oahu Bases and Barracks", "Verify installation context before choosing a lease around an assumed duty commute."),
+        { path: "contact.html", label: "Ask About Current Rentals", description: "Share your timing, household layout, vehicles, and rental requirements for a current-availability conversation." },
+      ].filter(Boolean).slice(0, 3);
+      return;
+    }
+
     if (page.path === "oahu-available-rental-properties/2-br-2-ba-with-2-car-garage-in-ewa-beach.html") {
       page.relatedLinks = [
         linkTo(pageIndex, "ewa-beach-real-estate", "Ewa Beach Area Guide", "Review broader Ewa Beach transportation, hazard, housing, and daily-life context."),
