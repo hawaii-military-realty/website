@@ -4284,26 +4284,85 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     ctaTitle: "Compare budget-friendly Ewa Beach rentals",
     ctaText: "Call or text to review current family rental options in Ewa Beach within your target budget.",
   }),
-  "oahu-available-rental-properties/for-rent-5-bedroom-executive-home-with-3-car-garage-in-ocean-pointe.html": buildPropertyExpansion({
-    topic: "Ocean Pointe executive rental",
-    status: "For Rent",
-    segment: "This page is for higher-income renter households, senior military families, contractors, or executives looking for a larger Ocean Pointe home.",
-    bestFit: "A 5-bedroom executive home with a 3-car garage usually fits households that need space, storage, privacy, and a premium West Oahu residential setting.",
-    sidebarNote: "Premium rentals need premium-level due diligence: lease terms, maintenance responsibility, utility expectations, garage use, and move-in timing all matter.",
-    localContext: "Ocean Pointe executive rentals can appeal to larger households that want Ewa Beach space with a more established residential feel.",
-    whySearched: "The executive-home language, bedroom count, and garage size indicate a narrower but valuable rental audience with specific household requirements.",
-    neighborhoodContext: "Ocean Pointe can work well for larger households, but premium rent should still be balanced against commute timing and how the home supports daily operations.",
-    compareFactors: ["rent", "garage capacity", "bedroom layout", "maintenance terms", "utilities", "commute"],
-    compareGuidance: "Premium rental value comes from how the home functions. Confirm whether the garage, bedroom layout, yard, and storage solve real household needs.",
-    currentUse: "Use this page to compare current executive rentals in Ocean Pointe, Ewa Beach, and nearby West Oahu communities.",
-    heroIntro: "A 5-bedroom Ocean Pointe executive rental should be compared by space, storage, lease terms, and daily routine.",
-    introHeading: "Ocean Pointe executive rental context",
-    introLead: "Use this page to evaluate premium West Oahu rental fit with practical detail.",
-    pills: ["Ocean Pointe", "Executive Home", "5 Bedrooms", "3-Car Garage", "Rental"],
-    comparePills: ["Garage", "Premium Rent", "Lease Terms", "Utilities"],
-    ctaTitle: "Ask about executive rentals in Ocean Pointe",
-    ctaText: "Call or text to compare current premium rental homes in Ocean Pointe and Ewa Beach.",
-  }),
+  "oahu-available-rental-properties/for-rent-5-bedroom-executive-home-with-3-car-garage-in-ocean-pointe.html": {
+    description: "Use this archived five-bedroom Ocean Pointe rental guide to verify availability, garage capacity, association rules, lease costs, schools, and daily fit.",
+    keywords: ["Ocean Pointe rental", "five bedroom Ewa Beach rental", "three car garage rental", "large Oahu rental home"],
+    heroEyebrow: "Archived Rental Guide",
+    heroIntro: "The five-bedroom and three-car-garage details come from a legacy listing title, not a promise that this Ocean Pointe home is available today. Use them as a search profile while you verify the current offer, exact address, written rules, and total cost.",
+    introEyebrow: "Large-Home Rental Due Diligence",
+    introHeading: "Test the space before paying for the label",
+    introLead: "An “executive home” description is marketing language; a good decision comes from confirming how the rooms, garage, lease, and location work for your household.",
+    intro: [
+      "This archive is for households seeking unusual capacity in Ewa Beach: multiple bedrooms, vehicle storage, work-from-home space, guest flexibility, or room for a multigenerational routine. It does not establish a current rent, address, floor plan, condition, amenity package, or availability date. Ask the authorized property manager to verify each of those items before treating the old headline as a live offer.",
+      "Five bedrooms do not automatically create five equally useful sleeping rooms. A downstairs room may help a household that needs fewer stairs, while a small upstairs room may work better as an office. Request a current floor plan or measured room dimensions, locate every full bathroom, and check where laundry, storage, cooling, and outdoor access sit in relation to the people who will use them.",
+      "A three-car garage can be the deciding feature, but the label needs its own inspection. Confirm the number and dimensions of usable stalls, door configuration, clearance, driveway capacity, opener access, storage restrictions, and whether appliances or owner belongings consume part of the advertised space. Match actual vehicles to the garage instead of assuming three full-size vehicles will fit."
+    ],
+    sidebar: {
+      eyebrow: "Household Fit",
+      heading: "Who should screen this profile",
+      paragraphs: [
+        "This profile may suit a larger family, a multigenerational household, roommates with a clear room plan, or renters who need separate office and guest space. It is most valuable when the extra rooms and garage solve defined needs rather than simply adding unused square footage.",
+        "Pause if your decision depends on an unverified school, a specific installation commute, unrestricted vehicle storage, a pet, accessibility, or permission to alter the exterior. Those are address- and lease-specific questions that should be resolved in writing before an application."
+      ],
+      pills: ["Archived Listing", "5 Bedrooms", "3-Car Garage", "Ocean Pointe", "Large Household", "Written Verification"]
+    },
+    sections: [
+      {
+        title: "Reconstruct the current rental offer",
+        pills: ["Availability", "Identity", "Lease Dates", "Application"],
+        paragraphs: [
+          "Begin with the exact street address and the name of the owner or authorized manager. Ask for present rent, proposed start date, lease length, application criteria and charge, all deposits, included appliances, utility responsibility, landscaping duties, pet terms, and showing access. Verify the recipient before sending identification, an application, or funds; an archived page alone is not evidence that anyone advertising the home now controls it.",
+          "At a showing, compare the current condition with the written offer. Operate doors, windows, locks, plumbing fixtures, appliances, garage doors, cooling equipment, and exterior lighting. Look for visible moisture, pests, damaged screens, uneven cooling, and deferred repairs. Photograph or otherwise document agreed condition through the proper move-in process, and make sure promised work and completion dates appear in writing."
+        ]
+      },
+      {
+        title: "Build a cost model for a large house",
+        pills: ["Move-In Funds", "Electricity", "Maintenance", "Insurance"],
+        paragraphs: [
+          "Separate the cash needed to move in from the cost of an ordinary month. Up-front funds may include first month's rent, security and any separately agreed pet deposit, movers, utility setup, and renters insurance. Monthly comparisons should include electricity for the actual cooling plan, water or sewer if tenant-paid, internet, landscaping or pest responsibilities, transportation, and any permitted parking or pet charges.",
+          "Hawaii's Department of Commerce and Consumer Affairs says a security deposit cannot exceed one month's rent. Its current handbook separately describes an agreed additional pet deposit of up to one month's rent and the assistance-animal exception. Use the current agency material and the proposed agreement together, and take questions about legal rights or unusual clauses to a qualified Hawaii professional rather than relying on a property archive."
+        ]
+      },
+      {
+        title: "Identify every Ocean Pointe rule that applies",
+        pills: ["Master Association", "Sub-Association", "Parking", "Exterior Use"],
+        paragraphs: [
+          "Ocean Pointe Residential Community Association's official site identifies eight service-area sub-associations with different management companies. That structure makes the exact address essential. Request the current master-association and any sub-association documents that bind occupants, along with tenant registration, access, contact, and enforcement procedures. Do not borrow parking or pet guidance from a different Ocean Pointe property.",
+          "Read the rules for garage use, driveway and street parking, vehicle registration, guests, towing, noise, pets, trash, deliveries, outdoor equipment, landscaping, and common areas. The association states that exterior improvements require Design Review Committee approval. A renter planning a satellite dish, charging equipment, shade feature, camera, or other visible installation should first obtain the owner's written consent and confirmation of the applicable approval process."
+        ]
+      },
+      {
+        title: "Make all five bedrooms and three stalls earn their cost",
+        pills: ["Room Plan", "Vehicle Fit", "Accessibility", "Storage"],
+        paragraphs: [
+          "Assign a purpose to each room before comparing this profile with a smaller home. Record usable dimensions, closet capacity, privacy, floor level, nearby bathroom, sun exposure, and cooling. Then walk a normal morning: showers, meals, school preparation, remote meetings, laundry, and departures. A high bedroom count can still create friction if most rooms share one bathroom or if noise travels between work and sleep areas.",
+          "Do the same exercise for vehicles and stored equipment. Measure rather than guess, account for mirrors and door swing, and check whether a vehicle can leave without moving another. Clarify whether the garage must remain available for parking, whether shelving is included, and who maintains the opener. Inspect the route from garage to kitchen and bedrooms; that detail matters with groceries, young children, mobility equipment, or frequent travel gear."
+        ]
+      },
+      {
+        title: "Verify the address against the household's map",
+        pills: ["Work Trip", "School Locator", "Hazards", "Daily Stops"],
+        paragraphs: [
+          "Test trips from the exact home to the actual workplace or installation gate at the hours you will travel. Include gate screening, school or childcare drop-off, recurring medical visits, and the return trip rather than relying on a generic mileage estimate. Shift workers should also inspect nighttime lighting, garage access, and the effect of neighboring activity during daytime sleep.",
+          "For public schools, enter the street address in the Hawaii Department of Education's SchoolSite Locator and then contact the school. HIDOE says the displayed service areas are general reference information and should not be the sole source for a rent decision. For preparedness, screen the address in Honolulu's Oʻahu Hazard Explorer, which maps tsunami evacuation, flood, wildfire-risk, and dam or levee evacuation areas; use the results to plan and ask better questions, not as a prediction of a home's condition."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Large Ocean Pointe Rental FAQs",
+      heading: "Questions to answer before applying",
+      intro: "The old title defines a useful search profile, but only current documents and an address-level inspection can establish what is being offered now.",
+      items: [
+        { question: "Is this five-bedroom Ocean Pointe home available now?", answer: "The archive does not establish current availability. Confirm the exact address, present rent, lease dates, authorized manager, showing access, and application process before relying on the listing." },
+        { question: "Does a three-car garage guarantee space for three vehicles?", answer: "No. Ask for stall and door dimensions, inspect clearance and storage intrusions, and test the household's actual vehicles. Also confirm driveway, street, guest, registration, and towing rules in the current association documents." },
+        { question: "Are Ocean Pointe rules the same at every address?", answer: "Do not assume they are. The master association's official site lists eight sub-associations and multiple managers. Request the master and sub-association documents that apply to the specific home." },
+        { question: "What should be included in the monthly comparison?", answer: "Compare rent plus electricity, water or sewer if allocated to the tenant, internet, renters insurance, transportation, and assigned landscaping, pest, or other maintenance. Keep required move-in cash as a separate total." },
+        { question: "How should a family verify public schools?", answer: "Use the exact address in HIDOE's SchoolSite Locator, then contact the relevant school to confirm. The department cautions that the locator's general service areas should not be the sole basis for renting or relocating." },
+        { question: "Can a tenant install equipment on the exterior?", answer: "Do not assume permission. Obtain the owner's written consent, review the lease, and verify the current association process. Ocean Pointe's association says exterior improvements require advance Design Review Committee approval." }
+      ]
+    },
+    cta: buildPageCta("Compare current large rentals in Ocean Pointe", "Share your move date, budget, household room plan, vehicles, pets, accessibility needs, school questions, and exact work or duty destination. We can help identify current options and compare their written terms, association rules, total cost, and everyday fit.")
+  },
   "oahu-available-rental-properties/for-rent-2-br-2-bath-condominium-in-mililani-mauka.html": buildPropertyExpansion({
     topic: "Mililani Mauka 2-bedroom condo rental",
     status: "For Rent",
@@ -4600,6 +4659,15 @@ function assignSecondPassLinks() {
         linkTo(pageIndex, "ewa-beach-real-estate", "Ewa Beach Area Guide", "Review broader Ewa Beach transportation, hazard, housing, and daily-life context."),
         linkTo(pageIndex, "hawaii-bases-and-barracks", "Oahu Bases and Barracks", "Verify the actual installation and gate before judging a military commute."),
         { path: "contact.html", label: "Ask About Current Rentals", description: "Share your timing, vehicles, pets, and household requirements for a current-availability conversation." },
+      ].filter(Boolean).slice(0, 3);
+      return;
+    }
+
+    if (page.path === "oahu-available-rental-properties/for-rent-5-bedroom-executive-home-with-3-car-garage-in-ocean-pointe.html") {
+      page.relatedLinks = [
+        linkTo(pageIndex, "ewa-beach-real-estate", "Ewa Beach Area Guide", "Review broader Ewa Beach transportation, hazard, housing, and daily-life context."),
+        linkTo(pageIndex, "hawaii-bases-and-barracks", "Oahu Bases and Barracks", "Verify the actual installation and gate before judging a military commute."),
+        { path: "contact.html", label: "Ask About Current Large Rentals", description: "Share your timing, room plan, vehicles, pets, and other requirements for a current-availability conversation." },
       ].filter(Boolean).slice(0, 3);
       return;
     }
