@@ -2123,25 +2123,112 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
       "Share your duty location or work route, arrival window, financing plan, and preferred communities. We can help compare exact new and resale options while your lender, inspector, insurer, and attorney handle their specialized reviews."
     )
   },
-  "oahu-real-estate-property-for-sale-listings": buildEvergreenExpansion({
-    topic: "Oahu real estate listings",
-    audienceShort: "islandwide Oahu buyers",
-    intent: "trying to understand where to focus your Oahu home search before narrowing to one community or property type",
-    segment: "This page is for buyers who are still comparing Oahu at the island level and need a practical way to move from broad search results into the right neighborhoods.",
-    sidebarNote: "Use it to sort the island by daily life first: commute, property type, price range, schools, base access, and how much space you realistically need.",
-    localContext: "Oahu is a compact island with very different housing experiences. A central Oahu townhome, a West Oahu detached home, a windward property, and an urban condo can all solve different problems for the same buyer.",
-    whyItMatters: "Broad Oahu searches have high potential but can waste time fast. Without a framework, buyers bounce between areas that do not solve the same commute, budget, or household need.",
-    oahuContext: "The first filter should be routine. Think through H-1 access, base proximity, work location, school schedule, maintenance fees, parking, and whether islandwide flexibility is worth a longer drive.",
-    decisionFactors: ["region", "property type", "budget", "commute", "association fees", "long-term fit"],
-    compareGuidance: "Compare West Oahu, Central Oahu, town, and windward options by what each area gives up and what it makes easier. The right Oahu search is usually a tradeoff decision, not a single perfect area.",
-    nextStep: "Choose two or three serious submarkets, then move into area-specific pages and listings so your search gets sharper instead of wider.",
-    heroIntro: "Islandwide Oahu search works best when broad curiosity turns into a clear comparison between regions, property types, and daily routines.",
-    introLead: "This guide helps buyers move from general Oahu real estate research into a focused search path.",
-    pills: ["Oahu Listings", "Islandwide Search", "Buyers", "Neighborhoods", "Commute"],
-    contextPills: ["West Oahu", "Central Oahu", "Town", "Windward"],
-    ctaTitle: "Narrow your Oahu search",
-    ctaText: "Call or text to compare communities, property types, and commute realities before you chase islandwide listings.",
-  }),
+  "oahu-real-estate-property-for-sale-listings": {
+    title: "Oahu Real Estate Listings and Islandwide Buyer Guide",
+    description: "Compare Oahu real estate listings by region, daily route, property type, monthly ownership cost, hazard research, and due diligence before choosing homes to tour.",
+    keywords: ["Oahu real estate listings", "Oahu homes for sale", "buying a home on Oahu", "Oahu property search", "Oahu military home buyer"],
+    heroEyebrow: "Islandwide Buyer Guide",
+    heroIntro: "Use Oahu listings to test a housing plan—not just collect attractive homes. Start with the routes and costs your household can sustain, then compare exact properties with the same due-diligence checklist.",
+    introEyebrow: "From Island Search to Short List",
+    introHeading: "Build an Oahu home search around the life you will actually live",
+    introLead: "An islandwide search is useful at the beginning, but the result should be a small set of areas and property types that work under real weekday conditions.",
+    intro: [
+      "Oahu buyers often open one search and see downtown and resort-area condos, older single-family homes, newer west-side developments, central townhomes, and windward properties together. Those listings are not interchangeable. Each combines a different route to work, parking pattern, exposure to association costs, maintenance burden, climate, and amount of private space.",
+      "Start by writing down the non-negotiable trips for every decision-maker: duty station or workplace, school or childcare, medical care, and recurring family obligations. Test those trips at the hours you would actually travel. A map distance or a single estimated drive time cannot capture congestion, incidents, weather, gate access, or the fact that two adults may travel in opposite directions.",
+      "Then set an all-in housing range with a qualified lender and keep cash needs visible. Purchase price is only one input. Depending on the property, the monthly and near-term picture may also include loan costs, property tax, hazard and other insurance, association or maintenance fees, utilities, repairs, parking, and reserves. This guide gives you a repeatable way to narrow listings; it does not replace lending, legal, inspection, insurance, or tax advice."
+    ],
+    sidebar: {
+      eyebrow: "Best Fit",
+      heading: "Who should use this islandwide search plan",
+      paragraphs: [
+        "Use this page if you have not settled on one Oahu community, are relocating from off island, are balancing more than one commute, or need to compare condos, townhomes, and detached homes on equal terms.",
+        "Military households should include report date, temporary lodging, household-goods timing, base gate, possible reassignment horizon, and any lender requirements in the search plan. Keep at least one workable backup area rather than betting the move on a single listing."
+      ],
+      pills: ["Islandwide Buyers", "PCS Planning", "Route Testing", "All-In Cost", "Due Diligence"]
+    },
+    sections: [
+      {
+        title: "Divide Oahu by your routes, not by listing volume",
+        pills: ["Honolulu", "Central Oahu", "West Oahu", "Windward", "Leeward"],
+        paragraphs: [
+          "Treat the common region names as starting points rather than promises. Urban Honolulu may put some buyers nearer major employment and services while making a high-rise or smaller footprint more likely. Central Oahu can change access to both town and parts of the military network. West Oahu may offer a different mix of planned communities, townhomes, and detached homes, but a town-focused household must test the route. Windward and leeward locations bring their own road dependencies, weather patterns, and access tradeoffs.",
+          "Choose two or three search zones by plotting the household's recurring destinations. Drive the leading route during a realistic weekday window when possible, and identify the alternate route before making an offer. For a remote purchase, ask for live video of the approach streets, parking, neighboring properties, exterior condition, and ambient noise—not only the interior. No community label can substitute for checking the exact address.",
+          "Compare the same five items for every zone: weekday route, attainable property type, all-in cost, parking and storage, and the household's likely holding period. This keeps a larger house from automatically beating a better-located townhome, or a lower list price from hiding fees and transportation tradeoffs."
+        ]
+      },
+      {
+        title: "Compare property types on the same all-in worksheet",
+        pills: ["Condo", "Townhome", "Detached Home", "Fees", "Reserves"],
+        paragraphs: [
+          "A condominium can reduce exterior maintenance responsibility and place a buyer closer to a preferred destination, but the unit comes with a shared financial and governance structure. A townhome may offer more separation or parking while retaining association rules. A detached home can provide land and control, yet shift more exterior, drainage, roof, pest, and utility responsibility directly to the owner. Ask what you own, what is common, and who pays when a major component fails.",
+          "For a condominium or other association property, review the declaration, bylaws, house rules, current budget, reserve study, insurance information, meeting minutes, pending work, litigation disclosures, delinquencies, and existing or discussed special assessments with the appropriate professionals. The Hawaiʻi Real Estate Commission's condominium buyer checklist specifically points buyers toward financials, insurance, reserves, rules, and board records. Do not reduce the comparison to the monthly fee alone.",
+          "Build one worksheet for every serious listing. Include estimated principal and interest supplied by the lender, property taxes, insurance quotes, association charges, utilities, parking, expected near-term repairs, and a reserve allowance. Keep one-time cash items—down payment, lender and closing costs, inspection, moving, immediate repairs, and deposits—separate from the monthly view. Confirm figures for the exact property before relying on them."
+        ]
+      },
+      {
+        title: "Research the parcel before the showing becomes an offer",
+        pills: ["TMK", "Property Record", "Permits", "Disclosure", "Title"],
+        paragraphs: [
+          "Use the address to identify the property's Tax Map Key, or TMK. Honolulu's Real Property Assessment Division says its parcel records include assessment and tax history, property classification, land description, and descriptions of building improvements. These records are useful leads, not a survey, title report, appraisal, permit approval, or guarantee that the physical home matches every official record.",
+          "If an addition, converted space, extra dwelling area, wall removal, or major renovation affects your decision, ask for permits and final approvals and research the exact TMK with Honolulu's Department of Planning and Permitting. DPP explains that the TMK numerically identifies property and points users to its GIS search. Have the inspector, title provider, attorney, lender, and permitting professionals address issues within their roles rather than assuming attractive finished space is authorized.",
+          "Read the seller disclosure and supporting documents early enough to investigate them. Verify the legal ownership form, parking rights, easements, leases if any, shared-drive or access arrangements, appliances and included items, known repairs, and deadlines in the purchase contract. Written records and professional review matter more than listing shorthand."
+        ]
+      },
+      {
+        title: "Check hazards and insurance at the exact address",
+        pills: ["Flood", "Tsunami", "Drainage", "Insurance", "Resilience"],
+        paragraphs: [
+          "Hazard research belongs near the beginning of an Oahu search because it can affect safety planning, insurance, financing, maintenance, and resale. Use Hawaiʻi's official Flood Hazard Assessment Tool for the parcel and the Hawaiʻi Emergency Management Agency's tsunami evacuation maps for the home, work, and school locations. HI-EMA cautions that an evacuation zone is a minimum guideline and that locally generated events require immediate action after strong shaking.",
+          "A map layer is only one part of property-level due diligence. Ask about past water entry, site drainage, retaining walls and slopes, roof and window age, corrosion, shoreline or stream proximity, sewer or wastewater system, and access during severe weather. Request an insurance quote during the contingency period rather than inferring availability or cost from a neighboring property.",
+          "Have a licensed inspector evaluate the home's accessible systems and conditions under the agreed scope. If using a VA-backed loan, remember that VA states its appraisal is not the same as a home inspection. Financing approval, appraisal, inspection, title review, disclosures, hazard research, and insurability answer different questions; one does not make the others unnecessary."
+        ]
+      },
+      {
+        title: "Turn saved listings into a disciplined tour and offer plan",
+        pills: ["Short List", "Tour", "Offer", "Contingencies", "Backup Plan"],
+        paragraphs: [
+          "Score saved listings before arranging tours. A useful scorecard covers route, all-in cost, layout, parking, condition, association health, hazard findings, and long-term flexibility. Mark each item as verified, estimated, or unknown. Remove homes that fail a true non-negotiable and carry the unresolved questions into the showing instead of letting fresh paint reset the decision.",
+          "At the property, test how the home works: parking dimensions and assigned stalls, guest access, stairs, ventilation and afternoon sun, storage, laundry, water pressure, exterior drainage, street noise, neighboring uses, and phone connectivity. For remote buyers, request an unedited live walk-through and independent inspections; keep travel, signing, funds-transfer, and closing procedures secure and confirmed through known contacts.",
+          "Before writing, ask your agent and lender to explain current comparable evidence, financing readiness, deadlines, deposits, included items, and the consequences of each proposed contingency. Decide your maximum exposure before negotiation starts. Keep the second-choice home or area alive until the transaction is secure, especially when a PCS or lease end leaves little schedule flexibility."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Buyer Questions",
+      heading: "Oahu real estate listing FAQs",
+      intro: "Use these answers to narrow the search and identify which facts still require property-specific verification.",
+      items: [
+        {
+          question: "Which part of Oahu should I search first?",
+          answer: "Start with the two or three zones that best serve the household's recurring work, duty, school, and care routes. Then compare attainable property type, all-in cost, parking, and holding period. Test actual routes at relevant hours instead of choosing from distance alone."
+        },
+        {
+          question: "Should I search condos and single-family homes together?",
+          answer: "Yes, if both could solve the same housing need, but compare them on one all-in worksheet. Include association costs and documents for a condo and realistic exterior, land, pest, drainage, roof, and repair responsibility for a detached home."
+        },
+        {
+          question: "What official records can I check for an Oahu property?",
+          answer: "Start with the Honolulu parcel record and TMK, then use Department of Planning and Permitting resources for permit questions. Also review title and seller documents, association records where relevant, and official flood and tsunami tools. Ask the appropriate professional to interpret issues that affect the transaction."
+        },
+        {
+          question: "Does a VA appraisal replace a home inspection?",
+          answer: "No. The U.S. Department of Veterans Affairs expressly says an appraisal is not the same as an inspection. Discuss loan requirements with a qualified VA lender and hire appropriate inspectors for property-condition review."
+        },
+        {
+          question: "How can I buy on Oahu while living elsewhere?",
+          answer: "Set the route, budget, property, and documentation standards before touring. Use live, unedited video; verify the exact address and records; arrange independent inspections; confirm insurance and financing; protect funds-transfer instructions; and maintain a lodging or housing backup if timing is firm."
+        },
+        {
+          question: "Are listings on this page guaranteed to be available?",
+          answer: "No. Listing status, price, terms, and property facts can change. Confirm current availability and all material details with the brokerage and the relevant transaction professionals before relying on a listing or making a decision."
+        }
+      ]
+    },
+    cta: buildPageCta(
+      "Build your Oahu short list",
+      "Share your work or duty locations, arrival or purchase window, financing stage, property preferences, and non-negotiables. We can help narrow the island to realistic areas and exact homes while your lender, inspector, insurer, title provider, and attorney handle their specialized reviews."
+    )
+  },
   "hawaii-military-lodging": buildEvergreenExpansion({
     topic: "Hawaii military lodging",
     audienceShort: "incoming military families",
