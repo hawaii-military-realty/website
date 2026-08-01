@@ -2915,25 +2915,99 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Build an address-specific Ewa Beach plan", "Share your destinations, move date, all-in monthly ceiling, cash reserve, property type, parking, pets, school needs, and likely holding period. We can help compare realistic Ewa Beach options while lenders, insurers, inspectors, agencies, and legal or tax professionals confirm decisions in their fields.")
   },
-  "opportune-lift-program-oplift": buildEvergreenExpansion({
-    topic: "OPLIFT",
-    audienceShort: "military families researching relocation support",
-    intent: "trying to understand whether OPLIFT or related support resources affect your move timing and housing plan",
-    segment: "This page is for service members and families researching military support resources while preparing for an Oahu transition.",
-    sidebarNote: "The program context matters most when it is connected to the housing timeline that follows arrival or travel planning.",
-    localContext: "Military moves often involve overlapping logistics: travel, temporary lodging, orders, household goods, school timing, pets, and housing availability. Any support resource should be viewed inside that larger plan.",
-    whyItMatters: "Niche military-resource searches can bring in highly relevant relocation traffic. These visitors may not be ready to buy or rent yet, but they are already solving move-related problems.",
-    oahuContext: "On Oahu, timing pressure can compound quickly because rental availability, commute testing, and purchase readiness all depend on when the family can be on island and how much flexibility they have.",
-    decisionFactors: ["eligibility questions", "arrival timing", "temporary lodging", "housing search window", "base assignment", "family logistics"],
-    compareGuidance: "Connect any support-program details to the practical housing questions: where you will stay, how quickly you need a rental or purchase, and which areas are realistic for the assignment.",
-    nextStep: "Use the resource research to build a housing timeline, then move into lodging, base, rental, or buying guidance as soon as the dates are clear.",
-    heroIntro: "OPLIFT-related research should connect military support questions with the housing decisions that usually follow.",
-    introLead: "Use this page to move from support-resource research into practical Oahu relocation planning.",
-    pills: ["OPLIFT", "Military Support", "PCS", "Oahu Relocation", "Housing Timeline"],
-    contextPills: ["Arrival", "Travel", "Temporary Lodging", "Housing Search"],
-    ctaTitle: "Turn support questions into a housing timeline",
-    ctaText: "Call or text with your timeline and assignment so relocation planning can move from logistics into housing decisions.",
-  }),
+  "opportune-lift-program-oplift": {
+    description: "Understand Navy OPLIFT vehicle shipping between Hawaii and San Diego, its space-available limits, and how to build an Oahu PCS and housing plan without depending on an uncertain second-car arrival.",
+    keywords: ["OPLIFT Hawaii", "Opportune Lift program", "second vehicle PCS Hawaii", "military car shipping Hawaii", "Oahu PCS transportation"],
+    heroEyebrow: "Second-Vehicle PCS Planning",
+    heroIntro: "Treat OPLIFT as a possible Navy shipping opportunity—not a scheduled entitlement—and keep your Oahu housing, commute, and arrival plans workable if a second vehicle does not arrive when hoped.",
+    introEyebrow: "What The Program Actually Does",
+    introHeading: "Put OPLIFT in the right place in your Hawaii move plan",
+    introLead: "OPLIFT can sometimes move a privately owned vehicle between Hawaii and San Diego in unused capacity aboard a participating Navy ship, but operational needs control whether and when a lift occurs.",
+    intro: [
+      "Commander Naval Surface Group Middle Pacific describes the Opportune Lift Program, or OPLIFT, as a member-funded, space-available program that relies on volunteer Navy ships. Its Hawaii program page says opportunities are extremely limited because ship schedules, follow-on missions, and load configurations come first. This is not ordinary commercial auto transport, a reservation with a delivery window, or proof that a particular vehicle will be accepted.",
+      "The practical appeal is easy to understand. Department of Defense travel rules generally limit a government-funded PCS vehicle shipment to one privately owned vehicle per member household. A family that uses two cars may therefore investigate OPLIFT for another vehicle between San Diego and Hawaii. The official Navy page lists contacts in both locations, but the coordinator—not a real estate professional, sponsor, or past participant—must confirm current eligibility, paperwork, vehicle requirements, direction of service, wait-list status, costs, and whether any lift is available.",
+      "Make the housing decision independently of an optimistic shipping date. On Oahu, a household's need for one or two vehicles depends on the exact duty site and gate, work hours, school or child-care trips, parking provided by the property, transit access, and the distance between recurring destinations. This guide helps connect those questions while keeping transportation, military entitlement, registration, and OPLIFT decisions with the responsible offices."
+    ],
+    sidebar: {
+      eyebrow: "Before You Apply",
+      heading: "Build a no-lift fallback first",
+      paragraphs: [
+        "Ask the current OPLIFT coordinator what service is actually available before moving a vehicle to San Diego or making nonrefundable plans. Confirm who may apply, required documents, acceptable vehicle condition and clearance, storage arrangements, loading method, possible fees, insurance or risk terms, pickup rules, and what happens if no suitable ship becomes available.",
+        "Then price the alternatives: ship commercially, sell or store the second vehicle, arrive with one vehicle, rent temporarily, use transit or rides, or buy later on island. Keep temporary transportation and parking costs visible in the housing budget."
+      ],
+      pills: ["Coordinator Confirmation", "No Set Schedule", "Possible Fees", "Vehicle Rules", "Fallback Budget", "Parking"]
+    },
+    sections: [
+      {
+        title: "Understand the difference between entitlement and opportunity",
+        pills: ["One POV Entitlement", "Space Available", "Operational Schedule", "Current Rules"],
+        paragraphs: [
+          "The Defense Travel Management Office records that, effective October 1, 2024, Joint Travel Regulations language was clarified to limit vehicle shipment under the applicable authority to one privately owned vehicle per member household. Your orders, service transportation office, and current regulations control your actual entitlement. Do not assume that a second vehicle will be government-funded because both adults drive or because a prior move was handled differently.",
+          "OPLIFT sits outside the certainty people often associate with that authorized shipment. The Navy says its Middle Pacific program moves material only when a participating ship has suitable capacity and an operational schedule that permits it. The published program information also says users fund the program; crane loading or unloading and tie-down equipment may create costs. The amount and process can vary with the lift, so obtain current written instructions before committing.",
+          "MilitaryINSTALLATIONS currently describes OPLIFT as an option associated with a second vehicle and warns that a space-available shipment can take a very long time. Read that as a planning warning, not a promised maximum. Verify the latest program status directly because a web page, phone number, eligibility rule, port procedure, or sailing opportunity can change."
+        ]
+      },
+      {
+        title: "Ask the coordinator questions that expose the real risk",
+        pills: ["Eligibility", "Application", "Wait List", "Ground Clearance", "Storage"],
+        paragraphs: [
+          "Start with eligibility and direction. State your service status, PCS or retirement circumstances, travel dates, vehicle year and model, and whether you need Hawaii-to-San Diego or San-Diego-to-Hawaii movement. Ask whether applications are being accepted, how the wait list works, whether the paperwork expires, and whether submission creates any priority or merely places you in consideration for a future lift.",
+          "Next, confirm physical and financial requirements. The Navy page notes that vehicle loading by ramp can require minimum ground clearance and that crane handling can generate shared fees. Ask about dimensions, modifications, operability, fuel level, cleanliness, prohibited contents, keys, lienholder or lease permission, inspection, photographs, damage documentation, tie-downs, insurance, release forms, and payment methods. Current instructions and application documents control, not this summary.",
+          "Finally, map custody from drop-off through pickup. Who stores the vehicle in San Diego or Hawaii, what fees can accrue, how much notice is given, who may release or receive it, and what happens when orders or personal travel change? Do not deliver the vehicle until you have verified the facility, contact, documents, charges, and contingency procedure through official channels."
+        ]
+      },
+      {
+        title: "Compare OPLIFT with the alternatives on total cost and control",
+        pills: ["Commercial Shipping", "One-Car Household", "Sell Or Store", "Temporary Transport"],
+        paragraphs: [
+          "Compare choices on more than the advertised shipping charge. An OPLIFT opportunity could reduce direct transport cost, yet uncertainty may produce storage, travel to or from San Diego, temporary transportation, insurance, duplicate parking, maintenance, or last-minute commercial shipping costs. A commercial carrier may cost more but provide a different level of scheduling and tracking. Obtain written quotes and terms for the actual vehicle and dates rather than relying on anecdotes.",
+          "Test whether the household can function with one vehicle for an open-ended period. Put every repeating trip on a weekly calendar: duty and gate report times, spouse employment, school or child care, medical appointments, groceries, pet care, and activities. Check current transit routes and safe walking connections for the exact home candidates. Car sharing may work for one schedule and fail immediately for another.",
+          "Selling or storing the second vehicle on the mainland, or purchasing after arrival, also has transaction, financing, registration, depreciation, maintenance, and timing consequences. There is no universal best answer. Choose the option whose worst plausible outcome the household can afford, and avoid using home-purchase reserves or emergency cash without considering the rest of the PCS budget."
+        ]
+      },
+      {
+        title: "Let transportation needs shape the Oahu housing shortlist",
+        pills: ["Duty Gate", "Parking", "Transit", "Daily Routes", "Housing Cost"],
+        paragraphs: [
+          "Begin the home search with exact destinations, not an installation name alone. A duty station may have multiple gates, work centers, or parking conditions. Test address-to-destination routes at representative report and release times when possible, then add the second worker and family trips. A map estimate cannot promise a recurring Oahu commute, and an uncertain second vehicle makes route conflicts more important.",
+          "Confirm parking before applying for a rental or offering on a property. Identify assigned stalls, garage dimensions, street rules, guest parking, base or workplace parking, association restrictions, vehicle-size limits, and any separate monthly charge. Two vehicles can turn an otherwise suitable condominium or townhome into a daily problem; one vehicle can make a transit-connected location more valuable even if it offers less private parking.",
+          "Keep transportation costs beside housing costs. Compare rent or mortgage scenario, association charges, insurance, utilities, parking, fuel, transit, rides, rental-car periods, and a vehicle-shipping fallback. The cheaper home can be the more expensive household choice if it forces another car or creates repeated schedule conflicts. A real estate professional can help screen property and location fit, but cannot validate OPLIFT access or military reimbursement."
+        ]
+      },
+      {
+        title: "Plan arrival, lodging, and move-in without a second-car promise",
+        pills: ["Arrival Week", "Temporary Lodging", "Keys", "Household Goods", "Backup Plan"],
+        paragraphs: [
+          "Build the arrival sequence around confirmed events: report date, lodging reservation, authorized POV delivery estimate, household-goods timing, housing appointments, lease or closing milestones, and key release. Place OPLIFT in a separate, unconfirmed lane until the program gives actionable instructions. Do not sign a lease, waive a useful purchase contingency, or shorten lodging solely because someone expects a ship to sail.",
+          "Installation relocation offices can help with PCS checklists, counseling, lending closets, and local contacts. MilitaryINSTALLATIONS advises contacting relocation assistance early for complex moves, and U.S. Army Garrison Hawaii says its Housing Services Office assists incoming personnel and processes Army Temporary Lodging Allowance eligibility. Services and eligibility differ by branch and installation, so use the office serving your assignment and have the appropriate official explain reimbursement or allowance rules.",
+          "Create a trigger date for changing plans. If no confirmed lift exists by that date, decide whether to extend storage, arrange commercial shipment, continue with one vehicle, or use another alternative. Write down who will make the decision, the maximum added cost, and the effect on home criteria. That converts uncertainty into a controlled branch of the move rather than a crisis after arrival."
+        ]
+      },
+      {
+        title: "Prepare for Oahu vehicle registration after delivery",
+        pills: ["Bill Of Lading", "Safety Inspection", "Registration", "Insurance", "Military Forms"],
+        paragraphs: [
+          "A shipped vehicle still needs an Oahu compliance plan. The City and County of Honolulu publishes a military-service-member process for initial registration. It directs owners of an out-of-state vehicle through a Hawaii safety inspection and then a satellite city hall or the Joint Base Pearl Harbor-Hickam vehicle registration office, with different document paths depending on whether the owner keeps out-of-state plates or obtains Hawaii plates.",
+          "The city's current checklist includes vehicle ownership or registration material, shipping documents showing the VIN, the inspection certificate, and applicable applications; military nonresident or resident forms may apply to tax treatment. Insurance, lien, lease, ownership, and status details can change what is required. Use Honolulu's current page and forms for the exact vehicle, and keep the bill of lading or shipping receipt accessible after pickup.",
+          "Schedule time and cash for inspection, registration, insurance adjustments, possible repairs, and travel between offices. Do not assume an OPLIFT handoff completes those steps or that a military tax waiver eliminates every registration fee. Verify base-access or installation registration requirements separately when they apply to where the vehicle will be driven."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "OPLIFT Decisions",
+      heading: "Opportune Lift Program FAQs",
+      intro: "Program availability and requirements can change; confirm current answers with the official OPLIFT coordinator and your transportation office before acting.",
+      items: [
+        { question: "What is OPLIFT in Hawaii?", answer: "OPLIFT is the Navy's Opportune Lift Program. Commander Naval Surface Group Middle Pacific describes its regional program as space-available movement using volunteer Navy ships, including lifts between Hawaii and San Diego. Operational schedules and ship load configurations control opportunities, so it is not scheduled commercial transport." },
+        { question: "Is OPLIFT the government-funded shipment on my PCS orders?", answer: "Do not treat the two as interchangeable. Current DoD guidance generally limits the authorized POV shipment to one vehicle per member household, while the Navy describes OPLIFT as a member-funded, space-available opportunity. Your orders and transportation office determine entitlement; the OPLIFT coordinator determines current program procedures." },
+        { question: "Can OPLIFT guarantee when my second vehicle will arrive?", answer: "No. The Navy states that availability depends on operational schedules and ship load out and that opportunities are extremely limited. Build a one-vehicle or other transportation fallback and ask the coordinator for current status without treating an estimate or wait-list position as a delivery guarantee." },
+        { question: "Is OPLIFT free?", answer: "Do not assume it is free. The Navy says the program is funded by participating members and explains that crane services and tie-down equipment may create charges. Confirm all current costs, storage terms, loading arrangements, and payment requirements before delivering a vehicle." },
+        { question: "Should OPLIFT determine where I live on Oahu?", answer: "It should inform the transportation scenario, not control the housing commitment. Choose a home that works with the confirmed vehicle situation and a realistic fallback, considering exact duty routes, the second worker, school or child-care trips, parking, transit, and the total household cost." },
+        { question: "What should I do first if I want to use OPLIFT?", answer: "Contact the official OPLIFT coordinator listed on the current Navy program page and your service transportation office. Verify eligibility, direction, application status, vehicle rules, required documents, costs, storage, risk terms, and pickup procedures before moving the vehicle or spending money." }
+      ]
+    },
+    cta: buildPageCta("Build an Oahu housing plan that survives a vehicle delay", "Share your duty destination, report and move dates, confirmed vehicle plan, backup transportation budget, parking needs, household routes, and housing ceiling. We can help compare Oahu locations and properties while official transportation and OPLIFT personnel confirm program and entitlement details.")
+  },
   "the-right-down-payment-on-hawaii-home": buildEvergreenExpansion({
     topic: "Hawaii down payment strategy",
     audienceShort: "cash-conscious Hawaii buyers",
