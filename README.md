@@ -29,6 +29,17 @@ Use `src/content.js` for general site content, including header and footer links
 
 The preview script rebuilds `build/` and serves it locally with an extensionless rewrite layer, so routes like `/about` and `/category/va-loan-information` resolve to `about.html` and `category/va-loan-information.html` during development.
 
+## Content Expansion Harness
+
+The Ralph loop expands only the 19 evergreen and 18 property pages owned by `src/content-seo.js`. It explicitly excludes `src/content.js` and all top-header pages.
+
+```bash
+./scripts/ralph-content.sh --dry-run
+./scripts/ralph-content.sh
+```
+
+Use `--max-iterations N` to cap an unattended run. The queue, shared rules, and individual page briefs live in `docs/content-expansion/`. Validate the harness with `node scripts/validate-content-expansion.js` and test its inventory guards with `node scripts/test-content-expansion-harness.js`.
+
 ## Legacy URL Inventory
 
 The routes below are the report-derived public URLs this project now preserves 1:1 without the root domain. GitHub Pages publishes them as extensionless routes, while the generated files in `build/` use the same paths with `.html`.
