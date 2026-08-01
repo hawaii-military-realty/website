@@ -3092,25 +3092,93 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
     },
     cta: buildPageCta("Connect your down payment plan to an Oahu home", "Share your target payment, available cash, minimum reserve, loan type, move timing, and property preferences. We can help compare the real-estate tradeoffs while your lender prices and approves the financing scenarios."),
   },
-  "hawaii-real-estate-news": buildEvergreenExpansion({
-    topic: "Hawaii real estate news",
-    audienceShort: "buyers, sellers, owners, and relocating families",
-    intent: "tracking market changes that may affect timing, pricing, inventory, or relocation decisions",
-    segment: "This page is for people who need market updates they can actually apply to a purchase, sale, rental plan, or property ownership decision.",
-    sidebarNote: "News is most valuable when it explains what changed, why it matters, and which next step should follow for your situation.",
-    localContext: "Hawaii real estate news can include inventory shifts, pricing pressure, interest-rate impact, military relocation patterns, insurance issues, association costs, and neighborhood-level demand changes.",
-    whyItMatters: "A news hub helps the site stay current while supporting evergreen authority. Visitors should leave with a clearer sense of what the market signal means for them.",
-    oahuContext: "Oahu is not one market in practice. Ewa Beach, Kapolei, Mililani, town, and windward areas can move differently, and the impact depends on whether the user is buying, selling, renting, or managing property.",
-    decisionFactors: ["inventory", "pricing", "interest rates", "buyer demand", "seller timing", "local area trends"],
-    compareGuidance: "Compare headlines against the area and property type you actually care about. Broad Hawaii news only becomes useful when it is tied to a specific decision.",
-    nextStep: "Use market updates to decide whether to wait, act, adjust price expectations, or move into a more specific neighborhood or service conversation.",
-    heroIntro: "Hawaii real estate news should help you interpret market changes, not just follow headlines.",
-    introLead: "Use this page to connect Oahu market updates with practical buying, selling, renting, and relocation decisions.",
-    pills: ["Market News", "Oahu", "Inventory", "Pricing", "Timing"],
-    contextPills: ["Market Updates", "Buyer Signals", "Seller Signals", "Relocation"],
-    ctaTitle: "Apply market news to your next move",
-    ctaText: "Call or text to discuss what current Oahu conditions mean for your buying, selling, or relocation timeline.",
-  }),
+  "hawaii-real-estate-news": {
+    description: "Learn how to read Oahu real estate news, compare market indicators, and turn changes in inventory, financing, insurance, and property costs into a practical decision.",
+    keywords: ["Hawaii real estate news", "Oahu housing market", "Oahu real estate trends", "Honolulu housing data", "Oahu buyers and sellers"],
+    heroEyebrow: "Oahu Market Briefing",
+    heroIntro: "Hawaii real estate headlines are only a starting point. The useful question is whether the evidence changes your price, property, location, or timing decision on Oahu.",
+    introEyebrow: "Read the Signal",
+    introHeading: "Turn Oahu real estate news into a decision",
+    introLead: "Use a repeatable process to separate a statewide headline from the facts that affect your target neighborhood, property type, financing, and move date.",
+    intro: [
+      "A median-price headline cannot tell you whether a particular home is well priced, whether a condominium building can support your financing, or whether your preferred area has enough choices. It describes a group of completed sales from an earlier period. Treat it as context, then narrow the question to Oahu, the relevant property type, the neighborhood, and the price range you can actually use.",
+      "The State of Hawaii Department of Business, Economic Development and Tourism publishes monthly indicators that include single-family and condominium resales, building permits, employment, and other economic measures. Its housing dashboard adds longer trends. Those sources are valuable for direction, but a decision still requires current listings, recent comparable sales, financing terms, insurance information, and property documents.",
+      "This guide is designed for buyers, sellers, owners, and relocating households who want a durable way to evaluate new information. It does not predict the market. It shows which numbers belong together, which property-level facts can outweigh a broad trend, and what to verify before changing course."
+    ],
+    sidebar: {
+      eyebrow: "A Useful News Check",
+      heading: "Ask four questions before reacting",
+      paragraphs: [
+        "Is the report about Oahu or the entire state? Does it separate single-family homes from condominiums? Is the comparison month over month or year over year? Does its date range match the decision you face now?",
+        "Then identify the action the news might justify: revise a search, test a list price, request documents, update a lender scenario, or simply keep watching. A headline without a defined action is information, not a plan."
+      ],
+      pills: ["Oahu", "Property Type", "Time Period", "Next Action"]
+    },
+    sections: [
+      {
+        title: "Start with geography, property type, and time period",
+        pills: ["Oahu Data", "Single-Family", "Condominium", "Trend"],
+        paragraphs: [
+          "Hawaii's counties and islands have different inventories, employment patterns, development constraints, and buyer pools. Even an Oahu total can hide meaningful differences between urban Honolulu condominiums, Ewa Plain subdivisions, Central Oahu homes, and Windward properties. Begin with the smallest reliable geography that matches your search, but avoid drawing a conclusion from a tiny sample. Neighborhood data is most useful when reviewed across several periods and checked against current competing listings.",
+          "Keep property categories separate. A change in condominium sales does not automatically describe detached homes, and a luxury closing can move a small area's median without changing the typical property. Also confirm whether the comparison is monthly, quarterly, or annual. Month-to-month movement can reflect seasonality or a small group of closings; a year-over-year comparison answers a different question. Write down the exact segment and period before applying any number to your plan."
+        ]
+      },
+      {
+        title: "Read price, sales, inventory, and market time together",
+        pills: ["Median Price", "Closed Sales", "Inventory", "Market Time"],
+        paragraphs: [
+          "No single market measure proves that buyers or sellers have control. Median price shows the midpoint of what closed, not the value of every home. Closed sales show activity that successfully reached recording, not today's full demand. Active inventory shows choice, while new listings and pending sales help explain how quickly that choice may change. Days on market adds useful pace, but it can be affected by pricing strategy, condition, and the mix of properties sold.",
+          "A buyer should ask whether choices are accumulating in the exact segment, whether acceptable homes are still receiving quick interest, and whether recent comparable sales support the asking price. A seller should compare the home with active competition as well as closed sales and watch for price reductions, expired listings, and contract fallout. If the indicators conflict, do not force a market-wide story. Let the property, competition, and your deadline determine how aggressively to act."
+        ]
+      },
+      {
+        title: "Translate financing news into a monthly-cost test",
+        pills: ["Interest Rate", "Cash to Close", "VA Loan", "Approval"],
+        paragraphs: [
+          "Rate news matters because the same purchase price can produce a different payment and qualification result when financing changes. But a national rate average is not a quote for your file. Loan program, credit profile, points, lock period, occupancy, property type, and lender rules all affect the scenario. Ask a licensed lender to update the principal-and-interest payment, estimated taxes and insurance, association dues, cash to close, and any mortgage insurance or VA funding fee that applies.",
+          "Use at least three scenarios: your target price, a lower price that preserves breathing room, and a stress case with a higher rate or property cost. Keep an emergency and repair reserve outside the amount available to close. For a military move, also test the payment against the household budget rather than assuming a housing allowance will cover every ownership expense. Do not change loan strategy based only on a headline; use a current Loan Estimate or lender worksheet and ask what assumptions can still change."
+        ]
+      },
+      {
+        title: "Treat condominium and insurance news as property-level due diligence",
+        pills: ["Condo Documents", "Master Policy", "Reserves", "Assessments"],
+        paragraphs: [
+          "Condominium news can affect affordability and loan availability, but conditions vary building by building. Before relying on a low list price or monthly fee, review the declaration and bylaws, current budget, reserve information, recent meeting minutes, litigation disclosures, planned projects, special assessments, delinquency information when available, and the association's master insurance evidence. The Hawaii Real Estate Commission maintains resources for prospective condominium buyers, including insurance materials; use them to build questions, not as a substitute for document review or professional advice.",
+          "Separate the association's policy from the unit owner's coverage. Hawaii's Hurricane Relief Fund describes its current product as hurricane-only commercial property insurance for qualifying condominium and townhouse associations, not individual units. Ask an insurance professional what the master policy covers, its limits and deductibles, what an HO-6 or other unit policy should cover, and whether the lender considers the project and coverage acceptable. A change in dues, insurance, reserves, or assessment exposure can matter more to your monthly cost than a small movement in the market median."
+        ]
+      },
+      {
+        title: "Verify taxes, flood information, and the exact parcel",
+        pills: ["Property Record", "TMK", "Flood Map", "Insurance Quote"],
+        paragraphs: [
+          "Property news often compresses costs into a broad affordability story. For a real decision, verify the parcel. Honolulu's Real Property Assessment Division says its records include current and historical assessments, tax information, property classifications, tax relief, and descriptions of land and improvements; records can be searched by address or Tax Map Key. These are tax records, not a guarantee of permitted condition, boundary, square footage, or market value, so follow discrepancies with the appropriate county office and inspectors.",
+          "Use FEMA's Flood Map Service Center as the official public source for federal flood-hazard information and search the property address. A map designation is one input, not a complete insurance answer. Ask an insurance professional for property-specific homeowners, hurricane, flood, and other relevant coverage and deductibles early enough to affect the offer or contingency plan. Buyers should coordinate those findings with the lender; owners and sellers should keep records available rather than assuming the next party will reach the same coverage result."
+        ]
+      },
+      {
+        title: "Build a personal trigger sheet instead of predicting the market",
+        pills: ["Buy", "Sell", "Relocate", "Review Date"],
+        paragraphs: [
+          "Define what evidence would change your decision. A buyer's triggers might include a payment ceiling, minimum cash reserve, acceptable commute, insurability, document approval, and enough comparable choices to negotiate. A seller's may include a latest acceptable closing date, minimum net proceeds, a limit on carrying costs, and a price-review date if activity is weak. An owner may track renewal quotes, dues, reserve projects, assessment notices, rent performance, and maintenance decisions.",
+          "Relocating households should add firm dates: orders or employment start, temporary lodging end, shipment arrival, and the earliest responsible closing or lease start. Review the sheet when reliable new data arrives, not every time a dramatic headline appears. If the signal changes one of your thresholds, update the relevant professional—a lender for financing, insurer for coverage, tax or legal adviser for their domains, and an Oahu real estate professional for inventory, comparables, documents, and negotiation."
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: "Market News FAQs",
+      heading: "Questions to ask about Hawaii real estate updates",
+      intro: "These answers help turn reported trends into a property-specific Oahu review.",
+      items: [
+        { question: "Does a rising Oahu median mean every home gained value?", answer: "No. The median is the midpoint of the homes that closed in the reported group. Changes in location, price range, condition, or property mix can move it. Estimate a home's position with recent comparable sales, current competition, condition, and property-specific costs." },
+        { question: "Is more inventory automatically a buyer's market?", answer: "Not automatically. Check which property types, areas, and price ranges gained listings, then compare new listings, pending activity, market time, reductions, and the quality of available choices. Desirable, well-priced homes can still move quickly inside a slower aggregate market." },
+        { question: "Should I wait to buy because rates might fall?", answer: "A future rate move is uncertain, and price, competition, rent, and personal timing may also change. Ask a lender for current and stress-tested scenarios, keep a reserve, and decide whether today's acceptable properties and total monthly cost meet your thresholds." },
+        { question: "What should I verify before offering on an Oahu condo?", answer: "Review the unit and sale disclosures plus the association documents, budget, reserve information, meeting minutes, planned work, assessments, litigation information, and master insurance evidence. Confirm project and insurance acceptability with the lender and coverage questions with an insurance professional." },
+        { question: "Where can I find reliable Hawaii housing data?", answer: "Start with Hawaii DBEDT's monthly economic indicators and housing dashboard for public trend data. For a transaction, add current listing data, recorded comparable sales, Honolulu parcel records, FEMA flood information, association documents when applicable, and property-specific lender and insurance review." },
+        { question: "How often should I change my plan based on market news?", answer: "Only when reliable information crosses a threshold you defined in advance, such as payment, reserve, timing, available choices, expected proceeds, insurability, or building risk. Set a regular review date and avoid rebuilding the plan around one headline or one sale." }
+      ]
+    },
+    cta: buildPageCta("Apply the latest Oahu signals to your move", "Share your target area, property type, budget, financing status, and deadline. We can help compare current inventory and property-level facts while your lender, insurer, and other advisers address their parts of the decision."),
+  },
   "hawaii-military-realty-inc": buildEvergreenExpansion({
     topic: "Hawaii Military Realty, Inc.",
     audienceShort: "branded entity searchers",
