@@ -10,8 +10,8 @@
       </div>
       <div class="trust">
         <div class="avatar-stack">
-          <img src="assets/avatar-1.jpg" alt="" /><img src="assets/avatar-2.jpg" alt="" /><img src="assets/avatar-3.jpg"
-            alt="" /><img src="assets/avatar-4.jpg" alt="" /><span>{{hero.avatarCount}}</span>
+          <img src="{{assetPrefix}}assets/avatar-1.jpg" alt="" /><img src="{{assetPrefix}}assets/avatar-2.jpg" alt="" /><img src="{{assetPrefix}}assets/avatar-3.jpg"
+            alt="" /><img src="{{assetPrefix}}assets/avatar-4.jpg" alt="" /><span>{{hero.avatarCount}}</span>
         </div>
         <div>
           <div class="stars">{{{starsHtml}}}<strong style="color: #fff; margin-left: 6px">{{hero.rating}}</strong>
@@ -23,7 +23,7 @@
     <div class="reveal">
       <div class="hero-img-wrap">
         <div class="hero-img">
-          <img src="assets/{{hero.image}}" alt="{{hero.imageAlt}}" />
+          <img src="{{assetPrefix}}assets/{{hero.image}}" alt="{{hero.imageAlt}}" />
           <div
             style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11, 11, 11, 0.82), transparent);">
           </div>
@@ -55,7 +55,7 @@
       <p>{{heritage.text}}</p>
     </div>
     <div class="heritage-photo reveal">
-      <img src="assets/{{heritage.image}}" alt="{{heritage.imageAlt}}" loading="lazy" />
+      <img src="{{heritage.imageSrc}}" alt="{{heritage.imageAlt}}" loading="lazy" />
     </div>
   </div>
 </section>

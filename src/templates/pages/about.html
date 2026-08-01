@@ -4,7 +4,7 @@
   <div class="container">
     <div class="split">
       <div class="reveal">
-        <img src="assets/{{featuredAgent.image}}" alt="{{featuredAgent.name}}" loading="lazy" />
+        <img src="{{featuredAgentImageSrc}}" alt="{{featuredAgent.name}}" loading="lazy" />
       </div>
       <div class="reveal">
         <div class="eyebrow-mini">{{featuredEyebrow}}</div>
@@ -12,7 +12,7 @@
         <div class="mt-6 muted" style="display: flex; flex-direction: column; gap: 1.1rem; line-height: 1.7;">
           {{{featuredAboutHtml}}}
         </div>
-        <a class="btn btn-dark mt-6" href="agents/{{featuredAgent.slug}}.html">{{featuredCtaLabel}}
+        <a class="btn btn-dark mt-6" href="{{featuredAgentProfileHref}}">{{featuredCtaLabel}}
           {{{arrowRightIcon}}}</a>
       </div>
     </div>

@@ -55,13 +55,18 @@ function getFeaturedAgent() {
   );
 }
 
-function resolveHref(hrefKey) {
+function resolveHref(currentOutputPath, hrefKey) {
   const contact = content.site.contact;
 
-  if (hrefKey === "email") return "mailto:" + contact.email;
-  if (hrefKey && contact[hrefKey]) return contact[hrefKey];
+  if (hrefKey === "email")
+    return relativePublicHref(
+      currentOutputPath,
+      contact.contactPageHref || "contact.html",
+    );
+  if (hrefKey && contact[hrefKey])
+    return relativePublicHref(currentOutputPath, contact[hrefKey]);
 
-  return hrefKey || "#";
+  return relativePublicHref(currentOutputPath, hrefKey || "#");
 }
 
 function phoneHref(phone) {
@@ -177,6 +182,32 @@ function getFeaturedListingModel() {
   };
 }
 
+function getContentPageModels() {
+  return []
+    .concat(
+      (content.evergreenPages || []).map(function (page) {
+        return {
+          page: page,
+          activePath: "",
+          prefix: "../",
+          template: "pages/content-page.html",
+          cta: page.cta,
+        };
+      }),
+    )
+    .concat(
+      (content.propertyPages || []).map(function (page) {
+        return {
+          page: page,
+          activePath: "",
+          prefix: "../",
+          template: "pages/content-page.html",
+          cta: page.cta,
+        };
+      }),
+    );
+}
+
 function getAgentPageModels() {
   return content.agents.map(function (agent) {
     return { agent: agent };
@@ -283,24 +314,129 @@ function renderHeadAsset(page, prefix, extraHeadHtml) {
   });
 }
 
-function renderExtraHead(page) {
+function normalizeOutputPath(value) {
+  return String(value || "").replace(/\\/g, "/").replace(/^\/+/, "");
+}
+
+function isExternalHref(value) {
+  return /^(?:[a-z]+:|\/\/|#)/i.test(String(value || ""));
+}
+
+function logicalPageToPublicPath(value) {
+  const normalized = normalizeOutputPath(value);
+
+  if (!normalized) return "";
+  if (normalized === "index.html") return "";
+  if (normalized === "404.html") return "404.html";
+  if (/\/index\.html$/i.test(normalized))
+    return normalized.replace(/\/index\.html$/i, "");
+  if (/\.html$/i.test(normalized))
+    return normalized.replace(/\.html$/i, "");
+
+  return normalized;
+}
+
+function logicalPageToOutputPath(value) {
+  return normalizeOutputPath(value);
+}
+
+function assetPrefixForOutputPath(outputPath) {
+  const normalized = normalizeOutputPath(outputPath);
+  const dir = path.posix.dirname(normalized || "index.html");
+
+  if (!dir || dir === ".") return "";
+
+  return dir
+    .split("/")
+    .map(function () {
+      return "..";
+    })
+    .join("/") + "/";
+}
+
+function relativePublicHref(fromOutputPath, targetPath) {
+  const rawTarget = String(targetPath || "");
+
+  if (!rawTarget) return "#";
+  if (isExternalHref(rawTarget)) return rawTarget;
+
+  const publicTarget = logicalPageToPublicPath(rawTarget);
+  const fromDir = path.posix.dirname(
+    normalizeOutputPath(fromOutputPath || "index.html"),
+  );
+  const fromBase = fromDir === "." ? "." : fromDir;
+
+  if (!publicTarget) {
+    const hrefToRoot = path.posix.relative(fromBase, ".");
+
+    return hrefToRoot || "./";
+  }
+
+  if (/\.html$/i.test(publicTarget)) {
+    const hrefToFile = path.posix.relative(fromBase, publicTarget);
+
+    return hrefToFile || path.posix.basename(publicTarget);
+  }
+
+  const hrefToTarget = path.posix.relative(fromBase, publicTarget || ".");
+
+  return hrefToTarget || "./";
+}
+
+function assetHref(prefix, fileName) {
+  return prefix + "assets/" + fileName;
+}
+
+function relativePageHref(fromOutputPath, targetPath) {
+  const fromPath = normalizeOutputPath(fromOutputPath);
+  const target = normalizeOutputPath(targetPath);
+  const fromDir = path.posix.dirname(fromPath || "index.html");
+  const href = path.posix.relative(fromDir, target || fromPath || "index.html");
+
+  return href || path.posix.basename(target || fromPath || "index.html");
+}
+
+function relativeStaticHref(fromOutputPath, targetPath) {
+  const rawTarget = String(targetPath || "");
+
+  if (!rawTarget) return "";
+  if (isExternalHref(rawTarget)) return rawTarget;
+
+  return relativePageHref(fromOutputPath || "index.html", rawTarget);
+}
+
+function renderExtraHead(page, currentOutputPath) {
   const rows = [];
+  const canonicalTarget = page.canonical || page.path || currentOutputPath || "";
+  const canonicalHref = canonicalTarget
+    ? relativePublicHref(currentOutputPath || canonicalTarget, canonicalTarget)
+    : "";
 
   if (page.robots)
     rows.push(
       '<meta name="robots" content="' + escapeHtml(page.robots) + '" />',
     );
-  if (page.canonical)
+  if (page.keywords && page.keywords.length) {
     rows.push(
-      '<link rel="canonical" href="' + escapeHtml(page.canonical) + '" />',
+      '<meta name="keywords" content="' +
+        escapeHtml(
+          Array.isArray(page.keywords) ? page.keywords.join(", ") : page.keywords,
+        ) +
+        '" />',
+    );
+  }
+  if (canonicalHref)
+    rows.push(
+      '<link rel="canonical" href="' + escapeHtml(canonicalHref) + '" />',
     );
   if (page.ogImage) {
+    const ogImageHref = relativeStaticHref(currentOutputPath, page.ogImage);
     rows.push(
-      '<meta property="og:image" content="' + escapeHtml(page.ogImage) + '" />',
+      '<meta property="og:image" content="' + escapeHtml(ogImageHref) + '" />',
     );
     rows.push(
       '<meta name="twitter:image" content="' +
-        escapeHtml(page.ogImage) +
+        escapeHtml(ogImageHref) +
         '" />',
     );
   }
@@ -360,7 +496,7 @@ function renderBrandMark(style, brand) {
   return '<span class="logo-mark">' + escapeHtml(brand.mark) + "</span>";
 }
 
-function renderNav(style, activePath, prefix, asFooter) {
+function renderNav(style, activePath, currentOutputPath, asFooter) {
   const partial =
     style === "asset"
       ? "partials/nav-link-asset.html"
@@ -368,7 +504,7 @@ function renderNav(style, activePath, prefix, asFooter) {
 
   return content.site.nav
     .map(function (item) {
-      const href = prefix + item.href;
+      const href = relativePublicHref(currentOutputPath, item.href);
       const isActive = activePath === item.href;
       const linkHtml = renderTemplate(partial, {
         href: href,
@@ -378,6 +514,20 @@ function renderNav(style, activePath, prefix, asFooter) {
       });
 
       return asFooter ? "<li>" + linkHtml + "</li>" : linkHtml;
+    })
+    .join("");
+}
+
+function renderFooterGuides(currentOutputPath) {
+  return (content.site.footer.guides || [])
+    .map(function (item) {
+      return (
+        "<li><a href=\"" +
+        escapeHtml(relativePublicHref(currentOutputPath, item.href)) +
+        "\">" +
+        escapeHtml(item.label) +
+        "</a></li>"
+      );
     })
     .join("");
 }
@@ -394,25 +544,34 @@ function renderSocials() {
     .join("");
 }
 
-function chromeData(style, activePath, prefix) {
+function chromeData(style, activePath, currentOutputPath) {
   const contact = content.site.contact;
   const footer = content.site.footer;
+  const prefix = assetPrefixForOutputPath(currentOutputPath);
 
   return {
     ...brandParts(),
     prefix: prefix,
+    homeHref: relativePublicHref(currentOutputPath, "index.html"),
     brandLogoHtml: renderBrandLogo(style, prefix, style === "asset"),
     phoneHref: contact.phoneHref,
     phoneDisplay: contact.phoneDisplay,
     email: contact.email,
     address: contact.address,
-    navHtml: renderNav(style, activePath, prefix, false),
-    mobileNavHtml: renderNav(style, activePath, prefix, false),
-    footerNavHtml: renderNav(style, activePath, prefix, true),
+    navHtml: renderNav(style, activePath, currentOutputPath, false),
+    mobileNavHtml: renderNav(style, activePath, currentOutputPath, false),
+    footerNavHtml: renderNav(style, activePath, currentOutputPath, true),
     socialHtml: renderSocials(),
     footerBlurb: footer.blurb,
     navHeading: footer.navHeading,
+    guidesHeading: footer.guidesHeading,
+    footerGuidesHtml: renderFooterGuides(currentOutputPath),
     contactHeading: footer.contactHeading,
+    contactPageHref: relativePublicHref(
+      currentOutputPath,
+      contact.contactPageHref || "contact.html",
+    ),
+    contactPageLabel: contact.contactPageLabel || "Contact Page",
     copyright: footer.copyright,
     year: new Date().getFullYear(),
     phoneIcon: icon("phone"),
@@ -424,29 +583,30 @@ function chromeData(style, activePath, prefix) {
   };
 }
 
-function renderHeader(style, activePath, prefix) {
+function renderHeader(style, activePath, currentOutputPath) {
   return renderTemplate(
     style === "asset"
       ? "partials/header-asset.html"
       : "partials/header-root.html",
-    chromeData(style, activePath, prefix),
+    chromeData(style, activePath, currentOutputPath),
   );
 }
 
-function renderFooter(style, activePath, prefix) {
+function renderFooter(style, activePath, currentOutputPath) {
   return renderTemplate(
     style === "asset"
       ? "partials/footer-asset.html"
       : "partials/footer-root.html",
-    chromeData(style, activePath, prefix),
+    chromeData(style, activePath, currentOutputPath),
   );
 }
 
-function renderCta(style, cta, prefix) {
+function renderCta(style, cta, currentOutputPath) {
   if (!cta) return "";
 
   const merged = { ...content.site.cta, ...cta };
   const contact = content.site.contact;
+  const prefix = assetPrefixForOutputPath(currentOutputPath);
 
   return renderTemplate(
     style === "asset" ? "partials/cta-asset.html" : "partials/cta-root.html",
@@ -457,9 +617,15 @@ function renderCta(style, cta, prefix) {
       subtitle: merged.subtitle,
       note: merged.note,
       primaryLabel: merged.primaryLabel || content.site.cta.primaryLabel,
-      secondaryLabel: merged.secondaryLabel || contact.email,
+      secondaryLabel:
+        merged.secondaryLabel ||
+        contact.contactPageLabel ||
+        "Contact Page",
+      secondaryHref: relativePublicHref(
+        currentOutputPath,
+        merged.secondaryHref || contact.contactPageHref || "contact.html",
+      ),
       phoneHref: contact.phoneHref,
-      email: contact.email,
       phoneIcon: icon("phone"),
       mailIcon: icon("mail"),
       arrowRightIcon: icon("arrowRight"),
@@ -480,45 +646,56 @@ function renderShell(options) {
 }
 
 function renderRootPage(options) {
-  const prefix = options.prefix || "";
+  const currentOutputPath =
+    options.outputPath || options.path || options.page.path || "index.html";
+  const prefix = assetPrefixForOutputPath(currentOutputPath);
+  const pageForHead = options.page.path
+    ? options.page
+    : { ...options.page, path: options.path || "" };
 
   return renderShell({
     style: "root",
     headHtml: renderHeadRoot(
-      options.page,
+      pageForHead,
       prefix,
-      renderExtraHead(options.page),
+      renderExtraHead(pageForHead, currentOutputPath),
     ),
-    headerHtml: renderHeader("root", options.activePath, prefix),
+    headerHtml: renderHeader("root", options.activePath, currentOutputPath),
     mainHtml: options.mainHtml,
-    ctaHtml: renderCta("root", options.cta, prefix),
-    footerHtml: renderFooter("root", options.activePath, prefix),
+    ctaHtml: renderCta("root", options.cta, currentOutputPath),
+    footerHtml: renderFooter("root", options.activePath, currentOutputPath),
     scriptPath: prefix + "js/site.js",
   });
 }
 
 function renderAssetPage(options) {
-  const prefix = options.prefix || "";
+  const currentOutputPath =
+    options.outputPath || options.path || options.page.path || "index.html";
+  const prefix = assetPrefixForOutputPath(currentOutputPath);
+  const pageForHead = options.page.path
+    ? options.page
+    : { ...options.page, path: options.path || "" };
 
   return renderShell({
     style: "asset",
     headHtml: renderHeadAsset(
-      options.page,
+      pageForHead,
       prefix,
-      renderExtraHead(options.page),
+      renderExtraHead(pageForHead, currentOutputPath),
     ),
-    headerHtml: renderHeader("asset", options.activePath, prefix),
+    headerHtml: renderHeader("asset", options.activePath, currentOutputPath),
     mainHtml: options.mainHtml,
-    ctaHtml: renderCta("asset", options.cta, prefix),
-    footerHtml: renderFooter("asset", options.activePath, prefix),
+    ctaHtml: renderCta("asset", options.cta, currentOutputPath),
+    footerHtml: renderFooter("asset", options.activePath, currentOutputPath),
     scriptPath: prefix + "js/site.js",
   });
 }
 
 // Presentation composites
-function renderPageHero(hero) {
+function renderPageHero(hero, prefix) {
   return renderTemplate("pages/page-hero.html", {
-    image: hero.image,
+    imageSrc: assetHref(prefix, hero.image),
+    imageAlt: hero.imageAlt || "",
     eyebrowHtml: renderEyebrow(hero.eyebrow),
     heading: hero.heading,
     introHtml: paragraphs([hero.intro]),
@@ -527,24 +704,43 @@ function renderPageHero(hero) {
 
 function renderHomePage(model) {
   const page = model.page;
+  const prefix = assetPrefixForOutputPath(model.outputPath);
+  const hero = {
+    ...page.hero,
+    secondaryHref: relativePublicHref(
+      model.outputPath,
+      page.hero.secondaryHref || "contact.html",
+    ),
+  };
+  const heritage = {
+    ...page.heritage,
+    imageSrc: assetHref(prefix, page.heritage.image),
+  };
   const testimonials = renderTestimonials(content.shared.testimonials, 4);
 
   const mainHtml = renderTemplate(model.template, {
     ...page,
+    assetPrefix: prefix,
+    hero: hero,
+    heritage: heritage,
     phoneHref: content.site.contact.phoneHref,
     phoneIcon: icon("phone"),
     arrowRightIcon: icon("arrowRight"),
     starsHtml: starRating(5),
     shieldIcon: icon("shield"),
-    heroStatsHtml: page.hero.imageStats.map(renderHeroStat).join(""),
+    heroStatsHtml: hero.imageStats.map(renderHeroStat).join(""),
     trustBarHtml: page.trustBar.map(renderHomeTrustItem).join(""),
-    whyCardsHtml: page.why.cards.map(renderWhyCard).join("\n"),
+    whyCardsHtml: page.why.cards
+      .map(function (card) {
+        return renderWhyCard(card, prefix);
+      })
+      .join("\n"),
     processStepsHtml: page.process.steps
       .map(function (step) {
         return renderTemplate("partials/process-step-number.html", step);
       })
       .join("\n"),
-    testimonialsHtml: testimonials,
+    testimonialsHtml: renderTestimonials(content.shared.testimonials, 4, prefix),
   });
 
   return renderRootPage({ ...model, mainHtml: mainHtml });
@@ -561,7 +757,7 @@ function renderHomeTrustItem(item) {
   });
 }
 
-function renderWhyCard(card) {
+function renderWhyCard(card, prefix) {
   const bulletsHtml = card.bullets
     .map(function (text) {
       return renderTemplate("partials/check-list-item.html", {
@@ -573,11 +769,12 @@ function renderWhyCard(card) {
 
   return renderTemplate("partials/why-card.html", {
     ...card,
+    imageSrc: assetHref(prefix, card.image),
     bulletsHtml: bulletsHtml,
   });
 }
 
-function renderServiceCard(card) {
+function renderServiceCard(card, prefix) {
   const bulletsHtml = card.bullets
     .map(function (text) {
       return renderTemplate("partials/service-list-item.html", {
@@ -589,16 +786,22 @@ function renderServiceCard(card) {
 
   return renderTemplate("partials/service-card.html", {
     ...card,
+    imageSrc: assetHref(prefix, card.image),
     bulletsHtml: bulletsHtml,
   });
 }
 
 function renderServicesPage(model) {
   const page = model.page;
+  const prefix = assetPrefixForOutputPath(model.outputPath);
   const mainHtml = renderTemplate(model.template, {
     ...page,
-    heroHtml: renderPageHero(page.hero),
-    serviceCardsHtml: page.cards.map(renderServiceCard).join("\n"),
+    heroHtml: renderPageHero(page.hero, prefix),
+    serviceCardsHtml: page.cards
+      .map(function (card) {
+        return renderServiceCard(card, prefix);
+      })
+      .join("\n"),
     processStepsHtml: page.process.steps
       .map(function (step) {
         return renderTemplate("partials/process-step-icon.html", {
@@ -614,10 +817,11 @@ function renderServicesPage(model) {
 
 function renderTestimonialsPage(model) {
   const page = model.page;
+  const prefix = assetPrefixForOutputPath(model.outputPath);
   const mainHtml = renderTemplate(model.template, {
     ...page,
-    heroHtml: renderPageHero(page.hero),
-    testimonialsHtml: renderTestimonials(content.shared.testimonials, 4),
+    heroHtml: renderPageHero(page.hero, prefix),
+    testimonialsHtml: renderTestimonials(content.shared.testimonials, 4, prefix),
     statsHtml: page.stats
       .map(function (stat) {
         return renderTemplate("partials/stat-card.html", stat);
@@ -631,14 +835,15 @@ function renderTestimonialsPage(model) {
 
 function renderContactPage(model) {
   const page = model.page;
+  const prefix = assetPrefixForOutputPath(model.outputPath);
   const mainHtml = renderTemplate(model.template, {
     ...page,
-    heroHtml: renderPageHero(page.hero),
+    heroHtml: renderPageHero(page.hero, prefix),
     methodsHtml: page.methods
       .map(function (method) {
         return renderTemplate("partials/contact-method.html", {
           ...method,
-          href: resolveHref(method.hrefKey),
+          href: resolveHref(model.outputPath, method.hrefKey),
           iconHtml: icon(method.icon),
         });
       })
@@ -658,6 +863,7 @@ function renderContactPage(model) {
 
 function renderTeamPage(model) {
   const page = content.team;
+  const prefix = assetPrefixForOutputPath(model.outputPath);
   const sortedAgents = sortAgents(content.agents);
   const agentNames = formatList(
     sortedAgents.map(function (agent) {
@@ -676,24 +882,32 @@ function renderTeamPage(model) {
     eyebrow: page.eyebrow,
     heading: page.heading,
     intro: agentNames + " " + page.intro[0],
-  });
+  }, prefix);
   const mainHtml = renderTemplate(model.template, {
     heroHtml: heroHtml,
-    teamCardsHtml: sortedAgents.map(renderTeamCard).join("\n"),
+    teamCardsHtml: sortedAgents
+      .map(function (agent) {
+        return renderTeamCard(agent, model.outputPath);
+      })
+      .join("\n"),
   });
 
   return renderRootPage({ ...model, page: teamPage, mainHtml: mainHtml });
 }
 
-function renderTeamCard(agent) {
+function renderTeamCard(agent, currentOutputPath) {
   const showContactButtons =
     content.site.settings &&
     content.site.settings.showAgentCardContactButtons === true;
+  const prefix = assetPrefixForOutputPath(currentOutputPath);
 
   return renderTemplate("partials/team-card.html", {
     ...agent,
-    prefix: "",
-    profileHref: "agents/" + agent.slug + ".html",
+    prefix: prefix,
+    profileHref: relativePublicHref(
+      currentOutputPath,
+      "agents/" + agent.slug + ".html",
+    ),
     contactActionsHtml: showContactButtons
       ? renderAgentContactActions(agent, "card")
       : "",
@@ -706,6 +920,7 @@ function renderTeamCard(agent) {
 
 function renderAboutPage(model) {
   const page = content.about;
+  const prefix = assetPrefixForOutputPath(model.outputPath);
   const featuredAgent = getFeaturedAgent();
   const featuredAbout =
     featuredAgent.featuredAbout && featuredAgent.featuredAbout.length
@@ -716,11 +931,16 @@ function renderAboutPage(model) {
     eyebrow: page.eyebrow,
     heading: page.heading,
     intro: page.intro[0],
-  });
+  }, prefix);
   const mainHtml = renderTemplate(model.template, {
     ...page,
     heroHtml: heroHtml,
     featuredAgent: featuredAgent,
+    featuredAgentImageSrc: assetHref(prefix, featuredAgent.image),
+    featuredAgentProfileHref: relativePublicHref(
+      model.outputPath,
+      "agents/" + featuredAgent.slug + ".html",
+    ),
     featuredAboutHtml: paragraphs(featuredAbout),
     backgroundCardsHtml: page.cards.map(renderBackgroundCard).join("\n"),
     arrowRightIcon: icon("arrowRight"),
@@ -738,12 +958,16 @@ function renderBackgroundCard(card) {
 
 function renderAgentPage(model) {
   const agent = model.agent;
+  const prefix = assetPrefixForOutputPath(model.outputPath);
   const page = {
     title: agent.title,
     description: agent.description,
+    path: model.logicalPath,
   };
   const mainHtml = renderTemplate("pages/agent.html", {
     agent: agent,
+    assetPrefix: prefix,
+    backHref: relativePublicHref(model.outputPath, "team.html"),
     contactActionsHtml: renderAgentContactActions(agent, "hero"),
     arrowLeftIcon: icon("arrowLeft"),
     aboutHtml: paragraphs(agent.about),
@@ -756,6 +980,7 @@ function renderAgentPage(model) {
     activePath: "team.html",
     prefix: "../",
     cta: agent.cta,
+    outputPath: model.outputPath,
     mainHtml: mainHtml,
   });
 }
@@ -804,11 +1029,12 @@ function renderSectionRows(sections) {
   return rows.join("\n\n");
 }
 
-function renderTestimonials(items, repetitions) {
+function renderTestimonials(items, repetitions, prefix) {
   const cardsHtml = items
     .map(function (testimonial) {
       return renderTemplate("partials/testimonial-card.html", {
         ...testimonial,
+        imageSrc: assetHref(prefix || "", testimonial.image),
         starsHtml: starRating(5),
         quoteIcon: icon("quote"),
       });
@@ -845,8 +1071,10 @@ function renderLongFormTestimonials(items) {
 
 function renderFeaturedListingPage(model) {
   const page = model.page;
+  const prefix = assetPrefixForOutputPath(model.outputPath);
   const mainHtml = renderTemplate(model.template, {
     ...page,
+    heroImageSrc: assetHref(prefix, page.hero.image),
     homeIcon: icon("home"),
     mapPinIcon: icon("mapPin"),
     specsHtml: page.specs
@@ -875,7 +1103,7 @@ function renderFeaturedListingPage(model) {
       .map(function (option, index) {
         return renderTemplate("partials/listing-tour-option.html", {
           ...option,
-          href: resolveHref(option.hrefKey),
+          href: resolveHref(model.outputPath, option.hrefKey),
           variantClass: index === 0 ? "" : "glass",
           iconHtml: icon(option.icon),
         });
@@ -886,9 +1114,60 @@ function renderFeaturedListingPage(model) {
   return renderAssetPage({ ...model, mainHtml: mainHtml });
 }
 
+function renderContentFaq(item) {
+  return renderTemplate("partials/content-faq-card.html", {
+    question: item.question,
+    answerHtml: paragraphs([item.answer]),
+  });
+}
+
+function renderContentRelatedLink(item, currentOutputPath) {
+  return renderTemplate("partials/content-related-link.html", {
+    href: relativePublicHref(currentOutputPath, item.path || item.href || ""),
+    eyebrow: item.eyebrow || "Related Resource",
+    label: item.label,
+    description: item.description,
+  });
+}
+
+function renderContentPage(model) {
+  const page = model.page;
+  const prefix = assetPrefixForOutputPath(model.outputPath);
+  const mainHtml = renderTemplate(model.template, {
+    heroHtml: renderPageHero(page.hero, prefix),
+    introEyebrow: page.introEyebrow,
+    introHeading: page.introHeading,
+    introLead: page.introLead,
+    introHtml: paragraphs(page.intro),
+    sidebarEyebrow: page.sidebar.eyebrow,
+    sidebarHeading: page.sidebar.heading,
+    sidebarHtml: paragraphs(page.sidebar.paragraphs),
+    pillsHtml: renderPills(page.sidebar.pills),
+    sectionRowsHtml: renderSectionRows(page.sections),
+    relatedEyebrow: "Related Resources",
+    relatedHeading: "Keep exploring the topic",
+    relatedIntro:
+      "Use these supporting pages to keep the search path connected and to move from research into a clearer next step.",
+    relatedLinksHtml: (page.relatedLinks || [])
+      .map(function (item) {
+        return renderContentRelatedLink(item, model.outputPath);
+      })
+      .join("\n"),
+    faqEyebrow: page.faq.eyebrow,
+    faqHeading: page.faq.heading,
+    faqIntro: page.faq.intro,
+    faqHtml: (page.faq.items || []).map(renderContentFaq).join("\n"),
+  });
+
+  return renderRootPage({ ...model, mainHtml: mainHtml });
+}
+
 function renderNotFoundPage(model) {
   const page = model.page;
-  const mainHtml = renderTemplate(model.template, page);
+  const mainHtml = renderTemplate(model.template, {
+    ...page,
+    homeHref: relativePublicHref(model.outputPath, "index.html"),
+  });
 
   return renderRootPage({ ...model, page: page, mainHtml: mainHtml });
 }
@@ -966,6 +1245,38 @@ function prepareBuildDirectory() {
   copyDirectory(srcDir, buildDir, "");
 }
 
+function getLogicalPagePath(model) {
+  return model.path || model.page.path;
+}
+
+function writePageModel(model, renderFn, seenOutputPaths) {
+  const logicalPath = getLogicalPagePath(model);
+  const outputPath = logicalPageToOutputPath(logicalPath);
+  const existingLogicalPath = seenOutputPaths
+    ? seenOutputPaths.get(outputPath)
+    : null;
+
+  if (existingLogicalPath) {
+    throw new Error(
+      'Duplicate output path "' +
+        outputPath +
+        '" generated for "' +
+        logicalPath +
+        '" and "' +
+        existingLogicalPath +
+        '".',
+    );
+  }
+
+  if (seenOutputPaths) {
+    seenOutputPaths.set(outputPath, logicalPath);
+  }
+
+  const rendered = renderFn({ ...model, logicalPath: logicalPath, outputPath: outputPath });
+
+  writeFile(outputPath, rendered);
+}
+
 function renderRootModel(model) {
   if (model.template === "pages/home.html") return renderHomePage(model);
   if (model.template === "pages/services.html")
@@ -975,6 +1286,8 @@ function renderRootModel(model) {
   if (model.template === "pages/contact.html") return renderContactPage(model);
   if (model.template === "pages/team.html") return renderTeamPage(model);
   if (model.template === "pages/about.html") return renderAboutPage(model);
+  if (model.template === "pages/content-page.html")
+    return renderContentPage(model);
   if (model.template === "pages/404.html") return renderNotFoundPage(model);
 
   throw new Error("No renderer registered for " + model.template);
@@ -983,26 +1296,42 @@ function renderRootModel(model) {
 function main() {
   prepareBuildDirectory();
 
-  getRootPageModels().forEach(function (model) {
-    const outputPath = model.path || model.page.path;
-    writeFile(outputPath, renderRootModel(model));
+  const rootModels = getRootPageModels();
+  const contentPageModels = getContentPageModels();
+  const agentModels = getAgentPageModels();
+  const seenOutputPaths = new Map();
+
+  rootModels.forEach(function (model) {
+    writePageModel(model, renderRootModel, seenOutputPaths);
   });
 
   const listingModel = getFeaturedListingModel();
-  writeFile(listingModel.page.path, renderFeaturedListingPage(listingModel));
+  writePageModel(
+    listingModel,
+    renderFeaturedListingPage,
+    seenOutputPaths,
+  );
 
-  getAgentPageModels().forEach(function (model) {
-    writeFile(
-      path.join("agents", model.agent.slug + ".html"),
-      renderAgentPage(model),
+  contentPageModels.forEach(function (model) {
+    writePageModel(model, renderRootModel, seenOutputPaths);
+  });
+
+  agentModels.forEach(function (model) {
+    writePageModel(
+      {
+        ...model,
+        path: path.posix.join("agents", model.agent.slug + ".html"),
+      },
+      renderAgentPage,
+      seenOutputPaths,
     );
   });
 
   console.log(
     "Rendered " +
-      (getRootPageModels().length + 1) +
-      " root/listing pages and " +
-      getAgentPageModels().length +
+      (rootModels.length + 1 + contentPageModels.length) +
+      " root/listing/content pages and " +
+      agentModels.length +
       " agent profile pages into build/.",
   );
 }

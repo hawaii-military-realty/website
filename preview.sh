@@ -81,7 +81,52 @@ trap cleanup EXIT INT TERM
 rebuild
 
 port="$(pick_port)"
-python3 -m http.server "$port" --bind "$host" --directory build &
+PREVIEW_HOST="$host" PREVIEW_PORT="$port" python3 - <<'PY' &
+import functools
+import http.server
+import os
+import posixpath
+import socketserver
+import urllib.parse
+
+host = os.environ.get("PREVIEW_HOST", "0.0.0.0")
+port = int(os.environ["PREVIEW_PORT"])
+directory = os.path.join(os.getcwd(), "build")
+
+
+class ExtensionlessHandler(http.server.SimpleHTTPRequestHandler):
+    def _candidate_from_request(self):
+        parsed = urllib.parse.urlsplit(self.path)
+        request_path = parsed.path or "/"
+
+        if request_path == "/" or posixpath.splitext(request_path)[1]:
+            return None
+
+        return request_path.rstrip("/") + ".html"
+
+    def send_head(self):
+        candidate = self._candidate_from_request()
+
+        if candidate:
+            local_candidate = self.translate_path(candidate)
+            if os.path.isfile(local_candidate):
+                parsed = urllib.parse.urlsplit(self.path)
+                self.path = urllib.parse.urlunsplit(
+                    ("", "", candidate, parsed.query, parsed.fragment)
+                )
+
+        return super().send_head()
+
+
+class PreviewServer(socketserver.ThreadingTCPServer):
+    allow_reuse_address = True
+
+
+handler = functools.partial(ExtensionlessHandler, directory=directory)
+
+with PreviewServer((host, port), handler) as httpd:
+    httpd.serve_forever()
+PY
 server_pid="$!"
 
 echo
