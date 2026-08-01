@@ -1708,7 +1708,7 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
     introLead: "Use this page to turn an Ewa Beach search from a photo scroll into a practical shortlist.",
     intro: [
       "A useful Ewa Beach listings search starts with the life you are trying to build on Oahu. The area can appeal to buyers who want West Oahu space, newer residential communities, townhome options, single-family homes, and a neighborhood feel that is different from town. That does not mean every listing with an Ewa Beach address solves the same problem.",
-      "The Census Bureau's recent QuickFacts profile for the Ewa Beach CDP shows a community with 3,385 households from 2020 through 2024, an owner-occupied housing rate of 72.9 percent, and a mean travel time to work of 38.0 minutes for workers age 16 and older. Those figures do not price any current home, but they do explain why monthly cost, commute, and household fit should be tested early.",
+      "The Census Bureau's 2020-2024 QuickFacts estimates for the Ewa Beach CDP report 3,385 households, an owner-occupied housing rate of 72.9 percent, and a mean travel time to work of 38.0 minutes for workers age 16 and older. Those community-level figures do not price any current home or predict an individual commute, but they explain why monthly cost, travel patterns, and household fit should be tested early.",
       "For military and remote buyers, the best listing is not always the newest home or the biggest floor plan. It is the one that fits your orders, lender guidance, school logistics, commute tolerance, parking needs, and maintenance comfort. Ewa Beach can stay high on the list, but only after each candidate survives those Oahu-specific checks.",
     ],
     sidebar: {
