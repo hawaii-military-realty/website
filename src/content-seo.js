@@ -194,7 +194,7 @@ function buildPropertyExpansion(config) {
     intro: [
       config.segment,
       config.localContext,
-      `If the original property is no longer available, this page should still help you understand what similar inventory may offer today and what to confirm before you spend time on a showing, application, or offer.`,
+      `Availability can change, but the property profile that brought you here is still useful for narrowing the location, layout, features, timing, and price range that fit your move. If this home is not currently offered, the same criteria can guide a search for a similar option.`,
     ],
     sidebar: {
       eyebrow: "Best Fit",
@@ -235,7 +235,7 @@ function buildPropertyExpansion(config) {
         pills: uniqueKeywords(["Current Availability", "Comparable Homes", "Next Steps"]),
         paragraphs: [
           config.currentUse,
-          "The strongest next step is to confirm whether the exact property, a similar rental, or a comparable home is available now, then compare that option against your timeline and the daily routine you need on island.",
+          "The strongest next step is to share your orders or move timeline, comfortable budget, and must-have details, then confirm which matching homes are available in time and compare them against the daily routine you need on island.",
         ],
       },
     ],
@@ -245,8 +245,8 @@ function buildPropertyExpansion(config) {
       intro: "These are the questions people usually need answered before they treat a property page as a serious lead.",
       items: [
         {
-          question: "Is the original property still available?",
-          answer: "Availability should always be confirmed directly. If the original property is no longer active, this page can still help you compare similar homes, rentals, or neighborhood options.",
+          question: "How do I find out whether this property is available?",
+          answer: "Availability should always be confirmed directly. If this particular home is not currently offered, Hawaii Military Realty can use the location, layout, and features you liked to look for similar options that fit your timing and budget.",
         },
         {
           question: "Who is this property type best suited for?",
@@ -2723,7 +2723,7 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
       heading: "Mililani real estate FAQs",
       intro: "Use these answers to structure research, then verify current property, association, school, transit, and installation details with the responsible sources.",
       items: [
-        { question: "Is Mililani a good choice for Schofield Barracks or Wheeler Army Airfield?", answer: "It can be a logical comparison area, but suitability depends on the exact duty site, gate, report time, household routes, and property. Test the actual trip at relevant hours and check current gate information rather than relying on mileage or a broad community label." },
+        { question: "Is Mililani a good choice for Schofield Barracks or Wheeler Army Airfield?", answer: "It can be a logical comparison area, but suitability depends on the exact duty site, gate, report time, househpage routes, and property. Test the actual trip at relevant hours and check current gate information rather than relying on mileage or a broad community label." },
         { question: "What is the difference between Mililani Town and Mililani Mauka for a home search?", answer: "Treat them as separate search areas, then compare individual neighborhood pockets and properties. Housing type, age, layout, association structure, parking, access routes, and current inventory can differ. Verify every listing's documents and obligations rather than applying an area-wide assumption." },
         { question: "Do Mililani homes have association dues?", answer: "Many properties may have association obligations, but the applicable organizations and charges are property-specific. Confirm MTA status, condominium or other association layers, current assessments, inclusions, rules, and pending changes from the disclosure documents and the associations responsible for the exact address." },
         { question: "How do I check the public school for a Mililani address?", answer: "Use the Hawaii Department of Education's official school tools and contact the school with the exact address. Do not rely on distance, a subdivision name, a listing portal, or a past assignment, and independently evaluate whether the available program and daily route fit the student." },
@@ -2851,7 +2851,7 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
         paragraphs: [
           "Start with a map boundary that serves your real destinations, then confirm the address and legal description of every property. Ewa Beach is not one uniform subdivision. Even nearby homes can sit in different developments, condominium projects, associations, school service areas, flood zones, or street settings. Ask what is conveyed, what is shared, and who maintains roads, landscaping, drainage features, roofs, exterior elements, or recreational facilities that matter to the household.",
           "Choose property type deliberately. A detached house may offer a private yard and more direct maintenance control, but it can also put every exterior repair on the owner. A townhome or condominium may shift some work to an association while adding recurring fees, rules, master-insurance questions, and shared financial exposure. A newer home can reduce some immediate projects without removing the need for inspection, document review, warranty research, or a reserve for repairs.",
-          "Renters need the same discipline. Confirm who is authorized to lease the property, the exact term, deposit and move-in requirements, utilities, parking, pet terms, maintenance contacts, association restrictions, and condition documentation. Never send funds or sensitive information until the owner or property manager and payment instructions have been independently verified. An archived page or old advertisement is context, not proof that a home remains available."
+          "Renters need the same discipline. Confirm who is authorized to lease the property, the exact term, deposit and move-in requirements, utilities, parking, pet terms, maintenance contacts, association restrictions, and condition documentation. Never send funds or sensitive information until the owner or property manager and payment instructions have been independently verified. A property page or advertisement can guide the search, while current written terms confirm what is available."
         ]
       },
       {
@@ -3006,7 +3006,7 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
         { question: "What should I do first if I want to use OPLIFT?", answer: "Contact the official OPLIFT coordinator listed on the current Navy program page and your service transportation office. Verify eligibility, direction, application status, vehicle rules, required documents, costs, storage, risk terms, and pickup procedures before moving the vehicle or spending money." }
       ]
     },
-    cta: buildPageCta("Build an Oahu housing plan that survives a vehicle delay", "Share your duty destination, report and move dates, confirmed vehicle plan, backup transportation budget, parking needs, household routes, and housing ceiling. We can help compare Oahu locations and properties while official transportation and OPLIFT personnel confirm program and entitlement details.")
+    cta: buildPageCta("Build an Oahu housing plan that survives a vehicle delay", "Share your duty destination, report and move dates, confirmed vehicle plan, backup transportation budget, parking needs, househpage routes, and housing ceiling. We can help compare Oahu locations and properties while official transportation and OPLIFT personnel confirm program and entitlement details.")
   },
   "the-right-down-payment-on-hawaii-home": {
     description: "Compare Oahu home down payment options, VA and conventional loan tradeoffs, cash to close, monthly cost, and the reserves to keep after closing.",
@@ -3436,15 +3436,15 @@ const EVERGREEN_CONTENT_EXPANSIONS = {
 
 const PROPERTY_CONTENT_EXPANSIONS = {
   "featured/pool-home-for-sale-in-ka-makana-at-hoakalei-in-ewa-beach-hawaii.html": {
-    description: "Use this archived Ka Makana at Hoakalei pool-home page to compare current availability, pool condition, association requirements, permits, insurance, and total ownership cost.",
+    description: "Use this Ka Makana at Hoakalei pool-home page to compare current availability, pool condition, association requirements, permits, insurance, and total ownership cost.",
     keywords: uniqueKeywords(["Ka Makana at Hoakalei pool home", "Hoakalei homes for sale", "Ewa Beach pool home", "Ka Makana real estate", "Oahu pool home", "Hawaii Military Realty"]),
-    heroEyebrow: "Archived Property Guide",
-    heroIntro: "The original pool-home listing may no longer be available. Use this archival guide to verify its current status and evaluate any comparable Ka Makana at Hoakalei home with the pool, association, permit, insurance, and daily-life questions that matter before an offer.",
+    heroEyebrow: "Property Search Guide",
+    heroIntro: "The original pool-home listing may no longer be available. Use this property-search guide to verify its current status and evaluate any comparable Ka Makana at Hoakalei home with the pool, association, permit, insurance, and daily-life questions that matter before an offer.",
     introEyebrow: "Buyer Due Diligence",
     introHeading: "How to evaluate a Ka Makana at Hoakalei pool home",
     introLead: "A private pool can shape how you use a home, but it also adds equipment, safety, documentation, and monthly-cost questions that deserve their own review.",
     intro: [
-      "This page preserves the search context of a previously marketed pool home in Ka Makana at Hoakalei; it is not a statement that the property is for sale today. Confirm the exact address, asking price, listing status, included fixtures, and showing availability before relying on any legacy marketing. If it is no longer active, the same checklist can help you compare current Ewa Beach homes with private pools.",
+      "This page describes the search for a pool home in Ka Makana at Hoakalei; it is not a statement that the property is for sale today. Confirm the exact address, asking price, listing status, included fixtures, and showing availability before relying on property-specific marketing. If it is no longer active, the same checklist can help you compare current Ewa Beach homes with private pools.",
       "Ka Makana is a Hoakalei village that the community's official site describes as including both single-family homes and townhomes. That distinction matters. Before comparing price per square foot or association costs, verify the legal property type, parcel or unit boundaries, parking rights, and which association documents and fees apply to the exact home rather than assuming every Ka Makana property is governed or maintained the same way.",
       "Treat the pool as a small operating system, not a photograph. Ask for its age, dimensions, equipment list, service history, recent repair invoices, safety features, electrical and plumbing documentation, and any transferable warranties. Then decide whether your household will use it enough to justify routine service, water, electricity, repairs, and the effect on insurance underwriting."
     ],
@@ -3455,14 +3455,14 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         "This search is strongest for buyers who want private outdoor recreation and entertaining space, expect to use a pool regularly, and have room in the budget for recurring care and occasional equipment replacement.",
         "It is a weaker fit if the pool would be used rarely, if a low-maintenance yard is the priority, or if the household has not yet resolved child, guest, pet, and water-safety needs. A community pool and a private pool solve different problems and carry different responsibilities."
       ],
-      pills: ["Archived Listing", "Private Pool", "Ka Makana", "Association Review", "Permit Check", "Insurance Quote"]
+      pills: ["Property Search", "Private Pool", "Ka Makana", "Association Review", "Permit Check", "Insurance Quote"]
     },
     sections: [
       {
         title: "First confirm what is actually being offered",
         pills: ["Current Status", "Exact Address", "Seller Disclosures", "Included Equipment"],
         paragraphs: [
-          "Start with present facts: Is the exact property active, under contract, withdrawn, or sold? Request the current listing record and seller disclosures, and identify everything included in the sale. Pool pumps, filters, heaters, automation, covers, alarms, cleaning equipment, photovoltaic equipment, and leased systems should never be assumed from old photos or copy.",
+          "Start with present facts: Is the exact property active, under contract, withdrawn, or sold? Request the current listing record and seller disclosures, and identify everything included in the sale. Pool pumps, filters, heaters, automation, covers, alarms, cleaning equipment, photovoltaic equipment, and leased systems should never be assumed from listing photos or copy.",
           "Match the listing to public records. Honolulu's Real Property Assessment Division says its parcel records can be searched by address or Tax Map Key and include land and improvement descriptions, assessments, tax information, and characteristics such as living area, bedrooms, and bathrooms. Those records are useful cross-checks, not substitutes for an appraisal, survey, inspection, title review, or the seller's disclosures."
         ]
       },
@@ -3502,9 +3502,9 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     faq: {
       eyebrow: "Common Questions",
       heading: "Ka Makana pool-home questions",
-      intro: "These answers keep an archived listing useful while directing current-property questions to the records and professionals that can verify them.",
+      intro: "These answers keep a property search useful while directing current-property questions to the records and professionals that can verify them.",
       items: [
-        { question: "Is this exact Ka Makana pool home still for sale?", answer: "Do not assume so from this archived page. Ask for the current listing record and verify the exact address, status, price, included items, and showing instructions before making plans around it." },
+        { question: "Is this exact Ka Makana pool home still for sale?", answer: "Do not assume so from this property page. Ask for the current listing record and verify the exact address, status, price, included items, and showing instructions before making plans around it." },
         { question: "Does every Ka Makana home have the same property type and fees?", answer: "No assumption should be made. The official community description includes single-family homes and townhomes. Verify the legal property type, applicable associations, current fees, boundaries, and maintenance responsibilities for the exact home through its current resale and title documents." },
         { question: "What pool records should I request?", answer: "Request permits, association approvals, approved plans, inspection or completion records, service history, repair invoices, equipment specifications, warranties, and any recent leak or condition evaluations. Have qualified professionals check whether the records match the installed pool." },
         { question: "How should I compare a private pool with community amenities?", answer: "Compare privacy and anytime access against maintenance, utilities, safety duties, insurance, repair reserves, and yard space. Also verify current community-amenity access and rules instead of assuming they are included or unchanged." },
@@ -3514,15 +3514,15 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     cta: buildPageCta("Compare current Hoakalei pool homes", "Share your target price, move timing, duty or work location, and how you expect to use a pool. We can confirm current availability and help you compare similar Ewa Beach homes while you obtain property-specific inspection, association, permit, insurance, and financing guidance.")
   },
   "oahu-available-rental-properties/3-bedroom-townhouse-in-makakilo.html": {
-    description: "Use this archived 3-bedroom Makakilo townhouse rental page to verify current availability and compare lease costs, parking, stairs, rules, hazards, and West Oahu travel.",
+    description: "Use this 3-bedroom Makakilo townhouse rental page to verify current availability and compare lease costs, parking, stairs, rules, hazards, and West Oahu travel.",
     keywords: ["3 bedroom townhouse Makakilo", "Makakilo townhouse for rent", "Makakilo rental", "Kapolei townhouse rental", "West Oahu rental"],
-    heroEyebrow: "Archived Rental Guide",
-    heroIntro: "This legacy 3-bedroom Makakilo townhouse page is a starting point, not proof of an active rental. Confirm current status first, then use the checklist below to evaluate this address or a comparable West Oahu townhome.",
+    heroEyebrow: "Rental Search Guide",
+    heroIntro: "This 3-bedroom Makakilo townhouse page is a starting point, not proof of an active rental. Confirm current status first, then use the checklist below to evaluate this address or a comparable West Oahu townhome.",
     introEyebrow: "Rental Decision Guide",
     introHeading: "How to evaluate a 3-bedroom Makakilo townhouse rental",
     introLead: "Separate the bedroom count from the details that determine whether the home, lease, and daily routine actually fit.",
     intro: [
-      "A renter who reaches this page probably has a concrete space requirement and a move date, not a general interest in Makakilo. Three bedrooms may support children, a roommate plan, a home office, or visiting family, but the archived title does not establish the current rent, bathroom count, square footage, condition, parking, pet policy, or availability. Ask for a current listing sheet and written rental terms before relying on any legacy property page.",
+      "A renter who reaches this page probably has a concrete space requirement and a move date, not a general interest in Makakilo. Three bedrooms may support children, a roommate plan, a home office, or visiting family, but the property details in the title do not establish the current rent, bathroom count, square footage, condition, parking, pet policy, or availability. Ask for a current listing sheet and written rental terms before relying on any property page.",
       "Makakilo belongs in a broader Kapolei-area comparison, but its hillside setting makes exact-address research especially important. Honolulu's official ʻEwa Development Plan identifies Puʻu Makakilo and views from it as significant regional features. That does not promise a view from this unit. It is a reminder to inspect the actual building orientation, stairs, slope, drainage, afternoon sun, wind exposure, and route to the property rather than applying a neighborhood-wide assumption.",
       "Use the same scorecard for this home and every alternative: total move-in funds, monthly housing cost, assigned and guest parking, interior layout, stairs, included utilities, maintenance responsibility, association rules, commute tests, and the application timeline. A slightly lower advertised rent may not be the better value if parking, utilities, storage, or an impractical daily route creates recurring cost and friction."
     ],
@@ -3540,7 +3540,7 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         title: "Confirm what is actually being offered",
         pills: ["Current Status", "Showing", "Application", "Written Terms"],
         paragraphs: [
-          "First confirm whether the original townhouse is available now. Request the exact address, current asking rent, desired lease start, lease length, application criteria, application fee, deposit amounts, utility responsibilities, pet terms, and the identity of the licensed property manager or owner contact. Do not send money or sensitive application information until you have verified the listing and the person authorized to rent it.",
+          "First confirm whether the particular townhouse is available now. Request the exact address, current asking rent, desired lease start, lease length, application criteria, application fee, deposit amounts, utility responsibilities, pet terms, and the identity of the licensed property manager or owner contact. Do not send money or sensitive application information until you have verified the listing and the person authorized to rent it.",
           "At a showing, check every level and bedroom rather than judging the home from staged photos. Note window condition, screens, ventilation, water pressure, appliance operation, signs of moisture or pests, cellular reception, noise, trash access, storage, mailbox location, and the route from each parking space to the entry. Ask which observations will be documented on a move-in condition form and take dated photos if you sign a lease."
         ]
       },
@@ -3580,9 +3580,9 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     faq: {
       eyebrow: "Makakilo Rental FAQs",
       heading: "Questions to answer before applying",
-      intro: "These answers preserve the useful search context while avoiding assumptions about an archived listing.",
+      intro: "These answers preserve the useful search context while avoiding assumptions about a property search.",
       items: [
-        { question: "Is this 3-bedroom Makakilo townhouse available now?", answer: "This is a legacy property page and does not establish current availability. Confirm the status, rent, showing access, move-in date, and written terms directly before submitting an application or sending funds." },
+        { question: "Is this 3-bedroom Makakilo townhouse available now?", answer: "This is a property page and does not establish current availability. Confirm the status, rent, showing access, move-in date, and written terms directly before submitting an application or sending funds." },
         { question: "What should I verify about parking?", answer: "Confirm the number and exact location of assigned stalls, vehicle restrictions, guest parking, street-parking rules, towing enforcement, and the walking route from the stalls to the unit. Verify every household vehicle against the written rules." },
         { question: "How much can a Hawaii rental security deposit be?", answer: "DCCA's 2024 handbook says the security deposit may not exceed one month's rent. It describes a separately agreed pet deposit of up to one month's rent and an exception for assistance animals used as a disability accommodation. Check current official guidance and the proposed lease for your situation." },
         { question: "How should I evaluate a Makakilo commute?", answer: "Test the exact address to the exact destination at realistic outbound and return times. Include local-road access, parking, installation entry, school drop-off, or transit transfers; a generic map estimate is not enough." },
@@ -3593,17 +3593,17 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     cta: buildPageCta("Compare current Makakilo and West Oahu rentals", "Share your move date, monthly budget, bedroom need, vehicles, pets, accessibility needs, and duty or work destination. We can confirm current options and help you compare the written terms and daily fit before you apply.")
   },
   "oahu-available-rental-properties/3-bedroom-2-5-bathroom-townhouse-in-ewa-beach-ocean-pointe.html": {
-    description: "Use this archived Ocean Pointe 3-bedroom townhouse rental guide to verify availability, lease costs, parking, association rules, schools, hazards, and commute fit.",
+    description: "Use this Ocean Pointe 3-bedroom townhouse rental guide to verify availability, lease costs, parking, association rules, schools, hazards, and commute fit.",
     keywords: ["Ocean Pointe townhouse rental", "3 bedroom rental Ewa Beach", "Ocean Pointe rental", "Ewa Beach townhouse for rent", "West Oahu rental"],
-    heroEyebrow: "Archived Rental Guide",
-    heroIntro: "This legacy 3-bedroom, 2.5-bath Ocean Pointe townhouse page does not establish current availability. Confirm the exact property and terms, then use this guide to compare its layout, costs, rules, and daily fit with current Ewa Beach rentals.",
+    heroEyebrow: "Rental Search Guide",
+    heroIntro: "This 3-bedroom, 2.5-bath Ocean Pointe townhouse page does not establish current availability. Confirm the exact property and terms, then use this guide to compare its layout, costs, rules, and daily fit with current Ewa Beach rentals.",
     introEyebrow: "Rental Decision Guide",
     introHeading: "How to evaluate an Ocean Pointe townhouse rental",
     introLead: "A bedroom-and-bath count narrows the search, but the lease, sub-association, parking, and ordinary weekday routine determine whether the home works.",
     intro: [
-      "The archived title preserves three useful search filters: Ocean Pointe, a townhouse layout, and three bedrooms with two and a half bathrooms. It does not confirm the current asking rent, exact address, square footage, condition, appliances, parking, pet policy, lease dates, or availability. Request a current listing sheet and written terms before scheduling around this property or sending an application.",
+      "The property details in the title preserve three useful search filters: Ocean Pointe, a townhouse layout, and three bedrooms with two and a half bathrooms. It does not confirm the current asking rent, exact address, square footage, condition, appliances, parking, pet policy, lease dates, or availability. Request a current listing sheet and written terms before scheduling around this property or sending an application.",
       "Ocean Pointe is not one interchangeable set of townhomes. The official Ocean Pointe Residential Community Association site lists several townhome communities and identifies different management companies for them. That makes the exact project name important: master-association guidance, sub-association rules, parking assignments, registration steps, and amenity access may not be identical from one address to another.",
-      "Use a written scorecard for this rental and each alternative. Compare total move-in funds, full monthly cost, bedroom and bathroom placement, stairs, parking, storage, outdoor space, utility responsibility, maintenance contacts, association restrictions, school verification, commute tests, and the time allowed to review and sign. This keeps an archived lead useful without pretending its original facts remain current."
+      "Use a written scorecard for this rental and each alternative. Compare total move-in funds, full monthly cost, bedroom and bathroom placement, stairs, parking, storage, outdoor space, utility responsibility, maintenance contacts, association restrictions, school verification, commute tests, and the time allowed to review and sign. This keeps a property search useful without pretending its property-specific facts remain current."
     ],
     sidebar: {
       eyebrow: "Best Fit",
@@ -3612,15 +3612,15 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         "This profile may suit a household that genuinely uses three bedrooms, wants a townhome rather than a detached-home lease, and can make an Ewa Beach routine work for every driver, student, and recurring appointment.",
         "Pause before applying if stairs create an access problem, the household has more vehicles than confirmed spaces, a pet needs written approval, or the work and school trips have only been checked with a generic map estimate. Each is an exact-address issue."
       ],
-      pills: ["Archived Listing", "3 Bedrooms", "2.5 Bathrooms", "Townhouse", "Ocean Pointe", "Rule Review"]
+      pills: ["Property Search", "3 Bedrooms", "2.5 Bathrooms", "Townhouse", "Ocean Pointe", "Rule Review"]
     },
     sections: [
       {
         title: "Confirm the current offer before sharing money or data",
         pills: ["Availability", "Exact Address", "Application", "Written Terms"],
         paragraphs: [
-          "Ask whether the original unit is available now and obtain the exact address, project name, current rent, proposed start date, lease length, application criteria, application charge, deposit amounts, utility allocation, pet terms, and the name of the owner or licensed property manager. Verify the person authorized to offer the rental before sending funds, identification, or other sensitive application information.",
-          "Tour the actual unit rather than relying on old photographs. Check door and window operation, screens, ventilation, water pressure, appliances, plumbing fixtures, visible moisture or pest evidence, noise, cellular reception, storage, trash access, mailbox location, outdoor areas, and the path from assigned parking to the door. If you proceed, document existing condition with the required move-in paperwork and dated images."
+          "Ask whether the particular unit is available now and obtain the exact address, project name, current rent, proposed start date, lease length, application criteria, application charge, deposit amounts, utility allocation, pet terms, and the name of the owner or licensed property manager. Verify the person authorized to offer the rental before sending funds, identification, or other sensitive application information.",
+          "Tour the actual unit rather than relying on listing photographs. Check door and window operation, screens, ventilation, water pressure, appliances, plumbing fixtures, visible moisture or pest evidence, noise, cellular reception, storage, trash access, mailbox location, outdoor areas, and the path from assigned parking to the door. If you proceed, document existing condition with the required move-in paperwork and dated images."
         ]
       },
       {
@@ -3659,9 +3659,9 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     faq: {
       eyebrow: "Ocean Pointe Rental FAQs",
       heading: "Questions to answer before applying",
-      intro: "These answers distinguish this archived lead from facts that must be verified for a current Ocean Pointe rental.",
+      intro: "These answers distinguish this property search from facts that must be verified for a current Ocean Pointe rental.",
       items: [
-        { question: "Is this exact 3-bedroom Ocean Pointe townhouse available now?", answer: "The legacy page is not proof of availability. Confirm the exact address, current status, rent, showing access, lease dates, and written application terms with the authorized owner or property manager." },
+        { question: "Is this exact 3-bedroom Ocean Pointe townhouse available now?", answer: "The property page is not proof of availability. Confirm the exact address, current status, rent, showing access, lease dates, and written application terms with the authorized owner or property manager." },
         { question: "Does every Ocean Pointe townhouse follow the same rules?", answer: "Do not assume so. The official master-association site identifies several townhome communities and different managers. Ask which master and sub-associations apply, then request the current tenant rules for the exact unit." },
         { question: "What should I confirm about parking?", answer: "Verify the number, type, and location of assigned spaces; garage access if advertised; vehicle and registration limits; guest parking; towing; street rules; and the route from each space to the home. Check every household vehicle against the written rules." },
         { question: "How much can a Hawaii rental security deposit be?", answer: "DCCA says a security deposit cannot exceed one month's rent, while its handbook discusses a separately agreed pet deposit and an assistance-animal exception. Check the latest official guidance and proposed lease for your circumstances." },
@@ -3672,17 +3672,17 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     cta: buildPageCta("Compare current Ocean Pointe and Ewa Beach rentals", "Share your move date, monthly budget, vehicles, pets, accessibility needs, school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, associations, layouts, and daily fit before you apply.")
   },
   "oahu-available-rental-properties/2-bedroom-1-5-bath-condo-in-ewa-beach.html": {
-    description: "Use this archived Ewa Beach 2-bedroom condo rental guide to verify availability, total costs, parking, condo rules, schools, hazards, and commute fit.",
+    description: "Use this Ewa Beach 2-bedroom condo rental guide to verify availability, total costs, parking, condo rules, schools, hazards, and commute fit.",
     keywords: ["2 bedroom condo Ewa Beach", "Ewa Beach condo rental", "2 bedroom rental Ewa Beach", "West Oahu condo for rent", "Ewa Beach rental guide"],
-    heroEyebrow: "Archived Rental Guide",
-    heroIntro: "This legacy 2-bedroom, 1.5-bath Ewa Beach condo page does not establish current availability. Confirm the exact unit and written terms, then compare its real cost, rules, layout, and daily routine with current rentals.",
+    heroEyebrow: "Rental Search Guide",
+    heroIntro: "This 2-bedroom, 1.5-bath Ewa Beach condo page does not establish current availability. Confirm the exact unit and written terms, then compare its real cost, rules, layout, and daily routine with current rentals.",
     introEyebrow: "Condo Rental Checklist",
     introHeading: "How to evaluate a 2-bedroom Ewa Beach condo",
     introLead: "The bedroom count may fit; the exact address, parking plan, lease, and weekday travel decide whether the rental works.",
     intro: [
-      "The archived title preserves three useful search filters: Ewa Beach, a condominium, and two bedrooms with one and a half bathrooms. It does not confirm the exact address, present asking rent, square footage, condition, floor level, parking, appliances, utilities, pet policy, lease dates, or availability. Ask for a current listing sheet and complete written terms before treating this property as an active option.",
+      "The property details in the title preserve three useful search filters: Ewa Beach, a condominium, and two bedrooms with one and a half bathrooms. It does not confirm the exact address, present asking rent, square footage, condition, floor level, parking, appliances, utilities, pet policy, lease dates, or availability. Ask for a current listing sheet and complete written terms before treating this property as an active option.",
       "A two-bedroom layout can serve a couple, a small household, roommates, or someone who needs a separate office, but those uses create different questions. Roommates may care about bedroom dimensions and how the full bathroom is shared. A remote worker should test cellular and internet service. A household with children or mobility needs should verify stairs, railings, elevator access, and the route between parking and the unit.",
-      "Use the same scorecard for this condo and every current alternative. Compare the funds due before move-in, full recurring cost, parking for each vehicle, laundry, storage, cooling, household layout, tenant rules, maintenance contacts, exact-address school and hazard checks, and realistic travel tests. That turns an old listing lead into a careful rental decision without assuming its original facts remain true."
+      "Use the same scorecard for this condo and every current alternative. Compare the funds due before move-in, full recurring cost, parking for each vehicle, laundry, storage, cooling, household layout, tenant rules, maintenance contacts, exact-address school and hazard checks, and realistic travel tests. That turns a property profile into a careful rental decision without assuming its property-specific facts remain true."
     ],
     sidebar: {
       eyebrow: "Best Fit",
@@ -3691,15 +3691,15 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         "This profile may suit a household that genuinely needs two flexible rooms, prefers a condo-sized home to a larger rental, and can make an Ewa Beach routine work for every driver and recurring destination.",
         "Pause before applying if a second vehicle lacks a confirmed space, stairs or bathroom placement create an access issue, a pet is not approved in writing, or the commute has only been estimated from the neighborhood name. These are unit-specific questions."
       ],
-      pills: ["Archived Listing", "2 Bedrooms", "1.5 Bathrooms", "Condo", "Ewa Beach", "Rule Review"]
+      pills: ["Property Search", "2 Bedrooms", "1.5 Bathrooms", "Condo", "Ewa Beach", "Rule Review"]
     },
     sections: [
       {
         title: "Confirm the current offer before applying",
         pills: ["Availability", "Exact Address", "Showing", "Written Terms"],
         paragraphs: [
-          "Start by asking whether the original unit is available now. Obtain the exact address and condominium project, current rent, desired start date, lease length, application standards and charge, deposit amounts, included utilities, pet terms, parking assignment, and the name of the owner or licensed property manager. Verify who is authorized to offer the unit before sending money, identification, or other sensitive information.",
-          "Tour the actual condo rather than relying on archived photographs. Operate windows, doors, locks, plumbing fixtures, appliances, fans, and any cooling equipment. Look for visible moisture or pest evidence, listen for neighboring and parking-lot noise, test cellular reception, and locate laundry, trash, mailbox, storage, and assigned stalls. If you proceed, use the required move-in condition process and retain dated records of existing condition."
+          "Start by asking whether the particular unit is available now. Obtain the exact address and condominium project, current rent, desired start date, lease length, application standards and charge, deposit amounts, included utilities, pet terms, parking assignment, and the name of the owner or licensed property manager. Verify who is authorized to offer the unit before sending money, identification, or other sensitive information.",
+          "Tour the actual condo rather than relying on listing photographs. Operate windows, doors, locks, plumbing fixtures, appliances, fans, and any cooling equipment. Look for visible moisture or pest evidence, listen for neighboring and parking-lot noise, test cellular reception, and locate laundry, trash, mailbox, storage, and assigned stalls. If you proceed, use the required move-in condition process and retain dated records of existing condition."
         ]
       },
       {
@@ -3730,7 +3730,7 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         title: "Check schools, hazards, and insurance by address",
         pills: ["School Assignment", "Flood", "Preparedness", "Coverage"],
         paragraphs: [
-          "Do not infer a public-school assignment from Ewa Beach or from an old advertisement. The Hawaii Department of Education's SchoolSite Locator accepts a street address, but the department says its general service areas are for reference and should not be the sole source for a rental decision. Enter the exact address and confirm the result directly with the relevant school before committing.",
+          "Do not infer a public-school assignment from Ewa Beach or from a property advertisement. The Hawaii Department of Education's SchoolSite Locator accepts a street address, but the department says its general service areas are for reference and should not be the sole source for a rental decision. Enter the exact address and confirm the result directly with the relevant school before committing.",
           "Search the address in Honolulu's Oʻahu Hazard Explorer, which maps flood, tsunami evacuation, wildfire-risk, and dam or levee evacuation areas. The State of Hawaii Flood Hazard Assessment Tool displays FEMA flood zones but warns that it does not identify every area subject to flooding. Ask about prior water intrusion and emergency access, review official preparedness guidance, and obtain an address-specific renters-insurance quote; maps are screening tools, not guarantees about a unit."
         ]
       }
@@ -3738,9 +3738,9 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     faq: {
       eyebrow: "Ewa Beach Condo FAQs",
       heading: "Questions to answer before applying",
-      intro: "Use the archived bedroom-and-bath profile as a starting point, then verify every current fact in writing.",
+      intro: "Use the bedroom-and-bath search profile as a starting point, then verify every current fact in writing.",
       items: [
-        { question: "Is this 2-bedroom Ewa Beach condo available now?", answer: "This is a legacy property page and does not establish current availability. Confirm the exact unit, rent, showing access, move-in date, lease length, application terms, and authorized contact before submitting information or funds." },
+        { question: "Is this 2-bedroom Ewa Beach condo available now?", answer: "This is a property page and does not establish current availability. Confirm the exact unit, rent, showing access, move-in date, lease length, application terms, and authorized contact before submitting information or funds." },
         { question: "What costs should I compare beyond rent?", answer: "Add required move-in funds and recurring electricity, water or sewer, internet, insurance, parking, pet, laundry, and transportation costs. Identify which amounts are refundable and require the allocation of utilities and fees in writing." },
         { question: "How much can a Hawaii rental security deposit be?", answer: "DCCA says the security deposit cannot exceed one month's rent. Its handbook discusses a separately agreed additional pet deposit and an assistance-animal exception. Check current official guidance and the proposed lease for your circumstances." },
         { question: "What condo rules matter most to a renter?", answer: "Verify parking and towing, pets, guests, noise, smoking, move procedures, deliveries, trash, common-area access, maintenance reporting, violations, and fines. Obtain the rules that apply to tenants and resolve conflicts with the lease in writing." },
@@ -3751,17 +3751,17 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     cta: buildPageCta("Compare current 2-bedroom Ewa Beach rentals", "Share your move date, monthly budget, vehicles, pets, accessibility and school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, condo rules, layouts, and daily fit before you apply.")
   },
   "oahu-available-rental-properties/3-bedroom-2-bathroom-townhouse-in-mililani-mauka.html": {
-    description: "Use this archived Mililani Mauka 3-bedroom townhouse rental guide to verify availability, lease costs, parking, community rules, schools, hazards, and commute fit.",
+    description: "Use this Mililani Mauka 3-bedroom townhouse rental guide to verify availability, lease costs, parking, community rules, schools, hazards, and commute fit.",
     keywords: ["Mililani Mauka townhouse rental", "3 bedroom rental Mililani", "Mililani Mauka rental", "Central Oahu townhouse for rent", "Mililani rental guide"],
-    heroEyebrow: "Archived Rental Guide",
-    heroIntro: "This legacy 3-bedroom, 2-bath Mililani Mauka townhouse page does not establish current availability. Confirm the exact home and written terms, then compare its layout, rules, total cost, and daily routine with current Central Oahu rentals.",
+    heroEyebrow: "Rental Search Guide",
+    heroIntro: "This 3-bedroom, 2-bath Mililani Mauka townhouse page does not establish current availability. Confirm the exact home and written terms, then compare its layout, rules, total cost, and daily routine with current Central Oahu rentals.",
     introEyebrow: "Rental Decision Guide",
     introHeading: "How to evaluate a Mililani Mauka townhouse rental",
     introLead: "Three bedrooms may solve the space question, but the exact address, parking, governing rules, lease, and weekday travel determine whether the home works.",
     intro: [
-      "The archived title preserves three useful filters: Mililani Mauka, a townhouse, and three bedrooms with two bathrooms. It does not confirm the current asking rent, exact address, project name, square footage, condition, parking, appliances, pet policy, utilities, lease dates, or availability. Obtain a current listing sheet and complete written terms before arranging a move around this property or sending an application.",
-      "Townhouse communities can layer a lease with master-association and project-specific requirements. Mililani Town Association publishes covenants, design documents, general rules, and a list of complexes requiring sub-association approval. That is a reason to identify the exact complex and request every rule that applies to tenants; it is not proof that a particular archived unit includes recreation access or any other amenity.",
-      "Use one written scorecard for this home and each active alternative. Compare funds due before move-in, full recurring cost, bedroom and bathroom placement, stairs, parking for every vehicle, storage, cooling, utility responsibility, maintenance contacts, pet restrictions, exact-address school and hazard checks, and realistic travel tests. An old listing can guide a search, but only current documents can support a rental decision."
+      "The property details in the title preserve three useful filters: Mililani Mauka, a townhouse, and three bedrooms with two bathrooms. It does not confirm the current asking rent, exact address, project name, square footage, condition, parking, appliances, pet policy, utilities, lease dates, or availability. Obtain a current listing sheet and complete written terms before arranging a move around this property or sending an application.",
+      "Townhouse communities can layer a lease with master-association and project-specific requirements. Mililani Town Association publishes covenants, design documents, general rules, and a list of complexes requiring sub-association approval. That is a reason to identify the exact complex and request every rule that applies to tenants; it is not proof that a particular unit described here includes recreation access or any other amenity.",
+      "Use one written scorecard for this home and each active alternative. Compare funds due before move-in, full recurring cost, bedroom and bathroom placement, stairs, parking for every vehicle, storage, cooling, utility responsibility, maintenance contacts, pet restrictions, exact-address school and hazard checks, and realistic travel tests. This property profile can guide a search, but only current documents can support a rental decision."
     ],
     sidebar: {
       eyebrow: "Best Fit",
@@ -3770,15 +3770,15 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         "This profile may suit a household that genuinely uses three bedrooms, prefers a townhouse to a detached-home lease, and can make a Mililani Mauka routine work for every driver, student, and recurring destination.",
         "Pause before applying if stairs create an access problem, a vehicle lacks a confirmed space, a pet has only verbal approval, or a Schofield Barracks, Wheeler Army Airfield, school, or Honolulu trip has only been estimated from the neighborhood name. Each is an address-specific question."
       ],
-      pills: ["Archived Listing", "3 Bedrooms", "2 Bathrooms", "Townhouse", "Mililani Mauka", "Rule Review"]
+      pills: ["Property Search", "3 Bedrooms", "2 Bathrooms", "Townhouse", "Mililani Mauka", "Rule Review"]
     },
     sections: [
       {
         title: "Confirm the current offer before applying",
         pills: ["Availability", "Exact Address", "Showing", "Written Terms"],
         paragraphs: [
-          "Ask whether the original townhouse is available now. Obtain the exact address and project name, current rent, proposed start date, lease length, application standards and charge, deposits, utility allocation, pet terms, parking assignment, and the name of the owner or licensed property manager. Verify who is authorized to offer the home before sending money, identification, or other sensitive application information.",
-          "Tour the actual unit rather than relying on archived photographs. Operate windows, doors, locks, plumbing fixtures, appliances, fans, and cooling equipment. Look for visible moisture or pest evidence, listen for road and neighboring noise, test cellular reception, and locate laundry, trash, mailbox, storage, and assigned parking. If you proceed, follow the move-in condition process and retain dated records of existing condition."
+          "Ask whether the particular townhouse is available now. Obtain the exact address and project name, current rent, proposed start date, lease length, application standards and charge, deposits, utility allocation, pet terms, parking assignment, and the name of the owner or licensed property manager. Verify who is authorized to offer the home before sending money, identification, or other sensitive application information.",
+          "Tour the actual unit rather than relying on listing photographs. Operate windows, doors, locks, plumbing fixtures, appliances, fans, and cooling equipment. Look for visible moisture or pest evidence, listen for road and neighboring noise, test cellular reception, and locate laundry, trash, mailbox, storage, and assigned parking. If you proceed, follow the move-in condition process and retain dated records of existing condition."
         ]
       },
       {
@@ -3809,7 +3809,7 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         title: "Verify schools, hazards, and preparedness by address",
         pills: ["School Assignment", "Flood", "Wildfire", "Coverage"],
         paragraphs: [
-          "Do not infer a public-school assignment from Mililani Mauka or an old advertisement. The Hawaii Department of Education's SchoolSite Locator accepts a street address, but the department says its general service areas are for reference and should not be the sole source for a rental decision. Enter the exact address, then confirm the result, grade placement, enrollment steps, and transportation directly with the relevant school.",
+          "Do not infer a public-school assignment from Mililani Mauka or a property advertisement. The Hawaii Department of Education's SchoolSite Locator accepts a street address, but the department says its general service areas are for reference and should not be the sole source for a rental decision. Enter the exact address, then confirm the result, grade placement, enrollment steps, and transportation directly with the relevant school.",
           "Search the address in Honolulu's Oʻahu Hazard Explorer. The city says it can show whether a location is within mapped flood, tsunami evacuation, wildfire-risk, or dam and levee evacuation areas. Treat mapping as a preparedness screen, not a guarantee about a unit. Ask about prior water intrusion, drainage, emergency access, and outages, review official preparedness guidance, and obtain a renters-insurance quote tied to the actual address and household."
         ]
       }
@@ -3817,9 +3817,9 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     faq: {
       eyebrow: "Mililani Mauka Rental FAQs",
       heading: "Questions to answer before applying",
-      intro: "Use the archived bedroom-and-bath profile as a starting point, then verify every current fact in writing.",
+      intro: "Use the bedroom-and-bath search profile as a starting point, then verify every current fact in writing.",
       items: [
-        { question: "Is this 3-bedroom Mililani Mauka townhouse available now?", answer: "This legacy page is not proof of current availability. Confirm the exact address, status, rent, showing access, lease dates, application terms, and authorized contact before submitting information or funds." },
+        { question: "Is this 3-bedroom Mililani Mauka townhouse available now?", answer: "This property page is not proof of current availability. Confirm the exact address, status, rent, showing access, lease dates, application terms, and authorized contact before submitting information or funds." },
         { question: "How much can a Hawaii rental security deposit be?", answer: "DCCA says a security deposit cannot exceed one month's rent. Its handbook discusses a separately agreed additional pet deposit and an assistance-animal exception. Check current official guidance and the proposed lease for your circumstances." },
         { question: "Which community rules should a tenant request?", answer: "Confirm every association governing the unit, then request tenant rules for parking, towing, pets, guests, noise, smoking, outdoor use, deliveries, moving, facilities, maintenance, violations, and fines. Resolve conflicts with the lease in writing." },
         { question: "How should I test a commute to Schofield or Wheeler?", answer: "Drive from the exact townhouse to the actual gate and duty destination at realistic outbound and return times. Include local roads, parking, and security screening, and verify the expected duty location and access procedure with the command or installation." },
@@ -3830,17 +3830,17 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     cta: buildPageCta("Compare current Mililani Mauka rentals", "Share your move date, monthly budget, vehicles, pets, accessibility and school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, rules, layouts, and daily fit before you apply.")
   },
   "oahu-available-rental-properties/4-br-3-ba-rental-in-kapolei.html": {
-    description: "Use this archived Kapolei 4-bedroom home rental guide to verify availability, total cost, layout, parking, yard duties, schools, hazards, and commute fit.",
+    description: "Use this Kapolei 4-bedroom home rental guide to verify availability, total cost, layout, parking, yard duties, schools, hazards, and commute fit.",
     keywords: ["Kapolei 4 bedroom rental", "4 bedroom house for rent Kapolei", "Kapolei single family home rental", "West Oahu rental home", "Kapolei rental guide"],
-    heroEyebrow: "Archived Rental Guide",
-    heroIntro: "This legacy 4-bedroom, 3-bath Kapolei rental page does not establish current availability or a current $3,000 rent. Confirm the exact home and written terms, then compare its full cost, layout, upkeep, and daily travel with active West Oahu rentals.",
+    heroEyebrow: "Rental Search Guide",
+    heroIntro: "This 4-bedroom, 3-bath Kapolei rental page does not establish current availability or a current $3,000 rent. Confirm the exact home and written terms, then compare its full cost, layout, upkeep, and daily travel with active West Oahu rentals.",
     introEyebrow: "Detached-Home Rental Checklist",
     introHeading: "How to evaluate a 4-bedroom Kapolei rental",
     introLead: "Four bedrooms may solve a space problem, but the address, lease, household layout, parking, upkeep, utilities, and weekday routine determine whether the home works.",
     intro: [
-      "The archived title preserves three useful search filters: Kapolei, a single-family home, and four bedrooms with three bathrooms. It also preserves an old $3,000 figure, but none of those words confirm that the original home is available now at that rent. The exact address, square footage, condition, cooling, parking, appliances, yard, pet policy, utility allocation, lease dates, and deposit terms all require current written verification.",
+      "The property details in the title preserve three useful search filters: Kapolei, a single-family home, and four bedrooms with three bathrooms. The $3,000 figure is a starting budget reference rather than a promise of today's rent. Confirm the exact address, current price, square footage, condition, cooling, parking, appliances, yard, pet policy, utility allocation, lease dates, and deposit terms in writing, then compare similar homes that can meet the move timeline.",
       "A larger detached home can fit a family, a multigenerational household, or roommates, yet the same bedroom count can produce very different daily routines. One bedroom may be downstairs or all may require stairs; a bathroom may be attached, shared, or inconvenient for a household member with limited mobility. Ask for a floor plan when possible, then tour and measure the spaces that matter instead of treating the headline as proof of fit.",
-      "Use one scorecard for this archived lead and every active alternative. Compare funds due before move-in, complete recurring cost, bedroom and bathroom placement, parking for every vehicle, storage, cooling, yard responsibility, pet approval, repair contacts, exact-address school and hazard checks, and realistic trips to work or a duty station. That process makes the old page useful without turning historic advertising into a present-day promise."
+      "Use one scorecard for this property search and every active alternative. Compare funds due before move-in, complete recurring cost, bedroom and bathroom placement, parking for every vehicle, storage, cooling, yard responsibility, pet approval, repair contacts, exact-address school and hazard checks, and realistic trips to work or a duty station. That process makes the property page useful without turning property advertising into a present-day promise."
     ],
     sidebar: {
       eyebrow: "Best Fit",
@@ -3849,15 +3849,15 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         "This profile may suit a larger household that will use four distinct rooms and three bathrooms, prefers detached-home responsibilities to condominium living, and can make a Kapolei routine work for every driver, student, and recurring destination.",
         "Pause before applying if the household has not priced the utilities, lacks a confirmed space for each vehicle, needs a downstairs bedroom, expects a pet or yard use that is not approved in writing, or has tested travel only from the word Kapolei rather than the exact address."
       ],
-      pills: ["Archived Listing", "4 Bedrooms", "3 Bathrooms", "Single-Family Home", "Kapolei", "Cost Review"]
+      pills: ["Property Search", "4 Bedrooms", "3 Bathrooms", "Single-Family Home", "Kapolei", "Cost Review"]
     },
     sections: [
       {
         title: "Confirm the offer and authorized contact first",
         pills: ["Availability", "Exact Address", "Showing", "Written Terms"],
         paragraphs: [
-          "Ask whether the original home is available now. Obtain the exact address, current rent, proposed start date, lease length, application standards and charge, deposit amounts, included appliances and utilities, pet terms, parking arrangements, and the owner or licensed property manager's identity. Verify who is authorized to offer the home before sending money, identification, or other sensitive application information.",
-          "Tour the actual house rather than relying on archived photographs. Operate doors, windows, locks, plumbing fixtures, appliances, fans, and cooling equipment. Look for visible moisture or pest evidence, listen for road and neighboring noise, test cellular reception, and locate laundry, refuse storage, utility equipment, exterior shutoffs, mail delivery, and every permitted parking area. If you proceed, document existing condition with the required move-in process and dated images."
+          "Ask whether the particular home is available now. Obtain the exact address, current rent, proposed start date, lease length, application standards and charge, deposit amounts, included appliances and utilities, pet terms, parking arrangements, and the owner or licensed property manager's identity. Verify who is authorized to offer the home before sending money, identification, or other sensitive application information.",
+          "Tour the actual house rather than relying on listing photographs. Operate doors, windows, locks, plumbing fixtures, appliances, fans, and cooling equipment. Look for visible moisture or pest evidence, listen for road and neighboring noise, test cellular reception, and locate laundry, refuse storage, utility equipment, exterior shutoffs, mail delivery, and every permitted parking area. If you proceed, document existing condition with the required move-in process and dated images."
         ]
       },
       {
@@ -3888,7 +3888,7 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         title: "Verify schools, hazards, and coverage by address",
         pills: ["School Assignment", "Flood", "Wildfire", "Preparedness"],
         paragraphs: [
-          "Do not infer a public-school assignment from Kapolei or an archived advertisement. The Hawaii Department of Education's SchoolSite Locator accepts a street address, but the department says its general service areas are for reference and should not be the sole source for a rent decision. Enter the exact address, then confirm the result, grade placement, enrollment steps, and transportation directly with the relevant school.",
+          "Do not infer a public-school assignment from Kapolei or a property page. The Hawaii Department of Education's SchoolSite Locator accepts a street address, but the department says its general service areas are for reference and should not be the sole source for a rent decision. Enter the exact address, then confirm the result, grade placement, enrollment steps, and transportation directly with the relevant school.",
           "Search the address in Honolulu's Oʻahu Hazard Explorer. The city says the tool can show whether a location is within mapped tsunami evacuation, flood, wildfire-risk, or dam and levee evacuation areas. Treat the result as a preparedness screen, not a guarantee about the home. Ask about prior water intrusion, drainage, outages, and emergency access, then obtain a renters-insurance quote tied to the address and household."
         ]
       }
@@ -3896,9 +3896,9 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     faq: {
       eyebrow: "Kapolei Rental FAQs",
       heading: "Questions to answer before applying",
-      intro: "Use the archived size and location as a search profile, then verify every current fact in writing.",
+      intro: "Use the search profile and location as a search profile, then verify every current fact in writing.",
       items: [
-        { question: "Is this Kapolei house available now for $3,000?", answer: "The legacy title is not proof of current status or price. Confirm the exact address, current rent, showing access, lease dates, application terms, and authorized contact before submitting information or funds." },
+        { question: "Is this Kapolei house available now for $3,000?", answer: "The property title is not proof of current status or price. Confirm the exact address, current rent, showing access, lease dates, application terms, and authorized contact before submitting information or funds. If it is not currently offered, ask for similar Kapolei homes that fit your move date and total monthly budget." },
         { question: "What costs should I compare beyond the advertised rent?", answer: "Add move-in funds and recurring electricity, water or sewer, internet, insurance, pet charges, yard or pest service, and transportation. Identify every included service, tenant responsibility, and refundable amount in writing." },
         { question: "How much can a Hawaii rental security deposit be?", answer: "DCCA says the security deposit cannot exceed one month's rent. Its handbook discusses a separately agreed additional pet deposit and an assistance-animal exception. Check current official guidance and the proposed lease for your circumstances." },
         { question: "What should a larger household verify in the floor plan?", answer: "Confirm bedroom and bathroom locations, stairs, usable dimensions, privacy, cooling, laundry, storage, and the route from parking. Assign rooms before applying so access needs and bathroom schedules are tested against the actual plan." },
@@ -3909,17 +3909,17 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     cta: buildPageCta("Compare current 4-bedroom Kapolei rentals", "Share your move date, monthly budget, vehicles, pets, accessibility and school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, layouts, upkeep, total cost, and daily fit before you apply.")
   },
   "oahu-available-rental-properties/3-br-1-5-bath-with-ocean-views.html": {
-    description: "Use this archived Oahu 3-bedroom ocean-view rental guide to verify availability, view quality, total cost, layout, parking, commute, schools, and hazards.",
+    description: "Use this Oahu 3-bedroom ocean-view rental guide to verify availability, view quality, total cost, layout, parking, commute, schools, and hazards.",
     keywords: ["Oahu 3 bedroom rental", "Oahu ocean view rental", "3 bedroom 1.5 bath rental Oahu", "ocean view home for rent Oahu", "Oahu rental guide"],
-    heroEyebrow: "Archived Rental Guide",
-    heroIntro: "This legacy 3-bedroom, 1.5-bath ocean-view rental page does not establish current availability, location, condition, or price. Confirm the exact property and written terms, then decide whether the view is worth the cost and everyday tradeoffs.",
+    heroEyebrow: "Rental Search Guide",
+    heroIntro: "This 3-bedroom, 1.5-bath ocean-view rental page does not establish current availability, location, condition, or price. Confirm the exact property and written terms, then decide whether the view is worth the cost and everyday tradeoffs.",
     introEyebrow: "View-Oriented Rental Checklist",
     introHeading: "How to evaluate an Oahu rental advertised with ocean views",
     introLead: "Treat the view as one feature to verify—not a substitute for a workable lease, floor plan, budget, parking arrangement, and daily route.",
     intro: [
-      "The archived headline preserves only a limited property profile: three bedrooms, one full bath, one half bath, and an advertised ocean view somewhere on Oahu. It does not confirm the original address, property type, square footage, parking, current condition, rent, deposit, utilities, pet terms, lease dates, or present availability. Obtain those details from the authorized owner or property manager before treating this page as an active offer.",
+      "The property details in the headline preserve only a limited property profile: three bedrooms, one full bath, one half bath, and an advertised ocean view somewhere on Oahu. It does not confirm the original address, property type, square footage, parking, current condition, rent, deposit, utilities, pet terms, lease dates, or present availability. Obtain those details from the authorized owner or property manager before treating this page as an active offer.",
       "Ocean-view language can describe very different experiences. The water may be visible from a main living room, one bedroom, a lanai, a standing position near a window, or only across neighboring roofs and vegetation. Weather, haze, future landscaping, curtains, parked vehicles, and the time of day can change what a photograph suggests. Tour the actual property and view it from the spaces your household will use most.",
-      "A disciplined comparison keeps the lifestyle feature in proportion. Put this archived lead beside active rentals using the same scorecard: verified monthly cost, funds due at signing, view quality, privacy, heat and wind exposure, bedroom and bathroom function, parking, stairs, laundry, storage, property rules, exact-address hazards, school confirmation if relevant, and realistic travel to work or a duty station. A less dramatic view may be the better home if the rest of the routine works."
+      "A disciplined comparison keeps the lifestyle feature in proportion. Put this property search beside active rentals using the same scorecard: verified monthly cost, funds due at signing, view quality, privacy, heat and wind exposure, bedroom and bathroom function, parking, stairs, laundry, storage, property rules, exact-address hazards, school confirmation if relevant, and realistic travel to work or a duty station. A less dramatic view may be the better home if the rest of the routine works."
     ],
     sidebar: {
       eyebrow: "Best Fit",
@@ -3928,14 +3928,14 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         "This profile may suit a household that will use three separate bedrooms, can share one full bathroom, values an outlook from the home, and has room in its budget for the complete cost after comparing similar rentals without a view.",
         "Pause before applying if the exact address or authorized contact is still unknown, the view has not been seen in person or by live video, every vehicle lacks confirmed parking, the household needs two full bathrooms, or the commute and move-in funds have not been tested against realistic alternatives."
       ],
-      pills: ["Archived Listing", "3 Bedrooms", "1.5 Bathrooms", "Ocean View", "Oahu", "Cost Review"]
+      pills: ["Property Search", "3 Bedrooms", "1.5 Bathrooms", "Ocean View", "Oahu", "Cost Review"]
     },
     sections: [
       {
         title: "Confirm the property, offer, and view first",
         pills: ["Availability", "Exact Address", "Live Tour", "Authorized Contact"],
         paragraphs: [
-          "Ask whether the original rental is available now and who is authorized to offer it. Request the exact address, current rent, proposed start date, lease length, application standards and charge, deposit amounts, included utilities and appliances, pet terms, parking, and all property or association rules in writing. Do not send money, identification, or sensitive application information based only on an archived page or copied advertisement.",
+          "Ask whether the particular rental is available now and who is authorized to offer it. Request the exact address, current rent, proposed start date, lease length, application standards and charge, deposit amounts, included utilities and appliances, pet terms, parking, and all property or association rules in writing. Do not send money, identification, or sensitive application information based only on a property page or copied advertisement.",
           "Tour the actual home, or request a live video tour that begins outside and moves continuously through it. From every claimed view location, note how much ocean is visible while seated and standing, what blocks it, which direction the windows face, and whether neighbors or public areas can see inside. Compare the view at the time the household is normally home, and ask whether window coverings, lanai use, landscaping, or exterior alterations are restricted."
         ]
       },
@@ -3967,7 +3967,7 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         title: "Check schools, hazards, and readiness by address",
         pills: ["School Assignment", "Flood", "Wildfire", "Preparedness"],
         paragraphs: [
-          "Do not infer a public-school assignment from Oahu or an old rental title. The Hawaii Department of Education's SchoolSite Locator accepts a street address, but the department says its general service areas are for reference and should not be the sole source for a rental decision. Enter the exact address, then confirm the result, enrollment steps, grade placement, and transportation directly with the relevant school.",
+          "Do not infer a public-school assignment from Oahu or a property title. The Hawaii Department of Education's SchoolSite Locator accepts a street address, but the department says its general service areas are for reference and should not be the sole source for a rental decision. Enter the exact address, then confirm the result, enrollment steps, grade placement, and transportation directly with the relevant school.",
           "Search the exact address in Honolulu's Oʻahu Hazard Explorer. The city says the tool can show whether a location is within mapped tsunami evacuation, flood, wildfire-risk, or dam and levee evacuation areas. A distant ocean view does not establish tsunami exposure, and elevation does not rule out other hazards. Use the map as a preparedness screen, ask about prior water intrusion, drainage, outages and emergency access, and obtain a renters-insurance quote for the actual address and household."
         ]
       }
@@ -3975,28 +3975,28 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     faq: {
       eyebrow: "Ocean-View Rental FAQs",
       heading: "Questions to answer before applying",
-      intro: "Use the archived size and view claim as a search profile, then verify every current fact in writing.",
+      intro: "Use the size and view search criteria as a search profile, then verify every current fact in writing.",
       items: [
-        { question: "Is this 3-bedroom ocean-view rental available now?", answer: "This legacy page is not proof of current availability. Confirm the exact address, current status, rent, showing access, lease dates, application terms, and authorized contact before submitting information or funds." },
+        { question: "Is this 3-bedroom ocean-view rental available now?", answer: "This property page is not proof of current availability. Confirm the exact address, current status, rent, showing access, lease dates, application terms, and authorized contact before submitting information or funds." },
         { question: "How should I verify an advertised ocean view?", answer: "See it from each claimed room during a live tour. Check the view seated and standing, identify obstructions, note privacy and sun exposure, and ask whether landscaping, construction, window coverings, or lanai rules could affect how the view is used." },
         { question: "How much can a Hawaii rental security deposit be?", answer: "DCCA says the security deposit cannot exceed one month's rent. Its handbook discusses a separately agreed additional pet deposit and an assistance-animal exception. Check current official guidance and the proposed lease for your circumstances." },
         { question: "What should a household verify with only one full bathroom?", answer: "Confirm bathroom locations, shower and half-bath access, ventilation, hot-water capacity, storage, and cleaning responsibility. Test morning schedules and guest needs against the actual floor plan rather than the bedroom count alone." },
-        { question: "How do I verify schools without a neighborhood in the old title?", answer: "First obtain the exact address. Enter it in the Hawaii Department of Education's SchoolSite Locator, then contact the relevant school directly because the department describes the locator's service areas as general and for reference only." },
+        { question: "How do I verify schools without a neighborhood in the property-focused title?", answer: "First obtain the exact address. Enter it in the Hawaii Department of Education's SchoolSite Locator, then contact the relevant school directly because the department describes the locator's service areas as general and for reference only." },
         { question: "Does an ocean view tell me whether the home is in a hazard area?", answer: "No. Search the exact address in Honolulu's Oʻahu Hazard Explorer and review its mapped hazard layers. Ask about prior incidents and emergency access, and discuss address-specific coverage with an insurer; mapping is a planning screen, not a guarantee." }
       ]
     },
     cta: buildPageCta("Compare current Oahu rentals with a view", "Share your move date, monthly budget, vehicles, pets, accessibility needs, exact duty or work destination, and what kind of view matters. We can confirm current options and help you compare written terms, total cost, layout, parking, and daily fit before you apply.")
   },
   "oahu-available-rental-properties/2-br-2-ba-with-2-car-garage-in-ewa-beach.html": {
-    description: "Use this archived Ewa Beach 2-bedroom rental guide to verify current availability, garage fit, total cost, lease terms, commute, schools, and hazards.",
+    description: "Use this Ewa Beach 2-bedroom rental guide to verify current availability, garage fit, total cost, lease terms, commute, schools, and hazards.",
     keywords: ["Ewa Beach 2 bedroom rental", "Ewa Beach rental with garage", "2 bedroom 2 bath Ewa Beach", "Ewa Beach home for rent", "Ewa Beach rental guide"],
-    heroEyebrow: "Archived Rental Guide",
-    heroIntro: "This legacy 2-bedroom, 2-bath Ewa Beach rental page does not establish current availability, price, condition, or even whether the original two-car garage remains usable as advertised. Verify the exact property and written terms before treating it as an active rental.",
+    heroEyebrow: "Rental Search Guide",
+    heroIntro: "This 2-bedroom, 2-bath Ewa Beach rental page does not establish current availability, price, condition, or even whether the original two-car garage remains usable as advertised. Verify the exact property and written terms before treating it as an active rental.",
     introEyebrow: "Garage-Focused Rental Checklist",
     introHeading: "How to evaluate an Ewa Beach rental with a two-car garage",
-    introLead: "Treat the archived headline as a search profile: two bedrooms, two bathrooms, and garage capacity to test against the vehicles, storage, budget, and daily routine your household actually has.",
+    introLead: "Treat the property details in the headline as a search profile: two bedrooms, two bathrooms, and garage capacity to test against the vehicles, storage, budget, and daily routine your household actually has.",
     intro: [
-      "The old headline preserves only a limited property description. It does not confirm the exact address, property type, interior size, garage dimensions, driveway, guest parking, current rent, deposit, utilities, pet policy, lease dates, association rules, condition, or present availability. Ask the authorized owner or property manager for those facts in writing before scheduling around this specific lead.",
+      "The property headline preserves only a limited property description. It does not confirm the exact address, property type, interior size, garage dimensions, driveway, guest parking, current rent, deposit, utilities, pet policy, lease dates, association rules, condition, or present availability. Ask the authorized owner or property manager for those facts in writing before scheduling around this specific lead.",
       "A label such as two-car garage describes intended capacity, not guaranteed fit. Door width and height, interior depth, storage cabinets, water heaters, stairs, posts, and the shape of the driveway can reduce usable space. A household with two large vehicles, motorcycles, bicycles, tools, surf equipment, or a charging need should measure and inspect instead of relying on the listing phrase.",
       "Compare the complete living arrangement rather than pricing the garage alone. Score active rentals on verified monthly cost, funds due before move-in, bedroom and bathroom function, cooling, laundry, garage access, legal parking for every vehicle, storage rules, commute at realistic times, exact-address hazards, and any school needs. A smaller parking setup may win if it produces a better lease, route, or monthly budget."
     ],
@@ -4007,14 +4007,14 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         "This profile may suit a couple, small family, roommates, or military household that can use two separate bedrooms and bathrooms and has a genuine need for secure vehicle space, equipment storage, or a protected loading area.",
         "Pause before applying if the authorized contact and exact address are unknown, both vehicles have not been tested against the garage and driveway, stored items would block required parking, association rules are unavailable, or the Ewa Beach commute has only been estimated from a map."
       ],
-      pills: ["Archived Listing", "2 Bedrooms", "2 Bathrooms", "2-Car Garage", "Ewa Beach", "Parking Check"]
+      pills: ["Property Search", "2 Bedrooms", "2 Bathrooms", "2-Car Garage", "Ewa Beach", "Parking Check"]
     },
     sections: [
       {
         title: "Verify the offer and garage in person",
         pills: ["Availability", "Exact Address", "Measurements", "Written Terms"],
         paragraphs: [
-          "First confirm whether the original home is currently offered and who has authority to rent it. Request the exact address, current rent, proposed start date, lease length, application standards and charge, deposit amounts, included utilities and appliances, pet terms, parking allocation, and all house or association rules. Do not send funds, identification, or sensitive application information merely because an archived page resembles a current advertisement.",
+          "First confirm whether the particular home is currently offered and who has authority to rent it. Request the exact address, current rent, proposed start date, lease length, application standards and charge, deposit amounts, included utilities and appliances, pet terms, parking allocation, and all house or association rules. Do not send funds, identification, or sensitive application information merely because a property page resembles a current advertisement.",
           "Tour the actual property or request a continuous live video tour. Open the garage door; measure the opening, depth, width, and clearance around fixed equipment; then test the household's vehicles when permitted. Confirm remote controls, manual release, lighting, outlets, ventilation, drainage, fire separation, interior access, and who maintains the door. Photograph existing damage with permission and ask that promised repairs and the garage's permitted uses appear in the agreement."
         ]
       },
@@ -4054,9 +4054,9 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     faq: {
       eyebrow: "Ewa Beach Garage Rental FAQs",
       heading: "Questions to answer before applying",
-      intro: "Use the archived bedroom, bathroom, and garage details as search criteria, then verify every current fact in writing.",
+      intro: "Use the bedroom, bathroom, and garage search criteria as search criteria, then verify every current fact in writing.",
       items: [
-        { question: "Is this Ewa Beach rental available now?", answer: "This is a legacy property page, not proof of an active offer. Confirm the exact address, current status, rent, showing access, lease dates, application terms, and authorized contact before submitting information or money." },
+        { question: "Is this Ewa Beach rental available now?", answer: "This is a property page, not proof of an active offer. Confirm the exact address, current status, rent, showing access, lease dates, application terms, and authorized contact before submitting information or money." },
         { question: "Will a two-car garage fit two vehicles?", answer: "The label alone cannot answer that. Measure the door opening and usable interior around fixed equipment, test the actual vehicles when permitted, and confirm driveway, overnight, storage, and association rules in writing." },
         { question: "Can I use one garage bay only for storage?", answer: "Ask the owner or manager and review the lease and current community rules. Confirm whether required parking must remain inside, what items are prohibited, and whether storage would obstruct utilities, doors, fire separation, or access." },
         { question: "How much can a Hawaii rental security deposit be?", answer: "DCCA says the security deposit cannot exceed one month's rent. Review current official guidance and the proposed agreement for your circumstances, and consult a qualified Hawaii attorney for advice about a specific dispute or lease." },
@@ -4067,15 +4067,15 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     cta: buildPageCta("Compare current Ewa Beach rentals with garages", "Share your move date, monthly budget, vehicles, storage needs, pets, accessibility needs, and exact duty or work destination. We can confirm current options and help you compare written terms, garage fit, total cost, layout, and daily routine before you apply.")
   },
   "oahu-available-rental-properties/4-bedroom-3-bathroom-single-family-home-in-ewa-beach.html": {
-    description: "Use this archived Ewa Beach 4-bedroom rental guide to verify availability, total cost, layout, parking, yard duties, commute, schools, and hazards.",
+    description: "Use this Ewa Beach 4-bedroom rental guide to verify availability, total cost, layout, parking, yard duties, commute, schools, and hazards.",
     keywords: ["Ewa Beach 4 bedroom rental", "4 bedroom 3 bath Ewa Beach", "Ewa Beach single family home for rent", "large Ewa Beach rental", "Ewa Beach rental checklist"],
-    heroEyebrow: "Archived Rental Guide",
-    heroIntro: "This legacy page describes a 4-bedroom, 3-bath single-family home in Ewa Beach, but it does not prove that the original property is currently available or that its old terms still apply. Confirm the exact address, authorized contact, condition, price, and written offer before treating it as an active rental.",
+    heroEyebrow: "Rental Search Guide",
+    heroIntro: "This property page describes a 4-bedroom, 3-bath single-family home in Ewa Beach, but it does not prove that the particular property is currently available or that its advertised terms still apply. Confirm the exact address, authorized contact, condition, price, and written offer before treating it as an active rental.",
     introEyebrow: "Large-Household Rental Checklist",
     introHeading: "How to evaluate a 4-bedroom Ewa Beach rental",
-    introLead: "Treat the archived bedroom, bathroom, property-type, and location claims as a search profile—not as a current listing—and test each available home against the way your household actually lives.",
+    introLead: "Treat the bedroom, bathroom, property-type, and location details as a search profile—not as a current listing—and test each available home against the way your household actually lives.",
     intro: [
-      "The old title does not establish the home's street address, floor plan, interior size, garage or driveway capacity, yard, current rent, deposits, utilities, appliances, pet policy, lease dates, association rules, condition, or availability. Get a current written fact sheet and proposed agreement from the owner or authorized property manager before sending money, identification, or an application.",
+      "The property-focused title does not establish the home's street address, floor plan, interior size, garage or driveway capacity, yard, current rent, deposits, utilities, appliances, pet policy, lease dates, association rules, condition, or availability. Get a current written fact sheet and proposed agreement from the owner or authorized property manager before sending money, identification, or an application.",
       "Four bedrooms can solve several different problems: separate rooms for children, space for a multigenerational household, a private office, or less conflict among roommates. Three bathrooms can make mornings easier, but the count says nothing about whether a full bath is downstairs, which bedrooms share, or whether a guest can reach a bathroom without crossing a private room. The floor plan matters more than the headline.",
       "Detached-home living also shifts the comparison beyond rent. Ask who handles landscaping, irrigation, pest treatment, refuse, appliance service, air-conditioning maintenance, and exterior care. Then combine those responsibilities with electricity, water or sewer if tenant-paid, internet, insurance, parking, pet costs, and transportation to compare the complete monthly routine rather than bedroom count alone."
     ],
@@ -4086,15 +4086,15 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         "This profile may fit a larger family, multigenerational household, roommate group, or military household that needs four genuinely usable rooms, three workable bathrooms, and the privacy of a detached home in Ewa Beach.",
         "Pause before applying if the exact address or authorized contact is unclear, a required downstairs sleeping or bathing arrangement has not been verified, every vehicle lacks a legal parking plan, yard duties are undefined, or the real commute has not been driven."
       ],
-      pills: ["Archived Listing", "4 Bedrooms", "3 Bathrooms", "Single-Family Home", "Ewa Beach", "Layout Check"]
+      pills: ["Property Search", "4 Bedrooms", "3 Bathrooms", "Single-Family Home", "Ewa Beach", "Layout Check"]
     },
     sections: [
       {
         title: "Verify the current offer before touring",
         pills: ["Availability", "Exact Address", "Written Terms", "Fraud Check"],
         paragraphs: [
-          "Start by confirming whether the original home is offered now and who has authority to rent it. Request the exact address, current rent, available date, lease length, application criteria and charge, all deposits, included utilities and appliances, pet terms, parking allocation, maintenance duties, and any house or association rules. Reconcile advertisements and verbal promises with the proposed agreement before paying or sharing sensitive information.",
-          "Tour the actual home or request a continuous live video tour if you are off island. Test doors, windows, plumbing fixtures, hot water, major appliances, cooling equipment, smoke alarms, lighting, and garage access. Ask that promised repairs be written down, and complete a detailed move-in condition record with dated photos when permitted. A polished headline or old photo set cannot establish present condition."
+          "Start by confirming whether the particular home is offered now and who has authority to rent it. Request the exact address, current rent, available date, lease length, application criteria and charge, all deposits, included utilities and appliances, pet terms, parking allocation, maintenance duties, and any house or association rules. Reconcile advertisements and verbal promises with the proposed agreement before paying or sharing sensitive information.",
+          "Tour the actual home or request a continuous live video tour if you are off island. Test doors, windows, plumbing fixtures, hot water, major appliances, cooling equipment, smoke alarms, lighting, and garage access. Ask that promised repairs be written down, and complete a detailed move-in condition record with dated photos when permitted. A polished headline or listing photo set cannot establish present condition."
         ]
       },
       {
@@ -4133,9 +4133,9 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     faq: {
       eyebrow: "Ewa Beach Large-Home FAQs",
       heading: "Questions to answer before applying",
-      intro: "Use the archived 4-bedroom, 3-bath description to frame your search, then verify every current property and lease fact in writing.",
+      intro: "Use the 4-bedroom, 3-bath search profile to frame your search, then verify every current property and lease fact in writing.",
       items: [
-        { question: "Is this 4-bedroom Ewa Beach home available now?", answer: "This legacy page is not proof of a current offer. Confirm the exact address, availability, rent, showing access, lease dates, application terms, condition, and authorized contact before submitting information or funds." },
+        { question: "Is this 4-bedroom Ewa Beach home available now?", answer: "This property page is not proof of a current offer. Confirm the exact address, availability, rent, showing access, lease dates, application terms, condition, and authorized contact before submitting information or funds." },
         { question: "Does three bathrooms mean there is a full bathroom downstairs?", answer: "No. A bathroom count does not establish location or fixtures. Review the current floor plan and inspect the actual home, especially if a household member needs sleeping and bathing space without stairs." },
         { question: "What detached-home costs should I ask about?", answer: "Confirm who pays for electricity, water or sewer, internet, insurance, yard and irrigation care, pest control, refuse, appliance service, cooling maintenance, and any required community-related charges. Compare both move-in funds and recurring costs." },
         { question: "How much can a Hawaii rental security deposit be?", answer: "DCCA says the security deposit cannot exceed one month's rent. Its handbook separately addresses an agreed pet deposit and assistance animals. Review current official guidance and the proposed agreement, and seek qualified legal advice for your situation." },
@@ -4146,17 +4146,17 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     cta: buildPageCta("Compare current 4-bedroom Ewa Beach rentals", "Share your move date, monthly budget, household layout needs, vehicles, pets, accessibility requirements, and exact duty or work destination. We can confirm current options and help you compare written terms, total cost, floor-plan fit, parking, outdoor duties, and daily routine before you apply.")
   },
   "oahu-available-rental-properties/3-bedroom-2-5-bathroom-in-ocean-pointe.html": {
-    description: "Use this archived Ocean Pointe 3-bedroom rental guide to verify current availability, total cost, association rules, parking, schools, hazards, and commute fit.",
+    description: "Use this Ocean Pointe 3-bedroom rental guide to verify current availability, total cost, association rules, parking, schools, hazards, and commute fit.",
     keywords: ["Ocean Pointe 3 bedroom rental", "3 bedroom rental Ewa Beach", "Ocean Pointe rental", "Ewa Beach home for rent", "West Oahu rental guide"],
-    heroEyebrow: "Archived Rental Guide",
-    heroIntro: "This legacy Ocean Pointe 3-bedroom, 2.5-bath rental page is not evidence that the original home is available today. Verify the exact address and current offer, then use this guide to test its costs, rules, layout, and daily fit.",
+    heroEyebrow: "Rental Search Guide",
+    heroIntro: "This Ocean Pointe 3-bedroom, 2.5-bath rental page is not evidence that the particular home is available today. Verify the exact address and current offer, then use this guide to test its costs, rules, layout, and daily fit.",
     introEyebrow: "Ocean Pointe Rental Checklist",
     introHeading: "Evaluate the home behind the bedroom count",
     introLead: "Three bedrooms and two and a half bathrooms describe capacity; the lease, address, parking plan, association documents, and weekday routine determine suitability.",
     intro: [
-      "The archived title preserves a useful rental profile, but it does not establish whether the home was detached, paired, or a townhouse. It also does not verify the present rent, square footage, condition, appliances, cooling, utilities, parking, pet policy, lease dates, or availability. Obtain a current listing sheet and written terms from the authorized owner or property manager before treating this page as an active offer.",
+      "The property details in the title preserve a useful rental profile, but it does not establish whether the home was detached, paired, or a townhouse. It also does not verify the present rent, square footage, condition, appliances, cooling, utilities, parking, pet policy, lease dates, or availability. Obtain a current listing sheet and written terms from the authorized owner or property manager before treating this page as an active offer.",
       "Ocean Pointe includes more than one property and association structure. The Ocean Pointe Residential Community Association describes itself as the master association and identifies eight sub-associations, several housing types, and multiple management companies. For a renter, the exact street address and project name control which documents, contacts, parking procedures, and use restrictions deserve review.",
-      "Compare this profile with current Ewa Beach options using one scorecard. Include funds due before move-in, recurring housing costs, bedroom placement, stairs, storage, parking for every vehicle, pet approval, maintenance responsibilities, school verification, hazard screening, and realistic travel tests. Consistent criteria make an old listing useful without carrying old assumptions into a new lease."
+      "Compare this profile with current Ewa Beach options using one scorecard. Include funds due before move-in, recurring housing costs, bedroom placement, stairs, storage, parking for every vehicle, pet approval, maintenance responsibilities, school verification, hazard screening, and realistic travel tests. Consistent criteria make a property profile useful without carrying unverified assumptions into a new lease."
     ],
     sidebar: {
       eyebrow: "Household Fit",
@@ -4165,15 +4165,15 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         "A 3-bedroom, 2.5-bath Ocean Pointe rental may fit a family, roommates, or a household needing a dedicated office when the room arrangement and parking match how everyone actually lives.",
         "Slow down if the household has several vehicles, a pet, mobility constraints, shift work, or a fixed school or installation destination. Those needs must be checked against the exact home and current written rules, not the neighborhood name."
       ],
-      pills: ["Archived Listing", "3 Bedrooms", "2.5 Bathrooms", "Ocean Pointe", "Exact-Address Check", "Lease Review"]
+      pills: ["Property Search", "3 Bedrooms", "2.5 Bathrooms", "Ocean Pointe", "Exact-Address Check", "Lease Review"]
     },
     sections: [
       {
         title: "Rebuild the current offer from written facts",
         pills: ["Availability", "Address", "Lease", "Application"],
         paragraphs: [
-          "Start by asking whether the original property is actually being offered. Request the exact address, property type, present rent, proposed start date, lease length, application standards and charge, deposit amounts, utility allocation, parking assignments, pet terms, and the identity of the authorized manager. Do not send money, identification, or sensitive application data until the offer and recipient have been verified.",
-          "Walk through the specific home rather than relying on archived photos. Test windows, doors, screens, plumbing fixtures, water pressure, appliances, cooling, cellular reception, and visible signs of moisture or pests. Listen for street and neighboring-unit noise, inspect storage and outdoor areas, and trace the route from assigned parking to the entry. Record existing condition through the proper move-in process if a lease proceeds."
+          "Start by asking whether the particular property is actually being offered. Request the exact address, property type, present rent, proposed start date, lease length, application standards and charge, deposit amounts, utility allocation, parking assignments, pet terms, and the identity of the authorized manager. Do not send money, identification, or sensitive application data until the offer and recipient have been verified.",
+          "Walk through the specific home rather than relying on earlier photos. Test windows, doors, screens, plumbing fixtures, water pressure, appliances, cooling, cellular reception, and visible signs of moisture or pests. Listen for street and neighboring-unit noise, inspect storage and outdoor areas, and trace the route from assigned parking to the entry. Record existing condition through the proper move-in process if a lease proceeds."
         ]
       },
       {
@@ -4212,10 +4212,10 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     faq: {
       eyebrow: "Ocean Pointe Rental FAQs",
       heading: "Questions to resolve before applying",
-      intro: "The archived headline starts the search; these answers identify what must be confirmed for a current rental decision.",
+      intro: "The property details in the headline starts the search; these answers identify what must be confirmed for a current rental decision.",
       items: [
-        { question: "Is this Ocean Pointe rental currently available?", answer: "The archive does not prove current availability. Confirm the exact address, rent, lease dates, showing access, application process, and authorized owner or manager before relying on the property." },
-        { question: "Is the home a townhouse or a detached house?", answer: "The archived title does not say. Ask for the property type, floor plan, exterior and yard responsibilities, parking arrangement, and governing association names. Ocean Pointe's official association profile identifies several housing types." },
+        { question: "Is this Ocean Pointe rental currently available?", answer: "The property search does not prove current availability. Confirm the exact address, rent, lease dates, showing access, application process, and authorized owner or manager before relying on the property." },
+        { question: "Is the home a townhouse or a detached house?", answer: "The property details in the title do not say. Ask for the property type, floor plan, exterior and yard responsibilities, parking arrangement, and governing association names. Ocean Pointe's official association profile identifies several housing types." },
         { question: "Do all Ocean Pointe rentals use the same rules?", answer: "No uniform rule set should be assumed. The master association identifies eight sub-associations and multiple managers. Request the documents that apply to the exact address and confirm tenant registration or access procedures." },
         { question: "How much can a Hawaii security deposit be?", answer: "DCCA says a security deposit may not exceed one month's rent; its handbook separately discusses an agreed pet deposit and the assistance-animal exception. Review current official guidance and your proposed lease." },
         { question: "How should I verify public schools?", answer: "Enter the exact address in HIDOE's SchoolSite Locator and then contact the relevant school. The department says the locator's general service areas are reference information and should not be the sole basis for renting." },
@@ -4225,33 +4225,33 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     cta: buildPageCta("Compare current Ocean Pointe and Ewa Beach rentals", "Share your move date, budget, household layout, vehicles, pets, accessibility needs, school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, governing rules, total cost, and daily fit before you apply.")
   },
   "oahu-available-rental-properties/for-rent-2-br-2-ba-condominium-in-mililani-hawaii.html": {
-    description: "Use this archived Mililani condominium rental guide to verify the bedroom count, availability, lease costs, parking, condo rules, schools, hazards, and commute fit.",
+    description: "Use this Mililani condominium rental guide to verify the bedroom count, availability, lease costs, parking, condo rules, schools, hazards, and commute fit.",
     keywords: ["Mililani condo rental", "3 bedroom condo Mililani", "Central Oahu rental", "Mililani rental guide", "Schofield Barracks housing search"],
-    heroEyebrow: "Archived Mililani Rental Guide",
-    heroIntro: "This legacy page describes a Mililani condominium, but its route says two bedrooms while its archived title says three. Neither version proves current availability. Verify the exact unit and every material term before treating it as a rental option.",
-    introEyebrow: "Resolve the Archive Mismatch",
+    heroEyebrow: "Mililani Rental Guide",
+    heroIntro: "This property page describes a Mililani condominium, but its route says two bedrooms while its property details in the title says three. Neither version proves current availability. Verify the exact unit and every material term before treating it as a rental option.",
+    introEyebrow: "Resolve the Detail Mismatch",
     introHeading: "Confirm what the Mililani condo actually offers",
-    introLead: "Use the old page as a search profile, then rebuild the current offer from the address, listing documents, lease, condo rules, and an in-person or live-video showing.",
+    introLead: "Use the property page as a search profile, then rebuild the current offer from the address, listing documents, lease, condo rules, and an in-person or live-video showing.",
     intro: [
-      "This archive is most useful to renters comparing a two- or three-bedroom condominium in Mililani with other Central Oahu choices. The conflicting bedroom references are a warning not to infer the floor plan from the URL. Ask the owner or authorized property manager to confirm the street address, unit number, bedroom and bathroom count, legal sleeping areas, current availability date, rent, lease term, condition, parking, utilities, deposits, pet terms, and application process in writing.",
+      "This guide is most useful to renters comparing a two- or three-bedroom condominium in Mililani with other Central Oahu choices. The conflicting bedroom references are a warning not to infer the floor plan from the URL. Ask the owner or authorized property manager to confirm the street address, unit number, bedroom and bathroom count, legal sleeping areas, current availability date, rent, lease term, condition, parking, utilities, deposits, pet terms, and application process in writing.",
       "A condo can reduce exterior upkeep, yet it adds a second layer of documents. The rental agreement governs the landlord-tenant relationship, while a declaration, bylaws, or house rules may control parking, guests, pets, noise, smoking, deliveries, moves, common areas, and tenant registration. Request the current documents that apply to the exact unit and ask who handles rule questions and maintenance inside and outside the condo.",
       "Mililani can be a practical base for some Central Oahu routines, including households connected with Schofield Barracks or Wheeler Army Airfield, but a community name is not a commute result. Confirm the exact duty or work destination and gate, test the trip at realistic times, and compare it with school, childcare, medical, shopping, and off-duty trips before applying."
     ],
     sidebar: {
       eyebrow: "Condo Search Fit",
-      heading: "Who should use this archived profile",
+      heading: "Who should use this property search profile",
       paragraphs: [
         "This guide fits couples, roommates, small families, or remote workers who want a manageable Central Oahu footprint and are prepared to verify the room count. A second bathroom may help shared routines, but layout, privacy, storage, parking, and written rules matter more than the headline count.",
-        "Pause if the decision depends on a particular school, two guaranteed parking spaces, a pet approval, step-free access, air conditioning, an amenity, or a short military commute. None is established by this archive; each requires address-specific evidence."
+        "Pause if the decision depends on a particular school, two guaranteed parking spaces, a pet approval, step-free access, air conditioning, an amenity, or a short military commute. None is established by this property search; each requires address-specific evidence."
       ],
-      pills: ["Archived Listing", "Mililani", "Condominium", "2 or 3 Bedrooms", "2 Baths", "Verify in Writing"]
+      pills: ["Property Search", "Mililani", "Condominium", "2 or 3 Bedrooms", "2 Baths", "Verify in Writing"]
     },
     sections: [
       {
         title: "Reconstruct the offer before paying anything",
         pills: ["Address", "Availability", "Lease", "Application"],
         paragraphs: [
-          "Start by confirming that the advertiser is the owner or authorized manager for the exact unit. Obtain a current listing sheet and proposed lease showing rent, start date, term, due date, late charge, application criteria and screening charge, deposits, utility allocation, renters-insurance requirement, pet terms, included appliances, and maintenance responsibilities. Do not send money because an old page, copied photo, or familiar community name appears credible.",
+          "Start by confirming that the advertiser is the owner or authorized manager for the exact unit. Obtain a current listing sheet and proposed lease showing rent, start date, term, due date, late charge, application criteria and screening charge, deposits, utility allocation, renters-insurance requirement, pet terms, included appliances, and maintenance responsibilities. Do not send money because a property page, copied photo, or familiar community name appears credible.",
           "Hawaii DCCA's landlord-tenant handbook says promises and house rules should be written into the agreement. It also says a landlord may collect first month's rent and a security deposit no greater than one month's rent, while separately describing an agreed additional pet deposit and the assistance-animal exception. Use the current handbook for general information and take legal questions to DCCA or a qualified attorney."
         ]
       },
@@ -4284,17 +4284,17 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         pills: ["Condo", "Townhouse", "Detached Home", "Tradeoffs"],
         paragraphs: [
           "Compare current Mililani condos on usable room count, total monthly cost, parking certainty, rule flexibility, condition, noise, storage, accessibility, and travel—not on rent alone. A townhouse may add separation or storage but introduce stairs; a detached home may add privacy and outdoor responsibility; a smaller condo may preserve budget if the extra room would rarely be used.",
-          "Create a short list only after the nonnegotiables are documented. Use the same questions and cost worksheet for every property, then revisit the finalists during a normal travel period if possible. The strongest choice is the verified home whose written terms and everyday routine fit, even if it differs from this archived listing profile."
+          "Create a short list only after the nonnegotiables are documented. Use the same questions and cost worksheet for every property, then revisit the finalists during a normal travel period if possible. The strongest choice is the verified home whose written terms and everyday routine fit, even if it differs from this property search profile."
         ]
       }
     ],
     faq: {
       eyebrow: "Mililani Rental FAQs",
-      heading: "Questions raised by the archived listing",
-      intro: "These answers address the legacy page's uncertainty without presenting its room count or availability as current fact.",
+      heading: "Questions raised by the property search",
+      intro: "These answers address the property page's uncertainty without presenting its room count or availability as current fact.",
       items: [
-        { question: "Is this Mililani condominium available now?", answer: "This archived page does not prove current availability. Ask the owner or authorized manager to confirm the exact address, availability date, rent, lease term, and application process before touring or paying." },
-        { question: "Does the condo have two bedrooms or three?", answer: "The legacy route and title conflict, so the room count is unverified. Obtain a current listing sheet or floor plan, inspect each room, and make sure the proposed lease identifies the exact unit." },
+        { question: "Is this Mililani condominium available now?", answer: "This property page does not prove current availability. Ask the owner or authorized manager to confirm the exact address, availability date, rent, lease term, and application process before touring or paying." },
+        { question: "Does the condo have two bedrooms or three?", answer: "The established route and title conflict, so the room count is unverified. Obtain a current listing sheet or floor plan, inspect each room, and make sure the proposed lease identifies the exact unit." },
         { question: "How much can a Hawaii rental security deposit be?", answer: "Hawaii DCCA's handbook says the security deposit may not exceed one month's rent. It separately discusses an agreed pet deposit and the assistance-animal exception. Check current official guidance and the proposed lease for your situation." },
         { question: "Do condo rules apply to tenants?", answer: "Tenants should expect the lease and applicable condo documents to matter. Request current rules for parking, pets, guests, noise, moves, smoking, deliveries, common areas, registration, violations, and fines before committing." },
         { question: "How can I verify the assigned public school?", answer: "Enter the exact address in Hawaii DOE's SchoolSite Locator and then contact the relevant school. DOE says the locator provides general service areas for reference and should not be the sole basis for a rental decision." },
@@ -4304,33 +4304,33 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     cta: buildPageCta("Compare current Mililani condominium rentals", "Share your move date, verified bedroom need, monthly budget, vehicles, pets, accessibility and school requirements, and exact work or duty destination. We can confirm current options and help compare written terms, condo rules, total cost, and daily fit before you apply.")
   },
   "oahu-available-rental-properties/3-bedroom-2-5-bath-townhouse-at-fairways-edge.html": {
-    description: "Use this archived Fairways Edge townhouse rental guide to verify availability, layout, parking, community rules, total cost, schools, hazards, and commute fit.",
+    description: "Use this Fairways Edge townhouse rental guide to verify availability, layout, parking, community rules, total cost, schools, hazards, and commute fit.",
     keywords: ["Fairways Edge townhouse rental", "3 bedroom Ewa Beach townhouse", "Ocean Pointe rental", "West Oahu townhome rental"],
-    heroEyebrow: "Archived Fairways Edge Rental Guide",
-    heroIntro: "The three-bedroom and 2.5-bath details come from a legacy listing title. They do not prove that the same Fairways Edge townhouse is available now, or that its rent, condition, parking, amenities, or lease terms remain unchanged.",
+    heroEyebrow: "Fairways Edge Rental Guide",
+    heroIntro: "The three-bedroom and 2.5-bath details come from a property-focused title. They do not prove that the same Fairways Edge townhouse is available now, or that its rent, condition, parking, amenities, or lease terms remain unchanged.",
     introEyebrow: "Address-Level Rental Check",
     introHeading: "Verify the Fairways Edge offer before comparing it",
     introLead: "A community name narrows the search, but the exact address, current documents, and a careful showing determine whether a townhouse fits your household.",
     intro: [
-      "This archive is for renters considering a three-bedroom townhouse in Fairways Edge while comparing Ewa Beach and other West Oahu options. Treat the old title as a search profile, not a live advertisement. Ask an authorized owner or property manager to confirm the street address, current availability date, monthly rent, lease length, bedroom and bathroom count, condition, parking, utility responsibility, pet terms, deposits, and application process in writing.",
+      "This guide is for renters considering a three-bedroom townhouse in Fairways Edge while comparing Ewa Beach and other West Oahu options. Treat the property-focused title as a search profile, not a live advertisement. Ask an authorized owner or property manager to confirm the street address, current availability date, monthly rent, lease length, bedroom and bathroom count, condition, parking, utility responsibility, pet terms, deposits, and application process in writing.",
       "The half bath can make a shared routine easier, but a bathroom count says little about placement. Confirm which floor contains each bedroom and bathroom, whether stairs affect anyone in the household, and how morning preparation would work. Request a current floor plan or measure at the showing; do not transfer square footage, garage details, views, finishes, or amenity claims from another Fairways Edge unit to this one.",
       "Community living also adds a second document check. The lease controls the tenant relationship, while condominium or association rules may govern parking, guests, pets, noise, trash, shared facilities, and exterior use. Request the current rules that apply to the exact unit and ask how tenants register, receive notices, access any included common areas, and handle rule questions before paying an application charge."
     ],
     sidebar: {
       eyebrow: "Townhouse Fit",
-      heading: "Who should use this archived profile",
+      heading: "Who should use this property search profile",
       paragraphs: [
         "This search may fit a household that needs three defined rooms, values a guest half bath, and is willing to trade some detached-home independence for a managed community setting. It is most useful when renters have a clear plan for bedrooms, work space, vehicles, pets, storage, and weekday travel.",
-        "Pause before applying if the decision depends on a particular school, guaranteed guest parking, a specific amenity, step-free access, an exterior modification, or a commute that has not been tested. Each depends on the exact address, current rules, and written offer rather than the archived community label."
+        "Pause before applying if the decision depends on a particular school, guaranteed guest parking, a specific amenity, step-free access, an exterior modification, or a commute that has not been tested. Each depends on the exact address, current rules, and written offer rather than the community name."
       ],
-      pills: ["Archived Listing", "Fairways Edge", "3 Bedrooms", "2.5 Baths", "Townhouse", "Verify in Writing"]
+      pills: ["Property Search", "Fairways Edge", "3 Bedrooms", "2.5 Baths", "Townhouse", "Verify in Writing"]
     },
     sections: [
       {
         title: "Rebuild the current offer from primary documents",
         pills: ["Availability", "Authorized Manager", "Lease", "Application"],
         paragraphs: [
-          "Start with the exact unit address and the identity of the owner or authorized manager. Ask for a current listing sheet, a showing, the proposed start date and term, rent, application criteria and charge, all deposits, included appliances, utility allocations, renters-insurance requirements, pet terms, and maintenance duties. An archived page or copied photograph is not evidence that a new advertiser controls the unit or may collect money.",
+          "Start with the exact unit address and the identity of the owner or authorized manager. Ask for a current listing sheet, a showing, the proposed start date and term, rent, application criteria and charge, all deposits, included appliances, utility allocations, renters-insurance requirements, pet terms, and maintenance duties. A property page or copied photograph does not establish that an advertiser controls the unit or may collect money.",
           "At the showing, compare the unit with the written offer. Operate doors, windows, locks, plumbing fixtures, appliances, cooling equipment, and garage or gate controls when permitted. Look for visible moisture, pest evidence, damaged screens, drainage concerns, noise, and unfinished repairs. Put promised work and timing in writing, then document condition through the proper move-in process."
         ]
       },
@@ -4370,9 +4370,9 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     faq: {
       eyebrow: "Fairways Edge Rental FAQs",
       heading: "Questions to settle before an application",
-      intro: "These answers preserve the useful search intent while keeping old property details separate from a current rental offer.",
+      intro: "These answers preserve the useful search intent while keeping unverified property details separate from a current rental offer.",
       items: [
-        { question: "Is this three-bedroom Fairways Edge townhouse available now?", answer: "The archive does not establish current availability. Confirm the exact address, authorized manager, rent, start date, lease term, showing access, condition, and application process before relying on the old title." },
+        { question: "Is this three-bedroom Fairways Edge townhouse available now?", answer: "The property search does not establish current availability. Confirm the exact address, authorized manager, rent, start date, lease term, showing access, condition, and application process before relying on the property-focused title." },
         { question: "Does the rental include a garage, guest parking, or community amenities?", answer: "Do not assume so. Ask for the current listing and lease, inspect assigned parking, and read the rules for the exact unit. Features shown or advertised for another Fairways Edge townhouse may not be included here." },
         { question: "What should I check in a three-bedroom, 2.5-bath layout?", answer: "Verify room dimensions, bathroom locations, stairs, storage, laundry, cooling, noise, furniture paths, and the route from parking to the home. Test the layout against the household's real morning and evening routine." },
         { question: "How much security deposit can a Hawaii landlord request?", answer: "DCCA's 2024 handbook says a security deposit may not exceed one month's rent and describes a separately agreed pet deposit of up to one month's rent, with an assistance-animal exception. Check current official guidance and seek legal advice for a specific dispute." },
@@ -4383,16 +4383,16 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     cta: buildPageCta("Compare current Fairways Edge and Ewa Beach rentals", "Share your move date, total monthly budget, bedroom plan, vehicles, pets, accessibility needs, and work or duty destination. We can verify current options and help you compare written terms, community rules, and daily fit before you apply.")
   },
   "oahu-available-rental-properties/4-bedroom-2-5-bathrooms-1538-sf-in-ewa-beach-2500-per-month.html": {
-    description: "Use this archived four-bedroom Ewa Beach rental page to verify current availability and compare layout, total cost, parking, schools, hazards, and commute fit.",
+    description: "Use this four-bedroom Ewa Beach rental page to verify current availability and compare layout, total cost, parking, schools, hazards, and commute fit.",
     keywords: ["4 bedroom rental Ewa Beach", "Ewa Beach family rental", "1538 square foot rental", "Oahu rental home", "military rental Ewa Beach"],
-    heroEyebrow: "Archived Rental Guide",
-    heroIntro: "The four-bedroom, 2.5-bath, 1,538-square-foot, and $2,500-per-month figures come from a legacy title. They do not establish that this Ewa Beach home is available now or that any price or property detail remains current.",
+    heroEyebrow: "Rental Search Guide",
+    heroIntro: "The four-bedroom, 2.5-bath, 1,538-square-foot, and $2,500-per-month figures come from the property title. They do not establish that this Ewa Beach home is available now or that any price or property detail remains current.",
     introEyebrow: "Budget and Layout Check",
     introHeading: "Recheck every number behind this Ewa Beach rental",
-    introLead: "A specific old price can be a useful comparison point, but only a current listing, showing, and proposed lease can tell you what is actually offered today.",
+    introLead: "A specific price shown on the page can be a useful comparison point, but only a current listing, showing, and proposed lease can tell you what is actually offered today.",
     intro: [
-      "This archive serves households searching for four bedrooms while trying to preserve room in the monthly budget for utilities, transportation, childcare, savings, and the move itself. Start by asking whether the exact property is currently offered by an authorized owner or manager. Confirm its address, rent, availability date, lease length, bedroom and bathroom count, interior area, condition, parking, utilities, deposit, pet terms, and application requirements in writing.",
-      "Do not use the $2,500 headline as a current Ewa Beach rent benchmark. It belongs to an earlier marketing context and may omit utilities, parking charges, pet costs, yard care, renters insurance, or other obligations. Compare present options on total move-in funds and total recurring cost, not on an archived base-rent number that may no longer be attainable or attached to this home.",
+      "This guide serves households searching for four bedrooms while trying to preserve room in the monthly budget for utilities, transportation, childcare, savings, and the move itself. Start by asking whether the exact property is currently offered by an authorized owner or manager. Confirm its address, rent, availability date, lease length, bedroom and bathroom count, interior area, condition, parking, utilities, deposit, pet terms, and application requirements in writing.",
+      "Do not use the $2,500 headline as a current Ewa Beach rent benchmark. It belongs to an the page title and may omit utilities, parking charges, pet costs, yard care, renters insurance, or other obligations. Compare present options on total move-in funds and total recurring cost, not on an advertised base-rent number that may no longer be attainable or attached to this home.",
       "The 1,538-square-foot figure also needs verification and does not explain how the space works. Four bedrooms within that footprint may be efficient for one household and tight for another. Request a current floor plan or measure at the showing, locate the half bath and full baths, check storage and laundry placement, and decide where beds, desks, mobility needs, and shared activities would actually fit."
     ],
     sidebar: {
@@ -4400,16 +4400,16 @@ const PROPERTY_CONTENT_EXPANSIONS = {
       heading: "Who should use this rental profile",
       paragraphs: [
         "This search can fit a budget-aware family, a multigenerational household with a workable room plan, or relocating renters who need separate sleeping and office space. It is strongest when four rooms solve defined needs and the household has tested the total cost rather than focusing only on the bedroom count.",
-        "Pause before applying if the decision depends on a specific school, pet approval, accessibility, more vehicles than the property can accommodate, or a commute that has not been driven. Those questions depend on the exact address and written lease, which the archived headline does not provide."
+        "Pause before applying if the decision depends on a specific school, pet approval, accessibility, more vehicles than the property can accommodate, or a commute that has not been driven. Those questions depend on the exact address and written lease, which the property details in the headline does not provide."
       ],
-      pills: ["Archived Listing", "4 Bedrooms", "2.5 Baths", "1,538 SF", "Legacy $2,500 Price", "Written Verification"]
+      pills: ["Property Search", "4 Bedrooms", "2.5 Baths", "1,538 SF", "Earlier $2,500 Price", "Written Verification"]
     },
     sections: [
       {
         title: "Verify the offer before sharing money or documents",
         pills: ["Current Status", "Authorized Manager", "Showing", "Application"],
         paragraphs: [
-          "Ask for the exact address, the name of the owner or licensed property manager, a current listing sheet, and an in-person or live remote showing. Verify who is authorized to receive an application and funds. An old property page is not proof that a new advertisement is legitimate, and copied photos or the same historical price should not substitute for identity and ownership checks.",
+          "Ask for the exact address, the name of the owner or licensed property manager, a current listing sheet, and an in-person or live remote showing. Verify who is authorized to receive an application and funds. A property page is not proof that a new advertisement is legitimate, and copied photos or the same advertised price should not substitute for identity and ownership checks.",
           "Request the full proposed terms before deciding that the home is affordable: current monthly rent, start date, lease duration, application criteria and charge, every deposit, included appliances, utility responsibility, yard or pest duties, smoking and pet rules, parking, and any community restrictions. Put promised repairs and their completion timing in writing rather than relying on a showing conversation."
         ]
       },
@@ -4448,10 +4448,10 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     ],
     faq: {
       eyebrow: "Ewa Beach Rental FAQs",
-      heading: "Questions behind the archived numbers",
-      intro: "These answers keep the old search profile useful without presenting its price, measurements, or availability as current facts.",
+      heading: "Questions behind the property details",
+      intro: "These answers keep the search profile useful without presenting its price, measurements, or availability as current facts.",
       items: [
-        { question: "Is this four-bedroom Ewa Beach rental available for $2,500 now?", answer: "Do not assume that it is. The price and property details are preserved from a legacy title. Ask an authorized owner or manager for the exact address, current status, rent, availability date, and complete written terms before applying." },
+        { question: "Is this four-bedroom Ewa Beach rental available for $2,500 now?", answer: "Do not assume that it is. The price and property details are preserved from the property title. Ask an authorized owner or manager for the exact address, current status, rent, availability date, and complete written terms before applying." },
         { question: "Is 1,538 square feet enough for four bedrooms?", answer: "The number alone cannot answer that. Verify the current measurement and floor plan, then measure bedrooms, closets, furniture paths, shared areas, storage, laundry, and bathroom placement against the needs of the people who will live there." },
         { question: "How much security deposit can a Hawaii landlord request?", answer: "DCCA's 2024 handbook says a security deposit may not exceed one month's rent and describes a separately agreed pet deposit of up to one month's rent, with an assistance-animal exception. Check current official guidance and obtain legal advice for a specific dispute or interpretation." },
         { question: "Which public schools serve the rental?", answer: "A neighborhood name is not enough to determine assignment. Search the exact address in the Hawaii Department of Education's SchoolSite Locator and contact the school directly; the department says the locator shows general service areas and is not a sole source for a rental decision." },
@@ -4462,15 +4462,15 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     cta: buildPageCta("Compare current four-bedroom Ewa Beach rentals", "Share your move date, total monthly budget, room plan, vehicles, pets, accessibility needs, and work or duty destination. We can confirm current options and help you compare written terms and daily fit before you apply.")
   },
   "oahu-available-rental-properties/for-rent-5-bedroom-executive-home-with-3-car-garage-in-ocean-pointe.html": {
-    description: "Use this archived five-bedroom Ocean Pointe rental guide to verify availability, garage capacity, association rules, lease costs, schools, and daily fit.",
+    description: "Use this five-bedroom Ocean Pointe rental guide to verify availability, garage capacity, association rules, lease costs, schools, and daily fit.",
     keywords: ["Ocean Pointe rental", "five bedroom Ewa Beach rental", "three car garage rental", "large Oahu rental home"],
-    heroEyebrow: "Archived Rental Guide",
-    heroIntro: "The five-bedroom and three-car-garage details come from a legacy listing title, not a promise that this Ocean Pointe home is available today. Use them as a search profile while you verify the current offer, exact address, written rules, and total cost.",
+    heroEyebrow: "Rental Search Guide",
+    heroIntro: "The five-bedroom and three-car-garage details come from a property-focused title, not a promise that this Ocean Pointe home is available today. Use them as a search profile while you verify the current offer, exact address, written rules, and total cost.",
     introEyebrow: "Large-Home Rental Due Diligence",
     introHeading: "Test the space before paying for the label",
     introLead: "An “executive home” description is marketing language; a good decision comes from confirming how the rooms, garage, lease, and location work for your household.",
     intro: [
-      "This archive is for households seeking unusual capacity in Ewa Beach: multiple bedrooms, vehicle storage, work-from-home space, guest flexibility, or room for a multigenerational routine. It does not establish a current rent, address, floor plan, condition, amenity package, or availability date. Ask the authorized property manager to verify each of those items before treating the old headline as a live offer.",
+      "This guide is for households seeking unusual capacity in Ewa Beach: multiple bedrooms, vehicle storage, work-from-home space, guest flexibility, or room for a multigenerational routine. It does not establish a current rent, address, floor plan, condition, amenity package, or availability date. Ask the authorized property manager to verify each of those items before treating the property headline as a live offer.",
       "Five bedrooms do not automatically create five equally useful sleeping rooms. A downstairs room may help a household that needs fewer stairs, while a small upstairs room may work better as an office. Request a current floor plan or measured room dimensions, locate every full bathroom, and check where laundry, storage, cooling, and outdoor access sit in relation to the people who will use them.",
       "A three-car garage can be the deciding feature, but the label needs its own inspection. Confirm the number and dimensions of usable stalls, door configuration, clearance, driveway capacity, opener access, storage restrictions, and whether appliances or owner belongings consume part of the advertised space. Match actual vehicles to the garage instead of assuming three full-size vehicles will fit."
     ],
@@ -4481,14 +4481,14 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         "This profile may suit a larger family, a multigenerational household, roommates with a clear room plan, or renters who need separate office and guest space. It is most valuable when the extra rooms and garage solve defined needs rather than simply adding unused square footage.",
         "Pause if your decision depends on an unverified school, a specific installation commute, unrestricted vehicle storage, a pet, accessibility, or permission to alter the exterior. Those are address- and lease-specific questions that should be resolved in writing before an application."
       ],
-      pills: ["Archived Listing", "5 Bedrooms", "3-Car Garage", "Ocean Pointe", "Large Household", "Written Verification"]
+      pills: ["Property Search", "5 Bedrooms", "3-Car Garage", "Ocean Pointe", "Large Household", "Written Verification"]
     },
     sections: [
       {
         title: "Reconstruct the current rental offer",
         pills: ["Availability", "Identity", "Lease Dates", "Application"],
         paragraphs: [
-          "Begin with the exact street address and the name of the owner or authorized manager. Ask for present rent, proposed start date, lease length, application criteria and charge, all deposits, included appliances, utility responsibility, landscaping duties, pet terms, and showing access. Verify the recipient before sending identification, an application, or funds; an archived page alone is not evidence that anyone advertising the home now controls it.",
+          "Begin with the exact street address and the name of the owner or authorized manager. Ask for present rent, proposed start date, lease length, application criteria and charge, all deposits, included appliances, utility responsibility, landscaping duties, pet terms, and showing access. Verify the recipient before sending identification, an application, or funds; a property page alone is not evidence that anyone advertising the home now controls it.",
           "At a showing, compare the current condition with the written offer. Operate doors, windows, locks, plumbing fixtures, appliances, garage doors, cooling equipment, and exterior lighting. Look for visible moisture, pests, damaged screens, uneven cooling, and deferred repairs. Photograph or otherwise document agreed condition through the proper move-in process, and make sure promised work and completion dates appear in writing."
         ]
       },
@@ -4497,7 +4497,7 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         pills: ["Move-In Funds", "Electricity", "Maintenance", "Insurance"],
         paragraphs: [
           "Separate the cash needed to move in from the cost of an ordinary month. Up-front funds may include first month's rent, security and any separately agreed pet deposit, movers, utility setup, and renters insurance. Monthly comparisons should include electricity for the actual cooling plan, water or sewer if tenant-paid, internet, landscaping or pest responsibilities, transportation, and any permitted parking or pet charges.",
-          "Hawaii's Department of Commerce and Consumer Affairs says a security deposit cannot exceed one month's rent. Its current handbook separately describes an agreed additional pet deposit of up to one month's rent and the assistance-animal exception. Use the current agency material and the proposed agreement together, and take questions about legal rights or unusual clauses to a qualified Hawaii professional rather than relying on a property archive."
+          "Hawaii's Department of Commerce and Consumer Affairs says a security deposit cannot exceed one month's rent. Its current handbook separately describes an agreed additional pet deposit of up to one month's rent and the assistance-animal exception. Use the current agency material and the proposed agreement together, and take questions about legal rights or unusual clauses to a qualified Hawaii professional rather than relying on a property page."
         ]
       },
       {
@@ -4528,9 +4528,9 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     faq: {
       eyebrow: "Large Ocean Pointe Rental FAQs",
       heading: "Questions to answer before applying",
-      intro: "The old title defines a useful search profile, but only current documents and an address-level inspection can establish what is being offered now.",
+      intro: "The property-focused title defines a useful search profile, but only current documents and an address-level inspection can establish what is being offered now.",
       items: [
-        { question: "Is this five-bedroom Ocean Pointe home available now?", answer: "The archive does not establish current availability. Confirm the exact address, present rent, lease dates, authorized manager, showing access, and application process before relying on the listing." },
+        { question: "Is this five-bedroom Ocean Pointe home available now?", answer: "The property search does not establish current availability. Confirm the exact address, present rent, lease dates, authorized manager, showing access, and application process before relying on the listing." },
         { question: "Does a three-car garage guarantee space for three vehicles?", answer: "No. Ask for stall and door dimensions, inspect clearance and storage intrusions, and test the household's actual vehicles. Also confirm driveway, street, guest, registration, and towing rules in the current association documents." },
         { question: "Are Ocean Pointe rules the same at every address?", answer: "Do not assume they are. The master association's official site lists eight sub-associations and multiple managers. Request the master and sub-association documents that apply to the specific home." },
         { question: "What should be included in the monthly comparison?", answer: "Compare rent plus electricity, water or sewer if allocated to the tenant, internet, renters insurance, transportation, and assigned landscaping, pest, or other maintenance. Keep required move-in cash as a separate total." },
@@ -4541,15 +4541,15 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     cta: buildPageCta("Compare current large rentals in Ocean Pointe", "Share your move date, budget, household room plan, vehicles, pets, accessibility needs, school questions, and exact work or duty destination. We can help identify current options and compare their written terms, association rules, total cost, and everyday fit.")
   },
   "oahu-available-rental-properties/for-rent-2-br-2-bath-condominium-in-mililani-mauka.html": {
-    description: "Archived Mililani Mauka 2-bedroom condo rental guidance covering availability, total cost, parking, association rules, room fit, schools, and hazards.",
+    description: "Mililani Mauka 2-bedroom condo rental guidance covering availability, total cost, parking, association rules, room fit, schools, and hazards.",
     keywords: ["Mililani Mauka condo rental", "2 bedroom condo Mililani Mauka", "central Oahu rental", "Mililani rental checklist"],
-    heroEyebrow: "Archived Mililani Mauka Rental",
-    heroIntro: "This legacy page preserves a two-bedroom, two-bath Mililani Mauka condo search profile; it does not establish that the original unit is available today. Use it to verify a current offer and compare similar rentals carefully.",
-    introEyebrow: "Archived Property Context",
+    heroEyebrow: "Mililani Mauka Rental Guide",
+    heroIntro: "This property page describes a two-bedroom, two-bath Mililani Mauka condo search profile; it does not establish that the particular unit is available today. Use it to verify a current offer and compare similar rentals carefully.",
+    introEyebrow: "Property Search Context",
     introHeading: "Make the condo work on paper before you apply",
     introLead: "Two bedrooms and two bathrooms can support several household plans, but the exact unit, parking, rules, condition, and recurring cost determine whether the fit is real.",
     intro: [
-      "The reliable facts in this archive are limited to the old headline: a condominium in Mililani Mauka with two bedrooms and two bathrooms. It does not confirm a street address, project name, floor area, floor level, rent, deposit, utilities, parking, pets, amenities, condition, lease dates, or present availability. Get those details from an authorized owner or property manager before submitting documents or money.",
+      "The reliable facts in this property search are limited to the property headline: a condominium in Mililani Mauka with two bedrooms and two bathrooms. It does not confirm a street address, project name, floor area, floor level, rent, deposit, utilities, parking, pets, amenities, condition, lease dates, or present availability. Get those details from an authorized owner or property manager before submitting documents or money.",
       "This profile may fit a couple wanting an office, a small family, two adults who prefer separate bedrooms and bathrooms, or a remote worker who needs a closed door. The label alone does not show whether the bedrooms are equally usable, whether both baths are full baths, or whether storage and common space remain comfortable once furniture and work equipment arrive.",
       "Mililani Mauka is useful as a search boundary, not a commute promise. Ask for the exact address and test the household's actual trips—including the correct installation gate, workplace, school or childcare stop, and return route—at the times they will occur. Also identify the condominium project because its parking, move-in, pet, noise, and common-area rules may shape daily life as much as the unit itself."
     ],
@@ -4560,14 +4560,14 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         "Compare this profile if two distinct sleeping or work rooms and two bathrooms solve a defined need without paying for a larger townhouse or house. Couples, a parent and child, roommates, and remote workers may value the efficient footprint for different reasons.",
         "Pause if the decision depends on an assumed pet approval, two convenient parking spaces, elevator access, a recreation privilege, a particular school, or an untested duty commute. Those items require current address-level and document-level confirmation."
       ],
-      pills: ["Archived Listing", "2 Bedrooms", "2 Bathrooms", "Condominium", "Mililani Mauka", "Verify in Writing"]
+      pills: ["Property Search", "2 Bedrooms", "2 Bathrooms", "Condominium", "Mililani Mauka", "Verify in Writing"]
     },
     sections: [
       {
         title: "Rebuild the current offer from written facts",
         pills: ["Availability", "Authorized Manager", "Lease Terms", "Showing"],
         paragraphs: [
-          "Start with the exact address, unit number, project name, authorized manager, current monthly rent, available date, lease length, application criteria and charge, and every required deposit. Ask which appliances and utilities are included, who handles repairs, whether renters insurance is required, and how keys, remotes, mail, and move-in access are delivered. An archived page or copied photograph is not proof of a current offer.",
+          "Start with the exact address, unit number, project name, authorized manager, current monthly rent, available date, lease length, application criteria and charge, and every required deposit. Ask which appliances and utilities are included, who handles repairs, whether renters insurance is required, and how keys, remotes, mail, and move-in access are delivered. A property page or copied photograph does not establish the terms of a current offer.",
           "View the unit in person or by a live remote tour before applying when possible. Compare what you see with the listing and proposed lease: doors, locks, windows, screens, plumbing, appliances, cooling equipment, visible moisture, pests, flooring, and promised repairs. Put material promises and completion dates in writing, and use the proper move-in condition process to preserve an accurate record."
         ]
       },
@@ -4607,9 +4607,9 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     faq: {
       eyebrow: "Mililani Mauka Condo FAQs",
       heading: "Questions to settle before applying",
-      intro: "The archived title defines a useful search profile, but only a current listing, project documents, and inspection establish today's offer.",
+      intro: "The property details in the title defines a useful search profile, but only a current listing, project documents, and inspection establish today's offer.",
       items: [
-        { question: "Is this two-bedroom Mililani Mauka condo available now?", answer: "The archive does not establish current availability. Confirm the exact address and unit, authorized manager, present rent, lease dates, showing access, application process, and written terms before relying on it." },
+        { question: "Is this two-bedroom Mililani Mauka condo available now?", answer: "The property search does not establish current availability. Confirm the exact address and unit, authorized manager, present rent, lease dates, showing access, application process, and written terms before relying on it." },
         { question: "Does the condo include two parking spaces?", answer: "Do not assume so. Ask for the number, location, dimensions, and type of assigned stalls, then review guest, registration, street-parking, and towing rules in the current project documents." },
         { question: "Which association rules apply to a renter?", answer: "Request the lease, condominium documents, and any applicable Mililani Town Association or sub-association rules for the exact address. Confirm tenant registration, move-in procedures, pets, parking, noise, common areas, and recreation access in writing." },
         { question: "How much security deposit can a Hawaii landlord request?", answer: "DCCA's 2024 handbook says the security deposit may not exceed one month's rent and describes a separately agreed pet deposit up to one month's rent, with an assistance-animal exception. Review current official guidance and seek qualified legal help for a specific issue." },
@@ -4620,15 +4620,15 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     cta: buildPageCta("Compare current Mililani Mauka condo rentals", "Share your move date, total monthly budget, room plan, vehicles, pets, accessibility needs, school questions, and exact work or duty destination. We can help confirm current options and compare their written terms and daily fit.")
   },
   "oahu-available-rental-properties/4-bedroom-3-bath-single-family-home-2060-sf.html": {
-    description: "Archived context for a 4-bedroom, 3-bath, 2,060-square-foot Oahu rental, with a practical checklist for layout, lease, commute, schools, and hazards.",
+    description: "Property search guidance for a 4-bedroom, 3-bath, 2,060-square-foot Oahu rental, with a practical checklist for layout, lease, commute, schools, and hazards.",
     keywords: ["4 bedroom Oahu rental", "4 bedroom 3 bath house Oahu", "2060 square foot rental home", "large single family rental Oahu"],
-    heroEyebrow: "Archived Oahu Rental",
-    heroIntro: "This legacy page describes a 4-bedroom, 3-bath, 2,060-square-foot single-family-home profile—not a promise that the original home is available today. Use it to decide what a similarly sized Oahu rental must prove before you apply.",
-    introEyebrow: "Archived Property Context",
+    heroEyebrow: "Oahu Rental Search Guide",
+    heroIntro: "This property page describes a 4-bedroom, 3-bath, 2,060-square-foot single-family-home profile—not a promise that the particular home is available today. Use it to decide what a similarly sized Oahu rental must prove before you apply.",
+    introEyebrow: "Property Search Context",
     introHeading: "Test the space, address, and lease—not just the bedroom count",
     introLead: "A four-bedroom home can solve a real space problem, but the right comparison starts with how 2,060 square feet supports your household's ordinary week.",
     intro: [
-      "The known facts preserved in this archive are limited to the headline profile: four bedrooms, three bathrooms, a single-family format, and 2,060 square feet. The route does not establish a street address, neighborhood, rent, deposit, utilities, parking, pet policy, yard duties, cooling, accessibility, or current status. Confirm every one of those details from a current listing and written rental terms before treating the property as a live option.",
+      "The known details in this property search are limited to the headline profile: four bedrooms, three bathrooms, a single-family format, and 2,060 square feet. The route does not establish a street address, neighborhood, rent, deposit, utilities, parking, pet policy, yard duties, cooling, accessibility, or current status. Confirm every one of those details from a current listing and written rental terms before treating the property as a live option.",
       "This size may appeal to a larger family, a multigenerational household, or adults who need separate work and sleeping areas. It does not guarantee four equally useful rooms. Ask where the bedrooms and bathrooms sit, whether a bedroom is downstairs, how people reach shared baths, and whether the dining, living, storage, and laundry areas remain functional when every bedroom is occupied.",
       "Location is the missing decision variable. On Oahu, an address affects the work route, installation gate, school service area, hazard exposure, parking pattern, and access to daily errands. Get the exact address before comparing drive times or making school assumptions; a house with generous interior space can still create an unworkable daily routine.",
     ],
@@ -4665,7 +4665,7 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         pills: ["Exact Address", "Schools", "Hazards", "Parcel Check"],
         paragraphs: [
           "For a military move, replace a broad base name with the actual duty location, gate, reporting window, and likely travel time. Then test the route at relevant hours and include a spouse's job, school drop-off, childcare, and recurring appointments. A map estimate outside the commuting window is a starting point, not a reliable promise of the daily drive.",
-          "For public-school planning, the Hawaii Department of Education's SchoolSite Locator accepts a street address and displays general service areas. DOE explicitly says the locator is for reference only and should not be the sole source for a relocation, purchase, or rental decision; contact the school directly to confirm the service area. Because this archive supplies no address, it cannot support a school assignment claim.",
+          "For public-school planning, the Hawaii Department of Education's SchoolSite Locator accepts a street address and displays general service areas. DOE explicitly says the locator is for reference only and should not be the sole source for a relocation, purchase, or rental decision; contact the school directly to confirm the service area. Because this property search supplies no address, it cannot support a school assignment claim.",
           "Use Honolulu's Oʻahu Hazard Explorer once you have the address. The county says the tool can show whether a selected location is in a tsunami evacuation zone, flood zone, wildfire risk area, or dam or levee evacuation area. Honolulu's Department of Planning and Permitting also directs users to Parcel Information for flood zone, zoning, warnings, and advisories by address or tax map key. Discuss results with the property manager and appropriate insurance or emergency-planning professionals rather than assuming a map alone settles the risk.",
         ],
       },
@@ -4673,13 +4673,13 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         title: "Inspect, document, and verify before paying",
         pills: ["Current Listing", "Condition Record", "Written Terms", "Fraud Check"],
         paragraphs: [
-          "First verify that the home is currently offered, who is authorized to rent it, when possession is possible, and how applications are handled. Compare the advertiser's name and contact channel with current brokerage or property-management information. Be cautious if someone refuses a real-time tour, pressures you to wire money immediately, or will not provide written terms. This archive is not evidence that any person is authorized to collect an application fee, deposit, or rent for the original property.",
+          "First verify that the home is currently offered, who is authorized to rent it, when possession is possible, and how applications are handled. Compare the advertiser's name and contact channel with current brokerage or property-management information. Be cautious if someone refuses a real-time tour, pressures you to wire money immediately, or will not provide written terms. This guide is not evidence that any person is authorized to collect an application fee, deposit, or rent for the particular property.",
           "At the showing, compare the property with the advertisement and ask what will change before possession. DCCA advises tenants to inspect carefully, identify damage and needed corrections with the landlord, and record repair promises and timing in the rental contract. Its guidance also recommends a signed, dated written inventory covering condition, contents, cleanliness, and damage. Photos and video can supplement that record when all parties follow the lease and applicable rules.",
           "Before signing, confirm names, address, term, rent due date, deposits, included utilities, occupants, pets, parking, yard work, entry procedures, repair contacts, renewal or termination terms, and the condition expected at return. If a clause is unclear or the timing conflicts with orders or another lease, pause and get appropriate professional guidance. A large home is only a good rental when its documentation, condition, location, and total cost work together.",
         ],
       },
       {
-        title: "Use this archive to compare live four-bedroom rentals",
+        title: "Use this property search to compare live four-bedroom rentals",
         pills: ["Availability", "Shortlist", "Tradeoffs", "Next Step"],
         paragraphs: [
           "Turn the profile into a shortlist scorecard. Mark each live option for verified status, exact address, usable bedroom plan, bathroom access, parking, pet fit, cooling, storage, outdoor duties, commute, school verification, hazard review, lease terms, and all-in monthly cost. Keep unresolved facts visible instead of scoring an assumption as a benefit.",
@@ -4690,28 +4690,28 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     faq: {
       eyebrow: "Rental Questions",
       heading: "Four-bedroom Oahu rental FAQs",
-      intro: "These answers preserve the archive's limits while helping you verify a current large-home rental.",
+      intro: "These answers preserve the property search's limits while helping you verify a current large-home rental.",
       items: [
-        { question: "Is this exact 4-bedroom home available now?", answer: "This archived page does not establish current availability. Ask Hawaii Military Realty or the current authorized property manager to verify status, address, rent, showing access, application process, and move-in date before relying on the home as an option." },
-        { question: "What property details are actually known from this page?", answer: "Only the legacy headline profile: a single-family home with four bedrooms, three bathrooms, and 2,060 square feet. The archive does not verify neighborhood, price, parking, pets, utilities, features, condition, or present rental status." },
+        { question: "Is this exact 4-bedroom home available now?", answer: "This property page does not establish current availability. Ask Hawaii Military Realty or the current authorized property manager to verify status, address, rent, showing access, application process, and move-in date before relying on the home as an option." },
+        { question: "What property details are actually known from this page?", answer: "Only the property-focused headline profile: a single-family home with four bedrooms, three bathrooms, and 2,060 square feet. The property search does not verify neighborhood, price, parking, pets, utilities, features, condition, or present rental status." },
         { question: "How should I compare 2,060 square feet with a smaller rental?", answer: "Compare room dimensions and placement, bathroom access, storage, cooling, furniture flow, parking, outdoor obligations, commute, and total monthly cost. Usable layout matters more than the headline number when each bedroom has a specific job." },
-        { question: "Can I determine the assigned public schools from this archive?", answer: "No. An exact address is required. Use Hawaii DOE's SchoolSite Locator as a starting point, then contact the school directly because DOE says the locator shows general service areas and should not be the sole source for a rental decision." },
+        { question: "Can I determine the assigned public schools from this property search?", answer: "No. An exact address is required. Use Hawaii DOE's SchoolSite Locator as a starting point, then contact the school directly because DOE says the locator shows general service areas and should not be the sole source for a rental decision." },
         { question: "What should I document at move-in?", answer: "Follow the signed lease and create a detailed condition record. Hawaii DCCA recommends a signed and dated inventory describing condition, contents, cleanliness, damage, and items needing correction, with repair promises and timing recorded in the rental agreement." },
         { question: "What should a military household verify first?", answer: "Confirm the current listing and move-in timing, then the exact duty location and gate, household room plan, vehicles, pets, school needs, full monthly cost, and lease term. Do not assume a broad Oahu location will fit a particular assignment." },
       ],
     },
-    cta: buildPageCta("Compare current four-bedroom Oahu rentals", "Share your move date, duty or work location, room plan, budget, vehicles, pets, and must-have lease terms. Hawaii Military Realty can verify current options instead of treating this archived home as active."),
+    cta: buildPageCta("Compare current four-bedroom Oahu rentals", "Share your move date, duty or work location, room plan, budget, vehicles, pets, and must-have lease terms. Hawaii Military Realty can verify current options instead of treating this property profile as active."),
   },
   "oahu-available-rental-properties/2-bedroom-2-bathroom-condo-in-mililani.html": {
-    description: "Archived guidance for a 2-bedroom, 2-bath Mililani condo rental, including current-status checks, layout, parking, rules, total cost, schools, and hazards.",
+    description: "Property search guidance for a 2-bedroom, 2-bath Mililani condo rental, including current-status checks, layout, parking, rules, total cost, schools, and hazards.",
     keywords: ["2 bedroom condo Mililani", "Mililani condo rental", "2 bath rental central Oahu", "Mililani rental checklist"],
-    heroEyebrow: "Archived Mililani Condo Rental",
-    heroIntro: "This legacy page preserves a two-bedroom, two-bath Mililani condo search profile; it does not prove that the original unit is available now. Use the profile to compare current rentals with the facts, documents, and daily routine that matter.",
-    introEyebrow: "Archived Property Context",
+    heroEyebrow: "Mililani Condo Rental Guide",
+    heroIntro: "This property page describes a two-bedroom, two-bath Mililani condo search profile; it does not prove that the particular unit is available now. Use the profile to compare current rentals with the facts, documents, and daily routine that matter.",
+    introEyebrow: "Property Search Context",
     introHeading: "Turn a promising room count into a verified rental choice",
     introLead: "Two bedrooms and two bathrooms can offer useful flexibility, but the exact project, floor plan, parking, written rules, and full cost decide whether a Mililani condo truly fits.",
     intro: [
-      "Only a few details are established by the old page title: the home was presented as a Mililani condominium with two bedrooms and two bathrooms. The archive does not verify an address, project, floor area, rent, deposit, availability date, parking, utilities, pet policy, amenities, condition, or current listing status. Treat all of those as open questions until an authorized owner or manager supplies current written information.",
+      "Only a few details are established by the property page title: the home was presented as a Mililani condominium with two bedrooms and two bathrooms. The property search does not verify an address, project, floor area, rent, deposit, availability date, parking, utilities, pet policy, amenities, condition, or current listing status. Treat all of those as open questions until an authorized owner or manager supplies current written information.",
       "This profile may suit a couple who needs an office, a parent and child, roommates who value separate bathrooms, or a household that wants a guest room without maintaining a detached home. Room labels do not establish usable dimensions, privacy, storage, accessibility, or whether one bathroom is reached through a bedroom. Assign a job to every room and test that plan during a tour.",
       "Mililani is also too broad to support a commute or school promise. Obtain the exact street address and unit number, then test the routes your household will actually use at the appropriate hours. Identify the condominium project as well: project and association documents can affect parking, pets, moves, noise, common areas, and other daily details that a bedroom-and-bath count cannot show.",
     ],
@@ -4720,16 +4720,16 @@ const PROPERTY_CONTENT_EXPANSIONS = {
       heading: "Who should use this checklist",
       paragraphs: [
         "Use this profile if two separate rooms and two usable bathrooms solve a defined household need while a larger townhouse or house would add unnecessary cost or upkeep. It is especially useful for comparing roommate privacy, work-from-home space, and morning routines.",
-        "Keep searching if the choice depends on assumed parking, pet permission, elevator access, recreation privileges, a named school, or an untested trip to work or a military gate. Those are current, address-level facts—not benefits established by this archive.",
+        "Keep searching if the choice depends on assumed parking, pet permission, elevator access, recreation privileges, a named school, or an untested trip to work or a military gate. Those are current, address-level facts—not benefits established by this property search.",
       ],
-      pills: ["Archived Listing", "2 Bedrooms", "2 Bathrooms", "Condominium", "Mililani", "Verify Current Status"],
+      pills: ["Property Search", "2 Bedrooms", "2 Bathrooms", "Condominium", "Mililani", "Verify Current Status"],
     },
     sections: [
       {
         title: "Confirm that a real, current offer exists",
         pills: ["Exact Unit", "Authorized Manager", "Current Terms", "Live Tour"],
         paragraphs: [
-          "Ask for the street address, unit number, project name, current rent, available date, lease length, application process, screening charge, required deposits, and the name of the person authorized to manage the unit. Confirm which appliances, utilities, parking stalls, storage areas, and access devices are included. An old route, forwarded advertisement, or set of photos does not authorize anyone to collect money.",
+          "Ask for the street address, unit number, project name, current rent, available date, lease length, application process, screening charge, required deposits, and the name of the person authorized to manage the unit. Confirm which appliances, utilities, parking stalls, storage areas, and access devices are included. An page route, forwarded advertisement, or set of photos does not authorize anyone to collect money.",
           "Tour the actual unit in person or by a continuous live video when possible. Check locks, windows, screens, plumbing, appliances, flooring, cooling equipment, visible staining, odors, pests, and repairs promised before possession. Compare the tour with the proposed lease and put material promises and deadlines in writing. Do not let application urgency replace verification.",
         ],
       },
@@ -4753,7 +4753,7 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         title: "Identify every rule tied to the exact condo",
         pills: ["Project Documents", "Parking", "Pets", "Move-In Rules"],
         paragraphs: [
-          "Request the current condominium house rules and any master or sub-association documents that apply to tenants. Mililani Town Association publishes general rules and information about complexes requiring sub-association approval, but that does not establish that MTA governs this unknown archived unit. The exact address and project name are necessary to identify the right governing documents and manager.",
+          "Request the current condominium house rules and any master or sub-association documents that apply to tenants. Mililani Town Association publishes general rules and information about complexes requiring sub-association approval, but that does not establish that MTA governs this unknown unit described here. The exact address and project name are necessary to identify the right governing documents and manager.",
           "Review assigned and guest parking, vehicle registration, towing, pets, smoking, noise, deliveries, move reservations, elevator protection, grills, bicycles, storage, trash, and common-area access. Confirm stall numbers, dimensions, tandem or covered arrangements, guest procedures, and how keys, fobs, remotes, or recreation credentials are issued. Put any permission essential to the household in writing rather than inferring it from neighborhood marketing.",
         ],
       },
@@ -4769,12 +4769,12 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     faq: {
       eyebrow: "Mililani Condo FAQs",
       heading: "Questions to answer before applying",
-      intro: "The archived title is a starting profile. A current offer, inspection, address research, and written documents must supply the missing facts.",
+      intro: "The property details in the title are a starting profile. A current offer, inspection, address research, and written documents supply the remaining facts.",
       items: [
-        { question: "Is this exact two-bedroom Mililani condo available now?", answer: "This archive does not establish current availability. Confirm the address and unit, authorized manager, current rent, lease dates, showing access, application procedure, and written terms before treating it as an option." },
-        { question: "What facts does the archive actually preserve?", answer: "Only that the old page presented a Mililani condominium with two bedrooms and two bathrooms. It does not verify the project, size, price, parking, pets, utilities, amenities, condition, or present status." },
+        { question: "Is this exact two-bedroom Mililani condo available now?", answer: "This page does not establish current availability. Confirm the address and unit, authorized manager, current rent, lease dates, showing access, application procedure, and written terms before treating it as an option." },
+        { question: "What facts does the property search actually preserve?", answer: "Only that the property page presented a Mililani condominium with two bedrooms and two bathrooms. It does not verify the project, size, price, parking, pets, utilities, amenities, condition, or present status." },
         { question: "Does two bathrooms mean roommates each get a private bath?", answer: "Not necessarily. Request a floor plan or tour and verify whether either bath is inside a bedroom, whether both contain the fixtures the household expects, and how guests reach them." },
-        { question: "How many parking spaces come with the condo?", answer: "The archive does not say. Confirm the number, stall locations, dimensions, covered or tandem arrangement, guest access, vehicle registration, and towing rules in the current lease and project documents." },
+        { question: "How many parking spaces come with the condo?", answer: "The property search does not say. Confirm the number, stall locations, dimensions, covered or tandem arrangement, guest access, vehicle registration, and towing rules in the current lease and project documents." },
         { question: "How should I verify the assigned public school?", answer: "Use the exact address in HIDOE's SchoolSite Locator, then contact the school. The department says its general service-area information is for reference and should not be the sole basis for renting or relocating." },
         { question: "What should roommates settle before signing?", answer: "Confirm bedroom and bathroom allocation, parking, utility shares, payment responsibility, guests, pets, quiet hours, cleaning, and what happens if one occupant leaves early. Ensure approved occupants and binding obligations appear in the written agreement." },
       ],
@@ -4782,34 +4782,34 @@ const PROPERTY_CONTENT_EXPANSIONS = {
     cta: buildPageCta("Compare current Mililani condo rentals", "Share your move date, full monthly budget, room plan, vehicles, pets, accessibility needs, school questions, and exact work or duty destination. Hawaii Military Realty can help verify current options and compare their written terms and daily fit."),
   },
   "oahu-available-rental-properties/2-bedroom-1-5-bath-condo-in-ewa-beach-1500-per-month.html": {
-    description: "This archived $1,500 Ewa Beach condo page explains how to verify today's rent, availability, total costs, parking, rules, condition, schools, and hazards.",
+    description: "This $1,500 Ewa Beach condo page explains how to verify today's rent, availability, total costs, parking, rules, condition, schools, and hazards.",
     keywords: ["Ewa Beach condo rental", "2 bedroom condo Ewa Beach", "Ewa Beach rental price", "1.5 bath condo rental", "West Oahu rental guide"],
-    heroEyebrow: "Archived Price-Point Guide",
-    heroIntro: "The $1,500 amount belongs to a legacy Ewa Beach condo page, not a current offer. Verify today's unit, rent, and terms before using this archive to plan a move or budget.",
+    heroEyebrow: "Budget Search Guide",
+    heroIntro: "The $1,500 amount belongs to an Ewa Beach condo page, not a current offer. Verify today's unit, rent, and terms before using this property search to plan a move or budget.",
     introEyebrow: "Price Verification First",
     introHeading: "How to investigate an old $1,500 Ewa Beach condo lead",
-    introLead: "Treat the old price as history; rebuild the decision from a current listing, actual unit, and complete written costs.",
+    introLead: "Treat the price shown on the page as a starting point; rebuild the decision from a current listing, actual unit, and complete written costs.",
     intro: [
-      "The archived title preserves only a past search profile: a two-bedroom, one-and-a-half-bath condominium in Ewa Beach once promoted at $1,500 per month. It does not establish that the original unit is available, that $1,500 remains the rent, or that a comparable home can be leased for that amount today. It also does not verify an address, project, size, condition, parking, utilities, appliances, pet policy, lease dates, or responsible manager.",
+      "The property details in the title preserve only a specific search profile: a two-bedroom, one-and-a-half-bath condominium in Ewa Beach once promoted at $1,500 per month. It does not establish that the particular unit is available, that $1,500 remains the rent, or that a comparable home can be leased for that amount today. It also does not verify an address, project, size, condition, parking, utilities, appliances, pet policy, lease dates, or responsible manager.",
       "That distinction matters for a renter working within a firm ceiling. Do not increase an application budget, give notice, schedule movers, or send funds around the amount embedded in this URL. Ask for a dated listing sheet and proposed terms for the exact unit, then confirm which party is authorized to offer it. A current lower-priced option can still be worthwhile, but only if the home, rules, and total recurring cost fit the household.",
-      "Build a simple comparison with separate columns for cash due before move-in and costs due each month. Add condition, bedroom use, bathroom placement, parking for every vehicle, laundry, cooling, condo restrictions, maintenance responsibilities, exact-address school and hazard checks, and real travel tests. This approach preserves the useful intent behind an old bargain search without turning the archived price into a present-day claim."
+      "Build a simple comparison with separate columns for cash due before move-in and costs due each month. Add condition, bedroom use, bathroom placement, parking for every vehicle, laundry, cooling, condo restrictions, maintenance responsibilities, exact-address school and hazard checks, and real travel tests. This approach preserves the useful intent behind a budget-focused search without turning the price shown on the page into a present-day claim."
     ],
     sidebar: {
       eyebrow: "Budget-Renter Fit",
-      heading: "Who can use this archive productively",
+      heading: "Who can use this property search productively",
       paragraphs: [
-        "This guide is for a renter who needs two rooms and is searching carefully around a monthly ceiling, but can evaluate tradeoffs instead of assuming the old headline represents a current bargain.",
+        "This guide is for a renter who needs two rooms and is searching carefully around a monthly ceiling, but can evaluate tradeoffs instead of assuming the property headline represents a current bargain.",
         "Stop and verify before applying if the advertised amount is undated, required fees are missing, a parking stall is only assumed, the actual unit cannot be toured, or payment is requested before the owner or licensed manager is confirmed."
       ],
-      pills: ["Archived Price", "2 Bedrooms", "1.5 Bathrooms", "Condo", "Ewa Beach", "Verify Today"]
+      pills: ["Budget Reference", "2 Bedrooms", "1.5 Bathrooms", "Condo", "Ewa Beach", "Verify Today"]
     },
     sections: [
       {
-        title: "Replace the archived price with a current written offer",
+        title: "Replace the price shown on the page with a current written offer",
         pills: ["Current Rent", "Exact Unit", "Authority", "Lease Dates"],
         paragraphs: [
-          "Request the exact street address, unit number, condominium project, current monthly rent, availability date, lease length, application criteria and charge, deposits, utility allocation, pet terms, parking assignment, and every mandatory recurring fee. Ask who owns or manages the condo and verify that the person collecting documents or money is authorized. A headline, screenshot, text message, or old web page is not a substitute for a complete current offer.",
-          "Tour the unit being offered rather than a model, similar unit, or archive of old photographs. Operate locks, windows, faucets, toilets, appliances, fans, and any cooling equipment; look for visible moisture or pests; test cellular service; and locate laundry, trash, mailbox, storage, and parking. Record promised repairs and included items in writing. If the unit is occupied or unavailable to inspect, understand exactly what protection the proposed process provides before committing funds."
+          "Request the exact street address, unit number, condominium project, current monthly rent, availability date, lease length, application criteria and charge, deposits, utility allocation, pet terms, parking assignment, and every mandatory recurring fee. Ask who owns or manages the condo and verify that the person collecting documents or money is authorized. A headline, screenshot, text message, or undated web page is not a substitute for a complete current offer.",
+          "Tour the unit being offered rather than a model, similar unit, or listing photographs. Operate locks, windows, faucets, toilets, appliances, fans, and any cooling equipment; look for visible moisture or pests; test cellular service; and locate laundry, trash, mailbox, storage, and parking. Record promised repairs and included items in writing. If the unit is occupied or unavailable to inspect, understand exactly what protection the proposed process provides before committing funds."
         ]
       },
       {
@@ -4824,7 +4824,7 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         title: "Price the condo's practical compromises",
         pills: ["Floor Plan", "Parking", "House Rules", "Repairs"],
         paragraphs: [
-          "A lower rent may reflect a perfectly acceptable tradeoff, but the archive does not reveal which one. Measure both bedrooms and closets, identify who would use the full and half bathrooms, trace any stairs from parking to the door, and check ventilation, afternoon heat, noise, laundry, storage, and accessibility. Roommates should decide whether bathroom access, bedroom sizes, parking, and utility sharing feel equitable before signing together.",
+          "A lower rent may reflect a perfectly acceptable tradeoff, but the property search does not reveal which one. Measure both bedrooms and closets, identify who would use the full and half bathrooms, trace any stairs from parking to the door, and check ventilation, afternoon heat, noise, laundry, storage, and accessibility. Roommates should decide whether bathroom access, bedroom sizes, parking, and utility sharing feel equitable before signing together.",
           "Obtain the current condominium rules that bind tenants. Confirm assigned and guest parking, towing, vehicle limits, pets, smoking, guests, quiet hours, move procedures, deliveries, trash, common areas, and responsibility for violations or fines. Identify who handles appliance, plumbing, pest, cooling, and common-area problems and how emergencies are reported. A price advantage can disappear when a second vehicle has no lawful space or important maintenance duties remain vague."
         ]
       },
@@ -4833,19 +4833,19 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         pills: ["Commute", "School Lookup", "Flood", "Insurance"],
         paragraphs: [
           "Do not judge travel from the words Ewa Beach alone. Drive from the actual address to each work site, installation gate, school, childcare stop, or recurring appointment during the hours the household expects to travel, and test the return. Include the local-road segment, parking, drop-off, transfers, and any installation screening. Military renters should confirm the duty destination and gate procedures through their command or installation rather than assuming one base name describes the trip.",
-          "For public schools, enter the complete address in the Hawaii Department of Education SchoolSite Locator and contact the school directly. HIDOE says the locator shows general service areas for reference and should not be the sole source for a rent or relocation decision. Do not infer an assignment from the city name, ZIP code, or an archived advertisement.",
+          "For public schools, enter the complete address in the Hawaii Department of Education SchoolSite Locator and contact the school directly. HIDOE says the locator shows general service areas for reference and should not be the sole source for a rent or relocation decision. Do not infer an assignment from the city name, ZIP code, or a property page.",
           "Search the address in official hazard tools and ask about prior water intrusion and emergency access. The State of Hawaii Flood Hazard Assessment Tool displays FEMA flood information but warns that it does not identify every area subject to flooding. Review relevant county guidance, understand evacuation routes, and obtain an address-specific renters-insurance quote. A map screen helps frame questions; it cannot guarantee what will happen at a particular unit."
         ]
       }
     ],
     faq: {
-      eyebrow: "Archived $1,500 Condo FAQs",
+      eyebrow: "Ewa Beach Condo Budget FAQs",
       heading: "Questions for a price-sensitive Ewa Beach renter",
-      intro: "Every answer begins with the same boundary: the legacy title is not evidence of a current rental offer.",
+      intro: "Every answer begins with the same boundary: the property title is not evidence of a current rental offer.",
       items: [
-        { question: "Can I rent this Ewa Beach condo for $1,500 now?", answer: "This archive does not establish that. Confirm the exact unit, current rent, availability, lease dates, application process, and authorized owner or manager in current written materials. Treat $1,500 only as part of the old page title." },
+        { question: "Can I rent this Ewa Beach condo for $1,500 now?", answer: "This page does not establish that. Confirm the exact unit, current rent, availability, lease dates, application process, and authorized owner or manager in current written materials. Treat $1,500 only as part of the property page title." },
         { question: "What should I include in a monthly affordability check?", answer: "Add rent, allocated electricity and water or sewer, internet, renters insurance, parking or pet charges, laundry, and transportation. Separately total first month's rent, deposits, application costs, setup expenses, movers, and needed household items." },
-        { question: "Does the archive confirm parking or utilities?", answer: "No. It confirms neither. Require the stall number and rules for every vehicle, guest and towing provisions, and the responsibility for each utility and fee in the proposed lease or other controlling documents." },
+        { question: "Does the property search confirm parking or utilities?", answer: "No. It confirms neither. Require the stall number and rules for every vehicle, guest and towing provisions, and the responsibility for each utility and fee in the proposed lease or other controlling documents." },
         { question: "How should roommates evaluate one and a half bathrooms?", answer: "Tour the actual layout, identify which fixtures each bathroom contains and how bedrooms connect to them, and agree on bathroom use, bedroom allocation, parking, utilities, guests, cleaning, and payment responsibility before signing." },
         { question: "How do I confirm the public schools?", answer: "Use the exact address in HIDOE's SchoolSite Locator, then contact the relevant school. HIDOE says its general service areas are for reference and should not be the sole source for a rent or relocation choice." },
         { question: "What hazard research should I do?", answer: "Check the exact address in official state and county hazard tools, ask about prior water intrusion and emergency access, review evacuation information, and seek an address-specific insurance quote. Remember that the state flood tool says mapped information does not capture every area subject to flooding." }
@@ -4858,9 +4858,21 @@ const PROPERTY_CONTENT_EXPANSIONS = {
 CONTENT.evergreenPages = EVERGREEN_PAGE_DEFS.map(buildEvergreenPage).map(function (page) {
   return applyPageExpansion(page, EVERGREEN_CONTENT_EXPANSIONS[page.key]);
 });
-CONTENT.propertyPages = PROPERTY_PAGE_DEFS.map(createPropertyPage).map(function (page) {
-  return applyPageExpansion(page, PROPERTY_CONTENT_EXPANSIONS[page.path]);
-});
+CONTENT.propertyPages = PROPERTY_PAGE_DEFS.map(createPropertyPage)
+  .map(function (page) {
+    return applyPageExpansion(page, PROPERTY_CONTENT_EXPANSIONS[page.path]);
+  })
+  .map(function (page) {
+    return {
+      ...page,
+      cta: {
+        ...page.cta,
+        subtitle:
+          page.cta.subtitle +
+          " If the home that brought you here is not currently offered, we can look for a similar property that fits your orders or move timeline and stays within your comfortable budget.",
+      },
+    };
+  });
 
 function buildPageIndex() {
   const index = Object.create(null);
@@ -4968,8 +4980,8 @@ function assignSecondPassLinks() {
       linkTo(pageIndex, "va-home-buying-in-hawaii", "VA Home Buying in Hawaii", "Use market context alongside buyer education resources."),
     ],
     "hawaii-military-realty-inc": [
-      { path: "about.html", label: "Who Are David and Tonya?", description: "Read the leadership and background page that maps to the legacy about route." },
-      { path: "index.html", label: "Hawaii Real Estate and Military Homes", description: "See the legacy home route that carries the primary brand positioning." },
+      { path: "about.html", label: "Who Are David and Tonya?", description: "Read the leadership and background page that maps to the established about route." },
+      { path: "index.html", label: "Hawaii Real Estate and Military Homes", description: "See the established home route that carries the primary brand positioning." },
       { path: "team.html", label: "Meet the Team", description: "Continue into the full team page from the company overview." },
     ],
     "kapolei-real-estate-listings-and-information": [

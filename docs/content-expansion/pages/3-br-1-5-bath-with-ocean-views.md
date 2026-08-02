@@ -17,7 +17,7 @@ The current generated expansion is a starting point. Review it for generic passa
 
 ## Required coverage
 
-- Deliver a useful archival property resource with at least 650 substantive content words.
+- Deliver a useful property-search resource with at least 650 substantive content words.
 - Clearly require current availability verification and distinguish known property context from general area guidance.
 - Provide page-specific introductions, sections, FAQs, CTA, and three intentional related links.
 - Follow every shared rule in `../CONTEXT.md` and do not edit `src/content.js`.
@@ -37,5 +37,5 @@ Add authoritative sources during the iteration. Do not mark the page complete wi
 - Status: complete
 - Build: passed
 - Completed date: 2026-08-01
-- Summary: Replaced the generic expansion with an archival ocean-view rental guide covering offer verification, view inspection, complete cost, a 3-bedroom/1.5-bath household test, parking and commute checks, and exact-address school and hazard research.
+- Summary: Replaced the generic expansion with an ocean-view rental search guide covering offer verification, view inspection, complete cost, a 3-bedroom/1.5-bath household test, parking and commute checks, and exact-address school and hazard research.
 - Verification notes: Content expansion validation passed; production build passed; selected route output exists in `build/oahu-available-rental-properties/3-br-1-5-bath-with-ocean-views.html`; diff reviewed for page scope and unrelated files.

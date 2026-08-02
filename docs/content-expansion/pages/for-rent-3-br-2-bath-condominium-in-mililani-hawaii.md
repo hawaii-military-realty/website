@@ -17,7 +17,7 @@ The current generated expansion is a starting point. Review it for generic passa
 
 ## Required coverage
 
-- Deliver a useful archival property resource with at least 650 substantive content words.
+- Deliver a useful property-search resource with at least 650 substantive content words.
 - Clearly require current availability verification and distinguish known property context from general area guidance.
 - Provide page-specific introductions, sections, FAQs, CTA, and three intentional related links.
 - Follow every shared rule in `../CONTEXT.md` and do not edit `src/content.js`.
@@ -38,5 +38,5 @@ Add authoritative sources during the iteration. Do not mark the page complete wi
 - Status: complete
 - Build: passed; selected output confirmed
 - Completed date: 2026-08-01
-- Summary: Replaced the generic expansion with a page-specific archival guide that foregrounds the route/title bedroom mismatch and covers offer verification, condo documents, layout, parking, total cost, commute, schools, hazards, comparisons, FAQs, CTA, and intentional related links.
+- Summary: Replaced the generic expansion with a page-specific property-search guide that foregrounds the route/title bedroom mismatch and covers offer verification, condo documents, layout, parking, total cost, commute, schools, hazards, comparisons, FAQs, CTA, and intentional related links.
 - Verification notes: `node scripts/validate-content-expansion.js` and `node scripts/build-content.js` passed; `build/oahu-available-rental-properties/for-rent-2-br-2-ba-condominium-in-mililani-hawaii.html` exists.

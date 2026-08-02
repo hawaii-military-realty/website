@@ -17,7 +17,7 @@ The current generated expansion is a starting point. Review it for generic passa
 
 ## Required coverage
 
-- Deliver a useful archival property resource with at least 650 substantive content words.
+- Deliver a useful property-search resource with at least 650 substantive content words.
 - Clearly require current availability verification and distinguish known property context from general area guidance.
 - Provide page-specific introductions, sections, FAQs, CTA, and three intentional related links.
 - Follow every shared rule in `../CONTEXT.md` and do not edit `src/content.js`.
@@ -37,5 +37,5 @@ Add authoritative sources during the iteration. Do not mark the page complete wi
 - Status: complete
 - Build: passed
 - Completed date: 2026-08-01
-- Summary: Replaced the generic generated copy with a Fairways Edge-specific archival rental guide covering current-offer verification, two-story household fit, unit-specific association rules, total move-in and monthly cost, school confirmation, commute testing, and address-level hazard screening.
+- Summary: Replaced the generic generated copy with a Fairways Edge-specific rental search guide covering current-offer verification, two-story household fit, unit-specific association rules, total move-in and monthly cost, school confirmation, commute testing, and address-level hazard screening.
 - Verification notes: `node scripts/validate-content-expansion.js` passed after completion status was set; `node scripts/build-content.js` succeeded; and `build/oahu-available-rental-properties/3-bedroom-2-5-bath-townhouse-at-fairways-edge.html` exists.

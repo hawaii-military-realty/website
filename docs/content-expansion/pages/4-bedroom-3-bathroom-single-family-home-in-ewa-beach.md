@@ -17,7 +17,7 @@ The current generated expansion is a starting point. Review it for generic passa
 
 ## Required coverage
 
-- Deliver a useful archival property resource with at least 650 substantive content words.
+- Deliver a useful property-search resource with at least 650 substantive content words.
 - Clearly require current availability verification and distinguish known property context from general area guidance.
 - Provide page-specific introductions, sections, FAQs, CTA, and three intentional related links.
 - Follow every shared rule in `../CONTEXT.md` and do not edit `src/content.js`.
@@ -38,5 +38,5 @@ Add authoritative sources during the iteration. Do not mark the page complete wi
 - Status: complete
 - Build: passed
 - Completed date: 2026-08-01
-- Summary: Replaced the generic expansion with an original archival rental guide focused on current-offer verification, four-bedroom/three-bath floor-plan fit, detached-home costs and duties, parking and outdoor-space checks, and exact-address Ewa Beach commute, school, transit, and hazard research.
+- Summary: Replaced the generic expansion with an original rental search guide focused on current-offer verification, four-bedroom/three-bath floor-plan fit, detached-home costs and duties, parking and outdoor-space checks, and exact-address Ewa Beach commute, school, transit, and hazard research.
 - Verification notes: Primary-source claims were recorded above; page-specific structure exceeds the 650-word property target; three intentional related links were assigned; `node scripts/validate-content-expansion.js` passed; `node scripts/build-content.js` succeeded; and the selected output was confirmed in `build/`.

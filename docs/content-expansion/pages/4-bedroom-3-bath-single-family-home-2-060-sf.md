@@ -17,7 +17,7 @@ The current generated expansion is a starting point. Review it for generic passa
 
 ## Required coverage
 
-- Deliver a useful archival property resource with at least 650 substantive content words.
+- Deliver a useful property-search resource with at least 650 substantive content words.
 - Clearly require current availability verification and distinguish known property context from general area guidance.
 - Provide page-specific introductions, sections, FAQs, CTA, and three intentional related links.
 - Follow every shared rule in `../CONTEXT.md` and do not edit `src/content.js`.
@@ -38,5 +38,5 @@ Add authoritative sources during the iteration. Do not mark the page complete wi
 - Status: complete
 - Build: passed
 - Completed date: 2026-08-01
-- Summary: Replaced the generic property expansion with a decision-grade archival guide for comparing a four-bedroom, three-bath, 2,060-square-foot Oahu rental without inventing an address, price, features, or active status. Added route-specific layout, cost, lease, inspection, school, hazard, commute, fraud-screening, FAQ, CTA, and related-link guidance.
+- Summary: Replaced the generic property expansion with a decision-grade property-search guide for comparing a four-bedroom, three-bath, 2,060-square-foot Oahu rental without inventing an address, price, features, or active status. Added route-specific layout, cost, lease, inspection, school, hazard, commute, fraud-screening, FAQ, CTA, and related-link guidance.
 - Verification notes: Authoritative state and county sources recorded above. `node scripts/validate-content-expansion.js` passed; `node scripts/build-content.js` passed; `build/oahu-available-rental-properties/4-bedroom-3-bath-single-family-home-2060-sf.html` exists.

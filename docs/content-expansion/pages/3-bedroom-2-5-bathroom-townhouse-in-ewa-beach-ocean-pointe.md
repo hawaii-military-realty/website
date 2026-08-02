@@ -17,7 +17,7 @@ The current generated expansion is a starting point. Review it for generic passa
 
 ## Required coverage
 
-- Deliver a useful archival property resource with at least 650 substantive content words.
+- Deliver a useful property-search resource with at least 650 substantive content words.
 - Clearly require current availability verification and distinguish known property context from general area guidance.
 - Provide page-specific introductions, sections, FAQs, CTA, and three intentional related links.
 - Follow every shared rule in `../CONTEXT.md` and do not edit `src/content.js`.
@@ -39,5 +39,5 @@ Add authoritative sources during the iteration. Do not mark the page complete wi
 - Status: complete
 - Build: passed
 - Completed date: 2026-08-01
-- Summary: Replaced the generic generated expansion with an original archival rental guide covering current-offer verification, full costs, Ocean Pointe sub-associations, parking and tenant rules, floor-plan and commute testing, schools, hazards, six FAQs, and a current-inventory CTA.
+- Summary: Replaced the generic generated expansion with an original rental search guide covering current-offer verification, full costs, Ocean Pointe sub-associations, parking and tenant rules, floor-plan and commute testing, schools, hazards, six FAQs, and a current-inventory CTA.
 - Verification notes: `node scripts/validate-content-expansion.js` passed; `node scripts/build-content.js` passed; confirmed `build/oahu-available-rental-properties/3-bedroom-2-5-bathroom-townhouse-in-ewa-beach-ocean-pointe.html` exists; final diff limited to this page definition, its brief, and the required queue update.

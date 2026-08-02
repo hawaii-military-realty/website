@@ -2,7 +2,7 @@
 
 ## Goal and scope
 
-Turn the 37 legacy SEO URLs exported by `CONTENT.evergreenPages` and `CONTENT.propertyPages` in `src/content-seo.js` into useful, original, decision-grade resources. Preserve every route and the existing data interfaces.
+Turn the 37 established SEO URLs exported by `CONTENT.evergreenPages` and `CONTENT.propertyPages` in `src/content-seo.js` into useful, original, decision-grade resources. Preserve every route and the existing data interfaces.
 
 The runtime collections are the only allowlist. Do not derive scope from the project report alone.
 
@@ -17,7 +17,7 @@ Excluded pages may be internal-link destinations. Their content must not be chan
 - Write for the specific searcher named in the page brief, not for a generic real-estate audience.
 - Use direct, calm, practical language consistent with a veteran-owned Oahu brokerage.
 - Explain tradeoffs and next decisions. Avoid hype, keyword stuffing, filler, and unsupported superlatives.
-- Distinguish archived property context from current availability. Never claim a legacy property is active without verified current evidence.
+- Treat each property page as the beginning of a current search. Confirm availability without labeling the page by age or status; if that home is not currently offered, shift naturally to similar options that can fit the reader's orders or move timeline and comfortable budget.
 - Do not provide legal, tax, lending, or military-benefit advice. Attribute consequential rules to an authoritative source and direct readers to the appropriate professional or agency.
 
 ## Research rules
@@ -30,7 +30,8 @@ Excluded pages may be internal-link destinations. Their content must not be chan
 
 ## Content and SEO standard
 
-- Evergreen pages target at least 900 substantive content words; property archive pages target at least 650.
+- Evergreen pages target at least 900 substantive content words; property pages target at least 650.
+- Never label a property page by its age or imply that it is merely a preserved listing. Avoid language that foregrounds when the page was created. Describe the desired home and current search instead.
 - Each page needs a useful description, focused hero introduction, at least three intro paragraphs, an audience-specific sidebar, at least four substantial sections, at least four FAQs, a relevant CTA, and three intentional related links.
 - Make headings and paragraphs unique to the route. Shared facts may recur, but do not reuse whole paragraphs between completed pages.
 - Preserve page keys, paths, canonical behavior, collection membership, and the schema consumed by `scripts/build-content.js`.

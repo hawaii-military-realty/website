@@ -17,7 +17,7 @@ The current generated expansion is a starting point. Review it for generic passa
 
 ## Required coverage
 
-- Deliver a useful archival property resource with at least 650 substantive content words.
+- Deliver a useful property-search resource with at least 650 substantive content words.
 - Clearly require current availability verification and distinguish known property context from general area guidance.
 - Provide page-specific introductions, sections, FAQs, CTA, and three intentional related links.
 - Follow every shared rule in `../CONTEXT.md` and do not edit `src/content.js`.
@@ -38,5 +38,5 @@ Add authoritative sources during the iteration. Do not mark the page complete wi
 - Status: complete
 - Build: passed
 - Completed date: 2026-08-01
-- Summary: Replaced the generic legacy stub with an original archival rental guide focused on verifying current status, measuring garage capacity, reconciling parking and storage rules, comparing full lease cost, testing the two-bedroom/two-bath layout, and checking the exact commute, schools, and hazards.
+- Summary: Replaced the generic thin property copy with an original rental search guide focused on verifying current status, measuring garage capacity, reconciling parking and storage rules, comparing full lease cost, testing the two-bedroom/two-bath layout, and checking the exact commute, schools, and hazards.
 - Verification notes: Authoritative state landlord-tenant and education guidance and county hazard guidance were recorded above. The content-expansion validator and site build passed, and the selected output was confirmed in `build/oahu-available-rental-properties/2-br-2-ba-with-2-car-garage-in-ewa-beach.html`.

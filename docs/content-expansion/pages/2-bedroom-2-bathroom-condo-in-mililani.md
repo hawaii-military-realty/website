@@ -17,7 +17,7 @@ The current generated expansion is a starting point. Review it for generic passa
 
 ## Required coverage
 
-- Deliver a useful archival property resource with at least 650 substantive content words.
+- Deliver a useful property-search resource with at least 650 substantive content words.
 - Clearly require current availability verification and distinguish known property context from general area guidance.
 - Provide page-specific introductions, sections, FAQs, CTA, and three intentional related links.
 - Follow every shared rule in `../CONTEXT.md` and do not edit `src/content.js`.
@@ -38,5 +38,5 @@ Add authoritative sources during the iteration. Do not mark the page complete wi
 - Status: complete
 - Build: passed; selected output confirmed
 - Completed date: 2026-08-01
-- Summary: Replaced the generic expansion with an original archived-rental guide covering current-offer verification, two-bedroom/two-bath layout fit, total cost and written terms, exact-project rules, address-level routine checks, six FAQs, a tailored CTA, and three intentional next-step links.
+- Summary: Replaced the generic expansion with an original earlier-rental guide covering current-offer verification, two-bedroom/two-bath layout fit, total cost and written terms, exact-project rules, address-level routine checks, six FAQs, a tailored CTA, and three intentional next-step links.
 - Verification notes: Authoritative state, association, education, and county sources recorded; content-expansion validation and full build passed; `build/oahu-available-rental-properties/2-bedroom-2-bathroom-condo-in-mililani.html` exists.

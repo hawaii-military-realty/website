@@ -17,7 +17,7 @@ The current generated expansion is a starting point. Review it for generic passa
 
 ## Required coverage
 
-- Deliver a useful archival property resource with at least 650 substantive content words.
+- Deliver a useful property-search resource with at least 650 substantive content words.
 - Clearly require current availability verification and distinguish known property context from general area guidance.
 - Provide page-specific introductions, sections, FAQs, CTA, and three intentional related links.
 - Follow every shared rule in `../CONTEXT.md` and do not edit `src/content.js`.
@@ -37,5 +37,5 @@ Add authoritative sources during the iteration. Do not mark the page complete wi
 - Status: complete
 - Build: passed
 - Completed date: 2026-08-01
-- Summary: Replaced the generic lower-price template with a distinct archival guide that treats $1,500 only as a historical title, requires present-day offer verification, and helps budget-sensitive renters evaluate total costs, unit condition, condo rules, parking, layout, commute, schools, hazards, and insurance.
+- Summary: Replaced the generic lower-price template with a distinct property-search guide that treats $1,500 only as a historical title, requires present-day offer verification, and helps budget-sensitive renters evaluate total costs, unit condition, condo rules, parking, layout, commute, schools, hazards, and insurance.
 - Verification notes: `node scripts/validate-content-expansion.js` and `node scripts/build-content.js` passed; confirmed `build/oahu-available-rental-properties/2-bedroom-1-5-bath-condo-in-ewa-beach-1500-per-month.html` exists.
