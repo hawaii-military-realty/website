@@ -1,0 +1,63 @@
+<section class="section mortgage-calculator-section" aria-labelledby="mortgage-calculator-heading">
+  <div class="container" style="max-width: 1100px">
+    <div class="section-head reveal">
+      <div class="eyebrow-mini">Interactive Calculator</div>
+      <h2 id="mortgage-calculator-heading">Estimate your monthly mortgage payment</h2>
+      <p>Adjust the assumptions below to compare payment scenarios. This planning estimate is not a loan quote or approval.</p>
+    </div>
+
+    <div class="mortgage-calculator reveal" data-mortgage-calculator>
+      <form class="mortgage-calculator-form" data-mortgage-form>
+        <div class="mortgage-field">
+          <label for="mortgage-price">Home price</label>
+          <div class="mortgage-input-affix"><span>$</span><input id="mortgage-price" name="price" type="number" min="0" step="1000" value="750000" required inputmode="decimal"></div>
+        </div>
+        <div class="mortgage-field">
+          <label for="mortgage-down-payment">Down payment</label>
+          <div class="mortgage-input-affix"><span>$</span><input id="mortgage-down-payment" name="downPayment" type="number" min="0" step="1000" value="0" required inputmode="decimal"></div>
+        </div>
+        <div class="mortgage-field">
+          <label for="mortgage-rate">Interest rate</label>
+          <div class="mortgage-input-affix mortgage-input-suffix"><input id="mortgage-rate" name="rate" type="number" min="0" max="30" step="0.01" value="6.5" required inputmode="decimal"><span>%</span></div>
+        </div>
+        <div class="mortgage-field">
+          <label for="mortgage-term">Loan term</label>
+          <select id="mortgage-term" name="term">
+            <option value="30" selected>30 years</option>
+            <option value="20">20 years</option>
+            <option value="15">15 years</option>
+            <option value="10">10 years</option>
+          </select>
+        </div>
+        <div class="mortgage-field">
+          <label for="mortgage-tax">Annual property tax</label>
+          <div class="mortgage-input-affix"><span>$</span><input id="mortgage-tax" name="propertyTax" type="number" min="0" step="100" value="3000" required inputmode="decimal"></div>
+        </div>
+        <div class="mortgage-field">
+          <label for="mortgage-insurance">Annual home insurance</label>
+          <div class="mortgage-input-affix"><span>$</span><input id="mortgage-insurance" name="insurance" type="number" min="0" step="100" value="1800" required inputmode="decimal"></div>
+        </div>
+        <div class="mortgage-field">
+          <label for="mortgage-hoa">Monthly HOA dues</label>
+          <div class="mortgage-input-affix"><span>$</span><input id="mortgage-hoa" name="hoa" type="number" min="0" step="25" value="0" required inputmode="decimal"></div>
+        </div>
+        <button class="btn btn-primary mortgage-calculate-button" type="submit">Calculate payment</button>
+        <p class="mortgage-error" data-mortgage-error role="alert" hidden></p>
+      </form>
+
+      <div class="mortgage-results" aria-live="polite">
+        <div class="eyebrow-mini">Estimated Payment</div>
+        <p class="mortgage-total" data-mortgage-total>$0</p>
+        <p class="mortgage-total-label">per month</p>
+        <dl class="mortgage-breakdown">
+          <div><dt>Principal &amp; interest</dt><dd data-mortgage-pi>$0</dd></div>
+          <div><dt>Property tax</dt><dd data-mortgage-tax-result>$0</dd></div>
+          <div><dt>Home insurance</dt><dd data-mortgage-insurance-result>$0</dd></div>
+          <div><dt>HOA dues</dt><dd data-mortgage-hoa-result>$0</dd></div>
+          <div class="mortgage-loan-row"><dt>Estimated loan amount</dt><dd data-mortgage-loan>$0</dd></div>
+        </dl>
+        <p class="mortgage-disclaimer">Excludes mortgage insurance, VA funding fees, flood insurance, closing costs, utilities, maintenance, and other property-specific expenses.</p>
+      </div>
+    </div>
+  </div>
+</section>

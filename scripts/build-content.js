@@ -1166,6 +1166,9 @@ function renderContentRelatedLink(item, currentOutputPath) {
 function renderContentPage(model) {
   const page = model.page;
   const prefix = assetPrefixForOutputPath(model.outputPath);
+  const calculatorHtml = page.key === "mortgage-calculator"
+    ? renderTemplate("partials/mortgage-calculator.html", {})
+    : "";
   const mainHtml = renderTemplate(model.template, {
     heroHtml: renderPageHero(page.hero, prefix),
     introEyebrow: page.introEyebrow,
@@ -1176,6 +1179,7 @@ function renderContentPage(model) {
     sidebarHeading: page.sidebar.heading,
     sidebarHtml: paragraphs(page.sidebar.paragraphs),
     pillsHtml: renderPills(page.sidebar.pills),
+    calculatorHtml: calculatorHtml,
     sectionRowsHtml: renderSectionRows(page.sections),
     relatedEyebrow: "Related Resources",
     relatedHeading: "Keep exploring the topic",
