@@ -294,24 +294,45 @@ function renderEyebrow(label) {
   return renderTemplate("partials/eyebrow-pill.html", { label: label });
 }
 
-function renderHeadRoot(page, prefix, extraHeadHtml) {
-  return renderTemplate("partials/head-root.html", {
-    title: page.title,
-    description: page.description || "",
+function renderHeadData(page, prefix, extraHeadHtml, currentOutputPath) {
+  const siteSeo = content.site.seo || {};
+  const title = page.title || "";
+  const description = page.description || "";
+  const ogTitle = page.ogTitle || title;
+  const ogDescription = page.ogDescription || description;
+
+  return {
+    title: title,
+    description: description,
+    generator: siteSeo.generator || "",
+    googleSiteVerification: siteSeo.googleSiteVerification || "",
+    ogLocale: page.ogLocale || siteSeo.locale || "en_US",
+    ogSiteName: page.ogSiteName || siteSeo.siteName || content.site.brand.name,
+    ogType: page.ogType || siteSeo.type || "website",
+    ogTitle: ogTitle,
+    ogDescription: ogDescription,
+    ogUrl:
+      page.ogUrl || buildAbsolutePublicUrl(currentOutputPath, siteSeo.url || ""),
+    twitterCard: page.twitterCard || siteSeo.twitterCard || "summary",
+    twitterTitle: page.twitterTitle || ogTitle,
+    twitterDescription: page.twitterDescription || ogDescription,
     prefix: prefix,
     extraHeadHtml: extraHeadHtml || "",
-  });
+  };
 }
 
-function renderHeadAsset(page, prefix, extraHeadHtml) {
-  return renderTemplate("partials/head-asset.html", {
-    title: page.title,
-    description: page.description || "",
-    ogTitle: page.ogTitle || page.title,
-    ogDescription: page.ogDescription || page.description || "",
-    prefix: prefix,
-    extraHeadHtml: extraHeadHtml || "",
-  });
+function renderHeadRoot(page, prefix, extraHeadHtml, currentOutputPath) {
+  return renderTemplate(
+    "partials/head-root.html",
+    renderHeadData(page, prefix, extraHeadHtml, currentOutputPath),
+  );
+}
+
+function renderHeadAsset(page, prefix, extraHeadHtml, currentOutputPath) {
+  return renderTemplate(
+    "partials/head-asset.html",
+    renderHeadData(page, prefix, extraHeadHtml, currentOutputPath),
+  );
 }
 
 function normalizeOutputPath(value) {
@@ -338,6 +359,16 @@ function logicalPageToPublicPath(value) {
 
 function logicalPageToOutputPath(value) {
   return normalizeOutputPath(value);
+}
+
+function buildAbsolutePublicUrl(outputPath, siteUrl) {
+  const baseUrl = String(siteUrl || "").replace(/\/+$/, "");
+  const publicPath = logicalPageToPublicPath(outputPath);
+
+  if (!baseUrl) return publicPath ? "/" + publicPath : "/";
+  if (!publicPath) return baseUrl;
+
+  return baseUrl + "/" + publicPath;
 }
 
 function assetPrefixForOutputPath(outputPath) {
@@ -659,6 +690,7 @@ function renderRootPage(options) {
       pageForHead,
       prefix,
       renderExtraHead(pageForHead, currentOutputPath),
+      currentOutputPath,
     ),
     headerHtml: renderHeader("root", options.activePath, currentOutputPath),
     mainHtml: options.mainHtml,
@@ -682,6 +714,7 @@ function renderAssetPage(options) {
       pageForHead,
       prefix,
       renderExtraHead(pageForHead, currentOutputPath),
+      currentOutputPath,
     ),
     headerHtml: renderHeader("asset", options.activePath, currentOutputPath),
     mainHtml: options.mainHtml,

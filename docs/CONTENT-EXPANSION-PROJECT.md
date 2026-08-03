@@ -11,11 +11,11 @@ The goal of this project is to expand each existing URL with high-quality, inten
 - preserves and strengthens the authority these pages already have
 - makes each page genuinely useful for the specific audience segment behind the query
 - improves topical relevance instead of publishing generic real estate filler
-- turns legacy URLs into assets that support leads, internal linking, and broader site authority
+- turns established URLs into assets that support leads, internal linking, and broader site authority
 
 ## Why High-Quality Content Matters Here
 
-If a legacy URL already has visibility, impressions, backlinks, crawl memory, or historical engagement, thin placeholder content sends the wrong signal. It tells Google the page may no longer deserve the relevance it previously earned.
+If an earlier URL already has visibility, impressions, backlinks, crawl memory, or historical engagement, thin placeholder content sends the wrong signal. It tells Google the page may no longer deserve the relevance it previously earned.
 
 High-quality content matters on this project because it allows each page to:
 
@@ -38,7 +38,7 @@ Evergreen pages should usually grow into substantial, unique resources. In most 
 
 ### Property Pages
 
-Property pages should not stay thin just because a listing or rental may no longer be active. A legacy property URL can still be useful if it becomes a strong archival and conversion page. In most cases, that means:
+Property pages should not stay thin just because a listing or rental may no longer be active. A established property URL can still be useful if it becomes a strong useful property-search and conversion page. In most cases, that means:
 
 - a clear note about status if the specific property is no longer active
 - the original property profile and why it appealed to a certain audience
@@ -52,7 +52,7 @@ Property pages should not stay thin just because a listing or rental may no long
 
 - Public URL: `/`
 - Primary market segment: broad branded and non-branded searchers evaluating whether this brokerage is relevant for buying, selling, renting, relocating, or property management on Oahu
-- Why this page needs high-quality content: this is the legacy home route and one of the strongest authority documents on the domain. Google is likely to treat it as the main brand and service summary page. Thin copy here weakens trust across the entire site.
+- Why this page needs high-quality content: this is the established home route and one of the strongest authority documents on the domain. Google is likely to treat it as the main brand and service summary page. Thin copy here weakens trust across the entire site.
 - Content expansion direction: explain the Oahu-only service area, military relocation specialization, major service lines, proof signals, and how different audiences should move deeper into the site based on their situation
 
 ### Who Are David and Tonya?
@@ -197,7 +197,7 @@ Property pages should not stay thin just because a listing or rental may no long
 
 ## Property Pages
 
-These URLs should be treated as high-value archival property pages, not disposable listing stubs. Even when the original property is no longer active, each page can still rank, assist users, and convert traffic if the content is expanded around the property type, the neighborhood, the likely audience, and current alternatives.
+These URLs should be treated as high-value property search pages, not disposable listing stubs. Even when the original property is no longer active, each page can still rank, assist users, and convert traffic if the content is expanded around the property type, the neighborhood, the likely audience, and current alternatives.
 
 ### POOL Home for Sale in Ka Makana at Hoakalei in Ewa Beach, Hawaii
 
@@ -273,7 +273,7 @@ These URLs should be treated as high-value archival property pages, not disposab
 
 - Public URL: `/oahu-available-rental-properties/for-rent-2-br-2-ba-condominium-in-mililani-hawaii`
 - Primary market segment: central Oahu renters who want condo living near Mililani's everyday conveniences
-- Why this page needs high-quality content: Mililani rental traffic often comes from practical households balancing commute, schools, and budget. This page should feel like a useful local rental guide, not a thin archive.
+- Why this page needs high-quality content: Mililani rental traffic often comes from practical households balancing commute, schools, and budget. This page should feel like a useful local rental guide, not a thin page.
 - Content expansion direction: explain why renters choose Mililani, what condo living there usually offers, and how to compare this option against nearby townhomes or single-family rentals
 
 ### 3 Bedroom, 2.5 Bath Townhouse at Fairways Edge
@@ -288,7 +288,7 @@ These URLs should be treated as high-value archival property pages, not disposab
 - Public URL: `/oahu-available-rental-properties/4-bedroom-2-5-bathrooms-1538-sf-in-ewa-beach-2500-per-month`
 - Primary market segment: budget-aware family renters searching a specific size and price point in Ewa Beach
 - Why this page needs high-quality content: this title signals both affordability and family-size intent. That makes it valuable for searchers comparing what their budget can realistically secure in West Oahu.
-- Content expansion direction: explain what renters should expect at this size and price point, how Ewa Beach fits family households, and how to use this archived example to judge current market options
+- Content expansion direction: explain what renters should expect at this size and price point, how Ewa Beach fits family households, and how to use this earlier example to judge current market options
 
 ### For Rent: 5 Bedroom Executive Home with 3 Car Garage in Ocean Pointe
 

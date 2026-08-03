@@ -21,6 +21,17 @@ const CONTENT = {
     settings: {
       showAgentCardContactButtons: false,
     },
+    seo: {
+      generator: "All in One SEO (AIOSEO) 4.9.10",
+      googleSiteVerification:
+        "r92goQtWWXDpF6aHjvlgeTkLscuiu4OSt_W6VPNW6Kg",
+      locale: "en_US",
+      siteName:
+        "Hawaii Military Realty Inc. | Hawaii homes and property",
+      type: "website",
+      url: "https://hawaiimilitaryrealty.com",
+      twitterCard: "summary",
+    },
     nav: [
       {
         href: "index.html",
@@ -146,9 +157,9 @@ const CONTENT = {
   pages: {
     home: {
       path: "index.html",
-      title: "Hawaii Real Estate and Military Homes by David Kucic",
+      title: "Hawaii Real Estate and Military Homes presented by David Kucic",
       description:
-        "Native Hawaiian veteran owned and managed Oahu real estate guidance for active duty, veterans, reservists, government civilians, government contractors, and service-minded clients.",
+        "Best resource for hawaii home owners and hawaii home buyers and military seeking hawaii homes. David Kucic real estate services specializes in ewa beach, oahu real estate, homes in Kapolei, and property in Mililani",
       hero: {
         eyebrow: "Native Hawaiian & Veteran Owned/Managed",
         title: "Hawaii's #1 Military",
