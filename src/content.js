@@ -574,7 +574,7 @@ const CONTENT = {
         eyebrow: "Direct Contact",
         heading: "Get clear answers before you move",
         intro:
-          "PCS timeline, VA questions, selling from off island, or property management after orders. Call, text, or use the contact page for a straight assessment.",
+          "PCS timeline, VA questions, selling from off island, or property management after orders. Call or text for a straight assessment.",
       },
       section: {
         eyebrow: "No Intake Maze",
@@ -590,14 +590,6 @@ const CONTENT = {
           value: "(808) 218-9338",
           note: "The fastest way to get a direct answer.",
           hrefKey: "phoneHref",
-        },
-        {
-          icon: "mail",
-          tone: "acc",
-          label: "Contact Page",
-          value: "Open contact page",
-          note: "Contact us for next steps.",
-          hrefKey: "contactPageHref",
         },
         {
           icon: "msg",
@@ -636,6 +628,9 @@ const CONTENT = {
         subtitle:
           "Buying, selling, relocating, or managing property from afar? Call or text anytime.",
         note: "(808) 218-9338 | 7 days a week.",
+        secondaryLabel: "Choose an Agent",
+        secondaryHref: "team.html",
+        secondaryIcon: "users",
       },
     },
     featuredListing: {

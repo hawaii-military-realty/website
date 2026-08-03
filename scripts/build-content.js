@@ -658,7 +658,7 @@ function renderCta(style, cta, currentOutputPath) {
       ),
       phoneHref: contact.phoneHref,
       phoneIcon: icon("phone"),
-      mailIcon: icon("mail"),
+      secondaryIcon: icon(merged.secondaryIcon || "mail"),
       arrowRightIcon: icon("arrowRight"),
     },
   );
