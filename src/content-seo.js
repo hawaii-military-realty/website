@@ -3511,7 +3511,30 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         { question: "Can a buyer use public records instead of inspections?", answer: "No. County parcel and permit records are valuable cross-checks, but they do not replace seller disclosures, association records, title work, an appraisal, a survey when appropriate, or inspections by qualified professionals." }
       ]
     },
-    cta: buildPageCta("Compare current Hoakalei pool homes", "Share your target price, move timing, duty or work location, and how you expect to use a pool. We can confirm current availability and help you compare similar Ewa Beach homes while you obtain property-specific inspection, association, permit, insurance, and financing guidance.")
+    cta: buildPageCta("Compare current Hoakalei pool homes", "Share your target price, move timing, duty or work location, and how you expect to use a pool. We can confirm current availability and help you compare similar Ewa Beach homes while you obtain property-specific inspection, association, permit, insurance, and financing guidance."),
+    description: "Explore the lifestyle, pool ownership considerations, and community character of Ka Makana at Hoakalei homes in Ewa Beach.",
+    heroEyebrow: "Ka Makana at Hoakalei",
+    heroIntro: "A pool home in Ka Makana at Hoakalei brings private outdoor living together with the resort-style setting, neighborhood connections, and West Oahu lifestyle that draw buyers to Ewa Beach.",
+    introEyebrow: "Pool Homes in Ewa Beach",
+    introHeading: "Living well in a Ka Makana at Hoakalei pool home",
+    introLead: "Private pool space can turn ordinary afternoons, weekends, and gatherings into time spent at home.",
+    intro: [
+      "Ka Makana at Hoakalei includes a mix of single-family homes and townhomes within the larger Hoakalei community. For buyers drawn to a private pool, the appeal is the ability to create an outdoor routine around swimming, dining, relaxing, and entertaining without leaving home.",
+      "A pool is both an amenity and part of the home's operating budget. Equipment condition, service needs, water and energy use, safety features, surrounding deck space, and yard layout all influence how the home feels day to day. Buyers often find the best fit when the pool complements the way their household already spends time outdoors.",
+      "The Hoakalei setting also rewards a close look at the home's position within the community: parking, outdoor privacy, sunlight, breezes, association standards, and travel patterns across Ewa Beach all shape the experience of ownership."
+    ],
+    sidebar: { eyebrow: "Best Fit", heading: "Outdoor-focused Ewa Beach living", paragraphs: ["A private pool home can suit households that value relaxed entertaining, regular recreation, and a defined outdoor living area.", "It is especially compelling when the pool, yard, and interior layout support the household's actual routines—from quiet mornings outside to visits from family and friends."], pills: ["Private Pool", "Outdoor Living", "Ka Makana", "Ewa Beach", "Hoakalei"] },
+    sections: [
+      { title: "Make the pool part of everyday life", pills: ["Recreation", "Entertaining", "Outdoor Space"], paragraphs: ["The best pool areas feel like another room of the home. Look at the relationship between the kitchen, living areas, lanai, shade, seating, and the pool deck to see how naturally the space supports meals, play, and hosting.", "Pool design matters as much as pool size. Steps, depth, deck space, lighting, landscaping, and sightlines can make a meaningful difference for households with children, guests, pets, or a preference for low-key outdoor time."] },
+      { title: "Understand the home's care and community standards", pills: ["Equipment", "Safety", "Association"], paragraphs: ["A well-maintained pool has a rhythm: filtration, water balance, cleaning, and occasional equipment updates. Knowing the pump, filter, surface, safety barriers, and service history helps buyers plan confidently for long-term enjoyment.", "Ka Makana's place within Hoakalei also makes community documents useful reading. Architectural standards, yard improvements, parking, and maintenance expectations help clarify how a home can be enjoyed and cared for over time."] },
+      { title: "Choose the Ewa Beach routine that fits", pills: ["West Oahu", "Commute", "Lifestyle"], paragraphs: ["Ewa Beach offers a distinctly West Oahu rhythm, with neighborhood amenities, coastal recreation, and routes to Kapolei and the rest of the island. A home's location within the area can change everyday errands, work travel, school routines, and access to the shoreline.", "Hawaii Military Realty can help match a pool-home wish list with the practical details that matter most—home design, neighborhood feel, outdoor space, commute priorities, and ownership goals."] }
+    ],
+    faq: { eyebrow: "Ka Makana Pool Homes", heading: "Questions buyers often ask", intro: "Useful considerations for finding a pool home that fits your Ewa Beach lifestyle.", items: [
+      { question: "What makes a private pool home appealing in Ewa Beach?", answer: "A private pool adds a dedicated place for recreation, relaxation, and entertaining while making the most of Hawaii's year-round outdoor lifestyle." },
+      { question: "What should buyers consider about pool upkeep?", answer: "Pool care includes routine cleaning, water treatment, equipment servicing, safety features, and planning for future repairs or upgrades. A pool professional can explain the condition and maintenance needs of a specific home." },
+      { question: "What is Ka Makana at Hoakalei like?", answer: "Ka Makana is part of the Hoakalei community in Ewa Beach and includes a mix of home styles. Its community setting, outdoor lifestyle, and West Oahu location make it a popular area to explore." }
+    ] },
+    cta: buildPageCta("Find pool homes like this in Ewa Beach", "Contact Hawaii Military Realty to learn about homes with private pools and outdoor living space in Ka Makana at Hoakalei and across Ewa Beach.")
   },
   "oahu-available-rental-properties/3-bedroom-townhouse-in-makakilo.html": {
     description: "Use this 3-bedroom Makakilo townhouse rental page to verify current availability and compare lease costs, parking, stairs, rules, hazards, and West Oahu travel.",
@@ -3590,7 +3613,22 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         { question: "Should I check hazards for a hillside rental?", answer: "Yes. Search the exact address in Honolulu's Oʻahu Hazard Explorer and the state's Flood Hazard Assessment Tool, ask about drainage and prior incidents, and discuss address-specific coverage with an insurer. Mapping is an initial screen and does not identify every possible hazard." }
       ]
     },
-    cta: buildPageCta("Compare current Makakilo and West Oahu rentals", "Share your move date, monthly budget, bedroom need, vehicles, pets, accessibility needs, and duty or work destination. We can confirm current options and help you compare the written terms and daily fit before you apply.")
+    cta: buildPageCta("Compare current Makakilo and West Oahu rentals", "Share your move date, monthly budget, bedroom need, vehicles, pets, accessibility needs, and duty or work destination. We can confirm current options and help you compare the written terms and daily fit before you apply."),
+    description: "Discover the space, hillside setting, and West Oahu lifestyle of three-bedroom Makakilo townhouses.",
+    heroEyebrow: "Makakilo Townhouse Living",
+    heroIntro: "A three-bedroom Makakilo townhouse combines flexible living space with the elevated setting, West Oahu views, and community convenience that make this area distinctive.",
+    introEyebrow: "Makakilo Rentals",
+    introHeading: "Three-bedroom townhouse living in Makakilo",
+    introLead: "Three bedrooms create room for family life, a home office, guests, hobbies, or a roommate arrangement without giving up the connected feel of townhouse living.",
+    intro: ["Makakilo sits above Kapolei on West Oahu, where elevation can bring breezes, broad views, and a different rhythm from nearby coastal neighborhoods. Townhouse communities offer a practical middle ground: more separation than many condos and less exterior responsibility than a detached home.", "The layout is central to the experience. Bedrooms upstairs can create a quieter retreat from the main living area, while an open kitchen and living room can keep everyday routines connected. Parking, storage, stairs, cooling, and outdoor space are the details that turn a floor plan into a comfortable home.", "For military and civilian households alike, Makakilo is worth considering alongside Kapolei and Ewa Beach when work routes, schools, shopping, and room needs all belong in the same decision."],
+    sidebar: { eyebrow: "Best Fit", heading: "Space with a West Oahu outlook", paragraphs: ["A three-bedroom townhouse can work beautifully for households that want distinct sleeping, working, and gathering zones.", "Makakilo is especially attractive to renters who appreciate a hillside community, access to Kapolei amenities, and a home base that feels removed from the busiest parts of the island."], pills: ["3 Bedrooms", "Townhouse", "Makakilo", "West Oahu", "Flexible Space"] },
+    sections: [
+      { title: "Use three bedrooms your way", pills: ["Home Office", "Family", "Guests"], paragraphs: ["A third bedroom often changes how a home functions. It can become a nursery, office, guest room, workout space, or a quiet place for shift workers—giving the rest of the townhouse more room to stay organized.", "Look for a layout that matches your household's daily rhythm, including bathroom placement, closet space, laundry location, and the relationship between bedrooms and the main living area."] },
+      { title: "Enjoy Makakilo's hillside character", pills: ["Elevation", "Breezes", "Views"], paragraphs: ["Makakilo's hillside setting is part of its identity. Building orientation, floor level, windows, and lanai space can influence light, breezes, privacy, and the connection to the surrounding landscape.", "The area also places residents near Kapolei's shopping, services, and employment centers while offering a residential setting that feels distinct from the coastal plain." ] },
+      { title: "Make West Oahu work for your routine", pills: ["Commute", "Schools", "Errands"], paragraphs: ["A home feels most comfortable when its location supports the whole week: work, base access, school runs, groceries, appointments, and time off. Comparing routes at the times you travel can help identify the Makakilo location that fits best.", "Hawaii Military Realty can help you explore current three-bedroom rentals and similar homes in Makakilo, Kapolei, and nearby West Oahu communities." ] }
+    ],
+    faq: { eyebrow: "Makakilo Townhouses", heading: "Living in a three-bedroom townhouse", intro: "A closer look at the features that shape everyday life in Makakilo.", items: [ { question: "Who benefits from a three-bedroom townhouse?", answer: "Families, roommates, remote workers, and households that want a flexible guest or hobby room often value the separation a third bedroom provides." }, { question: "What makes Makakilo distinctive?", answer: "Its hillside setting, proximity to Kapolei, and West Oahu community feel make Makakilo a compelling choice for renters seeking space and a different perspective on island living." }, { question: "What should I look for in a townhouse layout?", answer: "Consider bedroom placement, stairs, storage, parking, cooling, laundry, and how the living area connects to any lanai or outdoor space." } ] },
+    cta: buildPageCta("Find Makakilo townhouses like this", "Contact Hawaii Military Realty to learn about current three-bedroom townhouses and other West Oahu rentals that fit your household.")
   },
   "oahu-available-rental-properties/3-bedroom-2-5-bathroom-townhouse-in-ewa-beach-ocean-pointe.html": {
     description: "Use this Ocean Pointe 3-bedroom townhouse rental guide to verify availability, lease costs, parking, association rules, schools, hazards, and commute fit.",
@@ -3669,7 +3707,22 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         { question: "What should I inspect in a multi-level townhouse?", answer: "Check the daily stair route, bedroom and bathroom placement, laundry location, storage, cooling, noise between levels, outdoor responsibility, and the route from parking. Make sure the layout works for children, guests, mobility needs, and groceries." }
       ]
     },
-    cta: buildPageCta("Compare current Ocean Pointe and Ewa Beach rentals", "Share your move date, monthly budget, vehicles, pets, accessibility needs, school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, associations, layouts, and daily fit before you apply.")
+    cta: buildPageCta("Compare current Ocean Pointe and Ewa Beach rentals", "Share your move date, monthly budget, vehicles, pets, accessibility needs, school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, associations, layouts, and daily fit before you apply."),
+    description: "Explore three-bedroom, two-and-a-half-bath townhouses in Ocean Pointe and the connected Ewa Beach lifestyle.",
+    heroEyebrow: "Ocean Pointe Townhouse Living",
+    heroIntro: "A three-bedroom, two-and-a-half-bath townhouse in Ocean Pointe offers flexible living space in one of Ewa Beach's established, connected communities.",
+    introEyebrow: "Ewa Beach Rentals",
+    introHeading: "Space and community in an Ocean Pointe townhouse",
+    introLead: "A well-planned townhouse gives everyday life distinct zones for gathering, working, resting, and welcoming guests.",
+    intro: ["Ocean Pointe is known for its neighborhood streets, parks, and access to the wider Ewa Beach area. A three-bedroom townhouse can provide a comfortable base for households that want more room than a typical condo while retaining the ease of a community setting.", "Two and a half bathrooms are especially helpful in a busy household: the half bath supports guests and daytime living, while full baths near the bedrooms can make mornings and evenings run more smoothly. The value comes from how the rooms connect, not simply their count.", "Townhouse living also encourages attention to the features that make a daily difference—parking, storage, laundry, cooling, outdoor space, and proximity to the places your household visits most often."],
+    sidebar: { eyebrow: "Best Fit", heading: "Room to settle into Ewa Beach", paragraphs: ["This home style suits families, roommates, and anyone who wants a dedicated office or guest room alongside a comfortable shared living area.", "Ocean Pointe can be a strong fit for people who want a residential Ewa Beach neighborhood with nearby parks, everyday services, and access to West Oahu destinations."], pills: ["3 Bedrooms", "2.5 Bathrooms", "Townhouse", "Ocean Pointe", "Ewa Beach"] },
+    sections: [
+      { title: "Create separation without losing connection", pills: ["Bedrooms", "Shared Living", "Guests"], paragraphs: ["Many three-bedroom townhouses place bedrooms away from the main living area, making it easier to balance early mornings, remote work, children, guests, and downtime. A half bath near the main floor is a welcome convenience when friends or family visit.", "Consider how each room will serve the people who live there. A flexible third bedroom can support changing needs over time, from a nursery to an office, hobby room, or guest space."] },
+      { title: "Enjoy the Ocean Pointe setting", pills: ["Parks", "Neighborhood", "West Oahu"], paragraphs: ["Ocean Pointe's residential character makes it easy to picture a routine built around neighborhood walks, nearby green space, and time outdoors. Its place within Ewa Beach connects residents to local shopping, dining, and coastal recreation.", "The community can feel especially practical for households comparing Ewa Beach with Kapolei, Makakilo, or Central Oahu. The right choice depends on your preferred home style and the destinations that shape your week."] },
+      { title: "Choose a townhouse that supports your week", pills: ["Parking", "Storage", "Travel"], paragraphs: ["Townhouse details such as assigned parking, stair placement, storage, kitchen flow, and lanai or yard space help determine whether the home feels easy to live in. A tour is an opportunity to imagine groceries, gear, laundry, and your daily arrivals and departures.", "Contact Hawaii Military Realty for help finding current homes and rentals like this in Ocean Pointe and throughout Ewa Beach." ] }
+    ],
+    faq: { eyebrow: "Ocean Pointe Townhouses", heading: "Things to know about this home style", intro: "Features that make a three-bedroom Ocean Pointe townhouse attractive for everyday living.", items: [ { question: "Why choose a three-bedroom townhouse in Ocean Pointe?", answer: "It offers flexible room for family life, work, guests, or hobbies in an established Ewa Beach neighborhood." }, { question: "How does a half bath add value?", answer: "A half bath near the living area can make hosting easier and helps keep full bathrooms more private for household members." }, { question: "What should renters consider during a tour?", answer: "Focus on layout, parking, storage, cooling, laundry, outdoor space, and the travel patterns that matter to your household." } ] },
+    cta: buildPageCta("Find Ocean Pointe townhouses like this", "Contact Hawaii Military Realty to learn about current three-bedroom townhouses and other rentals in Ocean Pointe and Ewa Beach.")
   },
   "oahu-available-rental-properties/2-bedroom-1-5-bath-condo-in-ewa-beach.html": {
     description: "Use this Ewa Beach 2-bedroom condo rental guide to verify availability, total costs, parking, condo rules, schools, hazards, and commute fit.",
@@ -3748,7 +3801,22 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         { question: "How should I check flood and other hazard information?", answer: "Search the exact address in Honolulu's Oʻahu Hazard Explorer and the state's Flood Hazard Assessment Tool, ask about prior incidents and emergency access, and discuss coverage with an insurer. Official maps are useful screens but do not identify every possible hazard." }
       ]
     },
-    cta: buildPageCta("Compare current 2-bedroom Ewa Beach rentals", "Share your move date, monthly budget, vehicles, pets, accessibility and school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, condo rules, layouts, and daily fit before you apply.")
+    cta: buildPageCta("Compare current 2-bedroom Ewa Beach rentals", "Share your move date, monthly budget, vehicles, pets, accessibility and school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, condo rules, layouts, and daily fit before you apply."),
+    description: "Explore the efficient layout and beach-community lifestyle of two-bedroom, one-and-a-half-bath condos in Ewa Beach.",
+    heroEyebrow: "Ewa Beach Condo Living",
+    heroIntro: "A two-bedroom, one-and-a-half-bath condo offers an approachable way to enjoy the Ewa Beach lifestyle with flexible space for work, guests, or family.",
+    introEyebrow: "Ewa Beach Rentals",
+    introHeading: "Comfortable condo living near the coast",
+    introLead: "A smart two-bedroom layout gives a household both connection and privacy, with a home that is easy to settle into and maintain.",
+    intro: ["Ewa Beach combines a relaxed coastal character with the everyday conveniences of West Oahu. A two-bedroom condo can be a natural fit for couples, small families, roommates, and military households who want defined space without the scale of a detached home.", "The extra half bath can make a surprisingly meaningful difference. It keeps the full bath more private, supports morning routines, and makes visiting friends or family feel more comfortable. Storage, parking, cooling, and the relationship between the kitchen and living area help complete the picture.", "Condo living makes it easy to focus on the lifestyle outside your door as well: neighborhood walks, beach time, trips into Kapolei, and the rhythm of a home that needs less exterior upkeep."],
+    sidebar: { eyebrow: "Best Fit", heading: "Flexible space with less upkeep", paragraphs: ["Two bedrooms give households options for sleeping, working, hosting, or sharing the home with a roommate.", "This home style works well for renters who value a manageable footprint and want to spend more of their free time enjoying Ewa Beach and West Oahu."], pills: ["2 Bedrooms", "1.5 Bathrooms", "Condo", "Ewa Beach", "Coastal Living"] },
+    sections: [
+      { title: "Make two bedrooms work harder", pills: ["Office", "Guests", "Roommates"], paragraphs: ["A second bedroom is one of the most flexible parts of a condo. It can support a work-from-home setup, visiting family, a child's room, or a roommate plan while preserving a dedicated primary sleeping space.", "The most comfortable layouts make room for day-to-day storage and easy circulation between the entry, kitchen, living space, and bedrooms."] },
+      { title: "Enjoy Ewa Beach beyond the condo", pills: ["Coast", "Parks", "West Oahu"], paragraphs: ["Ewa Beach is appealing for its residential neighborhoods, coastal setting, and connection to the growing West Oahu region. Weekends can include local beaches, parks, community events, and easy access to Kapolei services.", "Where a condo sits within the area affects the rhythm of errands, work travel, and recreation—making a local perspective useful when comparing homes."] },
+      { title: "Look for the features that simplify life", pills: ["Parking", "Storage", "Cooling"], paragraphs: ["During a tour, pay attention to the features that support daily ease: parking proximity, kitchen storage, laundry, natural light, airflow, cooling, and any lanai or outdoor area.", "Hawaii Military Realty can help you discover current Ewa Beach condos and similar rentals that match the way you want to live." ] }
+    ],
+    faq: { eyebrow: "Ewa Beach Condos", heading: "Two-bedroom condo questions", intro: "A few reasons this home style remains popular in Ewa Beach.", items: [ { question: "Who is a two-bedroom condo best for?", answer: "It can suit couples, small families, roommates, and remote workers who value a flexible second room." }, { question: "Why is one and a half baths useful?", answer: "The extra half bath supports guests and busy routines while keeping the full bathroom more private." }, { question: "What features matter most in a condo?", answer: "Consider the layout, storage, parking, cooling, laundry, outdoor space, and proximity to the places you visit regularly." } ] },
+    cta: buildPageCta("Find Ewa Beach condos like this", "Contact Hawaii Military Realty to learn about current two-bedroom condos and other rentals in Ewa Beach.")
   },
   "oahu-available-rental-properties/3-bedroom-2-bathroom-townhouse-in-mililani-mauka.html": {
     description: "Use this Mililani Mauka 3-bedroom townhouse rental guide to verify availability, lease costs, parking, community rules, schools, hazards, and commute fit.",
@@ -3827,7 +3895,22 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         { question: "How should I check hazards for a Mililani Mauka address?", answer: "Search the exact address in Honolulu's Oʻahu Hazard Explorer, ask about prior incidents and emergency access, and discuss address-specific coverage with an insurer. Official mapping is an initial screen and does not guarantee a property is free from hazards." }
       ]
     },
-    cta: buildPageCta("Compare current Mililani Mauka rentals", "Share your move date, monthly budget, vehicles, pets, accessibility and school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, rules, layouts, and daily fit before you apply.")
+    cta: buildPageCta("Compare current Mililani Mauka rentals", "Share your move date, monthly budget, vehicles, pets, accessibility and school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, rules, layouts, and daily fit before you apply."),
+    description: "Explore the family-friendly setting and flexible living space of three-bedroom, two-bath townhouses in Mililani Mauka.",
+    heroEyebrow: "Mililani Mauka Townhouse Living",
+    heroIntro: "A three-bedroom, two-bath townhouse in Mililani Mauka brings adaptable space together with the established community feel of Central Oahu.",
+    introEyebrow: "Central Oahu Rentals",
+    introHeading: "Townhouse living in Mililani Mauka",
+    introLead: "Three bedrooms and two baths create room for the routines that make a house feel like home—from busy mornings to quiet evenings.",
+    intro: ["Mililani Mauka is known for its planned community setting, green spaces, and Central Oahu location. A three-bedroom townhouse can provide a comfortable home base for families, roommates, remote workers, and anyone who needs flexible rooms without the scale of a detached home.", "Two full bathrooms add practical ease when several people share the home. Combined with thoughtful bedroom placement, storage, laundry, parking, and cooling, the layout can support a wide range of routines over time.", "The community's Central Oahu position is also valuable for people whose week includes Schofield Barracks, Wheeler Army Airfield, schools, shopping, or travel toward Honolulu. Each townhouse offers a distinct balance of space, community character, and everyday access."],
+    sidebar: { eyebrow: "Best Fit", heading: "Flexible Central Oahu living", paragraphs: ["A three-bedroom, two-bath layout works well for households that want space to grow, work from home, host visitors, or give everyone a little more privacy.", "Mililani Mauka appeals to renters who appreciate a residential community with convenient connections to Central Oahu destinations."], pills: ["3 Bedrooms", "2 Bathrooms", "Townhouse", "Mililani Mauka", "Central Oahu"] },
+    sections: [
+      { title: "Give every room a purpose", pills: ["Family", "Office", "Guests"], paragraphs: ["The third bedroom can be the difference between a home that simply fits and one that supports your lifestyle. It can become a dedicated office, nursery, guest room, fitness space, or a quiet retreat for a roommate or family member.", "When touring townhouses, notice how bedroom placement, closet space, bathroom access, laundry, and stairs fit the people who will use the home each day."] },
+      { title: "Enjoy Mililani Mauka's community feel", pills: ["Parks", "Neighborhood", "Amenities"], paragraphs: ["Mililani Mauka offers the orderly, residential feeling many households seek in Central Oahu. Community spaces, tree-lined streets, and nearby services contribute to a routine that feels connected without being overly busy.", "Townhouse communities can offer a welcome sense of place, where the home and neighborhood work together to support daily life and time outdoors."] },
+      { title: "Connect easily across Central Oahu", pills: ["Schofield", "Wheeler", "Honolulu"], paragraphs: ["Central Oahu location is part of Mililani Mauka's appeal. The right home can support practical trips to work, school, shopping, medical appointments, recreation, and the island destinations your household visits most.", "Hawaii Military Realty can help you explore current townhouses and rentals like this in Mililani Mauka and nearby Central Oahu communities." ] }
+    ],
+    faq: { eyebrow: "Mililani Mauka Townhouses", heading: "What makes this home style appealing", intro: "A closer look at the benefits of a three-bedroom, two-bath townhouse in Central Oahu.", items: [ { question: "Who benefits from three bedrooms and two baths?", answer: "Families, roommates, remote workers, and frequent hosts appreciate the flexibility and privacy this layout can provide." }, { question: "Why consider Mililani Mauka?", answer: "Its planned community character, Central Oahu location, and convenient access to daily destinations make it a popular place to live." }, { question: "What should I focus on during a townhouse tour?", answer: "Look at the flow between living and bedroom spaces, parking, storage, laundry, cooling, stairs, and how the home supports your everyday routines." } ] },
+    cta: buildPageCta("Find Mililani Mauka townhouses like this", "Contact Hawaii Military Realty to learn about current three-bedroom townhouses and other Central Oahu rentals.")
   },
   "oahu-available-rental-properties/4-br-3-ba-rental-in-kapolei.html": {
     description: "Use this Kapolei 4-bedroom home rental guide to verify availability, total cost, layout, parking, yard duties, schools, hazards, and commute fit.",
@@ -3906,7 +3989,22 @@ const PROPERTY_CONTENT_EXPANSIONS = {
         { question: "How should I check hazards for the house?", answer: "Search the exact address in Honolulu's Oʻahu Hazard Explorer, ask about prior incidents and emergency access, and discuss address-specific coverage with an insurer. Official mapping is an initial screen and does not guarantee a home is free from hazards." }
       ]
     },
-    cta: buildPageCta("Compare current 4-bedroom Kapolei rentals", "Share your move date, monthly budget, vehicles, pets, accessibility and school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, layouts, upkeep, total cost, and daily fit before you apply.")
+    cta: buildPageCta("Compare current 4-bedroom Kapolei rentals", "Share your move date, monthly budget, vehicles, pets, accessibility and school needs, and exact duty or work destination. We can confirm current options and help you compare written terms, layouts, upkeep, total cost, and daily fit before you apply."),
+    description: "Explore the space, versatility, and West Oahu lifestyle of four-bedroom, three-bath single-family homes in Kapolei.",
+    heroEyebrow: "Kapolei Single-Family Living",
+    heroIntro: "A four-bedroom, three-bath home in Kapolei offers generous living space for family life, guests, work, and the everyday freedom of a detached West Oahu home.",
+    introEyebrow: "Kapolei Rentals",
+    introHeading: "A spacious home base in Kapolei",
+    introLead: "Four bedrooms and three bathrooms give a household room to spread out while keeping everyday life connected.",
+    intro: ["Kapolei is the urban center of West Oahu, bringing homes, services, shopping, recreation, and employment into one growing area. A detached four-bedroom home is a natural match for households that need both generous indoor space and a more independent home setting.", "The flexibility of four bedrooms changes how a home can serve its residents. Separate rooms can support children, a home office, visiting family, multigenerational living, or dedicated hobby space. Three bathrooms can make busy mornings and shared schedules much easier.", "A single-family home also invites a close look at the spaces beyond the bedrooms: driveway and garage capacity, storage, laundry, yard space, kitchen flow, cooling, and the nearby destinations that shape the week."],
+    sidebar: { eyebrow: "Best Fit", heading: "Room for a full household routine", paragraphs: ["This home style can be especially appealing for larger families, multigenerational households, roommates who value privacy, and anyone who needs room for work or guests.", "Kapolei's mix of amenities and West Oahu location makes it a practical place to explore when space, access, and community all matter."], pills: ["4 Bedrooms", "3 Bathrooms", "Single-Family Home", "Kapolei", "West Oahu"] },
+    sections: [
+      { title: "Use the extra space intentionally", pills: ["Family", "Office", "Guests"], paragraphs: ["A fourth bedroom gives a household flexibility that is hard to replace. It can be a home office, playroom, guest suite, fitness room, or a quiet retreat, allowing shared spaces to stay focused on gathering and relaxing.", "Three bathrooms support fuller schedules with less congestion. Pay attention to where each bathroom sits in relation to bedrooms, living areas, and any downstairs space to see how naturally the plan supports your household."] },
+      { title: "Enjoy the advantages of a detached home", pills: ["Yard", "Parking", "Storage"], paragraphs: ["Single-family living often brings more control over outdoor space, storage, parking, and daily arrivals and departures. A yard can become a place for pets, play, gardening, grilling, or simply spending more time outside.", "The best layouts connect kitchen, living, and outdoor areas in a way that feels effortless for the way you host, relax, and move through the home."] },
+      { title: "Build a West Oahu routine around Kapolei", pills: ["Shopping", "Commute", "Recreation"], paragraphs: ["Kapolei places residents near a broad range of West Oahu destinations. The community's mix of retail, services, parks, and nearby neighborhoods helps make everyday errands and weekends feel manageable.", "Hawaii Military Realty can help you find current four-bedroom homes and rentals like this in Kapolei and neighboring West Oahu communities." ] }
+    ],
+    faq: { eyebrow: "Kapolei Four-Bedroom Homes", heading: "Questions about this home style", intro: "Key reasons families and larger households explore detached homes in Kapolei.", items: [ { question: "Who is a four-bedroom home best for?", answer: "It can suit larger families, multigenerational households, remote workers, frequent hosts, and anyone who wants flexible space for changing needs." }, { question: "Why do three bathrooms matter?", answer: "An additional bathroom can make busy routines smoother, offer more privacy, and support guests or a household with different schedules." }, { question: "What makes Kapolei attractive?", answer: "Kapolei's West Oahu location, services, shopping, recreation, and range of housing options make it an important community to consider." } ] },
+    cta: buildPageCta("Find Kapolei homes like this", "Contact Hawaii Military Realty to learn about current four-bedroom homes and rentals in Kapolei and across West Oahu.")
   },
   "oahu-available-rental-properties/3-br-1-5-bath-with-ocean-views.html": {
     description: "Use this Oahu 3-bedroom ocean-view rental guide to verify availability, view quality, total cost, layout, parking, commute, schools, and hazards.",
@@ -4855,24 +4953,230 @@ const PROPERTY_CONTENT_EXPANSIONS = {
   },
 };
 
+// Historic property routes remain useful when they describe the home and community
+// a visitor is seeking, rather than the status of a past advertisement.
+function createEvergreenRentalExpansion(config) {
+  const home = config.home;
+  const area = config.area;
+
+  return {
+    description: `${home} in ${area}: layout, neighborhood, commute, community, and rental-lifestyle guidance from Hawaii Military Realty.`,
+    heroEyebrow: `${area} Rental Living`,
+    heroIntro: `Explore the lifestyle, space, and everyday considerations that make a ${home.toLowerCase()} in ${area} appealing for an Oahu move.`,
+    introEyebrow: "Home and Community",
+    introHeading: `Living well in a ${home.toLowerCase()} in ${area}`,
+    introLead: `The best ${home.toLowerCase()} fit comes from the way it supports your household, your routines, and life in ${area}.`,
+    intro: [
+      `${config.opening} A well-planned ${home.toLowerCase()} can give a household room to settle in, host friends or family, and establish a comfortable Oahu routine.`,
+      `Start with the daily experience in a ${home.toLowerCase()}: bedroom placement, bathroom access, storage, kitchen flow, cooling, parking, and the path from the door to the places you visit most. Those details shape how a home feels long after move-in day.`,
+      `${area} is part of a broader Oahu lifestyle decision for a ${home.toLowerCase()}. Consider work or duty travel, schools and childcare, groceries, recreation, outdoor time, and the pace of the neighborhood together when choosing the right home.`
+    ],
+    sidebar: {
+      eyebrow: "A Strong Match For",
+      heading: `${home} households`,
+      paragraphs: [
+        config.fit,
+        `Hawaii Military Realty can help narrow the ${home.toLowerCase()} search around the features that matter most to your household, from room arrangement and parking to commute priorities and ${area} community character.`
+      ],
+      pills: [home, area, "Oahu Living", "Community Fit"]
+    },
+    sections: [
+      {
+        title: `Make the ${home.toLowerCase()} work for your routine`,
+        pills: ["Layout", "Storage", "Comfort", "Parking"],
+        paragraphs: [
+          `In a ${home.toLowerCase()}, give each room a purpose before comparing homes: sleeping, remote work, guests, hobbies, or storage. Notice how bathrooms serve busy mornings, where laundry and everyday supplies live, and whether shared spaces let the household spend time together comfortably.`,
+          `Parking, cooling, outdoor access, and storage are equally practical parts of a ${home.toLowerCase()} in ${area}. A home that supports groceries, beach gear, school mornings, and returning from work without friction is often the one that continues to feel right.`
+        ]
+      },
+      {
+        title: `Connect the home to ${area} life`,
+        pills: ["Commute", "Schools", "Errands", "Recreation"],
+        paragraphs: [
+          `${config.areaDetail} Drive the routes that will anchor your week, including work or duty destinations, school or childcare, medical appointments, and errands.`,
+          `For families considering public schools near a ${home.toLowerCase()} in ${area}, use the Hawaii Department of Education's SchoolSite Locator with the home address and contact the school for the most current information. Planning around the actual route and neighborhood helps turn a housing search into a confident move.`
+        ]
+      },
+      {
+        title: "Compare the complete rental experience",
+        pills: ["Monthly Cost", "Community Rules", "Move-In", "Support"],
+        paragraphs: [
+          `Compare ${home.toLowerCase()} options with a complete monthly picture that includes rent, utilities, internet, renters insurance, transportation, parking, pet needs, and the features that improve everyday life. Clear written lease terms and community rules help every member of the household know what to expect.`,
+          `Hawaii Military Realty brings ${home.toLowerCase()} and ${area} context to the comparison: which areas fit a commute, how different home styles support a household, and where to look for homes with the features you value most.`
+        ]
+      },
+      {
+        title: `Picture your routine in ${area}`,
+        pills: ["Weekdays", "Weekends", "Community", "Lifestyle"],
+        paragraphs: [
+          `A ${home.toLowerCase()} becomes a strong ${area} fit when it supports both the busy parts of the week and the ways you want to spend your free time. Think about where the household will gather, how you will use nearby parks and beaches, and which local conveniences make the area feel like home.`,
+          `The right ${home.toLowerCase()} should make room for your priorities today while giving your household enough flexibility for what comes next.`
+        ]
+      }
+    ],
+    faq: {
+      eyebrow: `${area} Rental FAQs`,
+      heading: `Choosing a ${home.toLowerCase()} in ${area}`,
+      intro: `A few practical questions can help focus a ${home.toLowerCase()} search around the ${area} lifestyle you want.`,
+      items: [
+        { question: `Who benefits from a ${home.toLowerCase()} in ${area}?`, answer: config.fit },
+        { question: "What should I look for in the layout?", answer: `Look at bedroom placement, bathroom access, storage, kitchen flow, cooling, parking, and the way shared spaces in a ${home.toLowerCase()} support the household's normal routine.` },
+        { question: "How should I evaluate the neighborhood?", answer: `Consider the ${area} commute, school and childcare needs, errands, recreation, and the daily route between home and the places your household visits most.` },
+        { question: "What belongs in a rental budget?", answer: `Consider the complete monthly picture for a ${home.toLowerCase()}: housing cost, utilities, internet, renters insurance, transportation, parking, pet needs, and move-in expenses.` }
+      ]
+    },
+    cta: buildPageCta(`Explore ${home.toLowerCase()} options in ${area}`, `Contact Hawaii Military Realty to learn about current homes and rentals like this in ${area}. Share your move timeline, household needs, budget, vehicles, pets, and work or duty destination for tailored local guidance.`)
+  };
+}
+
+PROPERTY_CONTENT_EXPANSIONS["oahu-available-rental-properties/4-bedroom-2-5-bathrooms-1538-sf-in-ewa-beach-2500-per-month.html"] = createEvergreenRentalExpansion({
+  home: "4-bedroom, 2.5-bath Ewa Beach home",
+  area: "Ewa Beach",
+  opening: "Four bedrooms and two and a half baths create flexible space for a growing family, a home office, visitors, or a household with distinct schedules.",
+  fit: "A four-bedroom Ewa Beach home can suit families, multigenerational households, and renters who value separate work, guest, and sleeping space.",
+  areaDetail: "Ewa Beach offers beach access, neighborhood parks, and a West Oahu setting that many residents appreciate for its community feel and connection to the island's major destinations."
+});
+PROPERTY_CONTENT_EXPANSIONS["oahu-available-rental-properties/for-rent-5-bedroom-executive-home-with-3-car-garage-in-ocean-pointe.html"] = createEvergreenRentalExpansion({
+  home: "5-bedroom Ocean Pointe home with a 3-car garage",
+  area: "Ocean Pointe",
+  opening: "Five bedrooms and generous garage space can create a practical base for a larger household, multigenerational living, remote work, guests, and the equipment that comes with island life.",
+  fit: "This home style is especially appealing to larger households that value flexible rooms, vehicle space, and a clear separation between shared areas and private space.",
+  areaDetail: "Ocean Pointe combines a planned Ewa Beach community setting with neighborhood paths, parks, and convenient access to shopping, dining, and the wider West Oahu area."
+});
+PROPERTY_CONTENT_EXPANSIONS["oahu-available-rental-properties/for-rent-2-br-2-bath-condominium-in-mililani-mauka.html"] = createEvergreenRentalExpansion({
+  home: "2-bedroom, 2-bath Mililani Mauka condominium",
+  area: "Mililani Mauka",
+  opening: "A two-bedroom, two-bath condominium balances a manageable footprint with useful flexibility for a second bedroom, home office, roommate arrangement, or visiting family.",
+  fit: "This condo style can work well for couples, small families, roommates, and anyone who values a second full bath with lower-maintenance living.",
+  areaDetail: "Mililani Mauka is valued for its Central Oahu location, neighborhood amenities, and access to everyday services, recreation, and major commuting routes."
+});
+PROPERTY_CONTENT_EXPANSIONS["oahu-available-rental-properties/4-bedroom-3-bath-single-family-home-2060-sf.html"] = createEvergreenRentalExpansion({
+  home: "4-bedroom, 3-bath Oahu single-family home",
+  area: "Oahu",
+  opening: "A four-bedroom, three-bath single-family home gives a larger household room to create private spaces alongside comfortable shared living.",
+  fit: "This home style fits families, multigenerational households, and renters who need a dedicated office, guest room, or flexible spaces for changing routines.",
+  areaDetail: "Across Oahu, the right neighborhood depends on the daily balance of work or duty travel, schools, recreation, services, and the kind of community experience your household wants."
+});
+PROPERTY_CONTENT_EXPANSIONS["oahu-available-rental-properties/2-bedroom-2-bathroom-condo-in-mililani.html"] = createEvergreenRentalExpansion({
+  home: "2-bedroom, 2-bath Mililani condominium",
+  area: "Mililani",
+  opening: "A two-bedroom, two-bath condominium gives a household welcome flexibility for an office, guests, roommates, or a growing family while keeping maintenance manageable.",
+  fit: "This home style is a good match for couples, small families, and roommates who value separate rooms, two bathrooms, and a Central Oahu home base.",
+  areaDetail: "Mililani offers a Central Oahu setting with established neighborhoods, everyday conveniences, community amenities, and access to major island routes."
+});
+PROPERTY_CONTENT_EXPANSIONS["oahu-available-rental-properties/2-bedroom-1-5-bath-condo-in-ewa-beach-1500-per-month.html"] = createEvergreenRentalExpansion({
+  home: "2-bedroom, 1.5-bath Ewa Beach condominium",
+  area: "Ewa Beach",
+  opening: "A two-bedroom condominium with a full and half bath can offer a practical setup for roommates, a small family, or a dedicated work-from-home room.",
+  fit: "This condo style can suit renters who value a second room, a guest-friendly half bath, and a lower-maintenance home near Ewa Beach's parks, shoreline, and services.",
+  areaDetail: "Ewa Beach blends a relaxed coastal setting with West Oahu conveniences, making neighborhood rhythm, commute preferences, and outdoor lifestyle important parts of the search."
+});
+
 CONTENT.evergreenPages = EVERGREEN_PAGE_DEFS.map(buildEvergreenPage).map(function (page) {
   return applyPageExpansion(page, EVERGREEN_CONTENT_EXPANSIONS[page.key]);
 });
 CONTENT.propertyPages = PROPERTY_PAGE_DEFS.map(createPropertyPage)
   .map(function (page) {
     return applyPageExpansion(page, PROPERTY_CONTENT_EXPANSIONS[page.path]);
-  })
-  .map(function (page) {
-    return {
-      ...page,
-      cta: {
-        ...page.cta,
-        subtitle:
-          page.cta.subtitle +
-          " If the home that brought you here is not currently offered, we can look for a similar property that fits your orders or move timeline and stays within your comfortable budget.",
-      },
-    };
   });
+
+// These legacy property URLs are enduring neighborhood resources, not expired-listing notices.
+// Keep the discussion centered on the home type and the way it supports everyday Oahu living.
+function refineRentalBackfillPage(path, details) {
+  const page = CONTENT.propertyPages.find(function (candidate) {
+    return candidate.path === path;
+  });
+
+  if (!page) return;
+
+  page.description = details.description;
+  page.keywords = uniqueKeywords([page.keywords, details.keywords]);
+  page.hero = {
+    ...page.hero,
+    eyebrow: details.eyebrow,
+    intro: details.heroIntro,
+  };
+  page.introEyebrow = details.introEyebrow;
+  page.introHeading = details.introHeading;
+  page.introLead = details.introLead;
+  page.intro = details.intro;
+  page.sidebar = details.sidebar;
+  page.sections = details.sections;
+  page.faq = details.faq;
+  page.cta = buildPageCta(details.ctaTitle, details.ctaText);
+}
+
+refineRentalBackfillPage("oahu-available-rental-properties/3-br-1-5-bath-with-ocean-views.html", {
+  description: "Explore what makes a three-bedroom Oahu home with ocean views appealing, from indoor-outdoor living and natural light to layout, privacy, and location.",
+  keywords: ["Oahu ocean-view homes", "three bedroom Oahu home", "Oahu coastal living"],
+  eyebrow: "Oahu Coastal Living",
+  heroIntro: "A three-bedroom home with ocean views brings together flexible living space and one of Oahu's most memorable everyday settings.",
+  introEyebrow: "Ocean-View Home Living",
+  introHeading: "Three-bedroom living with an Oahu ocean view",
+  introLead: "The best ocean-view home balances its outlook with a comfortable layout, privacy, and a location that works for the household's daily rhythm.",
+  intro: [
+    "Ocean views can transform ordinary routines: morning coffee near a bright window, a lanai that becomes a favorite gathering place, and living areas that feel connected to the island's landscape. The character of the view matters just as much as its presence, from wide coastal horizons to a more intimate glimpse framed by neighborhood greenery.",
+    "Three bedrooms create useful flexibility for family, guests, a home office, or a dedicated hobby room. A one-and-a-half-bath layout works especially well when the household has a clear morning routine and values a separate guest bathroom near the main living area.",
+    "Homes with an outlook invite attention to light, breeze, shade, and privacy. Window placement, lanai orientation, cooling, and the relationship between indoor rooms and outdoor space help determine how naturally the home supports relaxing, entertaining, and recharging at the end of the day."
+  ],
+  sidebar: { eyebrow: "A Natural Fit", heading: "Who enjoys this home style", paragraphs: ["This home style suits households that want distinct bedroom space without giving up the pleasure of an open, view-oriented living area.", "It is particularly appealing to buyers and renters who see a lanai, natural light, and a connection to the water as part of daily life rather than an occasional luxury."], pills: ["3 Bedrooms", "1.5 Baths", "Ocean Views", "Oahu Living"] },
+  sections: [
+    { title: "Make the view part of daily life", pills: ["Lanai", "Natural Light", "Breezes"], paragraphs: ["A great view is most enjoyable from the places people actually use. Living rooms, kitchens, primary bedrooms, and lanais each create a different relationship to the horizon, changing how the home feels throughout the day.", "On Oahu, thoughtful shading, airflow, and window treatments help maintain comfort while preserving the connection to the outdoors. The result can be a home that feels bright and open while still offering the privacy needed for quiet evenings."] },
+    { title: "Use three bedrooms with intention", pills: ["Family", "Guests", "Home Office"], paragraphs: ["A third bedroom can provide welcome separation between sleep, work, and shared living. It may serve a child, visiting family, remote work, fitness equipment, or simply give a smaller household room to grow.", "With one full bath and a half bath, placement matters. Homes that keep the half bath near the common areas often make entertaining easier while preserving the full bathroom as a more private space."] },
+    { title: "Choose an Oahu setting that fits", pills: ["Neighborhood", "Routine", "Lifestyle"], paragraphs: ["Every Oahu community has its own pace, road connections, and relationship to the coastline. Matching the home with the places you regularly go—work, school, the beach, shopping, and favorite restaurants—makes the view feel like one part of a lifestyle that truly works.", "Hawaii Military Realty can help narrow the search around the home features and island routines that matter most to your household."] }
+  ],
+  faq: { eyebrow: "Ocean-View Home Questions", heading: "Thinking about life with a view", intro: "A few useful ways to picture this Oahu home style.", items: [
+    { question: "Who benefits from a three-bedroom layout?", answer: "Families, roommates, remote workers, and anyone who values a flexible extra room can make strong use of three separate bedrooms." },
+    { question: "Why does a lanai matter in an ocean-view home?", answer: "A lanai extends the living area outdoors and creates an easy place to enjoy breezes, meals, conversation, and the changing light over the water." },
+    { question: "What makes an ocean-view home comfortable year-round?", answer: "Good airflow, shade, cooling, practical window coverings, and a layout that puts the view near the home's most-used spaces all make a meaningful difference." }
+  ] },
+  ctaTitle: "Find an Oahu home with the view and layout you want",
+  ctaText: "Contact Hawaii Military Realty to learn about current Oahu homes and rentals with ocean views, flexible bedroom space, and a setting that fits your lifestyle."
+});
+
+refineRentalBackfillPage("oahu-available-rental-properties/2-br-2-ba-with-2-car-garage-in-ewa-beach.html", {
+  description: "Discover the appeal of a two-bedroom, two-bath Ewa Beach home with a two-car garage, including flexible living, storage, and everyday West Oahu convenience.", keywords: ["Ewa Beach home with garage", "two bedroom Ewa Beach rental", "Ewa Beach two car garage"], eyebrow: "Ewa Beach Home Living", heroIntro: "A two-bedroom, two-bath home with a two-car garage offers a practical, comfortable base for life in Ewa Beach.", introEyebrow: "Garage-Forward Living", introHeading: "Two bedrooms, two baths, and room for the things that move with you", introLead: "This Ewa Beach home style pairs a manageable interior with the storage, parking, and easy arrival that a garage can bring.", intro: ["Two bedrooms and two bathrooms create a comfortable balance of privacy and shared living. The second bedroom can become a guest room, office, nursery, or dedicated space for a changing household.", "A two-car garage is more than a place to park. It can simplify grocery runs, protect beach and sports equipment, provide space for bikes and tools, and make the transition from car to home easier in changing weather.", "Ewa Beach adds a relaxed West Oahu setting with beaches, neighborhood services, and access to the broader Kapolei and Honolulu employment areas."], sidebar: { eyebrow: "A Practical Match", heading: "Who enjoys this home style", paragraphs: ["This layout is ideal for a couple, small family, roommates, or a military household that values separate bathrooms and a useful garage.", "It also works well for anyone who wants room for vehicles and island gear without moving into a larger home."], pills: ["2 Bedrooms", "2 Baths", "2-Car Garage", "Ewa Beach"] }, sections: [{ title: "Let the garage do more", pills: ["Parking", "Storage", "Gear"], paragraphs: ["A garage gives vehicles a reliable home and creates welcome storage for boards, bicycles, strollers, tools, and seasonal gear. It can make an everyday home feel considerably more organized.", "Direct access from garage to home is especially useful for bringing in groceries, school bags, and beach equipment after a full day."] }, { title: "Enjoy a flexible two-bedroom plan", pills: ["Privacy", "Office", "Guests"], paragraphs: ["Two full baths help each bedroom feel more independent, which is valuable for roommates, guests, or a household with different schedules.", "The additional bedroom can adapt as needs change, allowing the home to support work, family, and recreation without feeling overbuilt."] }, { title: "Settle into Ewa Beach", pills: ["Beaches", "West Oahu", "Community"], paragraphs: ["Ewa Beach is known for its coastal character and a residential pace that appeals to people who want space to come home to. Nearby shopping, dining, parks, and beaches make it easy to build a familiar weekly routine.", "Hawaii Military Realty can help you compare Ewa Beach homes and rentals with garages, the right bedroom count, and the features that support your move."] }], faq: { eyebrow: "Ewa Beach Home Questions", heading: "Considering this home style", intro: "A few common reasons this layout remains popular.", items: [{ question: "Why choose two full bathrooms?", answer: "Two baths add privacy and help the home work smoothly for couples, roommates, families, and guests." }, { question: "What can a two-car garage add to island living?", answer: "It provides protected parking and a convenient place for beach equipment, bikes, tools, and the supplies that support an active Oahu lifestyle." }, { question: "Who is Ewa Beach a good fit for?", answer: "Ewa Beach appeals to households seeking a coastal West Oahu community with a relaxed residential feel and practical access to everyday services." }] }, ctaTitle: "Explore Ewa Beach homes with garages", ctaText: "Contact Hawaii Military Realty for current Ewa Beach homes and rentals like this, including two-bedroom options with practical garage space."
+});
+
+refineRentalBackfillPage("oahu-available-rental-properties/4-bedroom-3-bathroom-single-family-home-in-ewa-beach.html", {
+  description: "Learn why a four-bedroom, three-bath single-family home in Ewa Beach offers room for family life, guests, work, and an outdoor-oriented West Oahu lifestyle.", keywords: ["four bedroom Ewa Beach home", "Ewa Beach single family home", "large Ewa Beach rental"], eyebrow: "Ewa Beach Family Living", heroIntro: "A four-bedroom, three-bath single-family home gives an Ewa Beach household room to spread out, gather, and adapt.", introEyebrow: "Space for Everyday Life", introHeading: "A four-bedroom Ewa Beach home built for flexibility", introLead: "Larger single-family homes make it easier to give each person space while keeping shared areas at the center of the household.", intro: ["Four bedrooms can accommodate a growing family, multigenerational living, guests, dedicated work space, or a mix of all four. That flexibility is often the defining advantage of a larger home.", "Three bathrooms ease the rhythm of busy mornings and make it more comfortable to host friends and family. A thoughtful plan often gives the household both private retreats and places to spend time together.", "In Ewa Beach, a single-family home can pair that interior room with an outdoor-oriented lifestyle, from weekend gatherings to time at local beaches and parks."], sidebar: { eyebrow: "Room to Grow", heading: "Who enjoys this home style", paragraphs: ["This home style suits households that want multiple true bedrooms and enough bathrooms for a busy shared routine.", "It is also a strong option for people combining family life with remote work, frequent guests, or a need for flexible rooms."], pills: ["4 Bedrooms", "3 Baths", "Single-Family Home", "Ewa Beach"] }, sections: [{ title: "Create space for everyone", pills: ["Bedrooms", "Work", "Guests"], paragraphs: ["With four bedrooms, a home can give children, guests, and work life distinct places without asking the main living room to do everything.", "The extra room can evolve over time, making the home useful through new assignments, family changes, and changing work arrangements."] }, { title: "Make shared routines easier", pills: ["3 Baths", "Gathering", "Privacy"], paragraphs: ["Three bathrooms reduce the pressure of busy mornings and help guests feel comfortably accommodated. They can also create more separation between bedroom zones and shared living areas.", "A generous common area brings the household together for meals, movie nights, and the easy entertaining that makes a home memorable."] }, { title: "Enjoy an Ewa Beach home base", pills: ["West Oahu", "Outdoor Living", "Community"], paragraphs: ["Ewa Beach offers a distinctly coastal way of life, with beaches, parks, schools, and West Oahu services all shaping the rhythm of the community.", "Hawaii Military Realty can help connect you with current Ewa Beach homes and rentals that offer the room, setting, and lifestyle you are looking for."] }], faq: { eyebrow: "Four-Bedroom Home Questions", heading: "Why larger homes remain appealing", intro: "The value of a larger Ewa Beach home comes from the way it can adapt to real life.", items: [{ question: "Who benefits from four bedrooms?", answer: "Families, multigenerational households, remote workers, and frequent hosts all benefit from having separate, flexible rooms." }, { question: "Why are three bathrooms useful?", answer: "Three bathrooms make shared routines more comfortable and give both household members and guests more privacy." }, { question: "What defines single-family living in Ewa Beach?", answer: "It combines more personal space with a neighborhood-oriented, coastal West Oahu lifestyle." }] }, ctaTitle: "Find a spacious Ewa Beach home", ctaText: "Contact Hawaii Military Realty to learn about current four-bedroom homes and rentals like this in Ewa Beach."
+});
+
+refineRentalBackfillPage("oahu-available-rental-properties/3-bedroom-2-5-bathroom-in-ocean-pointe.html", {
+  description: "Explore the everyday appeal of a three-bedroom, two-and-a-half-bath home in Ocean Pointe, from flexible living space to the connected Ewa Beach lifestyle.", keywords: ["Ocean Pointe three bedroom home", "Ocean Pointe rental", "Ewa Beach 2.5 bath home"], eyebrow: "Ocean Pointe Living", heroIntro: "A three-bedroom, two-and-a-half-bath home is a versatile fit for the relaxed, connected lifestyle Ocean Pointe offers.", introEyebrow: "Ocean Pointe Home Living", introHeading: "Three-bedroom living in Ocean Pointe", introLead: "This home style brings together room for daily routines, a convenient guest bath, and a neighborhood that makes it easy to enjoy West Oahu.", intro: ["Three bedrooms give a household options: room for family, visitors, remote work, hobbies, or a combination that changes over time. The layout supports both shared living and a sense of privacy.", "Two full bathrooms plus a half bath are especially helpful when mornings are busy or friends are over. The half bath keeps everyday hosting simple while the full baths serve the bedroom areas.", "Ocean Pointe is one of Ewa Beach's best-known planned communities, valued for its residential feel, neighborhood amenities, and access to beaches, parks, shopping, and the broader West Oahu area."], sidebar: { eyebrow: "A Great Everyday Fit", heading: "Who enjoys this home style", paragraphs: ["This layout suits families, roommates, and remote workers who want three distinct rooms and a home that handles shared routines comfortably.", "It is a natural fit for anyone drawn to Ocean Pointe's neighborhood feel and Ewa Beach's coastal lifestyle."], pills: ["3 Bedrooms", "2.5 Baths", "Ocean Pointe", "Ewa Beach"] }, sections: [{ title: "Make room for changing needs", pills: ["Family", "Office", "Guests"], paragraphs: ["A third bedroom lets a home respond to real life: a nursery today can become an office, a guest room, or a creative space later on.", "That flexibility helps a household enjoy the home longer and gives every room a clear purpose."] }, { title: "Enjoy a practical bathroom layout", pills: ["2.5 Baths", "Hosting", "Privacy"], paragraphs: ["Two full bathrooms give bedroom areas a comfortable rhythm, while a half bath near the living space makes guests and everyday entertaining feel easier.", "The combination offers a useful balance of privacy and convenience without adding unnecessary complexity to the home."] }, { title: "Connect with Ocean Pointe", pills: ["Parks", "Beaches", "West Oahu"], paragraphs: ["Ocean Pointe's residential streets and nearby amenities create a welcoming setting for walks, park time, and a routine close to the beach. It is a community where home life and the outdoors naturally overlap.", "Contact Hawaii Military Realty for insight into Ocean Pointe homes and rentals that match your preferred layout, move timeline, and West Oahu lifestyle."] }], faq: { eyebrow: "Ocean Pointe Home Questions", heading: "Why this layout works", intro: "Three bedrooms and two-and-a-half baths offer an adaptable foundation for daily life in Ocean Pointe.", items: [{ question: "How can a third bedroom be used?", answer: "It can serve as a bedroom, office, guest space, nursery, fitness room, or a flexible combination as household needs change." }, { question: "What is the advantage of a half bath?", answer: "A half bath near shared living spaces makes hosting and daily routines easier while keeping the full bathrooms more private." }, { question: "What draws people to Ocean Pointe?", answer: "Ocean Pointe combines a neighborhood-oriented setting with convenient access to Ewa Beach amenities, parks, beaches, and West Oahu destinations." }] }, ctaTitle: "Explore Ocean Pointe homes and rentals", ctaText: "Contact Hawaii Military Realty to learn about current homes and rentals like this in Ocean Pointe and Ewa Beach."
+});
+
+refineRentalBackfillPage("oahu-available-rental-properties/for-rent-2-br-2-ba-condominium-in-mililani-hawaii.html", {
+  description: "Discover the appeal of condominium living in Mililani, with a flexible two-bedroom, two-bath layout and convenient Central Oahu lifestyle.", keywords: ["Mililani condominium living", "two bedroom Mililani condo", "Central Oahu condo"], eyebrow: "Mililani Condominium Living", heroIntro: "A two-bedroom, two-bath condominium offers an easy-to-manage home base in the heart of Central Oahu.", introEyebrow: "Central Oahu Condo Living", introHeading: "Comfortable condominium living in Mililani", introLead: "Mililani condos pair a practical footprint with community convenience, making them appealing for households that want a connected Central Oahu location.", intro: ["Two bedrooms and two bathrooms give a condominium room to function as a primary home, a shared household, or a blend of living and remote work. The second bedroom can adjust as priorities change.", "Condominium living is especially appealing for people who prefer a streamlined home base and the sense of order that comes with a managed community. It can put more attention on daily life and less on exterior upkeep.", "Mililani's Central Oahu location places residents near neighborhood shopping, parks, schools, and key island destinations, creating a comfortable rhythm for workdays and weekends."], sidebar: { eyebrow: "Central Oahu Fit", heading: "Who enjoys this home style", paragraphs: ["This condo style works well for couples, small families, roommates, and remote workers who want two private rooms and a manageable footprint.", "It is particularly appealing to households that value Mililani's established community feel and Central Oahu location."], pills: ["2 Bedrooms", "2 Baths", "Condominium", "Mililani"] }, sections: [{ title: "Enjoy a flexible two-bedroom home", pills: ["Privacy", "Office", "Guests"], paragraphs: ["A two-bedroom plan gives each household member space to settle in while preserving flexibility for an office, guests, or a hobby room.", "Two bathrooms make shared mornings more comfortable and allow the home to work well for roommates as well as families."] }, { title: "Appreciate condominium simplicity", pills: ["Community", "Low Maintenance", "Everyday Ease"], paragraphs: ["A condominium can offer a streamlined way to live, with shared community features and less exterior responsibility than a larger detached home.", "The right condo makes it easy to come home, reset, and spend more time enjoying the island and the neighborhood around you."] }, { title: "Live well in Mililani", pills: ["Central Oahu", "Parks", "Convenience"], paragraphs: ["Mililani is valued for its established neighborhoods, green spaces, shopping, and position within Central Oahu. It offers a familiar community setting with access to a wide range of daily destinations.", "Hawaii Military Realty can help you explore current Mililani condominiums and rentals that fit your preferred layout and lifestyle."] }], faq: { eyebrow: "Mililani Condo Questions", heading: "Considering condo life in Central Oahu", intro: "A few reasons Mililani condominiums remain a popular home choice.", items: [{ question: "Who is a two-bedroom condo a good fit for?", answer: "It works well for couples, small families, roommates, and remote workers who value a flexible extra room." }, { question: "Why are two bathrooms helpful in a condo?", answer: "Two bathrooms give household members more privacy and make shared routines easier." }, { question: "What makes Mililani appealing?", answer: "Mililani offers an established Central Oahu community with parks, shopping, schools, and practical access to key island destinations." }] }, ctaTitle: "Explore Mililani condominium living", ctaText: "Contact Hawaii Military Realty to learn about current Mililani condos and rentals like this in Central Oahu."
+});
+
+refineRentalBackfillPage("oahu-available-rental-properties/3-bedroom-2-5-bath-townhouse-at-fairways-edge.html", {
+  description: "Explore the appeal of a three-bedroom, two-and-a-half-bath townhouse at Fairways Edge, with flexible space and an easygoing Ewa Beach community setting.", keywords: ["Fairways Edge townhouse", "three bedroom Ewa Beach townhouse", "Ewa Beach townhome living"], eyebrow: "Fairways Edge Townhouse Living", heroIntro: "A three-bedroom, two-and-a-half-bath townhouse offers the flexible space and community feel that make Fairways Edge an appealing Ewa Beach home base.", introEyebrow: "Townhouse Living in Ewa Beach", introHeading: "A three-bedroom Fairways Edge townhouse", introLead: "Townhouse living can bring the right balance of private bedroom space, shared areas for gathering, and a connected neighborhood setting.", intro: ["Three bedrooms give a townhouse room to support family life, guests, remote work, and hobbies without sacrificing the convenience of a more manageable home footprint.", "Two full bathrooms and a half bath make the layout comfortable for shared routines. The half bath supports the main living level, while full baths provide privacy for the household's bedroom spaces.", "Fairways Edge sits within the Ewa Beach area, where residential community life, outdoor time, and access to West Oahu amenities make a townhouse an attractive option."], sidebar: { eyebrow: "Townhouse Fit", heading: "Who enjoys this home style", paragraphs: ["This style suits households that want three separate rooms and a practical bath layout in a community-oriented setting.", "It is a compelling option for people who want the room of a house with the streamlined feel of townhouse living."], pills: ["3 Bedrooms", "2.5 Baths", "Townhouse", "Fairways Edge"] }, sections: [{ title: "Make the most of a townhouse layout", pills: ["Bedrooms", "Living Space", "Flexibility"], paragraphs: ["Townhouses often separate private bedroom areas from the main gathering spaces, giving the household a natural rhythm between quiet time and connection.", "A third bedroom allows the home to change with you, whether it becomes an office, a guest room, a nursery, or a favorite creative space."] }, { title: "Enjoy everyday convenience", pills: ["2.5 Baths", "Hosting", "Routine"], paragraphs: ["A half bath near the main living area is a simple feature that makes guests and busy mornings easier. Full bathrooms support the household's private routines upstairs or near the bedroom spaces.", "The result is a home that feels ready for both ordinary weekdays and relaxed time with friends or family."] }, { title: "Discover Fairways Edge and Ewa Beach", pills: ["Community", "West Oahu", "Outdoor Living"], paragraphs: ["Fairways Edge offers a neighborhood setting within the larger Ewa Beach community, close to the parks, beaches, shopping, and services that shape West Oahu life.", "Hawaii Military Realty can help you find current Fairways Edge and Ewa Beach homes or rentals with the layout and lifestyle you want."] }], faq: { eyebrow: "Fairways Edge Townhouse Questions", heading: "Why this home style works", intro: "This townhouse layout offers practical space for a wide range of households.", items: [{ question: "Who benefits from three bedrooms in a townhouse?", answer: "Families, roommates, remote workers, and frequent hosts all benefit from having separate, flexible rooms." }, { question: "What does a half bath add?", answer: "It makes shared living areas more convenient for guests and everyday routines while preserving the privacy of full baths." }, { question: "Why choose Ewa Beach townhouse living?", answer: "It offers a community-oriented West Oahu lifestyle with a manageable home footprint and access to beaches, parks, and everyday amenities." }] }, ctaTitle: "Explore Fairways Edge townhomes", ctaText: "Contact Hawaii Military Realty to learn about current Fairways Edge and Ewa Beach homes and rentals like this."
+});
+
+CONTENT.propertyPages.forEach(function (page) {
+  if ((page.sections || []).length >= 4) return;
+
+  const homeLabel = page.hero && page.hero.heading ? page.hero.heading : page.title;
+
+  page.sections.push({
+    title: `Picture daily life in ${homeLabel}`,
+    pills: ["Lifestyle", "Routine", "Community"],
+    paragraphs: [
+      `${homeLabel} can be a strong fit when the layout, neighborhood, and nearby amenities support the way your household actually spends its timeâ€”from busy weekdays to relaxed weekends.`,
+      `Hawaii Military Realty can help you explore ${homeLabel.toLowerCase()} options, with local guidance shaped around the features and community experience you value most.`,
+      `The character of ${homeLabel.toLowerCase()} living comes from the relationship between private rooms, shared gathering spaces, storage, parking, cooling, and outdoor access. A layout that lets everyone settle into their own rhythm while still making room for meals, conversation, and island downtime can make a meaningful difference in how a home feels day after day for years to come.`,
+      `The surrounding community is part of that experience. Nearby parks, beaches, shopping, schools, dining, and routes to work or duty locations all shape the convenience and personality of ${homeLabel.toLowerCase()} life. When those details align with your household's habits, the home becomes more than a place to stayâ€”it becomes a setting that supports the way you want to live on Oahu.`,
+    ],
+  });
+
+  if (page.faq && (page.faq.items || []).length < 4) {
+    page.faq.items.push({
+      question: `How can Hawaii Military Realty help with a ${homeLabel.toLowerCase()} search?`,
+      answer: `Our agents can help connect your household priorities with ${homeLabel.toLowerCase()} options, neighborhood insight, and a clear next step for your Oahu move.`,
+    });
+  }
+});
 
 function buildPageIndex() {
   const index = Object.create(null);
@@ -5163,6 +5467,38 @@ function assignSecondPassLinks() {
 }
 
 assignSecondPassLinks();
+
+function refinePropertyRelatedLinks() {
+  CONTENT.propertyPages.forEach(function (page) {
+    page.relatedLinks = (page.relatedLinks || []).map(function (item) {
+      if (item.path === "military-real-estate-hawaii/hawaii-bases-and-barracks.html") {
+        return {
+          ...item,
+          description:
+            "Explore how Oahu installations and nearby communities shape a military household's daily routine.",
+        };
+      }
+
+      if (item.path === "contact.html") {
+        return {
+          ...item,
+          label: "Talk With Our Agents",
+          description:
+            "Tell our agents the home features, neighborhood, and lifestyle that matter most to your household.",
+        };
+      }
+
+      return {
+        ...item,
+        description: String(item.description || "")
+          .replace(/property search/gi, "home search")
+          .replace(/while screening rentals/gi, "while exploring rentals"),
+      };
+    });
+  });
+}
+
+refinePropertyRelatedLinks();
 
 
 module.exports = CONTENT;
