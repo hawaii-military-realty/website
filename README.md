@@ -29,6 +29,31 @@ Use `src/content.js` for general site content, including header and footer links
 
 The preview script rebuilds `build/` and serves it locally with an extensionless rewrite layer, so routes like `/about` and `/category/va-loan-information` resolve to `about.html` and `category/va-loan-information.html` during development.
 
+## himre.com Email Forwarding
+
+`himre.com` is to use [Forward Email](https://forwardemail.net/) for inbound, first-name agent aliases. The forwarding destinations below are the current decision. In Forward Email's aliases screen, enter these as `forward-email=<alias>:<destination>`.
+
+| Alias | Forward Email value | Destination |
+| --- | --- | --- |
+| `david@himre.com` | `forward-email=david:david@davidkucic.com` | `david@davidkucic.com` |
+| `cameron@himre.com` | `forward-email=cameron:camkucic@gmail.com` | `camkucic@gmail.com` |
+| `ashley@himre.com` | `forward-email=ashley:ashleykpayne.himre@gmail.com` | `ashleykpayne.himre@gmail.com` |
+| `brandie@himre.com` | `forward-email=brandie:brandie.martin.himre@gmail.com` | `brandie.martin.himre@gmail.com` |
+| `jim@himre.com` | `forward-email=jim:jim.pickens.himre@gmail.com` | `jim.pickens.himre@gmail.com` |
+| `tonya@himre.com` | `forward-email=tonya:tonyakucic@yahoo.com` | `tonyakucic@yahoo.com` |
+| `jeff@himre.com` | `forward-email=jeff:jeff.loyd.himre@gmail.com` | `jeff.loyd.himre@gmail.com` |
+| `tami@himre.com` | `forward-email=tami:tami.sego.himre@gmail.com` | `tami.sego.himre@gmail.com` |
+
+### Implementation and handoff
+
+1. Sign in to the organization-owned Forward Email account, add `himre.com`, and complete domain verification.
+2. In the authoritative DNS provider for `himre.com`, replace the current MX records with the exact MX records and priorities displayed in Forward Email's domain setup. Changing MX records redirects delivery for **all** `@himre.com` addresses; inventory and recreate any existing shared/business addresses before the cutover.
+3. Add the eight aliases above under **Domains → himre.com → Aliases**. Each forwarding recipient must complete Forward Email's verification request before the alias is considered operational.
+4. Add/merge the required email-authentication records. There must be only one root SPF TXT record. Forward Email documents `v=spf1 a include:spf.forwardemail.net -all`; merge any existing Google, Microsoft, CRM, website-form, or marketing sender authorizations into that single record. If sending as `@himre.com` is needed, enable Forward Email outbound SMTP and publish the dashboard-provided DKIM and DMARC records.
+5. Test every alias from an external mailbox, plus all pre-existing `@himre.com` recipients and website forms. Confirm delivery, spam-folder placement, and the intended recipient. DNS propagation may take up to 24–48 hours.
+
+Do not change website `A`, `AAAA`, or `CNAME` records as part of this work. Do not enable a catch-all alias unless someone is explicitly assigned to monitor unexpected addresses. Keep a secure administrative record of alias owner, destination, verification status, last successful test, and the previous MX values for rollback. Update this table whenever agent contact data changes in `src/content.js`.
+
 ## Content Expansion Harness
 
 The Ralph loop expands only the 19 evergreen and 18 property pages owned by `src/content-seo.js`. It explicitly excludes `src/content.js` and all top-header pages.
