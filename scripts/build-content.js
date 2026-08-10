@@ -513,7 +513,9 @@ function renderBrandLogo(style, prefix, light) {
     markHtml +
     '<span>Hawaii <span style="color:' +
     (light ? "var(--accent)" : "var(--primary)") +
-    '">Military</span><small>' +
+    '">Military</span> ' +
+    escapeHtml(brand.subName) +
+    '<small>' +
     escapeHtml(brand.tagline) +
     "</small></span>"
   );
