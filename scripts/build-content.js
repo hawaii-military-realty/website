@@ -883,6 +883,7 @@ function renderContactPage(model) {
         });
       })
       .join(""),
+    formHtml: renderTemplate("partials/contact-form.html", {}),
     infoCardsHtml: page.infoCards
       .map(function (card) {
         return renderTemplate("partials/contact-info-card.html", {
