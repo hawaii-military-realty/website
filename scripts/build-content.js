@@ -371,6 +371,16 @@ function buildAbsolutePublicUrl(outputPath, siteUrl) {
   return baseUrl + "/" + publicPath;
 }
 
+function buildAbsoluteRenderedUrl(outputPath, siteUrl) {
+  const baseUrl = String(siteUrl || "").replace(/\/+$/, "");
+  const renderedPath = normalizeOutputPath(outputPath);
+
+  if (!baseUrl) return renderedPath ? "/" + renderedPath : "/";
+  if (!renderedPath) return baseUrl + "/";
+
+  return baseUrl + "/" + renderedPath;
+}
+
 function assetPrefixForOutputPath(outputPath) {
   const normalized = normalizeOutputPath(outputPath);
   const dir = path.posix.dirname(normalized || "index.html");
@@ -883,7 +893,13 @@ function renderContactPage(model) {
         });
       })
       .join(""),
-    formHtml: renderTemplate("partials/contact-form.html", {}),
+    formHtml: renderTemplate("partials/contact-form.html", {
+      formRecipient: content.site.contact.formRecipient,
+      formUrl: buildAbsoluteRenderedUrl(
+        model.outputPath,
+        content.site.seo.url,
+      ),
+    }),
     infoCardsHtml: page.infoCards
       .map(function (card) {
         return renderTemplate("partials/contact-info-card.html", {

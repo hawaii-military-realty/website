@@ -14,6 +14,7 @@ const CONTENT = {
       phoneHref: "tel:8082189338",
       smsHref: "sms:8082189338",
       email: "",
+      formRecipient: "himre@redrhino.online",
       contactPageHref: "contact.html",
       contactPageLabel: "Contact Page",
       address: "91-1282 Kaiokia St, Ewa Beach, HI 96706",
