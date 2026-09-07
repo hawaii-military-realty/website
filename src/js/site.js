@@ -136,9 +136,29 @@
       });
   }
 
-  function initProtocolFallback() {
+  function deviceHandlesNativeSchemes() {
+    const ua = navigator.userAgent || "";
+    const mobilePattern =
+      /Android|iPhone|iPad|iPod|IEMobile|BlackBerry|Opera Mini|Mobile/i;
+    const isIpadDesktopMode =
+      /Macintosh/i.test(ua) && navigator.maxTouchPoints > 1;
+    return mobilePattern.test(ua) || isIpadDesktopMode;
+  }
+
+  function initContactLinks() {
+    if (deviceHandlesNativeSchemes()) return;
+
+    document
+      .querySelectorAll('a[href^="tel:"], a[href^="sms:"]')
+      .forEach(function (anchor) {
+        anchor.removeAttribute("href");
+        anchor.removeAttribute("data-fallback");
+      });
+  }
+
+  function initMailtoFallback() {
     const FALLBACK_TIMEOUT_MS = 500;
-    const SELECTOR = 'a[href^="tel:"], a[href^="sms:"], a[href^="mailto:"]';
+    const SELECTOR = 'a[href^="mailto:"]';
     let token = null;
 
     document.addEventListener("click", function (event) {
@@ -190,7 +210,8 @@
     initMenus();
     initReveal();
     initMortgageCalculators();
-    initProtocolFallback();
+    initContactLinks();
+    initMailtoFallback();
   }
 
   document.addEventListener("DOMContentLoaded", initSite);

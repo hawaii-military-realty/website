@@ -101,6 +101,10 @@ a {
   transition: color 0.2s;
 }
 
+a:not([href]) {
+  cursor: default;
+}
+
 button {
   font: inherit;
   cursor: pointer;
