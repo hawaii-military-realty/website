@@ -5,13 +5,15 @@
       <h1>{{hero.title}} <span class="grad">{{hero.titleAccent}}</span></h1>
       <p class="lead">{{hero.lead}}</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="{{phoneHref}}">{{{phoneIcon}}} {{hero.primaryLabel}} {{{arrowRightIcon}}}</a>
+        <a class="btn btn-primary" href="{{phoneHref}}" data-fallback="{{contactPageHref}}">{{{phoneIcon}}}
+          {{hero.primaryLabel}} {{{arrowRightIcon}}}</a>
         <a class="btn btn-outline" href="{{hero.secondaryHref}}">{{hero.secondaryLabel}}</a>
       </div>
       <div class="trust">
         <div class="avatar-stack">
-          <img src="{{assetPrefix}}assets/avatar-1.jpg" alt="" /><img src="{{assetPrefix}}assets/avatar-2.jpg" alt="" /><img src="{{assetPrefix}}assets/avatar-3.jpg"
-            alt="" /><img src="{{assetPrefix}}assets/avatar-4.jpg" alt="" /><span>{{hero.avatarCount}}</span>
+          <img src="{{assetPrefix}}assets/avatar-1.jpg" alt="" /><img src="{{assetPrefix}}assets/avatar-2.jpg"
+            alt="" /><img src="{{assetPrefix}}assets/avatar-3.jpg" alt="" /><img
+            src="{{assetPrefix}}assets/avatar-4.jpg" alt="" /><span>{{hero.avatarCount}}</span>
         </div>
         <div>
           <div class="stars">{{{starsHtml}}}<strong style="color: #fff; margin-left: 6px">{{hero.rating}}</strong>

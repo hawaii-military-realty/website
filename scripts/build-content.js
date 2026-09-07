@@ -81,14 +81,21 @@ function smsHref(phone) {
   return digits ? "sms:" + digits : "#";
 }
 
-function renderAgentContactActions(agent, variant) {
+function renderAgentContactActions(agent, variant, currentOutputPath) {
   const actions = [];
   const linkClass = variant === "hero" ? ' class="cta"' : "";
+  const fallbackHref = relativePublicHref(
+    currentOutputPath,
+    (content.site.contact && content.site.contact.contactPageHref) ||
+      "contact.html",
+  );
+  const fallbackAttribute = ' data-fallback="' + escapeHtml(fallbackHref) + '"';
 
   if (agent.phone) {
     actions.push(
-      '<a' +
+      "<a" +
         linkClass +
+        fallbackAttribute +
         ' href="' +
         escapeHtml(phoneHref(agent.phone)) +
         '">' +
@@ -98,8 +105,9 @@ function renderAgentContactActions(agent, variant) {
         "</a>",
     );
     actions.push(
-      '<a' +
+      "<a" +
         linkClass +
+        fallbackAttribute +
         ' href="' +
         escapeHtml(smsHref(agent.phone)) +
         '">' +
@@ -110,8 +118,9 @@ function renderAgentContactActions(agent, variant) {
 
   if (agent.email) {
     actions.push(
-      '<a' +
+      "<a" +
         linkClass +
+        fallbackAttribute +
         ' href="mailto:' +
         escapeHtml(agent.email) +
         '">' +
@@ -312,7 +321,8 @@ function renderHeadData(page, prefix, extraHeadHtml, currentOutputPath) {
     ogTitle: ogTitle,
     ogDescription: ogDescription,
     ogUrl:
-      page.ogUrl || buildAbsolutePublicUrl(currentOutputPath, siteSeo.url || ""),
+      page.ogUrl ||
+      buildAbsolutePublicUrl(currentOutputPath, siteSeo.url || ""),
     twitterCard: page.twitterCard || siteSeo.twitterCard || "summary",
     twitterTitle: page.twitterTitle || ogTitle,
     twitterDescription: page.twitterDescription || ogDescription,
@@ -336,7 +346,9 @@ function renderHeadAsset(page, prefix, extraHeadHtml, currentOutputPath) {
 }
 
 function normalizeOutputPath(value) {
-  return String(value || "").replace(/\\/g, "/").replace(/^\/+/, "");
+  return String(value || "")
+    .replace(/\\/g, "/")
+    .replace(/^\/+/, "");
 }
 
 function isExternalHref(value) {
@@ -351,8 +363,7 @@ function logicalPageToPublicPath(value) {
   if (normalized === "404.html") return "404.html";
   if (/\/index\.html$/i.test(normalized))
     return normalized.replace(/\/index\.html$/i, "");
-  if (/\.html$/i.test(normalized))
-    return normalized.replace(/\.html$/i, "");
+  if (/\.html$/i.test(normalized)) return normalized.replace(/\.html$/i, "");
 
   return normalized;
 }
@@ -377,12 +388,14 @@ function assetPrefixForOutputPath(outputPath) {
 
   if (!dir || dir === ".") return "";
 
-  return dir
-    .split("/")
-    .map(function () {
-      return "..";
-    })
-    .join("/") + "/";
+  return (
+    dir
+      .split("/")
+      .map(function () {
+        return "..";
+      })
+      .join("/") + "/"
+  );
 }
 
 function relativePublicHref(fromOutputPath, targetPath) {
@@ -438,7 +451,8 @@ function relativeStaticHref(fromOutputPath, targetPath) {
 
 function renderExtraHead(page, currentOutputPath) {
   const rows = [];
-  const canonicalTarget = page.canonical || page.path || currentOutputPath || "";
+  const canonicalTarget =
+    page.canonical || page.path || currentOutputPath || "";
   const canonicalHref = canonicalTarget
     ? relativePublicHref(currentOutputPath || canonicalTarget, canonicalTarget)
     : "";
@@ -451,7 +465,9 @@ function renderExtraHead(page, currentOutputPath) {
     rows.push(
       '<meta name="keywords" content="' +
         escapeHtml(
-          Array.isArray(page.keywords) ? page.keywords.join(", ") : page.keywords,
+          Array.isArray(page.keywords)
+            ? page.keywords.join(", ")
+            : page.keywords,
         ) +
         '" />',
     );
@@ -466,9 +482,7 @@ function renderExtraHead(page, currentOutputPath) {
       '<meta property="og:image" content="' + escapeHtml(ogImageHref) + '" />',
     );
     rows.push(
-      '<meta name="twitter:image" content="' +
-        escapeHtml(ogImageHref) +
-        '" />',
+      '<meta name="twitter:image" content="' + escapeHtml(ogImageHref) + '" />',
     );
   }
 
@@ -515,7 +529,7 @@ function renderBrandLogo(style, prefix, light) {
     (light ? "var(--accent)" : "var(--primary)") +
     '">Military</span> ' +
     escapeHtml(brand.subName) +
-    '<small>' +
+    "<small>" +
     escapeHtml(brand.tagline) +
     "</small></span>"
   );
@@ -555,9 +569,9 @@ function renderFooterGuides(currentOutputPath) {
   return (content.site.footer.guides || [])
     .map(function (item) {
       return (
-        "<li><a href=\"" +
+        '<li><a href="' +
         escapeHtml(relativePublicHref(currentOutputPath, item.href)) +
-        "\">" +
+        '">' +
         escapeHtml(item.label) +
         "</a></li>"
       );
@@ -651,9 +665,11 @@ function renderCta(style, cta, currentOutputPath) {
       note: merged.note,
       primaryLabel: merged.primaryLabel || content.site.cta.primaryLabel,
       secondaryLabel:
-        merged.secondaryLabel ||
-        contact.contactPageLabel ||
-        "Contact Page",
+        merged.secondaryLabel || contact.contactPageLabel || "Contact Page",
+      contactPageHref: relativePublicHref(
+        currentOutputPath,
+        contact.contactPageHref || "contact.html",
+      ),
       secondaryHref: relativePublicHref(
         currentOutputPath,
         merged.secondaryHref || contact.contactPageHref || "contact.html",
@@ -759,6 +775,7 @@ function renderHomePage(model) {
     hero: hero,
     heritage: heritage,
     phoneHref: content.site.contact.phoneHref,
+    contactPageHref: relativePublicHref(model.outputPath, "contact.html"),
     phoneIcon: icon("phone"),
     arrowRightIcon: icon("arrowRight"),
     starsHtml: starRating(5),
@@ -775,7 +792,11 @@ function renderHomePage(model) {
         return renderTemplate("partials/process-step-number.html", step);
       })
       .join("\n"),
-    testimonialsHtml: renderTestimonials(content.shared.testimonials, 4, prefix),
+    testimonialsHtml: renderTestimonials(
+      content.shared.testimonials,
+      4,
+      prefix,
+    ),
   });
 
   return renderRootPage({ ...model, mainHtml: mainHtml });
@@ -856,7 +877,11 @@ function renderTestimonialsPage(model) {
   const mainHtml = renderTemplate(model.template, {
     ...page,
     heroHtml: renderPageHero(page.hero, prefix),
-    testimonialsHtml: renderTestimonials(content.shared.testimonials, 4, prefix),
+    testimonialsHtml: renderTestimonials(
+      content.shared.testimonials,
+      4,
+      prefix,
+    ),
     statsHtml: page.stats
       .map(function (stat) {
         return renderTemplate("partials/stat-card.html", stat);
@@ -879,6 +904,10 @@ function renderContactPage(model) {
         return renderTemplate("partials/contact-method.html", {
           ...method,
           href: resolveHref(model.outputPath, method.hrefKey),
+          fallbackHref: relativePublicHref(
+            model.outputPath,
+            content.site.contact.contactPageHref || "contact.html",
+          ),
           iconHtml: icon(method.icon),
         });
       })
@@ -919,12 +948,15 @@ function renderTeamPage(model) {
       agentNames +
       ", real estate professionals serving clients across Oahu.",
   };
-  const heroHtml = renderPageHero({
-    image: "hero-bg-team.jpg",
-    eyebrow: page.eyebrow,
-    heading: page.heading,
-    intro: agentNames + " " + page.intro[0],
-  }, prefix);
+  const heroHtml = renderPageHero(
+    {
+      image: "hero-bg-team.jpg",
+      eyebrow: page.eyebrow,
+      heading: page.heading,
+      intro: agentNames + " " + page.intro[0],
+    },
+    prefix,
+  );
   const mainHtml = renderTemplate(model.template, {
     heroHtml: heroHtml,
     teamCardsHtml: sortedAgents
@@ -951,7 +983,7 @@ function renderTeamCard(agent, currentOutputPath) {
       "agents/" + agent.slug + ".html",
     ),
     contactActionsHtml: showContactButtons
-      ? renderAgentContactActions(agent, "card")
+      ? renderAgentContactActions(agent, "card", currentOutputPath)
       : "",
     sortAttribute:
       typeof agent.sort === "number"
@@ -968,12 +1000,15 @@ function renderAboutPage(model) {
     featuredAgent.featuredAbout && featuredAgent.featuredAbout.length
       ? featuredAgent.featuredAbout
       : featuredAgent.about;
-  const heroHtml = renderPageHero({
-    image: "hero-bg-about.jpg",
-    eyebrow: page.eyebrow,
-    heading: page.heading,
-    intro: page.intro[0],
-  }, prefix);
+  const heroHtml = renderPageHero(
+    {
+      image: "hero-bg-about.jpg",
+      eyebrow: page.eyebrow,
+      heading: page.heading,
+      intro: page.intro[0],
+    },
+    prefix,
+  );
   const mainHtml = renderTemplate(model.template, {
     ...page,
     heroHtml: heroHtml,
@@ -1010,7 +1045,11 @@ function renderAgentPage(model) {
     agent: agent,
     assetPrefix: prefix,
     backHref: relativePublicHref(model.outputPath, "team.html"),
-    contactActionsHtml: renderAgentContactActions(agent, "hero"),
+    contactActionsHtml: renderAgentContactActions(
+      agent,
+      "hero",
+      model.outputPath,
+    ),
     arrowLeftIcon: icon("arrowLeft"),
     aboutHtml: paragraphs(agent.about),
     badgesHtml: agent.badges.map(renderBadge).join("\n"),
@@ -1146,6 +1185,10 @@ function renderFeaturedListingPage(model) {
         return renderTemplate("partials/listing-tour-option.html", {
           ...option,
           href: resolveHref(model.outputPath, option.hrefKey),
+          fallbackHref: relativePublicHref(
+            model.outputPath,
+            content.site.contact.contactPageHref || "contact.html",
+          ),
           variantClass: index === 0 ? "" : "glass",
           iconHtml: icon(option.icon),
         });
@@ -1175,9 +1218,10 @@ function renderContentRelatedLink(item, currentOutputPath) {
 function renderContentPage(model) {
   const page = model.page;
   const prefix = assetPrefixForOutputPath(model.outputPath);
-  const calculatorHtml = page.key === "mortgage-calculator"
-    ? renderTemplate("partials/mortgage-calculator.html", {})
-    : "";
+  const calculatorHtml =
+    page.key === "mortgage-calculator"
+      ? renderTemplate("partials/mortgage-calculator.html", {})
+      : "";
   const mainHtml = renderTemplate(model.template, {
     heroHtml: renderPageHero(page.hero, prefix),
     introEyebrow: page.introEyebrow,
@@ -1319,7 +1363,11 @@ function writePageModel(model, renderFn, seenOutputPaths) {
     seenOutputPaths.set(outputPath, logicalPath);
   }
 
-  const rendered = renderFn({ ...model, logicalPath: logicalPath, outputPath: outputPath });
+  const rendered = renderFn({
+    ...model,
+    logicalPath: logicalPath,
+    outputPath: outputPath,
+  });
 
   writeFile(outputPath, rendered);
 }
@@ -1353,11 +1401,7 @@ function main() {
   });
 
   const listingModel = getFeaturedListingModel();
-  writePageModel(
-    listingModel,
-    renderFeaturedListingPage,
-    seenOutputPaths,
-  );
+  writePageModel(listingModel, renderFeaturedListingPage, seenOutputPaths);
 
   contentPageModels.forEach(function (model) {
     writePageModel(model, renderRootModel, seenOutputPaths);

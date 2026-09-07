@@ -4,7 +4,7 @@
       {{{brandLogoHtml}}}
     </a>
     <nav class="main-nav" aria-label="Primary">{{{navHtml}}}</nav>
-    <a href="{{phoneHref}}" class="call-btn">{{{phoneIcon}}}{{phoneDisplay}}</a>
+    <a href="{{phoneHref}}" class="call-btn" data-fallback="{{contactPageHref}}">{{{phoneIcon}}}{{phoneDisplay}}</a>
     <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" data-menu-btn
       data-menu-target="#assetMobileNav">
       <span data-menu-open>{{{menuIcon}}}</span>
@@ -14,7 +14,8 @@
   <div class="mobile-nav" id="assetMobileNav" data-mobile-nav>
     <div class="container inner">
       {{{mobileNavHtml}}}
-      <a href="{{phoneHref}}" class="call-btn-mobile">{{{phoneIcon}}}{{phoneDisplay}}</a>
+      <a href="{{phoneHref}}" class="call-btn-mobile"
+        data-fallback="{{contactPageHref}}">{{{phoneIcon}}}{{phoneDisplay}}</a>
     </div>
   </div>
 </header>
