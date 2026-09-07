@@ -600,6 +600,12 @@ const CONTENT = {
           hrefKey: "smsHref",
         },
       ],
+      emailButton: {
+        href: "https://formsubmit.co/el/puside",
+        label: "Email the Team",
+        note: "Prefer to write it out? Send the details and the team will reply from the shared inbox.",
+        icon: "mail",
+      },
       infoCards: [
         {
           icon: "mapPin",

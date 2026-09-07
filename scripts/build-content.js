@@ -883,6 +883,13 @@ function renderContactPage(model) {
         });
       })
       .join(""),
+    emailButtonHtml: page.emailButton
+      ? renderTemplate("partials/email-button.html", {
+          ...page.emailButton,
+          iconHtml: icon(page.emailButton.icon),
+          arrowIconHtml: icon("arrowRight"),
+        })
+      : "",
     infoCardsHtml: page.infoCards
       .map(function (card) {
         return renderTemplate("partials/contact-info-card.html", {
